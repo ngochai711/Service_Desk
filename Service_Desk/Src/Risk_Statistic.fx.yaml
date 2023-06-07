@@ -32,7 +32,9 @@
             BorderColor: =RGBA(0, 0, 0, 1)
             Fill: =RGBA(215, 223, 240, 1)
             Height: =51
-            OnSelect: =Set(varVisible,true)
+            OnSelect: |-
+                =Set(varVisible,true);
+                Set(varInput,"")
             Width: =345
             Y: =40
             ZIndex: =1
@@ -45,18 +47,14 @@
             Y: =40
             ZIndex: =2
 
-        Input As text:
-            AccessibleLabel: =
-            BorderThickness: =0
-            Default: =
-            DisplayMode: =DisplayMode.View
-            Height: =51
+        Label3 As label:
+            Height: =46
             OnSelect: =Set(varVisible,true)
-            Reset: =true
-            Width: =188
-            X: =157
-            Y: =40
-            ZIndex: =8
+            Text: =varInput
+            Width: =187
+            X: =158
+            Y: =45
+            ZIndex: =9
 
         Group8 As group:
             Height: =5
@@ -85,8 +83,7 @@
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 OnSelect: |-
-                    =Input.Text = ThisItem.RR_CSH;
-                    Reset(Input);
+                    =Set(varInput,ThisItem.RR_CSH);
                     Set(varVisible,false)
                 TemplatePadding: =0
                 TemplateSize: =80

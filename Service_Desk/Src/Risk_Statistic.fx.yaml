@@ -45,9 +45,9 @@
             Y: =40
             ZIndex: =2
 
-        TextInput1 As text:
+        Input As text:
             BorderThickness: =0
-            Default: =
+            Default: =""
             Height: =51
             Width: =188
             X: =157
@@ -78,13 +78,13 @@
                 Items: =Search(Risks,SearchRiskOwner.Text,"RR_CSH")
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
-                OnSelect: =Set(TextInput1. ,ThisItem.RR_CSH)
+                OnSelect: =
                 TemplatePadding: =0
                 TemplateSize: =80
                 Visible: =varVisible
                 Width: =751
                 X: =255
-                Y: =175
+                Y: =182
                 ZIndex: =5
 
                 Name As label:

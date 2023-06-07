@@ -34,18 +34,21 @@
     "Label5_5": 36,
     "Label5_6": 33,
     "Label5_7": 34,
+    "LblAppName1": 44,
     "LblAppName2": 6,
     "Rectangle2": 8,
     "Rectangle2_1": 21,
     "Rectangle7_22": 24,
     "Rectangle7_23": 26,
+    "RectQuickActionBar1": 43,
     "RectQuickActionBar2": 5,
+    "Risk_Statistic": 42,
     "Screen3": 4,
     "TextBox1": 22
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/07/2023 04:36:41",
+  "HeaderLastSavedDateTimeUTC": "06/07/2023 07:58:15",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "025a0b08-ca3b-4298-921e-8f2ffb4bd1fb": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/073447433099445e9bb253e2f9e40181\""
@@ -127,12 +130,15 @@
     "Label5_5": {},
     "Label5_6": {},
     "Label5_7": {},
+    "LblAppName1": {},
     "LblAppName2": {},
     "Rectangle2": {},
     "Rectangle2_1": {},
     "Rectangle7_22": {},
     "Rectangle7_23": {},
+    "RectQuickActionBar1": {},
     "RectQuickActionBar2": {},
+    "Risk_Statistic": {},
     "Screen3": {},
     "TextBox1": {}
   },
@@ -171,12 +177,15 @@
     "Label5_5": 36,
     "Label5_6": 33,
     "Label5_7": 34,
+    "LblAppName1": 0,
     "LblAppName2": 1,
     "Rectangle2": 3,
     "Rectangle2_1": 21,
     "Rectangle7_22": 25,
     "Rectangle7_23": 26,
+    "RectQuickActionBar1": 0,
     "RectQuickActionBar2": 0,
+    "Risk_Statistic": 0,
     "Screen3": 0,
     "TextBox1": 23
   },
@@ -186,7 +195,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.2481019,
+    "AnalysisLoadTime": 0.2586117,
     "ControlCount": {
       "gallery": 2,
       "galleryTemplate": 2,
@@ -196,7 +205,7 @@
       "rectangle": 5,
       "screen": 1
     },
-    "DeserializationLoadTime": 1.4395915
+    "DeserializationLoadTime": 1.4610221
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

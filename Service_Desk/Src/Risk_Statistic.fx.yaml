@@ -1,0 +1,15 @@
+"Risk_Statistic As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    RectQuickActionBar1 As rectangle:
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    LblAppName1 As label:
+        Align: =Align.Center
+        Height: =88
+        Size: =32
+        Text: ="RISK SAVVY 2023"
+        Width: =Parent.Width
+        ZIndex: =2
+

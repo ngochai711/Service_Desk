@@ -346,7 +346,7 @@
                 HoverFill: =icon2.Fill
                 Icon: =Icon.ChevronRight
                 OnSelect: |-
-                    =If(ThisItem.TicketTypes="All tickets",UpdateContext({type:"All"}),If(ThisItem.TicketTypes="New tickets",UpdateContext({type:"New"}),If(ThisItem.TicketTypes="Tickets in progress",UpdateContext({type:"In progress"}),If(ThisItem.TicketTypes="Tickets closed",UpdateContext({type:"Closed"}),If(ThisItem.TicketTypes="Tickets on hold",UpdateContext({type:"On hold"}))))));If(ThisItem.TicketTypes="Tickets older than 3 days",UpdateContext({datetype:Text(DateAdd(Today(), -3)),type:"Tickets older than 3 days"}),If(ThisItem.TicketTypes="Tickets closed today",UpdateContext({datetype:Text(Today()),type:"Tickets closed today"}),If(ThisItem.TicketTypes="Tickets opened today",UpdateContext({datetype:Text(Today()),type:"Tickets opened today"}))))
+                    =If(ThisItem.status="In progress",UpdateContext({type:"In progress"}))
                 PressedBorderColor: =ColorFade(icon2.BorderColor, -20%)
                 PressedColor: =ColorFade(icon2.Color, -20%)
                 PressedFill: =icon2.Fill

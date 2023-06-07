@@ -1,4 +1,4 @@
-"Screen3 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+"frmMain As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Height: =Max(App.Height, App.DesignHeight)
     Width: =Max(App.Width, App.DesignWidth)
 
@@ -9,16 +9,18 @@
 
     LblAppName2 As label:
         Align: =Align.Center
+        Fill: =RGBA(54, 176, 75, 1)
         Height: =88
         Size: =32
-        Text: ="Service Desk"
+        Text: ="RISK SAVVY 2023"
         Width: =Parent.Width
         ZIndex: =2
 
     Rectangle2 As rectangle:
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =140
-        Width: =1366
+        Fill: =RGBA(232, 244, 217, 1)
+        Height: =109
+        Width: =544
+        X: =9
         Y: =88
         ZIndex: =3
 
@@ -34,7 +36,7 @@
             Height: =39
             Text: ="New ticket"
             Width: =99
-            X: =389
+            X: =137
             Y: =158
             ZIndex: =6
 
@@ -45,7 +47,7 @@
             Size: =32
             Text: =CountRows(Filter(Ticket_detail,status="New"))
             Width: =82
-            X: =397
+            X: =136
             Y: =91
             ZIndex: =7
 
@@ -60,7 +62,7 @@
             Height: =39
             Text: ="All ticket"
             Width: =82
-            X: =142
+            X: =52
             Y: =158
             ZIndex: =8
 
@@ -70,7 +72,7 @@
             Size: =32
             Text: =CountRows(Ticket_detail)
             Width: =82
-            X: =142
+            X: =52
             Y: =91
             ZIndex: =9
 
@@ -86,8 +88,8 @@
             Height: =39
             Text: ="In progress"
             Width: =101
-            X: =642
-            Y: =158
+            X: =236
+            Y: =155
             ZIndex: =10
 
         Label4_3 As label:
@@ -97,8 +99,8 @@
             Size: =32
             Text: =CountRows(Filter(Ticket_detail,status="In progress"))
             Width: =82
-            X: =651
-            Y: =94
+            X: =236
+            Y: =91
             ZIndex: =11
 
     Group2_4 As group:
@@ -113,8 +115,8 @@
             Height: =39
             Text: ="Closed"
             Width: =70
-            X: =926
-            Y: =155
+            X: =348
+            Y: =158
             ZIndex: =12
 
         Label4_4 As label:
@@ -124,8 +126,8 @@
             Size: =32
             Text: =CountRows(Filter(Ticket_detail,status="Closed"))
             Width: =82
-            X: =920
-            Y: =88
+            X: =342
+            Y: =91
             ZIndex: =13
 
     Group2_5 As group:
@@ -140,7 +142,7 @@
             Height: =39
             Text: ="On hold"
             Width: =82
-            X: =1167
+            X: =424
             Y: =158
             ZIndex: =14
 
@@ -151,7 +153,7 @@
             Size: =32
             Text: =CountRows(Filter(Ticket_detail,status="On hold"))
             Width: =82
-            X: =1167
+            X: =424
             Y: =91
             ZIndex: =15
 
@@ -164,13 +166,14 @@
 
     Gallery5 As gallery.galleryVertical:
         DelayItemLoading: =true
-        Height: =540
+        Fill: =RGBA(232, 244, 217, 1)
+        Height: =518
         Items: =Ticket_detail
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
-        Width: =1080
-        X: =286
+        TemplateSize: =496
+        Width: =382
+        X: =171
         Y: =228
         ZIndex: =19
 
@@ -190,8 +193,8 @@
             Text: |-
                 ="Created by: "&ThisItem.person_create
             Width: =230
-            X: =237
-            Y: =12
+            X: =12
+            Y: =54
             ZIndex: =2
 
         Label5_2 As label:
@@ -200,8 +203,8 @@
             Text: |-
                 ="Priority: "&ThisItem.priorty
             Width: =176
-            X: =554
-            Y: =12
+            X: =12
+            Y: =97
             ZIndex: =3
 
         Label5_3 As label:
@@ -210,8 +213,8 @@
             Text: |-
                 ="Created Date: "&ThisItem.date_create
             Width: =221
-            X: =817
-            Y: =12
+            X: =12
+            Y: =145
             ZIndex: =4
 
         Label5_4 As label:
@@ -221,7 +224,7 @@
                 ="Assigned to:"
             Width: =116
             X: =12
-            Y: =212
+            Y: =329
             ZIndex: =5
 
         Label5_5 As label:
@@ -231,7 +234,7 @@
             Text: =If(IsBlank(ThisItem.assign_to),"None",ThisItem.assign_to)
             Width: =61
             X: =128
-            Y: =212
+            Y: =329
             ZIndex: =6
 
         Label5_6 As label:
@@ -240,9 +243,9 @@
             OnSelect: =Select(Parent)
             Size: =20
             Text: =ThisItem.subject
-            Width: =1026
+            Width: =344
             X: =12
-            Y: =66
+            Y: =187
             ZIndex: =7
 
         Label5_7 As label:
@@ -250,17 +253,17 @@
             OnSelect: =Select(Parent)
             Text: =ThisItem.description
             VerticalAlign: =VerticalAlign.Top
-            Width: =1026
+            Width: =320
             X: =12
-            Y: =120
+            Y: =241
             ZIndex: =8
 
     FilterGallery As gallery.galleryVertical:
         AccessibleLabel: ="Filter gallery"
         DisabledBorderColor: =FilterGallery.BorderColor
         DisabledFill: =FilterGallery.Fill
-        Fill: =RGBA(212, 193, 221,.3)
-        Height: =540
+        Fill: =RGBA(209, 232, 178, 1)
+        Height: =518
         HoverBorderColor: =FilterGallery.BorderColor
         HoverFill: =FilterGallery.Fill
         Items: =Ticket_detail
@@ -271,7 +274,8 @@
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =54.37995540456163
-        Width: =286
+        Width: =159
+        X: =9
         Y: =228
         ZIndex: =20
 
@@ -279,14 +283,14 @@
             AccessibleLabel: =ThisItem.TicketTypes
             BorderColor: =RGBA(0, 0, 255, 1)
             DisabledFill: =Rectangle2_1.Fill
-            Fill: =RGBA(212, 193, 221,.5)
+            Fill: =RGBA(187, 221, 140, 1)
             FocusedBorderColor: =Rectangle2_1.BorderColor
-            Height: =54.0586419753091
+            Height: =54
             HoverFill: =Rectangle2_1.Fill
             PressedFill: =Rectangle2_1.Fill
             TabIndex: =0
             Visible: =If(ThisItem.IsSelected,true,false)
-            Width: =286
+            Width: =159
             ZIndex: =1
 
         Rectangle7_22 As rectangle:
@@ -313,9 +317,10 @@
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(29,33,35,.9)
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                Fill: =RGBA(187, 221, 140, 1)
                 FocusedBorderColor: =TextBox1.BorderColor
                 FocusedBorderThickness: =02
-                Height: =51.9620896374532
+                Height: =51
                 HoverBorderColor: =TextBox1.BorderColor
                 HoverColor: =TextBox1.Color
                 HoverFill: =TextBox1.Fill
@@ -328,7 +333,7 @@
                 Size: =12
                 TabIndex: =0
                 Text: =ThisItem.area
-                Width: =273.50040096231
+                Width: =125
                 Y: =2
                 ZIndex: =5
 
@@ -339,8 +344,9 @@
                 DisabledBorderColor: =RGBA(56, 56, 56, 1)
                 DisabledColor: =RGBA(193, 193, 193, 0.95)
                 DisabledFill: =icon2.Fill
+                Fill: =RGBA(187, 221, 140, 1)
                 FocusedBorderColor: =icon2.BorderColor
-                Height: =19.6083357122465
+                Height: =19
                 HoverBorderColor: =ColorFade(icon2.BorderColor, 20%)
                 HoverColor: =ColorFade(icon2.Color, 20%)
                 HoverFill: =icon2.Fill
@@ -352,8 +358,8 @@
                 PressedFill: =icon2.Fill
                 TabIndex: =0
                 Visible: =If(ThisItem.IsSelected,true,false)
-                Width: =20.6415396952688
-                X: =265.358460304731
+                Width: =9
+                X: =122
                 Y: =18.3080368231383
                 ZIndex: =6
 
@@ -370,4 +376,208 @@
         X: =2
         Y: =228
         ZIndex: =21
+
+    Gallery5_1 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Fill: =RGBA(232, 244, 217, 1)
+        Height: =518
+        Items: =Ticket_detail
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =496
+        Width: =382
+        X: =562
+        Y: =228
+        ZIndex: =22
+
+        Label5_8 As label:
+            Height: =42
+            OnSelect: =Select(Parent)
+            Text: |-
+                ="Ticket ID: "&ThisItem.id
+            Width: =116
+            X: =12
+            Y: =12
+            ZIndex: =1
+
+        Label5_9 As label:
+            Height: =42
+            OnSelect: =Select(Parent)
+            Text: |-
+                ="Created by: "&ThisItem.person_create
+            Width: =230
+            X: =12
+            Y: =54
+            ZIndex: =2
+
+        Label5_10 As label:
+            Height: =42
+            OnSelect: =Select(Parent)
+            Text: |-
+                ="Priority: "&ThisItem.priorty
+            Width: =176
+            X: =12
+            Y: =97
+            ZIndex: =3
+
+        Label5_11 As label:
+            Height: =42
+            OnSelect: =Select(Parent)
+            Text: |-
+                ="Created Date: "&ThisItem.date_create
+            Width: =221
+            X: =12
+            Y: =145
+            ZIndex: =4
+
+        Label5_14 As label:
+            Height: =42
+            OnSelect: =Select(Parent)
+            Text: |-
+                ="Assigned to:"
+            Width: =116
+            X: =12
+            Y: =329
+            ZIndex: =5
+
+        Label5_15 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =42
+            OnSelect: =Select(Parent)
+            Text: =If(IsBlank(ThisItem.assign_to),"None",ThisItem.assign_to)
+            Width: =61
+            X: =128
+            Y: =329
+            ZIndex: =6
+
+        Label5_12 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =54
+            OnSelect: =Select(Parent)
+            Size: =20
+            Text: =ThisItem.subject
+            Width: =344
+            X: =12
+            Y: =187
+            ZIndex: =7
+
+        Label5_13 As label:
+            Height: =92
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.description
+            VerticalAlign: =VerticalAlign.Top
+            Width: =320
+            X: =12
+            Y: =241
+            ZIndex: =8
+
+    Gallery5_2 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Fill: =RGBA(232, 244, 217, 1)
+        Height: =518
+        Items: =Ticket_detail
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =496
+        Width: =396
+        X: =950
+        Y: =228
+        ZIndex: =23
+
+        Label5_16 As label:
+            Height: =42
+            OnSelect: =Select(Parent)
+            Text: |-
+                ="Ticket ID: "&ThisItem.id
+            Width: =116
+            X: =12
+            Y: =12
+            ZIndex: =1
+
+        Label5_17 As label:
+            Height: =42
+            OnSelect: =Select(Parent)
+            Text: |-
+                ="Created by: "&ThisItem.person_create
+            Width: =230
+            X: =12
+            Y: =54
+            ZIndex: =2
+
+        Label5_18 As label:
+            Height: =42
+            OnSelect: =Select(Parent)
+            Text: |-
+                ="Priority: "&ThisItem.priorty
+            Width: =176
+            X: =12
+            Y: =97
+            ZIndex: =3
+
+        Label5_19 As label:
+            Height: =42
+            OnSelect: =Select(Parent)
+            Text: |-
+                ="Created Date: "&ThisItem.date_create
+            Width: =221
+            X: =12
+            Y: =145
+            ZIndex: =4
+
+        Label5_22 As label:
+            Height: =42
+            OnSelect: =Select(Parent)
+            Text: |-
+                ="Assigned to:"
+            Width: =116
+            X: =12
+            Y: =329
+            ZIndex: =5
+
+        Label5_23 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =42
+            OnSelect: =Select(Parent)
+            Text: =If(IsBlank(ThisItem.assign_to),"None",ThisItem.assign_to)
+            Width: =61
+            X: =128
+            Y: =329
+            ZIndex: =6
+
+        Label5_20 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =54
+            OnSelect: =Select(Parent)
+            Size: =20
+            Text: =ThisItem.subject
+            Width: =344
+            X: =12
+            Y: =187
+            ZIndex: =7
+
+        Label5_21 As label:
+            Height: =92
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.description
+            VerticalAlign: =VerticalAlign.Top
+            Width: =320
+            X: =12
+            Y: =241
+            ZIndex: =8
+
+    Rectangle2_2 As rectangle:
+        Fill: =RGBA(232, 244, 217, 1)
+        Height: =109
+        Width: =382
+        X: =562
+        Y: =91
+        ZIndex: =24
+
+    Rectangle2_3 As rectangle:
+        Fill: =RGBA(232, 244, 217, 1)
+        Height: =109
+        Width: =395
+        X: =951
+        Y: =91
+        ZIndex: =25
 

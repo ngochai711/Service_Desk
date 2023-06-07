@@ -46,9 +46,13 @@
             ZIndex: =2
 
         Input As text:
+            AccessibleLabel: =
             BorderThickness: =0
-            Default: =""
+            Default: =
+            DisplayMode: =DisplayMode.View
             Height: =51
+            OnSelect: =Set(varVisible,true)
+            Reset: =true
             Width: =188
             X: =157
             Y: =40
@@ -62,6 +66,7 @@
             ZIndex: =9
 
             Rectangle4 As rectangle:
+                AccessibleLabel: =varVisible
                 Fill: =RGBA(241, 244, 249, 1)
                 Height: =371
                 OnSelect: =Set(varVisible,true)
@@ -72,13 +77,17 @@
                 ZIndex: =4
 
             "Gallery3 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
+                AccessibleLabel: =varVisible
                 BorderThickness: =1
                 DelayItemLoading: =true
                 Height: =315
                 Items: =Search(Risks,SearchRiskOwner.Text,"RR_CSH")
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
-                OnSelect: =
+                OnSelect: |-
+                    =Input.Text = ThisItem.RR_CSH;
+                    Reset(Input);
+                    Set(varVisible,false)
                 TemplatePadding: =0
                 TemplateSize: =80
                 Visible: =varVisible
@@ -133,6 +142,7 @@
                     ZIndex: =4
 
             Icon2 As icon.Search:
+                AccessibleLabel: =varVisible
                 Height: =56
                 Icon: =Icon.Search
                 OnSelect: =Set(varVisible,false)
@@ -143,6 +153,7 @@
                 ZIndex: =6
 
             SearchRiskOwner As text:
+                AccessibleLabel: =varVisible
                 Default: =""
                 Height: =56
                 HintText: ="Nhập tên chủ sở hữu"

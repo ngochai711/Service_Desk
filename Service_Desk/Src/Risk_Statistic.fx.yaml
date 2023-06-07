@@ -22,117 +22,133 @@
             Width: =Parent.Width
             ZIndex: =4
 
-    Rectangle1 As rectangle:
-        BorderColor: =RGBA(0, 0, 0, 1)
-        Fill: =RGBA(215, 223, 240, 1)
-        Height: =51
-        Width: =345
-        Y: =88
-        ZIndex: =5
+    Container2 As groupContainer:
+        Height: =527
+        Width: =1204
+        Y: =48
+        ZIndex: =23
 
-    Label2 As label:
-        Height: =51
-        Text: |-
-            ="Chủ sở hữu rủi ro: "
-        Width: =171
-        Y: =88
-        ZIndex: =6
-
-    Label3 As label:
-        Text: =""
-        X: =159
-        Y: =93
-        ZIndex: =7
-
-    "'Search Risk Ower' As groupContainer":
-        Height: =451
-        Width: =844
-        X: =256
-        Y: =93
-        ZIndex: =10
-
-        Rectangle4 As rectangle:
-            Fill: =RGBA(241, 244, 249, 1)
-            Height: =371
-            Width: =764
-            X: =40
+        Rectangle1 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(215, 223, 240, 1)
+            Height: =51
+            OnSelect: =Set(varVisible,true)
+            Width: =345
             Y: =40
             ZIndex: =1
 
-        "Gallery3 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
-            BorderThickness: =1
-            DelayItemLoading: =true
-            Height: =315
-            Items: =Risks
-            Layout: =Layout.Vertical
-            LoadingSpinner: =LoadingSpinner.Data
-            TemplatePadding: =0
-            TemplateSize: =80
-            Width: =751
-            X: =53
-            Y: =96
+        Label2 As label:
+            Height: =51
+            Text: |-
+                ="Chủ sở hữu rủi ro: "
+            Width: =171
+            Y: =40
             ZIndex: =2
 
-            Name As label:
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =Self.Size * 1.8
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =ThisItem.RR_CSH
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Parent.TemplateWidth - 86
-                X: =16
-                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                ZIndex: =1
+        TextInput1 As text:
+            BorderThickness: =0
+            Default: =
+            Height: =51
+            Width: =188
+            X: =157
+            Y: =40
+            ZIndex: =8
 
-            NextArrow2 As icon.ChevronRight:
-                AccessibleLabel: =Self.Tooltip
-                Color: =RGBA(166, 166, 166, 1)
-                Height: =50
-                Icon: =Icon.ChevronRight
-                OnSelect: =Select(Parent)
-                PaddingBottom: =12
-                PaddingLeft: =12
-                PaddingRight: =12
-                PaddingTop: =12
-                Tooltip: ="View item details"
-                Width: =50
-                X: =Parent.TemplateWidth - Self.Width - 12
-                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                ZIndex: =2
+        Group8 As group:
+            Height: =5
+            Width: =5
+            X: =60
+            Y: =60
+            ZIndex: =9
 
-            Separator2 As rectangle:
-                Height: =8
-                OnSelect: =Select(Parent)
-                Width: =Parent.TemplateWidth
-                Y: =72
-                ZIndex: =3
-
-            Rectangle6 As rectangle:
-                Height: =Parent.TemplateHeight - Separator2.Height
-                OnSelect: =Select(Parent)
-                Visible: =If(ThisItem.IsSelected, true, false)
-                Width: =4
+            Rectangle4 As rectangle:
+                Fill: =RGBA(241, 244, 249, 1)
+                Height: =371
+                OnSelect: =Set(varVisible,true)
+                Visible: =varVisible
+                Width: =764
+                X: =255
+                Y: =105
                 ZIndex: =4
 
-        Icon2 As icon.Search:
-            Height: =56
-            Icon: =Icon.Search
-            OnSelect: =Search(Risks,SearchRiskOwner.Text,"RR_CSH")
-            Width: =85
-            X: =53
-            Y: =40
-            ZIndex: =4
+            "Gallery3 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
+                BorderThickness: =1
+                DelayItemLoading: =true
+                Height: =315
+                Items: =Search(Risks,SearchRiskOwner.Text,"RR_CSH")
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                OnSelect: =Set(TextInput1. ,ThisItem.RR_CSH)
+                TemplatePadding: =0
+                TemplateSize: =80
+                Visible: =varVisible
+                Width: =751
+                X: =255
+                Y: =175
+                ZIndex: =5
 
-        SearchRiskOwner As text:
-            Default: =""
-            Height: =56
-            HintText: ="Nhập tên chủ sở hữu"
-            Width: =666
-            X: =138
-            Y: =40
-            ZIndex: =5
+                Name As label:
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =Self.Size * 1.8
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =ThisItem.RR_CSH
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =Parent.TemplateWidth - 86
+                    X: =16
+                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    ZIndex: =1
+
+                NextArrow2 As icon.ChevronRight:
+                    AccessibleLabel: =Self.Tooltip
+                    Color: =RGBA(166, 166, 166, 1)
+                    Height: =50
+                    Icon: =Icon.ChevronRight
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =12
+                    PaddingLeft: =12
+                    PaddingRight: =12
+                    PaddingTop: =12
+                    Tooltip: ="View item details"
+                    Width: =50
+                    X: =Parent.TemplateWidth - Self.Width - 12
+                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    ZIndex: =2
+
+                Separator2 As rectangle:
+                    Height: =8
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =72
+                    ZIndex: =3
+
+                Rectangle6 As rectangle:
+                    Height: =Parent.TemplateHeight - Separator2.Height
+                    OnSelect: =Select(Parent)
+                    Visible: =If(ThisItem.IsSelected, true, false)
+                    Width: =4
+                    ZIndex: =4
+
+            Icon2 As icon.Search:
+                Height: =56
+                Icon: =Icon.Search
+                OnSelect: =Set(varVisible,false)
+                Visible: =varVisible
+                Width: =85
+                X: =255
+                Y: =105
+                ZIndex: =6
+
+            SearchRiskOwner As text:
+                Default: =""
+                Height: =56
+                HintText: ="Nhập tên chủ sở hữu"
+                Visible: =varVisible
+                Width: =666
+                X: =339
+                Y: =105
+                ZIndex: =7
 

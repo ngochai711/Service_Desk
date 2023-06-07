@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 2,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -115,9 +115,9 @@
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
     "ManualOfflineProfileId": "",
-    "Name": "Service_Desk.msapp",
+    "Name": "Service_Desk",
     "OriginatingVersion": "1.331",
-    "ParserErrorCount": 0
+    "ParserErrorCount": 1
   },
   "PublishInfo": {
     "AppName": "Service_Desk",

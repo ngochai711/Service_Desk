@@ -2,39 +2,17 @@
     Height: =Max(App.Height, App.DesignHeight)
     Width: =Max(App.Width, App.DesignWidth)
 
-    AppBar As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =3
-
-        AppNameBar As rectangle:
-            Height: =88
-            Width: =Parent.Width
-            ZIndex: =2
-
-        AppName As label:
-            Align: =Align.Center
-            Height: =88
-            Size: =32
-            Text: ="RISK SAVVY 2023"
-            Width: =Parent.Width
-            ZIndex: =4
-
-    Container2 As groupContainer:
+    "'Risk Owner' As groupContainer":
         Height: =527
         Width: =1204
-        Y: =48
-        ZIndex: =23
+        Y: =57
+        ZIndex: =3
 
         Rectangle1 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
             Fill: =RGBA(215, 223, 240, 1)
             Height: =51
-            OnSelect: |-
-                =Set(varVisible,true);
-                Set(varInput,"")
+            OnSelect: =
             Width: =345
             Y: =40
             ZIndex: =1
@@ -47,7 +25,7 @@
             Y: =40
             ZIndex: =2
 
-        Label3 As label:
+        RO_Name As label:
             Height: =46
             OnSelect: =Set(varVisible,true)
             Text: =varInput
@@ -56,7 +34,7 @@
             Y: =45
             ZIndex: =9
 
-        Group8 As group:
+        RO_Search As group:
             Height: =5
             Width: =5
             X: =60
@@ -79,7 +57,7 @@
                 BorderThickness: =1
                 DelayItemLoading: =true
                 Height: =315
-                Items: =Search(Risks,SearchRiskOwner.Text,"RR_CSH")
+                Items: =Search(Risks,SearchBar.Text,"RR_CSH")
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 OnSelect: |-
@@ -149,7 +127,7 @@
                 Y: =105
                 ZIndex: =6
 
-            SearchRiskOwner As text:
+            SearchBar As text:
                 AccessibleLabel: =varVisible
                 Default: =""
                 Height: =56
@@ -159,4 +137,248 @@
                 X: =339
                 Y: =105
                 ZIndex: =7
+
+    AppBar As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =3
+
+        AppNameBar As rectangle:
+            Height: =88
+            Width: =Parent.Width
+            ZIndex: =1
+
+        AppName As label:
+            Align: =Align.Center
+            Height: =88
+            Size: =32
+            Text: ="RISK SAVVY 2023"
+            Width: =Parent.Width
+            ZIndex: =2
+
+    "'Risk Rate' As groupContainer":
+        Height: =527
+        Width: =1204
+        X: =113
+        Y: =97
+        ZIndex: =7
+
+        Rectangle1_2 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(215, 223, 240, 1)
+            Height: =51
+            OnSelect: =
+            Width: =230
+            X: =588
+            ZIndex: =1
+
+        Label2_1 As label:
+            Height: =51
+            Text: |-
+                ="Xếp hạng rủi ro: "
+            Width: =144
+            X: =600
+            ZIndex: =2
+
+        RR_Type As label:
+            Height: =46
+            OnSelect: =Set(varRiskRate,true)
+            Text: =varRiskRateInput
+            Width: =72
+            X: =746
+            Y: =5
+            ZIndex: =9
+
+        RR_Search As group:
+            Height: =5
+            Width: =5
+            X: =60
+            Y: =60
+            ZIndex: =9
+
+            Rectangle4_1 As rectangle:
+                AccessibleLabel: =varRiskRate
+                Fill: =RGBA(241, 244, 249, 1)
+                Height: =371
+                OnSelect: =Set(varVisible,true)
+                Visible: =varRiskRate
+                Width: =764
+                X: =141
+                Y: =66
+                ZIndex: =4
+
+            "Gallery3_1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
+                AccessibleLabel: =varRiskRate
+                BorderThickness: =1
+                DelayItemLoading: =true
+                Height: =315
+                Items: =Search(Risks,RR_SearchBar.Text,"RR_CSH")
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                OnSelect: |-
+                    =Set(varRiskRateInput,ThisItem.RR_THUAN_XEPHANG);
+                    Set(varRiskRate,false)
+                TemplatePadding: =0
+                TemplateSize: =80
+                Visible: =varRiskRate
+                Width: =751
+                X: =141
+                Y: =143
+                ZIndex: =5
+
+                Name_1 As label:
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =Self.Size * 1.8
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =ThisItem.RR_CSH
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =Parent.TemplateWidth - 86
+                    X: =16
+                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    ZIndex: =1
+
+                NextArrow2_1 As icon.ChevronRight:
+                    AccessibleLabel: =Self.Tooltip
+                    Color: =RGBA(166, 166, 166, 1)
+                    Height: =50
+                    Icon: =Icon.ChevronRight
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =12
+                    PaddingLeft: =12
+                    PaddingRight: =12
+                    PaddingTop: =12
+                    Tooltip: ="View item details"
+                    Width: =50
+                    X: =Parent.TemplateWidth - Self.Width - 12
+                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    ZIndex: =2
+
+                Separator2_1 As rectangle:
+                    Height: =8
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =72
+                    ZIndex: =3
+
+                Rectangle6_1 As rectangle:
+                    Height: =Parent.TemplateHeight - Separator2_1.Height
+                    OnSelect: =Select(Parent)
+                    Visible: =If(ThisItem.IsSelected, true, false)
+                    Width: =4
+                    ZIndex: =4
+
+            Icon2_1 As icon.Search:
+                AccessibleLabel: =varRiskRate
+                Height: =56
+                Icon: =Icon.Search
+                OnSelect: =Set(varVisible,false)
+                Visible: =varRiskRate
+                Width: =85
+                X: =141
+                Y: =66
+                ZIndex: =6
+
+            RR_SearchBar As text:
+                AccessibleLabel: =varRiskRate
+                Default: =""
+                Height: =56
+                HintText: ="Nhập tên chủ sở hữu"
+                Visible: =varRiskRate
+                Width: =666
+                X: =225
+                Y: =66
+                ZIndex: =7
+
+    Rectangle1_3 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(215, 223, 240, 1)
+        Height: =47
+        OnSelect: =
+        Width: =453
+        Y: =159
+        ZIndex: =10
+
+    Rectangle1_4 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(215, 223, 240, 1)
+        Height: =47
+        OnSelect: =
+        Width: =453
+        X: =456
+        Y: =159
+        ZIndex: =11
+
+    Rectangle1_5 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(215, 223, 240, 1)
+        Height: =47
+        OnSelect: =
+        Width: =453
+        X: =913
+        Y: =159
+        ZIndex: =12
+
+    "'Date Picker' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =27
+
+        Rectangle1_1 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(215, 223, 240, 1)
+            Height: =51
+            OnSelect: =
+            Width: =345
+            X: =351
+            Y: =97
+            ZIndex: =4
+
+        DatePicker3 As datepicker:
+            Width: =220
+            X: =465
+            Y: =102
+            ZIndex: =5
+
+        Label3 As label:
+            Text: |-
+                ="Thời gian:"
+            Width: =98
+            X: =367
+            Y: =102
+            ZIndex: =6
+
+    Search As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =30
+
+        RR_SearchBar_1 As text:
+            AccessibleLabel: =
+            Default: =""
+            Height: =38
+            HintText: ="Tìm kiếm"
+            Width: =413
+            X: =938
+            Y: =104
+            ZIndex: =8
+
+        Icon2_2 As icon.Search:
+            AccessibleLabel: =
+            Height: =38
+            Icon: =Icon.Search
+            OnSelect: =Set(varVisible,false)
+            Width: =34
+            X: =1317
+            Y: =104
+            ZIndex: =9
 

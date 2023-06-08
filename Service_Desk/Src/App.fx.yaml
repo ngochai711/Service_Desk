@@ -1,5 +1,10 @@
 App As appinfo:
     BackEnabled: =false
+    OnStart: |-
+        =Set(varVisible,false);
+        Set(varInput,"");
+        Set(varRiskRateInput,"");
+        Set(varRiskRate,false)
 
     Host As hostControl.DefaultHostControlVariant:
         OnCancel: =false

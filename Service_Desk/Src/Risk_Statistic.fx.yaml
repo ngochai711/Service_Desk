@@ -338,6 +338,7 @@
                 HoverBorderColor: =TextBox1_20.BorderColor
                 HoverColor: =TextBox1_20.Color
                 HoverFill: =TextBox1_20.Fill
+                OnSelect: =Search(Risks,"a","RR_CSH")
                 PressedBorderColor: =TextBox1_20.BorderColor
                 PressedColor: =TextBox1_20.Color
                 PressedFill: =TextBox1_20.Fill
@@ -573,6 +574,7 @@
                 ZIndex: =17
 
         "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            AccessibleLabel: =
             DelayItemLoading: =true
             Height: =454
             Items: =Risks

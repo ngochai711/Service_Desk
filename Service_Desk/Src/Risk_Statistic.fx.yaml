@@ -2,168 +2,12 @@
     Height: =Max(App.Height, App.DesignHeight)
     Width: =Max(App.Width, App.DesignWidth)
 
-    "'Risk Owner' As groupContainer":
-        Height: =527
-        Width: =1204
-        Y: =57
-        ZIndex: =3
-
-        Rectangle1 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            Fill: =RGBA(215, 223, 240, 1)
-            Height: =51
-            OnSelect: =
-            Width: =345
-            Y: =40
-            ZIndex: =1
-
-        Label2 As label:
-            Height: =51
-            Text: |-
-                ="Chủ sở hữu rủi ro: "
-            Width: =171
-            Y: =40
-            ZIndex: =2
-
-        RO_Name As label:
-            Height: =46
-            OnSelect: =Set(varVisible,true)
-            Text: =varInput
-            Width: =187
-            X: =158
-            Y: =45
-            ZIndex: =9
-
-        RO_Search As group:
-            Height: =5
-            Width: =5
-            X: =60
-            Y: =60
-            ZIndex: =9
-
-            Rectangle4 As rectangle:
-                AccessibleLabel: =varVisible
-                Fill: =RGBA(241, 244, 249, 1)
-                Height: =371
-                OnSelect: =Set(varVisible,true)
-                Visible: =varVisible
-                Width: =764
-                X: =255
-                Y: =105
-                ZIndex: =4
-
-            "Gallery3 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
-                AccessibleLabel: =varVisible
-                BorderThickness: =1
-                DelayItemLoading: =true
-                Height: =315
-                Items: =Search(Risks,SearchBar.Text,"RR_CSH")
-                Layout: =Layout.Vertical
-                LoadingSpinner: =LoadingSpinner.Data
-                OnSelect: |-
-                    =Set(varInput,ThisItem.RR_CSH);
-                    Set(varVisible,false)
-                TemplatePadding: =0
-                TemplateSize: =80
-                Visible: =varVisible
-                Width: =751
-                X: =255
-                Y: =182
-                ZIndex: =5
-
-                Name As label:
-                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =Self.Size * 1.8
-                    OnSelect: =Select(Parent)
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Text: =ThisItem.RR_CSH
-                    VerticalAlign: =VerticalAlign.Top
-                    Width: =Parent.TemplateWidth - 86
-                    X: =16
-                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                    ZIndex: =1
-
-                NextArrow2 As icon.ChevronRight:
-                    AccessibleLabel: =Self.Tooltip
-                    Color: =RGBA(166, 166, 166, 1)
-                    Height: =50
-                    Icon: =Icon.ChevronRight
-                    OnSelect: =Select(Parent)
-                    PaddingBottom: =12
-                    PaddingLeft: =12
-                    PaddingRight: =12
-                    PaddingTop: =12
-                    Tooltip: ="View item details"
-                    Width: =50
-                    X: =Parent.TemplateWidth - Self.Width - 12
-                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                    ZIndex: =2
-
-                Separator2 As rectangle:
-                    Height: =8
-                    OnSelect: =Select(Parent)
-                    Width: =Parent.TemplateWidth
-                    Y: =72
-                    ZIndex: =3
-
-                Rectangle6 As rectangle:
-                    Height: =Parent.TemplateHeight - Separator2.Height
-                    OnSelect: =Select(Parent)
-                    Visible: =If(ThisItem.IsSelected, true, false)
-                    Width: =4
-                    ZIndex: =4
-
-            Icon2 As icon.Search:
-                AccessibleLabel: =varVisible
-                Height: =56
-                Icon: =Icon.Search
-                OnSelect: =Set(varVisible,false)
-                Visible: =varVisible
-                Width: =85
-                X: =255
-                Y: =105
-                ZIndex: =6
-
-            SearchBar As text:
-                AccessibleLabel: =varVisible
-                Default: =""
-                Height: =56
-                HintText: ="Nhập tên chủ sở hữu"
-                Visible: =varVisible
-                Width: =666
-                X: =339
-                Y: =105
-                ZIndex: =7
-
-    AppBar As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =3
-
-        AppNameBar As rectangle:
-            Height: =88
-            Width: =Parent.Width
-            ZIndex: =1
-
-        AppName As label:
-            Align: =Align.Center
-            Height: =88
-            Size: =32
-            Text: ="RISK SAVVY 2023"
-            Width: =Parent.Width
-            ZIndex: =2
-
     "'Risk Rate' As groupContainer":
         Height: =527
         Width: =1204
         X: =113
         Y: =97
-        ZIndex: =7
+        ZIndex: =1
 
         Rectangle1_2 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -295,11 +139,167 @@
                 Y: =66
                 ZIndex: =7
 
+    "'Risk Owner' As groupContainer":
+        Height: =527
+        Width: =1204
+        Y: =57
+        ZIndex: =2
+
+        Rectangle1 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(215, 223, 240, 1)
+            Height: =51
+            OnSelect: =
+            Width: =345
+            Y: =40
+            ZIndex: =1
+
+        Label2 As label:
+            Height: =51
+            Text: |-
+                ="Chủ sở hữu rủi ro: "
+            Width: =171
+            Y: =40
+            ZIndex: =2
+
+        RO_Name As label:
+            Height: =46
+            OnSelect: =Set(varVisible,true)
+            Text: =varInput
+            Width: =187
+            X: =158
+            Y: =40
+            ZIndex: =9
+
+        RO_Search As group:
+            Height: =5
+            Width: =5
+            X: =60
+            Y: =60
+            ZIndex: =9
+
+            Rectangle4 As rectangle:
+                AccessibleLabel: =varVisible
+                Fill: =RGBA(241, 244, 249, 1)
+                Height: =371
+                OnSelect: =Set(varVisible,true)
+                Visible: =varVisible
+                Width: =764
+                X: =255
+                Y: =105
+                ZIndex: =4
+
+            "Gallery3 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
+                AccessibleLabel: =varVisible
+                BorderThickness: =1
+                DelayItemLoading: =true
+                Height: =315
+                Items: =Search(Risks,SearchBar.Text,"RR_CSH")
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                OnSelect: |-
+                    =Set(varInput,ThisItem.RR_CSH);
+                    Set(varVisible,false)
+                TemplatePadding: =0
+                TemplateSize: =80
+                Visible: =varVisible
+                Width: =751
+                X: =255
+                Y: =182
+                ZIndex: =5
+
+                Name As label:
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =Self.Size * 1.8
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =ThisItem.RR_CSH
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =Parent.TemplateWidth - 86
+                    X: =16
+                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    ZIndex: =1
+
+                NextArrow2 As icon.ChevronRight:
+                    AccessibleLabel: =Self.Tooltip
+                    Color: =RGBA(166, 166, 166, 1)
+                    Height: =50
+                    Icon: =Icon.ChevronRight
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =12
+                    PaddingLeft: =12
+                    PaddingRight: =12
+                    PaddingTop: =12
+                    Tooltip: ="View item details"
+                    Width: =50
+                    X: =Parent.TemplateWidth - Self.Width - 12
+                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    ZIndex: =2
+
+                Separator2 As rectangle:
+                    Height: =8
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =72
+                    ZIndex: =3
+
+                Rectangle6 As rectangle:
+                    Height: =Parent.TemplateHeight - Separator2.Height
+                    OnSelect: =Select(Parent)
+                    Visible: =If(ThisItem.IsSelected, true, false)
+                    Width: =4
+                    ZIndex: =4
+
+            Icon2 As icon.Search:
+                AccessibleLabel: =varVisible
+                Height: =56
+                Icon: =Icon.Search
+                OnSelect: =Set(varVisible,false)
+                Visible: =varVisible
+                Width: =85
+                X: =255
+                Y: =105
+                ZIndex: =6
+
+            SearchBar As text:
+                AccessibleLabel: =varVisible
+                Default: =""
+                Height: =56
+                HintText: ="Nhập tên chủ sở hữu"
+                Visible: =varVisible
+                Width: =666
+                X: =339
+                Y: =105
+                ZIndex: =7
+
+    AppBar As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =3
+
+        AppNameBar As rectangle:
+            Height: =88
+            Width: =Parent.Width
+            ZIndex: =3
+
+        AppName As label:
+            Align: =Align.Center
+            Height: =88
+            Size: =32
+            Text: ="RISK SAVVY 2023"
+            Width: =Parent.Width
+            ZIndex: =4
+
     Risk As groupContainer:
         Height: =609
         Width: =456
         Y: =159
-        ZIndex: =17
+        ZIndex: =10
 
         Rectangle1_3 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -586,18 +586,6 @@
             Y: =155
             ZIndex: =18
 
-            Image1 As image:
-                Height: =72
-                OnSelect: =Select(Parent)
-                RadiusBottomLeft: =8
-                RadiusBottomRight: =8
-                RadiusTopLeft: =8
-                RadiusTopRight: =8
-                Width: =72
-                X: =16
-                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                ZIndex: =1
-
             Title1 As label:
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                 Height: =Self.Size * 1.8
@@ -609,8 +597,8 @@
                 Text: =ThisItem.'NGAY TẠO'
                 VerticalAlign: =VerticalAlign.Top
                 Width: =Parent.TemplateWidth - 173
-                X: =103
-                Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle1.Size * 1.8)) / 2
+                X: =24
+                Y: =27
                 ZIndex: =2
 
             Subtitle1 As label:
@@ -671,7 +659,7 @@
         Width: =456
         X: =454
         Y: =159
-        ZIndex: =18
+        ZIndex: =11
 
         Rectangle1_4 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -715,7 +703,7 @@
                 PressedColor: =TextBox1_25.Color
                 PressedFill: =TextBox1_25.Fill
                 Size: =20
-                Text: =CountRows(Risks)
+                Text: =CountRows(Risk_Control)
                 Width: =91
                 Wrap: =false
                 Y: =47
@@ -957,18 +945,6 @@
             Y: =155
             ZIndex: =18
 
-            Image1_1 As image:
-                Height: =72
-                OnSelect: =Select(Parent)
-                RadiusBottomLeft: =8
-                RadiusBottomRight: =8
-                RadiusTopLeft: =8
-                RadiusTopRight: =8
-                Width: =72
-                X: =16
-                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                ZIndex: =1
-
             Title1_1 As label:
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                 Height: =Self.Size * 1.8
@@ -980,7 +956,7 @@
                 Text: =ThisItem.'NGAY TẠO'
                 VerticalAlign: =VerticalAlign.Top
                 Width: =Parent.TemplateWidth - 173
-                X: =103
+                X: =31
                 Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle1_1.Size * 1.8)) / 2
                 ZIndex: =2
 
@@ -1045,7 +1021,7 @@
         Width: =456
         X: =910
         Y: =159
-        ZIndex: =19
+        ZIndex: =12
 
         Rectangle1_5 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -1088,7 +1064,7 @@
                 PressedColor: =TextBox1_30.Color
                 PressedFill: =TextBox1_30.Fill
                 Size: =20
-                Text: =CountRows(Risks)
+                Text: =CountRows(Risk_Fix)
                 Width: =91
                 Wrap: =false
                 Y: =47
@@ -1330,18 +1306,6 @@
             Y: =155
             ZIndex: =18
 
-            Image1_2 As image:
-                Height: =72
-                OnSelect: =Select(Parent)
-                RadiusBottomLeft: =8
-                RadiusBottomRight: =8
-                RadiusTopLeft: =8
-                RadiusTopRight: =8
-                Width: =72
-                X: =16
-                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                ZIndex: =1
-
             Title1_2 As label:
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                 Height: =Self.Size * 1.8
@@ -1353,8 +1317,8 @@
                 Text: =ThisItem.'NGAY TẠO'
                 VerticalAlign: =VerticalAlign.Top
                 Width: =Parent.TemplateWidth - 173
-                X: =103
-                Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle1_2.Size * 1.8)) / 2
+                X: =28
+                Y: =35
                 ZIndex: =2
 
             Subtitle1_2 As label:
@@ -1428,13 +1392,13 @@
             Width: =345
             X: =351
             Y: =97
-            ZIndex: =4
+            ZIndex: =5
 
         DatePicker3 As datepicker:
             Width: =220
             X: =465
             Y: =102
-            ZIndex: =5
+            ZIndex: =6
 
         Label3 As label:
             Text: |-
@@ -1442,7 +1406,7 @@
             Width: =98
             X: =367
             Y: =102
-            ZIndex: =6
+            ZIndex: =7
 
     Search As group:
         Height: =5

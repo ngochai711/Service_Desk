@@ -663,14 +663,13 @@
             FontWeight: =FontWeight.Semibold
             Size: =17
             Text: ="RỦI RO"
-            X: =153
-            Y: =3
+            X: =173
             ZIndex: =19
 
     "'Risk Control' As groupContainer":
         Height: =609
         Width: =456
-        X: =456
+        X: =454
         Y: =159
         ZIndex: =18
 
@@ -680,6 +679,7 @@
             Height: =47
             OnSelect: =
             Width: =455
+            X: =1
             ZIndex: =1
 
         Rectangle1_7 As rectangle:

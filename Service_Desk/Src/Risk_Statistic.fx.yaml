@@ -139,142 +139,6 @@
                 Y: =66
                 ZIndex: =7
 
-    "'Risk Owner' As groupContainer":
-        Height: =527
-        Width: =1204
-        Y: =57
-        ZIndex: =2
-
-        Rectangle1 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            Fill: =RGBA(215, 223, 240, 1)
-            Height: =51
-            OnSelect: =
-            Width: =345
-            Y: =40
-            ZIndex: =1
-
-        Label2 As label:
-            Height: =51
-            Text: |-
-                ="Chủ sở hữu rủi ro: "
-            Width: =171
-            Y: =40
-            ZIndex: =2
-
-        RO_Name As label:
-            Height: =46
-            OnSelect: =Set(varVisible,true)
-            Text: =varInput
-            Width: =187
-            X: =158
-            Y: =40
-            ZIndex: =9
-
-        RO_Search As group:
-            Height: =5
-            Width: =5
-            X: =60
-            Y: =60
-            ZIndex: =9
-
-            Rectangle4 As rectangle:
-                AccessibleLabel: =varVisible
-                Fill: =RGBA(241, 244, 249, 1)
-                Height: =371
-                OnSelect: =Set(varVisible,true)
-                Visible: =varVisible
-                Width: =764
-                X: =255
-                Y: =105
-                ZIndex: =4
-
-            "Gallery3 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
-                AccessibleLabel: =varVisible
-                BorderThickness: =1
-                DelayItemLoading: =true
-                Height: =315
-                Items: =Search(Risks,SearchBar.Text,"RR_CSH")
-                Layout: =Layout.Vertical
-                LoadingSpinner: =LoadingSpinner.Data
-                OnSelect: |-
-                    =Set(varInput,ThisItem.RR_CSH);
-                    Set(varVisible,false)
-                TemplatePadding: =0
-                TemplateSize: =80
-                Visible: =varVisible
-                Width: =751
-                X: =255
-                Y: =182
-                ZIndex: =5
-
-                Name As label:
-                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =Self.Size * 1.8
-                    OnSelect: =Select(Parent)
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Text: =ThisItem.RR_CSH
-                    VerticalAlign: =VerticalAlign.Top
-                    Width: =Parent.TemplateWidth - 86
-                    X: =16
-                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                    ZIndex: =1
-
-                NextArrow2 As icon.ChevronRight:
-                    AccessibleLabel: =Self.Tooltip
-                    Color: =RGBA(166, 166, 166, 1)
-                    Height: =50
-                    Icon: =Icon.ChevronRight
-                    OnSelect: =Select(Parent)
-                    PaddingBottom: =12
-                    PaddingLeft: =12
-                    PaddingRight: =12
-                    PaddingTop: =12
-                    Tooltip: ="View item details"
-                    Width: =50
-                    X: =Parent.TemplateWidth - Self.Width - 12
-                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                    ZIndex: =2
-
-                Separator2 As rectangle:
-                    Height: =8
-                    OnSelect: =Select(Parent)
-                    Width: =Parent.TemplateWidth
-                    Y: =72
-                    ZIndex: =3
-
-                Rectangle6 As rectangle:
-                    Height: =Parent.TemplateHeight - Separator2.Height
-                    OnSelect: =Select(Parent)
-                    Visible: =If(ThisItem.IsSelected, true, false)
-                    Width: =4
-                    ZIndex: =4
-
-            Icon2 As icon.Search:
-                AccessibleLabel: =varVisible
-                Height: =56
-                Icon: =Icon.Search
-                OnSelect: =Set(varVisible,false)
-                Visible: =varVisible
-                Width: =85
-                X: =255
-                Y: =105
-                ZIndex: =6
-
-            SearchBar As text:
-                AccessibleLabel: =varVisible
-                Default: =""
-                Height: =56
-                HintText: ="Nhập tên chủ sở hữu"
-                Visible: =varVisible
-                Width: =666
-                X: =339
-                Y: =105
-                ZIndex: =7
-
     AppBar As group:
         Height: =5
         Width: =5
@@ -285,7 +149,7 @@
         AppNameBar As rectangle:
             Height: =88
             Width: =Parent.Width
-            ZIndex: =3
+            ZIndex: =2
 
         AppName As label:
             Align: =Align.Center
@@ -293,13 +157,13 @@
             Size: =32
             Text: ="RISK SAVVY 2023"
             Width: =Parent.Width
-            ZIndex: =4
+            ZIndex: =3
 
     Risk As groupContainer:
         Height: =609
         Width: =456
         Y: =159
-        ZIndex: =10
+        ZIndex: =9
 
         Rectangle1_3 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -659,7 +523,7 @@
         Width: =456
         X: =454
         Y: =159
-        ZIndex: =11
+        ZIndex: =10
 
         Rectangle1_4 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -1021,7 +885,7 @@
         Width: =456
         X: =910
         Y: =159
-        ZIndex: =12
+        ZIndex: =11
 
         Rectangle1_5 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -1377,6 +1241,123 @@
             Y: =3
             ZIndex: =19
 
+    TextInputSearchPerson As text:
+        AccessibleLabel: ="Search person"
+        BorderColor: =
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =0
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =
+        DisabledBorderColor: =
+        DisabledColor: =
+        DisabledFill: =
+        Fill: =RGBA(215, 223, 240, 1)
+        FocusedBorderColor: =
+        FocusedBorderThickness: =1
+        Font: =Font.'Segoe UI'
+        Height: =36
+        HintText: ="Search Contacts & Directory"
+        HoverBorderColor: =
+        HoverColor: =
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =
+        PressedColor: =
+        PressedFill: =
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Reset: =true
+        Size: =9
+        Width: =163
+        X: =161
+        Y: =103
+        ZIndex: =15
+
+    Label5 As label:
+        Height: =59
+        OnSelect: |-
+            = UpdateContext({HidePeopleGallery:false, IsShowPeopleDetails: false})
+        Text: =SelectedPerson.RR_CSH
+        Visible: =HidePeopleGallery
+        Width: =173
+        X: =156
+        Y: =88
+        ZIndex: =18
+
+    Group3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =18
+
+        Rectangle1 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(215, 223, 240, 1)
+            Height: =51
+            OnSelect: =
+            Width: =345
+            Y: =96
+            ZIndex: =12
+
+        Label2 As label:
+            Height: =51
+            Text: |-
+                ="Chủ sở hữu rủi ro: "
+            Width: =171
+            Y: =96
+            ZIndex: =13
+
+        GallerySelectedPerson As gallery.galleryVertical:
+            AccessibleLabel: ="People for selection"
+            BorderColor: =RGBA(0, 0, 0, 0.16)
+            BorderThickness: =1
+            DisabledBorderColor: =GallerySelectedPerson.BorderColor
+            DisabledFill: =GallerySelectedPerson.Fill
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =250
+            HoverBorderColor: =GallerySelectedPerson.BorderColor
+            HoverFill: =GallerySelectedPerson.Fill
+            Items: |
+                =If(!IsBlank(TextInputSearchPerson.Text), 
+                Search(Risks,Trim(TextInputSearchPerson.Text),"RR_CSH"))
+            Layout: =Layout.Vertical
+            LoadingSpinnerColor: =GallerySelectedPerson.BorderColor
+            OnSelect: |-
+                = UpdateContext({SelectedPerson:ThisItem, HidePeopleGallery:true, IsShowPeopleDetails: true})
+            PressedBorderColor: =GallerySelectedPerson.BorderColor
+            PressedFill: =GallerySelectedPerson.Fill
+            TemplateSize: =53
+            Visible: |-
+                =Not(IsBlank(TextInputSearchPerson)) &&
+                !HidePeopleGallery
+            Width: =345
+            Y: =159
+            ZIndex: =14
+
+            LabelPersonDisplayName As label:
+                BorderColor: =RGBA(101, 128, 187, 1)
+                FocusedBorderColor: =LabelPersonDisplayName.BorderColor
+                Font: =Font.'Segoe UI'
+                Height: =53
+                HoverBorderColor: =LabelPersonDisplayName.BorderColor
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(244, 244, 244, 1)
+                OnSelect: =Select(Parent)
+                PaddingBottom: =15
+                PaddingLeft: =20
+                PaddingRight: =0
+                PaddingTop: =0
+                PressedBorderColor: =LabelPersonDisplayName.BorderColor
+                PressedColor: =LabelPersonDisplayName.Color
+                PressedFill: =LabelPersonDisplayName.Fill
+                Size: =10
+                TabIndex: =0
+                Text: =ThisItem.RR_CSH
+                Width: =335
+                ZIndex: =1
+
     "'Date Picker' As group":
         Height: =5
         Width: =5
@@ -1392,13 +1373,13 @@
             Width: =345
             X: =351
             Y: =97
-            ZIndex: =5
+            ZIndex: =4
 
         DatePicker3 As datepicker:
             Width: =220
             X: =465
             Y: =102
-            ZIndex: =6
+            ZIndex: =5
 
         Label3 As label:
             Text: |-
@@ -1406,7 +1387,7 @@
             Width: =98
             X: =367
             Y: =102
-            ZIndex: =7
+            ZIndex: =6
 
     Search As group:
         Height: =5
@@ -1423,7 +1404,7 @@
             Width: =413
             X: =938
             Y: =104
-            ZIndex: =8
+            ZIndex: =7
 
         Icon2_2 As icon.Search:
             AccessibleLabel: =
@@ -1433,5 +1414,5 @@
             Width: =34
             X: =1317
             Y: =104
-            ZIndex: =9
+            ZIndex: =8
 

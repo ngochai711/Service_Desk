@@ -1281,7 +1281,7 @@
         FocusedBorderThickness: =1
         Font: =Font.'Segoe UI'
         Height: =36
-        HintText: ="Search Contacts & Directory"
+        HintText: ="Nhập tên"
         HoverBorderColor: =
         HoverColor: =
         HoverFill: =RGBA(255, 255, 255, 1)

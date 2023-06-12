@@ -1300,14 +1300,15 @@
         ZIndex: =15
 
     Label5 As label:
-        Height: =50
+        Fill: =RGBA(215, 223, 240, 1)
+        Height: =42
         OnSelect: |-
             = UpdateContext({HidePeopleGallery:false, IsShowPeopleDetails: false})
         Text: =SelectedPerson.RR_CSH
         Visible: =HidePeopleGallery
-        Width: =173
-        X: =156
-        Y: =97
+        Width: =153
+        X: =161
+        Y: =100
         ZIndex: =18
 
     Group3 As group:

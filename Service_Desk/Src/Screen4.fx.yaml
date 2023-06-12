@@ -12,22 +12,11 @@
         Width: =Parent.Width
         ZIndex: =2
 
-    Canvas3 As fluidGrid.fluidGridWithBlankCard:
-        BorderThickness: =0
-        Height: =Parent.Height - Self.Y
-        Width: =Parent.Width
-        Y: =RectQuickActionBar3.Y + RectQuickActionBar3.Height
+    Form1 As form:
+        DataSource: =Risk_Control
+        Height: =667
+        Width: =1283
+        X: =81
+        Y: =99
         ZIndex: =3
-
-        DataCard3 As dataCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            BorderThickness: =0
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height - 100
-            Width: =Parent.Width
-            X: =0
-            Y: =0
-            ZIndex: =1
 

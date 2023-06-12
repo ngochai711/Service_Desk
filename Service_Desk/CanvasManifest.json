@@ -132,7 +132,8 @@
   },
   "ScreenOrder": [
     "frmMain",
-    "Risk_Statistic",
-    "Screen1"
+    "frmRiskStatistic",
+    "Screen1",
+    "frmRisk"
   ]
 }

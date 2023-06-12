@@ -1,4 +1,4 @@
-"Risk_Statistic As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+"frmRiskStatistic As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Height: =Max(App.Height, App.DesignHeight)
     Width: =Max(App.Width, App.DesignWidth)
 
@@ -179,7 +179,7 @@
             Fill: =RGBA(255, 255, 255, 1)
             Height: =108
             OnSelect: =
-            Width: =455
+            Width: =456
             Y: =47
             ZIndex: =2
 
@@ -208,7 +208,7 @@
                 PressedFill: =TextBox1_20.Fill
                 Size: =20
                 Text: =CountRows(Risks)
-                Width: =91
+                Width: =82
                 Wrap: =false
                 Y: =47
                 ZIndex: =4
@@ -229,7 +229,7 @@
                 PressedFill: =TextBox2_20.Fill
                 Size: =5
                 Text: ="Tổng"
-                Width: =91
+                Width: =82
                 Y: =110
                 ZIndex: =5
 
@@ -310,7 +310,7 @@
                 Text: =CountRows(Filter(Risks,RR_TRANGTHAI="Đang xử lý"))
                 Width: =91
                 Wrap: =false
-                X: =182
+                X: =173
                 Y: =47
                 ZIndex: =10
 
@@ -331,7 +331,7 @@
                 Size: =5
                 Text: ="Đang xử lý"
                 Width: =91
-                X: =182
+                X: =173
                 Y: =108
                 ZIndex: =11
 
@@ -383,7 +383,7 @@
                 Text: ="Đóng"
                 Width: =91
                 X: =273
-                Y: =108
+                Y: =109
                 ZIndex: =14
 
         R_OnHoldStatus As group:
@@ -410,7 +410,7 @@
                 PressedFill: =TextBox1_24.Fill
                 Size: =20
                 Text: =CountRows(Filter(Risks,RR_TRANGTHAI="Đang chờ"))
-                Width: =91
+                Width: =92
                 Wrap: =false
                 X: =364
                 Y: =47
@@ -432,7 +432,7 @@
                 PressedFill: =TextBox2_24.Fill
                 Size: =5
                 Text: ="Đang chờ"
-                Width: =91
+                Width: =92
                 X: =364
                 Y: =108
                 ZIndex: =17
@@ -517,6 +517,15 @@
             Text: ="RỦI RO"
             X: =173
             ZIndex: =19
+
+        R_Add As icon.Add:
+            Height: =28
+            Icon: =Icon.Add
+            OnSelect: =Navigate(frmRisk,ScreenTransition.Fade)
+            Width: =27
+            X: =416
+            Y: =12
+            ZIndex: =20
 
     "'Risk Control' As groupContainer":
         Height: =609
@@ -880,6 +889,14 @@
             Y: =3
             ZIndex: =19
 
+        RC_Add As icon.Add:
+            Height: =28
+            Icon: =Icon.Add
+            Width: =27
+            X: =413
+            Y: =11
+            ZIndex: =20
+
     "'Risk Fix' As groupContainer":
         Height: =609
         Width: =456
@@ -1241,6 +1258,14 @@
             Y: =3
             ZIndex: =19
 
+        RF_Add As icon.Add:
+            Height: =28
+            Icon: =Icon.Add
+            Width: =27
+            X: =421
+            Y: =11
+            ZIndex: =20
+
     TextInputSearchPerson As text:
         AccessibleLabel: ="Search person"
         BorderColor: =
@@ -1275,14 +1300,14 @@
         ZIndex: =15
 
     Label5 As label:
-        Height: =59
+        Height: =50
         OnSelect: |-
             = UpdateContext({HidePeopleGallery:false, IsShowPeopleDetails: false})
         Text: =SelectedPerson.RR_CSH
         Visible: =HidePeopleGallery
         Width: =173
         X: =156
-        Y: =88
+        Y: =97
         ZIndex: =18
 
     Group3 As group:

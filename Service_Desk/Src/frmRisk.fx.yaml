@@ -312,3 +312,104 @@
         Y: =27
         ZIndex: =20
 
+    TextBox5_39 As label:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(92,92,92,1)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        FocusedBorderColor: =TextBox5_39.BorderColor
+        FontWeight: =FontWeight.Semibold
+        Height: =31.233201581027572
+        HoverBorderColor: =TextBox5_39.BorderColor
+        HoverColor: =TextBox5_39.Color
+        HoverFill: =TextBox5_39.Fill
+        PressedBorderColor: =TextBox5_39.BorderColor
+        PressedColor: =TextBox5_39.Color
+        PressedFill: =TextBox5_39.Fill
+        Size: =12
+        Text: |-
+            ="Mã thẻ:"
+        VerticalAlign: =VerticalAlign.Top
+        Width: =225
+        X: =28
+        Y: =248
+        ZIndex: =21
+
+    card_id As text:
+        AccessibleLabel: ="Input ticket creator"
+        BorderColor: =RGBA(230,230,230,1)
+        Color: =RGBA(47, 41, 43, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(159, 167, 165, 1)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
+        DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
+        FocusedBorderColor: =card_id.BorderColor
+        FocusedBorderThickness: =3
+        Height: =30
+        HoverBorderColor: =card_id.BorderColor
+        HoverColor: =card_id.Color
+        HoverFill: =card_id.Fill
+        PressedBorderColor: =card_id.HoverBorderColor
+        PressedColor: =card_id.Color
+        PressedFill: =card_id.Fill
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Reset: =
+        Width: =169
+        X: =114
+        Y: =248
+        ZIndex: =22
+
+    TextBox5_40 As label:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(92,92,92,1)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        FocusedBorderColor: =TextBox5_40.BorderColor
+        FontWeight: =FontWeight.Semibold
+        Height: =42
+        HoverBorderColor: =TextBox5_40.BorderColor
+        HoverColor: =TextBox5_40.Color
+        HoverFill: =TextBox5_40.Fill
+        PressedBorderColor: =TextBox5_40.BorderColor
+        PressedColor: =TextBox5_40.Color
+        PressedFill: =TextBox5_40.Fill
+        Size: =12
+        Text: ="Priority *"
+        VerticalAlign: =VerticalAlign.Top
+        Width: =225
+        X: =28
+        Y: =295
+        ZIndex: =23
+
+    Dropdown_Priority As dropdown:
+        AccessibleLabel: ="Select a priority"
+        BorderColor: =RGBA(230,230,230,1) 
+        ChevronBackground: =RGBA(255,255,255,1)
+        ChevronDisabledBackground: =RGBA(159, 167, 165, 1)
+        ChevronDisabledFill: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        ChevronFill: =RGBA(225, 225, 225, 1)
+        ChevronHoverBackground: =RGBA(101,128,187,1)
+        ChevronHoverFill: =ColorFade(RGBA(255,255,255,1), -5%)
+        Color: =RGBA(47, 41, 43, 1)
+        DisabledBorderColor: =RGBA(159, 167, 165, 1)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
+        DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
+        FocusedBorderColor: =Dropdown_Priority.BorderColor
+        Height: =44
+        HoverBorderColor: =ColorFade(Dropdown_Priority.BorderColor, 15%)
+        HoverColor: =Dropdown_Priority.Color
+        HoverFill: =RGBA(225, 225, 225, 1)
+        Items: =Risks
+        PressedBorderColor: =Dropdown_Priority.HoverBorderColor
+        PressedColor: =Dropdown_Priority.Color
+        PressedFill: =RGBA(137,51,102,1)
+        Reset: =
+        SelectionColor: =RGBA(255,255,255,1)
+        SelectionFill: =RGBA(137,51,102,1)
+        X: =35
+        Y: =326
+        ZIndex: =24
+

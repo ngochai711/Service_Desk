@@ -183,158 +183,6 @@
             Y: =47
             ZIndex: =2
 
-        R_AllStatus As group:
-            Height: =150
-            Width: =150
-            X: =-24.400000000000006
-            Y: =-7.530093118328402
-            ZIndex: =3
-
-            TextBox1_20 As label:
-                Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
-                Color: =RGBA(0,0,0,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox1_20.BorderColor
-                FocusedBorderThickness: =02
-                FontWeight: =FontWeight.Semibold
-                Height: =108
-                HoverBorderColor: =TextBox1_20.BorderColor
-                HoverColor: =TextBox1_20.Color
-                HoverFill: =TextBox1_20.Fill
-                OnSelect: =Search(Risks,"a","RR_CSH")
-                PressedBorderColor: =TextBox1_20.BorderColor
-                PressedColor: =TextBox1_20.Color
-                PressedFill: =TextBox1_20.Fill
-                Size: =20
-                Text: =CountRows(Risks)
-                Width: =82
-                Wrap: =false
-                Y: =47
-                ZIndex: =4
-
-            TextBox2_20 As label:
-                Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
-                Color: =RGBA(0,0,0,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox2_20.BorderColor
-                FocusedBorderThickness: =02
-                Height: =27
-                HoverBorderColor: =TextBox2_20.BorderColor
-                HoverColor: =TextBox2_20.Color
-                HoverFill: =TextBox2_20.Fill
-                PressedBorderColor: =TextBox2_20.BorderColor
-                PressedColor: =TextBox2_20.Color
-                PressedFill: =TextBox2_20.Fill
-                Size: =5
-                Text: ="Tổng"
-                Width: =82
-                Y: =110
-                ZIndex: =5
-
-        R_NewStatus As group:
-            Height: =150
-            Width: =150.00000000000003
-            X: =-228.89266279590035
-            Y: =-7.530093118328402
-            ZIndex: =6
-
-            TextBox1_21 As label:
-                Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
-                Color: =RGBA(56,86,153,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox1_21.BorderColor
-                FocusedBorderThickness: =02
-                FontWeight: =FontWeight.Semibold
-                Height: =108
-                HoverBorderColor: =TextBox1_21.BorderColor
-                HoverColor: =TextBox1_21.Color
-                HoverFill: =TextBox1_21.Fill
-                PressedBorderColor: =TextBox1_21.BorderColor
-                PressedColor: =TextBox1_21.Color
-                PressedFill: =TextBox1_21.Fill
-                Size: =20
-                Text: =CountRows(Filter(Risks,RR_TRANGTHAI="Mới"))
-                Width: =91
-                Wrap: =false
-                X: =82
-                Y: =47
-                ZIndex: =7
-
-            TextBox2_21 As label:
-                Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
-                Color: =RGBA(56,86,153,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox2_21.BorderColor
-                FocusedBorderThickness: =02
-                Height: =29
-                HoverBorderColor: =TextBox2_21.BorderColor
-                HoverColor: =TextBox2_21.Color
-                HoverFill: =TextBox2_21.Fill
-                PressedBorderColor: =TextBox2_21.BorderColor
-                PressedColor: =TextBox2_21.Color
-                PressedFill: =TextBox2_21.Fill
-                Size: =5
-                Text: ="Mới"
-                Width: =91
-                X: =82
-                Y: =108
-                ZIndex: =8
-
-        R_ProgressStatus As group:
-            Height: =150
-            Width: =150.00000000000003
-            X: =-42
-            Y: =-7
-            ZIndex: =9
-
-            TextBox1_22 As label:
-                Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
-                Color: =RGBA(255, 191, 0, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox1_22.BorderColor
-                FocusedBorderThickness: =02
-                FontWeight: =FontWeight.Semibold
-                Height: =108
-                HoverBorderColor: =TextBox1_22.BorderColor
-                HoverColor: =TextBox1_22.Color
-                HoverFill: =TextBox1_22.Fill
-                PressedBorderColor: =TextBox1_22.BorderColor
-                PressedColor: =TextBox1_22.Color
-                PressedFill: =TextBox1_22.Fill
-                Size: =20
-                Text: =CountRows(Filter(Risks,RR_TRANGTHAI="Đang xử lý"))
-                Width: =91
-                Wrap: =false
-                X: =173
-                Y: =47
-                ZIndex: =10
-
-            TextBox2_22 As label:
-                Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
-                Color: =RGBA(255, 191, 0, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox2_22.BorderColor
-                FocusedBorderThickness: =02
-                Height: =29
-                HoverBorderColor: =TextBox2_22.BorderColor
-                HoverColor: =TextBox2_22.Color
-                HoverFill: =TextBox2_22.Fill
-                PressedBorderColor: =TextBox2_22.BorderColor
-                PressedColor: =TextBox2_22.Color
-                PressedFill: =TextBox2_22.Fill
-                Size: =5
-                Text: ="Đang xử lý"
-                Width: =91
-                X: =173
-                Y: =108
-                ZIndex: =11
-
         R_CloseStatus As group:
             Height: =150
             Width: =150.00000000000003
@@ -361,7 +209,7 @@
                 Text: =CountRows(Filter(Risks,RR_TRANGTHAI="Đóng"))
                 Width: =91
                 Wrap: =false
-                X: =273
+                X: =82
                 Y: =47
                 ZIndex: =13
 
@@ -380,9 +228,9 @@
                 PressedColor: =TextBox2_23.Color
                 PressedFill: =TextBox2_23.Fill
                 Size: =5
-                Text: ="Đóng"
+                Text: ="Theo dõi"
                 Width: =91
-                X: =273
+                X: =82
                 Y: =109
                 ZIndex: =14
 
@@ -412,7 +260,7 @@
                 Text: =CountRows(Filter(Risks,RR_TRANGTHAI="Đang chờ"))
                 Width: =92
                 Wrap: =false
-                X: =364
+                X: =272
                 Y: =47
                 ZIndex: =16
 
@@ -431,9 +279,9 @@
                 PressedColor: =TextBox2_24.Color
                 PressedFill: =TextBox2_24.Fill
                 Size: =5
-                Text: ="Đang chờ"
+                Text: ="Trả lại"
                 Width: =92
-                X: =364
+                X: =272
                 Y: =108
                 ZIndex: =17
 
@@ -582,259 +430,6 @@
             Y: =47
             ZIndex: =2
 
-        RC_AllStatus As group:
-            Height: =150
-            Width: =150
-            X: =-24.400000000000006
-            Y: =-7.530093118328402
-            ZIndex: =3
-
-            TextBox1_25 As label:
-                Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
-                Color: =RGBA(0,0,0,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox1_25.BorderColor
-                FocusedBorderThickness: =02
-                FontWeight: =FontWeight.Semibold
-                Height: =108
-                HoverBorderColor: =TextBox1_25.BorderColor
-                HoverColor: =TextBox1_25.Color
-                HoverFill: =TextBox1_25.Fill
-                PressedBorderColor: =TextBox1_25.BorderColor
-                PressedColor: =TextBox1_25.Color
-                PressedFill: =TextBox1_25.Fill
-                Size: =20
-                Text: =CountRows(Risk_Control)
-                Width: =91
-                Wrap: =false
-                Y: =47
-                ZIndex: =4
-
-            TextBox2_25 As label:
-                Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
-                Color: =RGBA(0,0,0,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox2_25.BorderColor
-                FocusedBorderThickness: =02
-                Height: =27
-                HoverBorderColor: =TextBox2_25.BorderColor
-                HoverColor: =TextBox2_25.Color
-                HoverFill: =TextBox2_25.Fill
-                PressedBorderColor: =TextBox2_25.BorderColor
-                PressedColor: =TextBox2_25.Color
-                PressedFill: =TextBox2_25.Fill
-                Size: =5
-                Text: ="Tổng"
-                Width: =91
-                Y: =110
-                ZIndex: =5
-
-        RC_NewStatus As group:
-            Height: =150
-            Width: =150.00000000000003
-            X: =-228.89266279590035
-            Y: =-7.530093118328402
-            ZIndex: =6
-
-            TextBox1_26 As label:
-                Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
-                Color: =RGBA(56,86,153,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox1_26.BorderColor
-                FocusedBorderThickness: =02
-                FontWeight: =FontWeight.Semibold
-                Height: =108
-                HoverBorderColor: =TextBox1_26.BorderColor
-                HoverColor: =TextBox1_26.Color
-                HoverFill: =TextBox1_26.Fill
-                PressedBorderColor: =TextBox1_26.BorderColor
-                PressedColor: =TextBox1_26.Color
-                PressedFill: =TextBox1_26.Fill
-                Size: =20
-                Text: =CountRows(Filter(Risks,RR_TRANGTHAI="Mới"))
-                Width: =91
-                Wrap: =false
-                X: =82
-                Y: =47
-                ZIndex: =7
-
-            TextBox2_26 As label:
-                Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
-                Color: =RGBA(56,86,153,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox2_26.BorderColor
-                FocusedBorderThickness: =02
-                Height: =29
-                HoverBorderColor: =TextBox2_26.BorderColor
-                HoverColor: =TextBox2_26.Color
-                HoverFill: =TextBox2_26.Fill
-                PressedBorderColor: =TextBox2_26.BorderColor
-                PressedColor: =TextBox2_26.Color
-                PressedFill: =TextBox2_26.Fill
-                Size: =5
-                Text: ="Mới"
-                Width: =91
-                X: =82
-                Y: =108
-                ZIndex: =8
-
-        RC_ProgressStatus As group:
-            Height: =150
-            Width: =150.00000000000003
-            X: =-42
-            Y: =-7
-            ZIndex: =9
-
-            TextBox1_27 As label:
-                Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
-                Color: =RGBA(255, 191, 0, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox1_27.BorderColor
-                FocusedBorderThickness: =02
-                FontWeight: =FontWeight.Semibold
-                Height: =108
-                HoverBorderColor: =TextBox1_27.BorderColor
-                HoverColor: =TextBox1_27.Color
-                HoverFill: =TextBox1_27.Fill
-                PressedBorderColor: =TextBox1_27.BorderColor
-                PressedColor: =TextBox1_27.Color
-                PressedFill: =TextBox1_27.Fill
-                Size: =20
-                Text: =CountRows(Filter(Risks,RR_TRANGTHAI="Đang xử lý"))
-                Width: =91
-                Wrap: =false
-                X: =182
-                Y: =47
-                ZIndex: =10
-
-            TextBox2_27 As label:
-                Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
-                Color: =RGBA(255, 191, 0, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox2_27.BorderColor
-                FocusedBorderThickness: =02
-                Height: =29
-                HoverBorderColor: =TextBox2_27.BorderColor
-                HoverColor: =TextBox2_27.Color
-                HoverFill: =TextBox2_27.Fill
-                PressedBorderColor: =TextBox2_27.BorderColor
-                PressedColor: =TextBox2_27.Color
-                PressedFill: =TextBox2_27.Fill
-                Size: =5
-                Text: ="Đang xử lý"
-                Width: =91
-                X: =182
-                Y: =108
-                ZIndex: =11
-
-        RC_CloseStatus As group:
-            Height: =150
-            Width: =150.00000000000003
-            X: =-42
-            Y: =-7
-            ZIndex: =12
-
-            TextBox1_28 As label:
-                Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox1_28.BorderColor
-                FocusedBorderThickness: =02
-                FontWeight: =FontWeight.Semibold
-                Height: =108
-                HoverBorderColor: =TextBox1_28.BorderColor
-                HoverColor: =TextBox1_28.Color
-                HoverFill: =TextBox1_28.Fill
-                PressedBorderColor: =TextBox1_28.BorderColor
-                PressedColor: =TextBox1_28.Color
-                PressedFill: =TextBox1_28.Fill
-                Size: =20
-                Text: =CountRows(Filter(Risks,RR_TRANGTHAI="Đóng"))
-                Width: =91
-                Wrap: =false
-                X: =273
-                Y: =47
-                ZIndex: =13
-
-            TextBox2_28 As label:
-                Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox2_28.BorderColor
-                FocusedBorderThickness: =02
-                Height: =29
-                HoverBorderColor: =TextBox2_28.BorderColor
-                HoverColor: =TextBox2_28.Color
-                HoverFill: =TextBox2_28.Fill
-                PressedBorderColor: =TextBox2_28.BorderColor
-                PressedColor: =TextBox2_28.Color
-                PressedFill: =TextBox2_28.Fill
-                Size: =5
-                Text: ="Đóng"
-                Width: =91
-                X: =273
-                Y: =108
-                ZIndex: =14
-
-        RC_OnHoldStatus As group:
-            Height: =150
-            Width: =150.00000000000003
-            X: =-42
-            Y: =-7
-            ZIndex: =15
-
-            TextBox1_29 As label:
-                Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
-                Color: =RGBA(255, 0, 0, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox1_29.BorderColor
-                FocusedBorderThickness: =02
-                FontWeight: =FontWeight.Semibold
-                Height: =108
-                HoverBorderColor: =TextBox1_29.BorderColor
-                HoverColor: =TextBox1_29.Color
-                HoverFill: =TextBox1_29.Fill
-                PressedBorderColor: =TextBox1_29.BorderColor
-                PressedColor: =TextBox1_29.Color
-                PressedFill: =TextBox1_29.Fill
-                Size: =20
-                Text: =CountRows(Filter(Risks,RR_TRANGTHAI="Đang chờ"))
-                Width: =91
-                Wrap: =false
-                X: =364
-                Y: =47
-                ZIndex: =16
-
-            TextBox2_29 As label:
-                Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
-                Color: =RGBA(255, 0, 0, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox2_29.BorderColor
-                FocusedBorderThickness: =02
-                Height: =29
-                HoverBorderColor: =TextBox2_29.BorderColor
-                HoverColor: =TextBox2_29.Color
-                HoverFill: =TextBox2_29.Fill
-                PressedBorderColor: =TextBox2_29.BorderColor
-                PressedColor: =TextBox2_29.Color
-                PressedFill: =TextBox2_29.Fill
-                Size: =5
-                Text: ="Đang chờ"
-                Width: =91
-                X: =364
-                Y: =108
-                ZIndex: =17
-
         "Gallery1_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
             Height: =454
@@ -918,13 +513,107 @@
             Y: =3
             ZIndex: =19
 
-        RC_Add As icon.Add:
-            Height: =28
-            Icon: =Icon.Add
-            Width: =27
-            X: =413
-            Y: =11
+        R_CloseStatus_2 As group:
+            Height: =150
+            Width: =150.00000000000003
+            X: =-134
+            Y: =17
             ZIndex: =20
+
+            TextBox1_25 As label:
+                Align: =LayoutAlignItems.Center
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(54, 176, 75, 1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =TextBox1_25.BorderColor
+                FocusedBorderThickness: =02
+                FontWeight: =FontWeight.Semibold
+                Height: =108
+                HoverBorderColor: =TextBox1_25.BorderColor
+                HoverColor: =TextBox1_25.Color
+                HoverFill: =TextBox1_25.Fill
+                PressedBorderColor: =TextBox1_25.BorderColor
+                PressedColor: =TextBox1_25.Color
+                PressedFill: =TextBox1_25.Fill
+                Size: =20
+                Text: =CountRows(Filter(Risks,RR_TRANGTHAI="Đóng"))
+                Width: =91
+                Wrap: =false
+                X: =87
+                Y: =47
+                ZIndex: =21
+
+            TextBox2_25 As label:
+                Align: =LayoutAlignItems.Center
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(54, 176, 75, 1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =TextBox2_25.BorderColor
+                FocusedBorderThickness: =02
+                Height: =29
+                HoverBorderColor: =TextBox2_25.BorderColor
+                HoverColor: =TextBox2_25.Color
+                HoverFill: =TextBox2_25.Fill
+                PressedBorderColor: =TextBox2_25.BorderColor
+                PressedColor: =TextBox2_25.Color
+                PressedFill: =TextBox2_25.Fill
+                Size: =5
+                Text: ="Theo dõi"
+                Width: =91
+                X: =87
+                Y: =109
+                ZIndex: =22
+
+        R_OnHoldStatus_2 As group:
+            Height: =150
+            Width: =150.00000000000003
+            X: =-134
+            Y: =17
+            ZIndex: =23
+
+            TextBox1_26 As label:
+                Align: =LayoutAlignItems.Center
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(255, 0, 0, 1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =TextBox1_26.BorderColor
+                FocusedBorderThickness: =02
+                FontWeight: =FontWeight.Semibold
+                Height: =108
+                HoverBorderColor: =TextBox1_26.BorderColor
+                HoverColor: =TextBox1_26.Color
+                HoverFill: =TextBox1_26.Fill
+                PressedBorderColor: =TextBox1_26.BorderColor
+                PressedColor: =TextBox1_26.Color
+                PressedFill: =TextBox1_26.Fill
+                Size: =20
+                Text: =CountRows(Filter(Risks,RR_TRANGTHAI="Đang chờ"))
+                Width: =92
+                Wrap: =false
+                X: =277
+                Y: =47
+                ZIndex: =24
+
+            TextBox2_26 As label:
+                Align: =LayoutAlignItems.Center
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(255, 0, 0, 1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =TextBox2_26.BorderColor
+                FocusedBorderThickness: =02
+                Height: =29
+                HoverBorderColor: =TextBox2_26.BorderColor
+                HoverColor: =TextBox2_26.Color
+                HoverFill: =TextBox2_26.Fill
+                PressedBorderColor: =TextBox2_26.BorderColor
+                PressedColor: =TextBox2_26.Color
+                PressedFill: =TextBox2_26.Fill
+                Size: =5
+                Text: ="Trả lại"
+                Width: =92
+                X: =277
+                Y: =108
+                ZIndex: =25
 
     "'Risk Fix' As groupContainer":
         Height: =609
@@ -1286,14 +975,6 @@
             X: =87
             Y: =3
             ZIndex: =19
-
-        RF_Add As icon.Add:
-            Height: =28
-            Icon: =Icon.Add
-            Width: =27
-            X: =421
-            Y: =11
-            ZIndex: =20
 
     TextInputSearchPerson As text:
         AccessibleLabel: ="Search person"

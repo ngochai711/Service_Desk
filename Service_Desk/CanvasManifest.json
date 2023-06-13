@@ -113,7 +113,6 @@
     "FileID": "3a559a78-796b-4d08-916f-bc4482dd2143",
     "Id": "aef194d0-012c-477b-8c7e-36a85320fd37",
     "InstrumentationKey": "",
-    "LocalDatabaseReferences": "{}",
     "ManualOfflineProfileId": "",
     "Name": "Service_Desk",
     "OriginatingVersion": "1.331",
@@ -134,6 +133,7 @@
     "frmMain",
     "frmRiskStatistic",
     "frmRisk",
-    "frmRiskControl"
+    "frmRiskControl",
+    "frmRiskFix"
   ]
 }

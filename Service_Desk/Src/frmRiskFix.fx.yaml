@@ -1,25 +1,25 @@
-"frmRiskControl As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+"frmRiskFix As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
-    RectQuickActionBar2 As rectangle:
+    RectQuickActionBar2_1 As rectangle:
         Height: =88
         Width: =Parent.Width
         ZIndex: =1
 
-    LblAppName2 As label:
+    LblAppName2_1 As label:
         Align: =Align.Center
         Height: =88
         Text: ="RISK CONTROL"
         Width: =Parent.Width
         ZIndex: =2
 
-    Canvas1 As fluidGrid.fluidGridWithBlankCard:
+    Canvas1_1 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Height: =Parent.Height - Self.Y
         Width: =Parent.Width
-        Y: =RectQuickActionBar2.Y + RectQuickActionBar2.Height
+        Y: =RectQuickActionBar2_1.Y + RectQuickActionBar2_1.Height
         ZIndex: =3
 
-        DataCard1 As dataCard:
+        DataCard1_1 As dataCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =0
@@ -31,7 +31,7 @@
             Y: =0
             ZIndex: =1
 
-            "Gallery4 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
+            "Gallery4_1 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
                 DelayItemLoading: =true
                 Height: =865
                 Items: =RiskInfo
@@ -42,27 +42,27 @@
                 Width: =1363
                 ZIndex: =1
 
-                Rectangle6 As rectangle:
-                    Height: =576
+                Rectangle6_2 As rectangle:
+                    Height: =335
                     OnSelect: =Select(Parent)
                     Visible: =If(ThisItem.IsSelected, true, false)
                     Width: =0
                     X: =3
                     ZIndex: =7
 
-                HD_RiskID_1 As label:
+                HD_RiskID_2 As label:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     Color: =RGBA(92,92,92,1)
                     DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                    FocusedBorderColor: =HD_RiskID_1.BorderColor
+                    FocusedBorderColor: =HD_RiskID_2.BorderColor
                     FontWeight: =FontWeight.Semibold
                     Height: =34
-                    HoverBorderColor: =HD_RiskID_1.BorderColor
-                    HoverColor: =HD_RiskID_1.Color
-                    HoverFill: =HD_RiskID_1.Fill
-                    PressedBorderColor: =HD_RiskID_1.BorderColor
-                    PressedColor: =HD_RiskID_1.Color
-                    PressedFill: =HD_RiskID_1.Fill
+                    HoverBorderColor: =HD_RiskID_2.BorderColor
+                    HoverColor: =HD_RiskID_2.Color
+                    HoverFill: =HD_RiskID_2.Fill
+                    PressedBorderColor: =HD_RiskID_2.BorderColor
+                    PressedColor: =HD_RiskID_2.Color
+                    PressedFill: =HD_RiskID_2.Fill
                     Text: ="Mã rủi ro"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =93
@@ -70,19 +70,19 @@
                     Y: =9
                     ZIndex: =8
 
-                HD_RiskStatus_1 As label:
+                HD_RiskStatus_2 As label:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     Color: =RGBA(92,92,92,1)
                     DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                    FocusedBorderColor: =HD_RiskStatus_1.BorderColor
+                    FocusedBorderColor: =HD_RiskStatus_2.BorderColor
                     FontWeight: =FontWeight.Semibold
                     Height: =32
-                    HoverBorderColor: =HD_RiskStatus_1.BorderColor
-                    HoverColor: =HD_RiskStatus_1.Color
-                    HoverFill: =HD_RiskStatus_1.Fill
-                    PressedBorderColor: =HD_RiskStatus_1.BorderColor
-                    PressedColor: =HD_RiskStatus_1.Color
-                    PressedFill: =HD_RiskStatus_1.Fill
+                    HoverBorderColor: =HD_RiskStatus_2.BorderColor
+                    HoverColor: =HD_RiskStatus_2.Color
+                    HoverFill: =HD_RiskStatus_2.Fill
+                    PressedBorderColor: =HD_RiskStatus_2.BorderColor
+                    PressedColor: =HD_RiskStatus_2.Color
+                    PressedFill: =HD_RiskStatus_2.Fill
                     Text: ="Trạng thái rủi ro"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =161
@@ -90,19 +90,19 @@
                     Y: =68
                     ZIndex: =9
 
-                HD_RiskRecordDate_1 As label:
+                HD_RiskRecordDate_2 As label:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     Color: =RGBA(92,92,92,1)
                     DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                    FocusedBorderColor: =HD_RiskRecordDate_1.BorderColor
+                    FocusedBorderColor: =HD_RiskRecordDate_2.BorderColor
                     FontWeight: =FontWeight.Semibold
                     Height: =36
-                    HoverBorderColor: =HD_RiskRecordDate_1.BorderColor
-                    HoverColor: =HD_RiskRecordDate_1.Color
-                    HoverFill: =HD_RiskRecordDate_1.Fill
-                    PressedBorderColor: =HD_RiskRecordDate_1.BorderColor
-                    PressedColor: =HD_RiskRecordDate_1.Color
-                    PressedFill: =HD_RiskRecordDate_1.Fill
+                    HoverBorderColor: =HD_RiskRecordDate_2.BorderColor
+                    HoverColor: =HD_RiskRecordDate_2.Color
+                    HoverFill: =HD_RiskRecordDate_2.Fill
+                    PressedBorderColor: =HD_RiskRecordDate_2.BorderColor
+                    PressedColor: =HD_RiskRecordDate_2.Color
+                    PressedFill: =HD_RiskRecordDate_2.Fill
                     Text: ="Ngày ghi nhận rủi ro"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =200
@@ -110,19 +110,19 @@
                     Y: =36
                     ZIndex: =10
 
-                HD_RiskImportant_1 As label:
+                HD_RiskImportant_2 As label:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     Color: =RGBA(92,92,92,1)
                     DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                    FocusedBorderColor: =HD_RiskImportant_1.BorderColor
+                    FocusedBorderColor: =HD_RiskImportant_2.BorderColor
                     FontWeight: =FontWeight.Semibold
                     Height: =35
-                    HoverBorderColor: =HD_RiskImportant_1.BorderColor
-                    HoverColor: =HD_RiskImportant_1.Color
-                    HoverFill: =HD_RiskImportant_1.Fill
-                    PressedBorderColor: =HD_RiskImportant_1.BorderColor
-                    PressedColor: =HD_RiskImportant_1.Color
-                    PressedFill: =HD_RiskImportant_1.Fill
+                    HoverBorderColor: =HD_RiskImportant_2.BorderColor
+                    HoverColor: =HD_RiskImportant_2.Color
+                    HoverFill: =HD_RiskImportant_2.Fill
+                    PressedBorderColor: =HD_RiskImportant_2.BorderColor
+                    PressedColor: =HD_RiskImportant_2.Color
+                    PressedFill: =HD_RiskImportant_2.Fill
                     Text: ="Rủi ro trọng yếu"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =149
@@ -130,19 +130,19 @@
                     Y: =100
                     ZIndex: =11
 
-                HD_RiskName_1 As label:
+                HD_RiskName_2 As label:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     Color: =RGBA(92,92,92,1)
                     DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                    FocusedBorderColor: =HD_RiskName_1.BorderColor
+                    FocusedBorderColor: =HD_RiskName_2.BorderColor
                     FontWeight: =FontWeight.Semibold
                     Height: =36
-                    HoverBorderColor: =HD_RiskName_1.BorderColor
-                    HoverColor: =HD_RiskName_1.Color
-                    HoverFill: =HD_RiskName_1.Fill
-                    PressedBorderColor: =HD_RiskName_1.BorderColor
-                    PressedColor: =HD_RiskName_1.Color
-                    PressedFill: =HD_RiskName_1.Fill
+                    HoverBorderColor: =HD_RiskName_2.BorderColor
+                    HoverColor: =HD_RiskName_2.Color
+                    HoverFill: =HD_RiskName_2.Fill
+                    PressedBorderColor: =HD_RiskName_2.BorderColor
+                    PressedColor: =HD_RiskName_2.Color
+                    PressedFill: =HD_RiskName_2.Fill
                     Text: ="Tên rủi ro"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =122
@@ -150,19 +150,19 @@
                     Y: =198
                     ZIndex: =12
 
-                HD_RiskDescribe_1 As label:
+                HD_RiskDescribe_2 As label:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     Color: =RGBA(92,92,92,1)
                     DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                    FocusedBorderColor: =HD_RiskDescribe_1.BorderColor
+                    FocusedBorderColor: =HD_RiskDescribe_2.BorderColor
                     FontWeight: =FontWeight.Semibold
                     Height: =35
-                    HoverBorderColor: =HD_RiskDescribe_1.BorderColor
-                    HoverColor: =HD_RiskDescribe_1.Color
-                    HoverFill: =HD_RiskDescribe_1.Fill
-                    PressedBorderColor: =HD_RiskDescribe_1.BorderColor
-                    PressedColor: =HD_RiskDescribe_1.Color
-                    PressedFill: =HD_RiskDescribe_1.Fill
+                    HoverBorderColor: =HD_RiskDescribe_2.BorderColor
+                    HoverColor: =HD_RiskDescribe_2.Color
+                    HoverFill: =HD_RiskDescribe_2.Fill
+                    PressedBorderColor: =HD_RiskDescribe_2.BorderColor
+                    PressedColor: =HD_RiskDescribe_2.Color
+                    PressedFill: =HD_RiskDescribe_2.Fill
                     Text: ="Mô tả rủi ro"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =122
@@ -170,19 +170,19 @@
                     Y: =119
                     ZIndex: =13
 
-                HD_RiskReason_1 As label:
+                HD_RiskReason_2 As label:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     Color: =RGBA(92,92,92,1)
                     DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                    FocusedBorderColor: =HD_RiskReason_1.BorderColor
+                    FocusedBorderColor: =HD_RiskReason_2.BorderColor
                     FontWeight: =FontWeight.Semibold
                     Height: =35
-                    HoverBorderColor: =HD_RiskReason_1.BorderColor
-                    HoverColor: =HD_RiskReason_1.Color
-                    HoverFill: =HD_RiskReason_1.Fill
-                    PressedBorderColor: =HD_RiskReason_1.BorderColor
-                    PressedColor: =HD_RiskReason_1.Color
-                    PressedFill: =HD_RiskReason_1.Fill
+                    HoverBorderColor: =HD_RiskReason_2.BorderColor
+                    HoverColor: =HD_RiskReason_2.Color
+                    HoverFill: =HD_RiskReason_2.Fill
+                    PressedBorderColor: =HD_RiskReason_2.BorderColor
+                    PressedColor: =HD_RiskReason_2.Color
+                    PressedFill: =HD_RiskReason_2.Fill
                     Text: ="Nguyên nhân cốt lõi"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =212
@@ -190,19 +190,19 @@
                     Y: =9
                     ZIndex: =14
 
-                HD_RiskOwner_1 As label:
+                HD_RiskOwner_2 As label:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     Color: =RGBA(92,92,92,1)
                     DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                    FocusedBorderColor: =HD_RiskOwner_1.BorderColor
+                    FocusedBorderColor: =HD_RiskOwner_2.BorderColor
                     FontWeight: =FontWeight.Semibold
                     Height: =35
-                    HoverBorderColor: =HD_RiskOwner_1.BorderColor
-                    HoverColor: =HD_RiskOwner_1.Color
-                    HoverFill: =HD_RiskOwner_1.Fill
-                    PressedBorderColor: =HD_RiskOwner_1.BorderColor
-                    PressedColor: =HD_RiskOwner_1.Color
-                    PressedFill: =HD_RiskOwner_1.Fill
+                    HoverBorderColor: =HD_RiskOwner_2.BorderColor
+                    HoverColor: =HD_RiskOwner_2.Color
+                    HoverFill: =HD_RiskOwner_2.Fill
+                    PressedBorderColor: =HD_RiskOwner_2.BorderColor
+                    PressedColor: =HD_RiskOwner_2.Color
+                    PressedFill: =HD_RiskOwner_2.Fill
                     Text: ="Chủ sở hữu rủi ro"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =178
@@ -210,19 +210,19 @@
                     Y: =149
                     ZIndex: =15
 
-                HD_RiskConsequence_1 As label:
+                HD_RiskConsequence_2 As label:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     Color: =RGBA(92,92,92,1)
                     DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                    FocusedBorderColor: =HD_RiskConsequence_1.BorderColor
+                    FocusedBorderColor: =HD_RiskConsequence_2.BorderColor
                     FontWeight: =FontWeight.Semibold
                     Height: =35
-                    HoverBorderColor: =HD_RiskConsequence_1.BorderColor
-                    HoverColor: =HD_RiskConsequence_1.Color
-                    HoverFill: =HD_RiskConsequence_1.Fill
-                    PressedBorderColor: =HD_RiskConsequence_1.BorderColor
-                    PressedColor: =HD_RiskConsequence_1.Color
-                    PressedFill: =HD_RiskConsequence_1.Fill
+                    HoverBorderColor: =HD_RiskConsequence_2.BorderColor
+                    HoverColor: =HD_RiskConsequence_2.Color
+                    HoverFill: =HD_RiskConsequence_2.Fill
+                    PressedBorderColor: =HD_RiskConsequence_2.BorderColor
+                    PressedColor: =HD_RiskConsequence_2.Color
+                    PressedFill: =HD_RiskConsequence_2.Fill
                     Text: ="Hậu quả rủi ro"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =169
@@ -230,7 +230,7 @@
                     Y: =184
                     ZIndex: =16
 
-                Label12 As label:
+                Label12_1 As label:
                     Height: =27
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.RiskId
@@ -239,7 +239,7 @@
                     Y: =9
                     ZIndex: =35
 
-                Label13 As label:
+                Label13_1 As label:
                     Height: =159
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.RiskConsequence
@@ -249,7 +249,7 @@
                     Y: =39
                     ZIndex: =36
 
-                Label14 As label:
+                Label14_1 As label:
                     Height: =32
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.RiskCreateDate
@@ -257,7 +257,7 @@
                     Y: =36
                     ZIndex: =37
 
-                Label15 As label:
+                Label15_1 As label:
                     Height: =116
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.RiskDescribe
@@ -267,7 +267,7 @@
                     Y: =140
                     ZIndex: =38
 
-                Label17 As label:
+                Label17_4 As label:
                     Height: =32
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.RiskStatus
@@ -275,7 +275,7 @@
                     Y: =68
                     ZIndex: =39
 
-                Label17_1 As label:
+                Label17_5 As label:
                     Height: =32
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.RiskImportant
@@ -283,7 +283,7 @@
                     Y: =103
                     ZIndex: =40
 
-                Label17_2 As label:
+                Label17_6 As label:
                     Height: =62
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.RiskOwner
@@ -292,7 +292,7 @@
                     Y: =139
                     ZIndex: =41
 
-                Label17_3 As label:
+                Label17_7 As label:
                     Height: =32
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.RiskImportant
@@ -300,7 +300,7 @@
                     Y: =202
                     ZIndex: =42
 
-    RiskAdd_1 As label:
+    RiskAdd_2 As label:
         Color: =RGBA(255, 255, 255, 1)
         Height: =85
         OnSelect: =
@@ -311,14 +311,14 @@
         Y: =3
         ZIndex: =6
 
-    Back_1 As group:
+    Back_2 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =20
         ZIndex: =7
 
-        Rectangle3_1 As rectangle:
+        Rectangle3_2 As rectangle:
             Height: =88
             OnSelect: |-
                 =Navigate(frmRiskStatistic,ScreenTransition.Fade);
@@ -326,25 +326,25 @@
             Width: =86
             ZIndex: =4
 
-        ic_Back_1 As icon.ChevronLeft:
+        ic_Back_2 As icon.ChevronLeft:
             AccessibleLabel: ="Navigate to previous page"
             BorderColor: =RGBA(0, 0, 0, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(56, 56, 56, 1)
             DisabledColor: =RGBA(193, 193, 193, 0.95)
-            DisabledFill: =ic_Back_1.Fill
-            FocusedBorderColor: =ic_Back_1.BorderColor
+            DisabledFill: =ic_Back_2.Fill
+            FocusedBorderColor: =ic_Back_2.BorderColor
             Height: =42
-            HoverBorderColor: =ColorFade(ic_Back_1.BorderColor, 20%)
-            HoverColor: =ColorFade(ic_Back_1.Color, 20%)
-            HoverFill: =ic_Back_1.Fill
+            HoverBorderColor: =ColorFade(ic_Back_2.BorderColor, 20%)
+            HoverColor: =ColorFade(ic_Back_2.Color, 20%)
+            HoverFill: =ic_Back_2.Fill
             Icon: =Icon.ChevronLeft
             OnSelect: |-
                 =Navigate(frmRiskStatistic,ScreenTransition.Fade);
                 Clear(RiskInfo)
-            PressedBorderColor: =ColorFade(ic_Back_1.BorderColor, -20%)
-            PressedColor: =ColorFade(ic_Back_1.Color, -20%)
-            PressedFill: =ic_Back_1.Fill
+            PressedBorderColor: =ColorFade(ic_Back_2.BorderColor, -20%)
+            PressedColor: =ColorFade(ic_Back_2.Color, -20%)
+            PressedFill: =ic_Back_2.Fill
             TabIndex: =0
             Width: =29
             X: =28

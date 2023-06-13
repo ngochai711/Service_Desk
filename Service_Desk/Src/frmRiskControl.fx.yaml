@@ -1,0 +1,80 @@
+"frmRiskControl As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    RectQuickActionBar2 As rectangle:
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    LblAppName2 As label:
+        Align: =Align.Center
+        Height: =88
+        Text: ="RISK CONTROL"
+        Width: =Parent.Width
+        ZIndex: =2
+
+    Canvas1 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        Y: =RectQuickActionBar2.Y + RectQuickActionBar2.Height
+        ZIndex: =3
+
+        DataCard1 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height - 100
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+    RiskAdd_1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =85
+        OnSelect: =
+        Size: =20
+        Text: ="Lưu"
+        Width: =91
+        X: =1275
+        Y: =3
+        ZIndex: =6
+
+    Back_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =20
+        ZIndex: =7
+
+        Rectangle3_1 As rectangle:
+            Height: =88
+            OnSelect: =Navigate(frmRiskStatistic,ScreenTransition.Fade)
+            Width: =86
+            ZIndex: =4
+
+        ic_Back_1 As icon.ChevronLeft:
+            AccessibleLabel: ="Navigate to previous page"
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(56, 56, 56, 1)
+            DisabledColor: =RGBA(193, 193, 193, 0.95)
+            DisabledFill: =ic_Back_1.Fill
+            FocusedBorderColor: =ic_Back_1.BorderColor
+            Height: =42
+            HoverBorderColor: =ColorFade(ic_Back_1.BorderColor, 20%)
+            HoverColor: =ColorFade(ic_Back_1.Color, 20%)
+            HoverFill: =ic_Back_1.Fill
+            Icon: =Icon.ChevronLeft
+            OnSelect: =Navigate(frmRiskStatistic,ScreenTransition.Fade)
+            PressedBorderColor: =ColorFade(ic_Back_1.BorderColor, -20%)
+            PressedColor: =ColorFade(ic_Back_1.Color, -20%)
+            PressedFill: =ic_Back_1.Fill
+            TabIndex: =0
+            Width: =29
+            X: =28
+            Y: =26
+            ZIndex: =5
+

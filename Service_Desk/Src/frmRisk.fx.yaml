@@ -2,7 +2,7 @@
     OnVisible: |-
         =Reset(ComboBox1);
         Reset(ComboBox1_1);
-        Reset(ComboBox1_2);
+        Reset(RO_PossibleRate);
         UpdateContext({varRiskGOPOverall_Text:"Nhỏ"});
         UpdateContext({varRiskGOPOverall_Index:1});
         UpdateContext({varRiskGOPRank:"Nhỏ"})
@@ -730,7 +730,7 @@
                 Text: ="Tài chính"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =161
-                X: =65
+                X: =312
                 Y: =711
                 ZIndex: =22
 
@@ -750,7 +750,7 @@
                 Text: ="Phi tài chính"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =161
-                X: =311
+                X: =538
                 Y: =711
                 ZIndex: =24
 
@@ -775,16 +775,16 @@
                     UpdateContext({varRiskGOPOverall_Text:ComboBox1.Selected.Value,varRiskGOPOverall_Index:ComboBox1.Selected.Index}),
                     UpdateContext({varRiskGOPOverall_Text:ComboBox1_1.Selected.Value,varRiskGOPOverall_Index:ComboBox1_1.Selected.Index})));
                     
-                    UpdateContext({varTemp:varRiskGOPOverall_Index*ComboBox1_2.Selected.Index});
+                    UpdateContext({varTemp:varRiskGOPOverall_Index*RO_PossibleRate.Selected.Index});
                     If(!(varRiskGOPOverall_Index=2) && varTemp >= 8, UpdateContext({varRiskGOPRank:"Rất cao"}),
-                    If((varRiskGOPOverall_Index>=3 || ComboBox1_2.Selected.Index>=3) && varTemp >=4, UpdateContext({varRiskGOPRank:"Cao"}),
-                    If(ComboBox1_2.Selected.Index=1 && varRiskGOPOverall_Index<=2,  UpdateContext({varRiskGOPRank:"Thấp"}),
+                    If((varRiskGOPOverall_Index>=3 || RO_PossibleRate.Selected.Index>=3) && varTemp >=4, UpdateContext({varRiskGOPRank:"Cao"}),
+                    If(RO_PossibleRate.Selected.Index=1 && varRiskGOPOverall_Index<=2,  UpdateContext({varRiskGOPRank:"Thấp"}),
                     UpdateContext({varRiskGOPRank:"Trung bình"}))))
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
                 Width: =158
-                X: =65
+                X: =312
                 Y: =743
                 ZIndex: =26
 
@@ -809,16 +809,16 @@
                     UpdateContext({varRiskGOPOverall_Text:ComboBox1.Selected.Value,varRiskGOPOverall_Index:ComboBox1.Selected.Index}),
                     UpdateContext({varRiskGOPOverall_Text:ComboBox1_1.Selected.Value,varRiskGOPOverall_Index:ComboBox1_1.Selected.Index})));
                     
-                    UpdateContext({varTemp:varRiskGOPOverall_Index*ComboBox1_2.Selected.Index});
+                    UpdateContext({varTemp:varRiskGOPOverall_Index*RO_PossibleRate.Selected.Index});
                     If(!(varRiskGOPOverall_Index=2) && varTemp >= 8, UpdateContext({varRiskGOPRank:"Rất cao"}),
-                    If((varRiskGOPOverall_Index>=3 || ComboBox1_2.Selected.Index>=3) && varTemp >=4, UpdateContext({varRiskGOPRank:"Cao"}),
-                    If(ComboBox1_2.Selected.Index=1 && varRiskGOPOverall_Index<=2,  UpdateContext({varRiskGOPRank:"Thấp"}),
+                    If((varRiskGOPOverall_Index>=3 || RO_PossibleRate.Selected.Index>=3) && varTemp >=4, UpdateContext({varRiskGOPRank:"Cao"}),
+                    If(RO_PossibleRate.Selected.Index=1 && varRiskGOPOverall_Index<=2,  UpdateContext({varRiskGOPRank:"Thấp"}),
                     UpdateContext({varRiskGOPRank:"Trung bình"}))))
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
                 Width: =158
-                X: =311
+                X: =538
                 Y: =743
                 ZIndex: =27
 
@@ -838,7 +838,7 @@
                 Text: ="Tổng thể"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =118
-                X: =532
+                X: =772
                 Y: =711
                 ZIndex: =28
 
@@ -846,7 +846,7 @@
                 Height: =37
                 Text: =varRiskGOPOverall_Text
                 Width: =118
-                X: =532
+                X: =772
                 Y: =743
                 ZIndex: =29
 
@@ -866,11 +866,11 @@
                 Text: ="Khả năng xảy ra"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =161
-                X: =667
+                X: =87
                 Y: =711
                 ZIndex: =30
 
-            ComboBox1_2 As combobox:
+            RO_PossibleRate As combobox:
                 BorderColor: =RGBA(219, 219, 219, 1)
                 ChevronBackground: =RGBA(255, 255, 255, 1)
                 ChevronFill: =RGBA(219, 219, 219, 1)
@@ -885,16 +885,16 @@
                     {Value:"Cao",Index:3},
                     {Value:"Rất cao",Index:4})
                 OnChange: |-
-                    =UpdateContext({varTemp:varRiskGOPOverall_Index*ComboBox1_2.Selected.Index});
+                    =UpdateContext({varTemp:varRiskGOPOverall_Index*RO_PossibleRate.Selected.Index});
                     If(!(varRiskGOPOverall_Index=2) && varTemp >= 8, UpdateContext({varRiskGOPRank:"Rất cao"}),
-                    If((varRiskGOPOverall_Index>=3 || ComboBox1_2.Selected.Index>=3) && varTemp >=4, UpdateContext({varRiskGOPRank:"Cao"}),
-                    If(ComboBox1_2.Selected.Index=1 && varRiskGOPOverall_Index<=2,  UpdateContext({varRiskGOPRank:"Thấp"}),
+                    If((varRiskGOPOverall_Index>=3 || RO_PossibleRate.Selected.Index>=3) && varTemp >=4, UpdateContext({varRiskGOPRank:"Cao"}),
+                    If(RO_PossibleRate.Selected.Index=1 && varRiskGOPOverall_Index<=2,  UpdateContext({varRiskGOPRank:"Thấp"}),
                     UpdateContext({varRiskGOPRank:"Trung bình"}))))
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
                 Width: =158
-                X: =667
+                X: =87
                 Y: =743
                 ZIndex: =31
 
@@ -914,15 +914,15 @@
                 Text: ="Điểm"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =118
-                X: =855
+                X: =942
                 Y: =711
                 ZIndex: =32
 
             Label7_1 As label:
                 Height: =37
-                Text: =varRiskGOPOverall_Index&"-"&ComboBox1_2.Selected.Index
+                Text: =RO_PossibleRate.Selected.Index&"-"&varRiskGOPOverall_Index
                 Width: =87
-                X: =855
+                X: =942
                 Y: =743
                 ZIndex: =33
 
@@ -949,7 +949,7 @@
             Label7_2 As label:
                 Height: =37
                 Text: =varRiskGOPRank
-                Width: =87
+                Width: =118
                 X: =1101
                 Y: =743
                 ZIndex: =35

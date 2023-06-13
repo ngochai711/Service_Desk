@@ -4557,19 +4557,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.ComboBox1_2.AccessibleLabel"
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.RO_PossibleRate.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.ComboBox1_2.AccessibleLabel",
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.RO_PossibleRate.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "frmRisk",
-                "type": "frmRisk.Canvas3_1.DataCard3_1.ComboBox1_2"
+                "type": "frmRisk.Canvas3_1.DataCard3_1.RO_PossibleRate"
               }
             }
           ],

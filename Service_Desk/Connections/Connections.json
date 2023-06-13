@@ -15,5 +15,27 @@
     "dependencies": {},
     "dependents": [],
     "id": "025a0b08-ca3b-4298-921e-8f2ffb4bd1fb"
+  },
+  "1802da10-ad39-462c-a969-60fb5823496f": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3310/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://pnjcomvn.sharepoint.com/sites/PNJDataTeam": {
+        "dataSources": {
+          "Issue tracker list": {
+            "tableName": "f3942b34-0b80-4edd-8404-f8ad2abee355"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Issue tracker list"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "1802da10-ad39-462c-a969-60fb5823496f"
   }
 }

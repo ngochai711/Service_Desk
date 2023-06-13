@@ -228,7 +228,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/13/2023 06:57:18",
+  "HeaderLastSavedDateTimeUTC": "06/13/2023 07:15:37",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "025a0b08-ca3b-4298-921e-8f2ffb4bd1fb": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/073447433099445e9bb253e2f9e40181\""
@@ -635,7 +635,7 @@
     "galleryTemplate1_1": 103,
     "galleryTemplate1_2": 130,
     "galleryTemplate3_1": 79,
-    "galleryTemplate3_2": 173,
+    "galleryTemplate3_2": 174,
     "galleryTemplate4_1": 38,
     "galleryTemplate5_1": 3,
     "galleryTemplate5_2": 13,
@@ -694,7 +694,7 @@
     "Label5_8": 4,
     "Label5_9": 5,
     "LabelPersonDisplayName": 80,
-    "LabelPersonDisplayName_1": 174,
+    "LabelPersonDisplayName_1": 173,
     "LB_RG_RiskGrade": 194,
     "LB_RG_RiskOverall": 193,
     "LB_RG_RiskRank": 195,

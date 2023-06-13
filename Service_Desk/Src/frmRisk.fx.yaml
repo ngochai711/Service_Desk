@@ -1401,7 +1401,11 @@
     RiskAdd As label:
         Color: =RGBA(255, 255, 255, 1)
         Height: =85
-        OnSelect: =
+        OnSelect: |-
+            =If(IsBlank(TIn_RiskOwner) || IsBlank(TIn_RiskName) || IsBlank(TIn_RiskDescribe) || IsBlank(TIn_RiskReason) || IsBlank(TIn_RiskConsequence) || IsBlank(TIn_RG_Evaluate) || IsBlank(TIn_RT_RiskEvaluate),
+            UpdateContext({varTemp1:""}),
+            Patch(Risks,Defaults(Risks),{RR_MA:LB_RiskID,'NGAY TẠO':DP_RiskRecordDate,RR_TRONGYEU:CB_RiskImportant,RR_TEN:TIn_RiskName,RR_MOTA:TIn_RiskDescribe,RR_NGUYENNHAN:TIn_RiskReason,RR_HAUQUA:TIn_RiskConsequence,RR_CSH:SelectedOwner.RR_CSH,RR_GOP_TAICHINH:CB_RG_Finance,RR_GOP_PHITAICHINH:CB_RG_nonFinance,RR_GOP_2TONGTHE:varRiskGOPOverall_Text,RR_GOP_KHANANGXAYRA:CB_RG_RiskRate,RR_GOP_DIEM:LB_RG_RiskGrade,RR_GOP_XEPHANG:LB_RG_RiskRank,RR_GOP_CSDANHGIA:TIn_RG_Evaluate,RR_THUAN_TAICHINH:CB_RT_Finance,RR_THUAN_PHITAICHINH:CB_RT_nonFinance,RR_THUAN_3TONGTHE:varRiskGOPOverall_Text,RR_THUAN_KHANANGXAYRA:CB_RT_RiskRate,RR_THUAN_DIEM:LB_RT_RiskGrade,RR_THUAN_XEPHANG:LB_RT_RiskRank,RR_THUAN_CSDANHGIA:TIn_RT_RiskEvaluate})
+            )
         Size: =20
         Text: ="Tạo thẻ"
         Width: =129

@@ -485,7 +485,36 @@
                 Color: =RGBA(166, 166, 166, 1)
                 Height: =50
                 Icon: =Icon.ChevronRight
-                OnSelect: =Select(Parent)
+                OnSelect: |-
+                    =Navigate(frmRiskControl,ScreenTransition.Fade);
+                    Collect(
+                        RiskInfo,
+                        {
+                            RiskId: ThisItem.RR_MA,
+                            RiskStatus: ThisItem.RR_TRANGTHAI,
+                            RiskCreateDate: ThisItem.'NGAY TẠO',
+                            RiskImportant: ThisItem.RR_TRONGYEU,
+                            RiskName: ThisItem.RR_TEN,
+                            RiskDescribe: ThisItem.RR_MOTA,
+                            RiskReason: ThisItem.RR_NGUYENNHAN,
+                            RiskConsequence: ThisItem.RR_HAUQUA,
+                            RiskOwner: ThisItem.RR_CSH,
+                            RiskGOPFinance: ThisItem.RR_GOP_TAICHINH,
+                            RiskGOPnonFinance: ThisItem.RR_GOP_PHITAICHINH,
+                            RiskGOPOverall: ThisItem.RR_GOP_2TONGTHE,
+                            RiskGOPRate: ThisItem.RR_GOP_KHANANGXAYRA,
+                            RiskGOPGrade: ThisItem.RR_GOP_DIEM,
+                            RiskGOPRank: ThisItem.RR_GOP_XEPHANG,
+                            RiskGOPEvaluate: ThisItem.RR_GOP_CSDANHGIA,
+                            RiskTHUANFinance: ThisItem.RR_THUAN_TAICHINH,
+                            RiskTHUANnonFinance: ThisItem.RR_THUAN_PHITAICHINH,
+                            RiskTHUANOverall: ThisItem.RR_THUAN_3TONGTHE,
+                            RiskTHUANRate: ThisItem.RR_THUAN_KHANANGXAYRA,
+                            RiskTHUANGrade: ThisItem.RR_THUAN_DIEM,
+                            RiskTHUANRank: ThisItem.RR_THUAN_XEPHANG,
+                            RiskTHUANEvaluate: ThisItem.RR_THUAN_CSDANHGIA
+                        }
+                    )
                 PaddingBottom: =16
                 PaddingLeft: =16
                 PaddingRight: =16

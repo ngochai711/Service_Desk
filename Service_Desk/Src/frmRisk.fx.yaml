@@ -248,7 +248,7 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =1095
+            Height: =1489
             Width: =Parent.Width
             X: =0
             Y: =0
@@ -264,19 +264,19 @@
                 Y: =27
                 ZIndex: =1
 
-            TextBox5_39 As label:
+            HD_RiskID As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox5_39.BorderColor
+                FocusedBorderColor: =HD_RiskID.BorderColor
                 FontWeight: =FontWeight.Semibold
                 Height: =39
-                HoverBorderColor: =TextBox5_39.BorderColor
-                HoverColor: =TextBox5_39.Color
-                HoverFill: =TextBox5_39.Fill
-                PressedBorderColor: =TextBox5_39.BorderColor
-                PressedColor: =TextBox5_39.Color
-                PressedFill: =TextBox5_39.Fill
+                HoverBorderColor: =HD_RiskID.BorderColor
+                HoverColor: =HD_RiskID.Color
+                HoverFill: =HD_RiskID.Fill
+                PressedBorderColor: =HD_RiskID.BorderColor
+                PressedColor: =HD_RiskID.Color
+                PressedFill: =HD_RiskID.Fill
                 Text: ="Mã rủi ro"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =93
@@ -284,7 +284,7 @@
                 Y: =11
                 ZIndex: =2
 
-            card_id As text:
+            LB_RiskID As text:
                 AccessibleLabel: ="Input ticket creator"
                 BorderColor: =RGBA(230,230,230,1)
                 Color: =RGBA(47, 41, 43, 1)
@@ -293,15 +293,15 @@
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
                 DisplayMode: =DisplayMode.View
-                FocusedBorderColor: =card_id.BorderColor
+                FocusedBorderColor: =LB_RiskID.BorderColor
                 FocusedBorderThickness: =3
                 Height: =37
-                HoverBorderColor: =card_id.BorderColor
-                HoverColor: =card_id.Color
-                HoverFill: =card_id.Fill
-                PressedBorderColor: =card_id.HoverBorderColor
-                PressedColor: =card_id.Color
-                PressedFill: =card_id.Fill
+                HoverBorderColor: =LB_RiskID.BorderColor
+                HoverColor: =LB_RiskID.Color
+                HoverFill: =LB_RiskID.Fill
+                PressedBorderColor: =LB_RiskID.HoverBorderColor
+                PressedColor: =LB_RiskID.Color
+                PressedFill: =LB_RiskID.Fill
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -312,19 +312,19 @@
                 Y: =44
                 ZIndex: =3
 
-            TextBox5_40 As label:
+            HD_RiskStatus As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox5_40.BorderColor
+                FocusedBorderColor: =HD_RiskStatus.BorderColor
                 FontWeight: =FontWeight.Semibold
                 Height: =32
-                HoverBorderColor: =TextBox5_40.BorderColor
-                HoverColor: =TextBox5_40.Color
-                HoverFill: =TextBox5_40.Fill
-                PressedBorderColor: =TextBox5_40.BorderColor
-                PressedColor: =TextBox5_40.Color
-                PressedFill: =TextBox5_40.Fill
+                HoverBorderColor: =HD_RiskStatus.BorderColor
+                HoverColor: =HD_RiskStatus.Color
+                HoverFill: =HD_RiskStatus.Fill
+                PressedBorderColor: =HD_RiskStatus.BorderColor
+                PressedColor: =HD_RiskStatus.Color
+                PressedFill: =HD_RiskStatus.Fill
                 Text: ="Trạng thái rủi ro"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =161
@@ -332,50 +332,19 @@
                 Y: =11
                 ZIndex: =4
 
-            Dropdown_Priority As dropdown:
-                AccessibleLabel: ="Select a priority"
-                BorderColor: =RGBA(230,230,230,1) 
-                ChevronBackground: =RGBA(255,255,255,1)
-                ChevronDisabledBackground: =RGBA(159, 167, 165, 1)
-                ChevronDisabledFill: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                ChevronFill: =RGBA(225, 225, 225, 1)
-                ChevronHoverBackground: =RGBA(101,128,187,1)
-                ChevronHoverFill: =ColorFade(RGBA(255,255,255,1), -5%)
-                Color: =RGBA(47, 41, 43, 1)
-                DisabledBorderColor: =RGBA(159, 167, 165, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
-                DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
-                FocusedBorderColor: =Dropdown_Priority.BorderColor
-                Height: =37
-                HoverBorderColor: =ColorFade(Dropdown_Priority.BorderColor, 15%)
-                HoverColor: =Dropdown_Priority.Color
-                HoverFill: =RGBA(225, 225, 225, 1)
-                Items: =["Mới","Chờ duyệt V1","Chờ duyệt 2","Theo dõi","Đóng","Hủy","Trả lại"]
-                PressedBorderColor: =Dropdown_Priority.HoverBorderColor
-                PressedColor: =Dropdown_Priority.Color
-                PressedFill: =RGBA(137,51,102,1)
-                Reset: =
-                SelectionColor: =RGBA(255,255,255,1)
-                SelectionFill: =RGBA(137,51,102,1)
-                Width: =158
-                X: =557
-                Y: =44
-                ZIndex: =5
-
-            TextBox5_41 As label:
+            HD_RiskRecordDate As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox5_41.BorderColor
+                FocusedBorderColor: =HD_RiskRecordDate.BorderColor
                 FontWeight: =FontWeight.Semibold
                 Height: =36
-                HoverBorderColor: =TextBox5_41.BorderColor
-                HoverColor: =TextBox5_41.Color
-                HoverFill: =TextBox5_41.Fill
-                PressedBorderColor: =TextBox5_41.BorderColor
-                PressedColor: =TextBox5_41.Color
-                PressedFill: =TextBox5_41.Fill
+                HoverBorderColor: =HD_RiskRecordDate.BorderColor
+                HoverColor: =HD_RiskRecordDate.Color
+                HoverFill: =HD_RiskRecordDate.Fill
+                PressedBorderColor: =HD_RiskRecordDate.BorderColor
+                PressedColor: =HD_RiskRecordDate.Color
+                PressedFill: =HD_RiskRecordDate.Fill
                 Text: ="Ngày ghi nhận rủi ro"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =200
@@ -383,26 +352,29 @@
                 Y: =7
                 ZIndex: =6
 
-            DatePicker1 As datepicker:
+            DP_RiskRecordDate As datepicker:
+                BorderColor: =RGBA(219, 219, 219, 1)
                 Height: =38
+                IconBackground: =
+                IconFill: =
                 Width: =200
                 X: =281
                 Y: =43
                 ZIndex: =7
 
-            TextBox5_42 As label:
+            HD_RiskImportant As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox5_42.BorderColor
+                FocusedBorderColor: =HD_RiskImportant.BorderColor
                 FontWeight: =FontWeight.Semibold
                 Height: =35
-                HoverBorderColor: =TextBox5_42.BorderColor
-                HoverColor: =TextBox5_42.Color
-                HoverFill: =TextBox5_42.Fill
-                PressedBorderColor: =TextBox5_42.BorderColor
-                PressedColor: =TextBox5_42.Color
-                PressedFill: =TextBox5_42.Fill
+                HoverBorderColor: =HD_RiskImportant.BorderColor
+                HoverColor: =HD_RiskImportant.Color
+                HoverFill: =HD_RiskImportant.Fill
+                PressedBorderColor: =HD_RiskImportant.BorderColor
+                PressedColor: =HD_RiskImportant.Color
+                PressedFill: =HD_RiskImportant.Fill
                 Text: ="Rủi ro trọng yếu"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =149
@@ -410,50 +382,19 @@
                 Y: =8
                 ZIndex: =8
 
-            Dropdown_Priority_1 As dropdown:
-                AccessibleLabel: ="Select a priority"
-                BorderColor: =RGBA(230,230,230,1) 
-                ChevronBackground: =RGBA(255,255,255,1)
-                ChevronDisabledBackground: =RGBA(159, 167, 165, 1)
-                ChevronDisabledFill: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                ChevronFill: =RGBA(225, 225, 225, 1)
-                ChevronHoverBackground: =RGBA(101,128,187,1)
-                ChevronHoverFill: =ColorFade(RGBA(255,255,255,1), -5%)
-                Color: =RGBA(47, 41, 43, 1)
-                DisabledBorderColor: =RGBA(159, 167, 165, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
-                DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
-                FocusedBorderColor: =Dropdown_Priority_1.BorderColor
-                Height: =37
-                HoverBorderColor: =ColorFade(Dropdown_Priority_1.BorderColor, 15%)
-                HoverColor: =Dropdown_Priority_1.Color
-                HoverFill: =RGBA(225, 225, 225, 1)
-                Items: =["Có","Không"]
-                PressedBorderColor: =Dropdown_Priority_1.HoverBorderColor
-                PressedColor: =Dropdown_Priority_1.Color
-                PressedFill: =RGBA(137,51,102,1)
-                Reset: =
-                SelectionColor: =RGBA(255,255,255,1)
-                SelectionFill: =RGBA(137,51,102,1)
-                Width: =144
-                X: =798
-                Y: =44
-                ZIndex: =9
-
-            TextBox5_43 As label:
+            HD_RiskName As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox5_43.BorderColor
+                FocusedBorderColor: =HD_RiskName.BorderColor
                 FontWeight: =FontWeight.Semibold
                 Height: =36
-                HoverBorderColor: =TextBox5_43.BorderColor
-                HoverColor: =TextBox5_43.Color
-                HoverFill: =TextBox5_43.Fill
-                PressedBorderColor: =TextBox5_43.BorderColor
-                PressedColor: =TextBox5_43.Color
-                PressedFill: =TextBox5_43.Fill
+                HoverBorderColor: =HD_RiskName.BorderColor
+                HoverColor: =HD_RiskName.Color
+                HoverFill: =HD_RiskName.Fill
+                PressedBorderColor: =HD_RiskName.BorderColor
+                PressedColor: =HD_RiskName.Color
+                PressedFill: =HD_RiskName.Fill
                 Text: ="Tên rủi ro"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =122
@@ -461,7 +402,7 @@
                 Y: =97
                 ZIndex: =10
 
-            card_id_1 As text:
+            TIn_RiskName As text:
                 AccessibleLabel: ="Input ticket creator"
                 BorderColor: =RGBA(230,230,230,1)
                 Color: =RGBA(47, 41, 43, 1)
@@ -470,15 +411,15 @@
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
                 DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
-                FocusedBorderColor: =card_id_1.BorderColor
+                FocusedBorderColor: =TIn_RiskName.BorderColor
                 FocusedBorderThickness: =3
                 Height: =36
-                HoverBorderColor: =card_id_1.BorderColor
-                HoverColor: =card_id_1.Color
-                HoverFill: =card_id_1.Fill
-                PressedBorderColor: =card_id_1.HoverBorderColor
-                PressedColor: =card_id_1.Color
-                PressedFill: =card_id_1.Fill
+                HoverBorderColor: =TIn_RiskName.BorderColor
+                HoverColor: =TIn_RiskName.Color
+                HoverFill: =TIn_RiskName.Fill
+                PressedBorderColor: =TIn_RiskName.HoverBorderColor
+                PressedColor: =TIn_RiskName.Color
+                PressedFill: =TIn_RiskName.Fill
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -489,19 +430,19 @@
                 Y: =133
                 ZIndex: =11
 
-            TextBox5_44 As label:
+            HD_RiskDescribe As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox5_44.BorderColor
+                FocusedBorderColor: =HD_RiskDescribe.BorderColor
                 FontWeight: =FontWeight.Semibold
                 Height: =35
-                HoverBorderColor: =TextBox5_44.BorderColor
-                HoverColor: =TextBox5_44.Color
-                HoverFill: =TextBox5_44.Fill
-                PressedBorderColor: =TextBox5_44.BorderColor
-                PressedColor: =TextBox5_44.Color
-                PressedFill: =TextBox5_44.Fill
+                HoverBorderColor: =HD_RiskDescribe.BorderColor
+                HoverColor: =HD_RiskDescribe.Color
+                HoverFill: =HD_RiskDescribe.Fill
+                PressedBorderColor: =HD_RiskDescribe.BorderColor
+                PressedColor: =HD_RiskDescribe.Color
+                PressedFill: =HD_RiskDescribe.Fill
                 Text: ="Mô tả rủi ro"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =122
@@ -509,7 +450,7 @@
                 Y: =179
                 ZIndex: =12
 
-            card_id_2 As text:
+            TIn_RiskDescribe As text:
                 AccessibleLabel: ="Input ticket creator"
                 BorderColor: =RGBA(230,230,230,1)
                 Color: =RGBA(47, 41, 43, 1)
@@ -518,16 +459,16 @@
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
                 DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
-                FocusedBorderColor: =card_id_2.BorderColor
+                FocusedBorderColor: =TIn_RiskDescribe.BorderColor
                 FocusedBorderThickness: =3
                 Height: =182
-                HoverBorderColor: =card_id_2.BorderColor
-                HoverColor: =card_id_2.Color
-                HoverFill: =card_id_2.Fill
+                HoverBorderColor: =TIn_RiskDescribe.BorderColor
+                HoverColor: =TIn_RiskDescribe.Color
+                HoverFill: =TIn_RiskDescribe.Fill
                 Mode: =TextMode.MultiLine
-                PressedBorderColor: =card_id_2.HoverBorderColor
-                PressedColor: =card_id_2.Color
-                PressedFill: =card_id_2.Fill
+                PressedBorderColor: =TIn_RiskDescribe.HoverBorderColor
+                PressedColor: =TIn_RiskDescribe.Color
+                PressedFill: =TIn_RiskDescribe.Fill
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -538,19 +479,19 @@
                 Y: =214
                 ZIndex: =13
 
-            TextBox5_45 As label:
+            HD_RiskReason As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox5_45.BorderColor
+                FocusedBorderColor: =HD_RiskReason.BorderColor
                 FontWeight: =FontWeight.Semibold
                 Height: =35
-                HoverBorderColor: =TextBox5_45.BorderColor
-                HoverColor: =TextBox5_45.Color
-                HoverFill: =TextBox5_45.Fill
-                PressedBorderColor: =TextBox5_45.BorderColor
-                PressedColor: =TextBox5_45.Color
-                PressedFill: =TextBox5_45.Fill
+                HoverBorderColor: =HD_RiskReason.BorderColor
+                HoverColor: =HD_RiskReason.Color
+                HoverFill: =HD_RiskReason.Fill
+                PressedBorderColor: =HD_RiskReason.BorderColor
+                PressedColor: =HD_RiskReason.Color
+                PressedFill: =HD_RiskReason.Fill
                 Text: ="Nguyên nhân cốt lõi"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =212
@@ -558,7 +499,7 @@
                 Y: =179
                 ZIndex: =14
 
-            card_id_3 As text:
+            TIn_RiskReason As text:
                 AccessibleLabel: ="Input ticket creator"
                 BorderColor: =RGBA(230,230,230,1)
                 Color: =RGBA(47, 41, 43, 1)
@@ -567,16 +508,16 @@
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
                 DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
-                FocusedBorderColor: =card_id_3.BorderColor
+                FocusedBorderColor: =TIn_RiskReason.BorderColor
                 FocusedBorderThickness: =3
                 Height: =422
-                HoverBorderColor: =card_id_3.BorderColor
-                HoverColor: =card_id_3.Color
-                HoverFill: =card_id_3.Fill
+                HoverBorderColor: =TIn_RiskReason.BorderColor
+                HoverColor: =TIn_RiskReason.Color
+                HoverFill: =TIn_RiskReason.Fill
                 Mode: =TextMode.MultiLine
-                PressedBorderColor: =card_id_3.HoverBorderColor
-                PressedColor: =card_id_3.Color
-                PressedFill: =card_id_3.Fill
+                PressedBorderColor: =TIn_RiskReason.HoverBorderColor
+                PressedColor: =TIn_RiskReason.Color
+                PressedFill: =TIn_RiskReason.Fill
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -587,19 +528,19 @@
                 Y: =214
                 ZIndex: =15
 
-            TextBox5_47 As label:
+            HD_RiskOwner As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox5_47.BorderColor
+                FocusedBorderColor: =HD_RiskOwner.BorderColor
                 FontWeight: =FontWeight.Semibold
                 Height: =35
-                HoverBorderColor: =TextBox5_47.BorderColor
-                HoverColor: =TextBox5_47.Color
-                HoverFill: =TextBox5_47.Fill
-                PressedBorderColor: =TextBox5_47.BorderColor
-                PressedColor: =TextBox5_47.Color
-                PressedFill: =TextBox5_47.Fill
+                HoverBorderColor: =HD_RiskOwner.BorderColor
+                HoverColor: =HD_RiskOwner.Color
+                HoverFill: =HD_RiskOwner.Fill
+                PressedBorderColor: =HD_RiskOwner.BorderColor
+                PressedColor: =HD_RiskOwner.Color
+                PressedFill: =HD_RiskOwner.Fill
                 Text: ="Chủ sở hữu rủi ro"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =178
@@ -607,7 +548,7 @@
                 Y: =8
                 ZIndex: =16
 
-            card_id_5 As text:
+            TIn_RiskOwner As text:
                 AccessibleLabel: ="Input ticket creator"
                 BorderColor: =RGBA(230,230,230,1)
                 Color: =RGBA(47, 41, 43, 1)
@@ -616,15 +557,15 @@
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
                 DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
-                FocusedBorderColor: =card_id_5.BorderColor
+                FocusedBorderColor: =TIn_RiskOwner.BorderColor
                 FocusedBorderThickness: =3
                 Height: =37
-                HoverBorderColor: =card_id_5.BorderColor
-                HoverColor: =card_id_5.Color
-                HoverFill: =card_id_5.Fill
-                PressedBorderColor: =card_id_5.HoverBorderColor
-                PressedColor: =card_id_5.Color
-                PressedFill: =card_id_5.Fill
+                HoverBorderColor: =TIn_RiskOwner.BorderColor
+                HoverColor: =TIn_RiskOwner.Color
+                HoverFill: =TIn_RiskOwner.Fill
+                PressedBorderColor: =TIn_RiskOwner.HoverBorderColor
+                PressedColor: =TIn_RiskOwner.Color
+                PressedFill: =TIn_RiskOwner.Fill
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -634,19 +575,19 @@
                 Y: =44
                 ZIndex: =17
 
-            TextBox5_46 As label:
+            HD_RiskConsequence As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox5_46.BorderColor
+                FocusedBorderColor: =HD_RiskConsequence.BorderColor
                 FontWeight: =FontWeight.Semibold
                 Height: =35
-                HoverBorderColor: =TextBox5_46.BorderColor
-                HoverColor: =TextBox5_46.Color
-                HoverFill: =TextBox5_46.Fill
-                PressedBorderColor: =TextBox5_46.BorderColor
-                PressedColor: =TextBox5_46.Color
-                PressedFill: =TextBox5_46.Fill
+                HoverBorderColor: =HD_RiskConsequence.BorderColor
+                HoverColor: =HD_RiskConsequence.Color
+                HoverFill: =HD_RiskConsequence.Fill
+                PressedBorderColor: =HD_RiskConsequence.BorderColor
+                PressedColor: =HD_RiskConsequence.Color
+                PressedFill: =HD_RiskConsequence.Fill
                 Text: ="Hậu quả rủi ro"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =169
@@ -654,7 +595,7 @@
                 Y: =410
                 ZIndex: =18
 
-            card_id_4 As text:
+            TIn_RiskConsequence As text:
                 AccessibleLabel: ="Input ticket creator"
                 BorderColor: =RGBA(230,230,230,1)
                 Color: =RGBA(47, 41, 43, 1)
@@ -663,16 +604,16 @@
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
                 DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
-                FocusedBorderColor: =card_id_4.BorderColor
+                FocusedBorderColor: =TIn_RiskConsequence.BorderColor
                 FocusedBorderThickness: =3
                 Height: =182
-                HoverBorderColor: =card_id_4.BorderColor
-                HoverColor: =card_id_4.Color
-                HoverFill: =card_id_4.Fill
+                HoverBorderColor: =TIn_RiskConsequence.BorderColor
+                HoverColor: =TIn_RiskConsequence.Color
+                HoverFill: =TIn_RiskConsequence.Fill
                 Mode: =TextMode.MultiLine
-                PressedBorderColor: =card_id_4.HoverBorderColor
-                PressedColor: =card_id_4.Color
-                PressedFill: =card_id_4.Fill
+                PressedBorderColor: =TIn_RiskConsequence.HoverBorderColor
+                PressedColor: =TIn_RiskConsequence.Color
+                PressedFill: =TIn_RiskConsequence.Fill
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -683,29 +624,29 @@
                 Y: =445
                 ZIndex: =19
 
-            Rectangle5 As rectangle:
+            Rec_RiskOverall As rectangle:
                 BorderColor: =RGBA(219, 219, 219, 1)
                 BorderThickness: =2
                 Fill: =RGBA(255, 255, 255, 1)
-                Height: =402
+                Height: =342
                 Width: =1280
-                X: =40
+                X: =36
                 Y: =693
                 ZIndex: =20
 
-            TextBox5_48 As label:
+            HD_RiskOverall As label:
                 BorderColor: =RGBA(219, 219, 219, 1)
                 Color: =RGBA(92,92,92,1)
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox5_48.BorderColor
+                FocusedBorderColor: =HD_RiskOverall.BorderColor
                 FontWeight: =FontWeight.Bold
                 Height: =36
-                HoverBorderColor: =TextBox5_48.BorderColor
-                HoverColor: =TextBox5_48.Color
-                HoverFill: =TextBox5_48.Fill
-                PressedBorderColor: =TextBox5_48.BorderColor
-                PressedColor: =TextBox5_48.Color
-                PressedFill: =TextBox5_48.Fill
+                HoverBorderColor: =HD_RiskOverall.BorderColor
+                HoverColor: =HD_RiskOverall.Color
+                HoverFill: =HD_RiskOverall.Fill
+                PressedBorderColor: =HD_RiskOverall.BorderColor
+                PressedColor: =HD_RiskOverall.Color
+                PressedFill: =HD_RiskOverall.Fill
                 Size: =15
                 Text: ="RỦI RO GỘP"
                 VerticalAlign: =VerticalAlign.Top
@@ -714,23 +655,23 @@
                 Y: =657
                 ZIndex: =21
 
-            TextBox5_49 As label:
+            HD_RO_Finance As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                FocusedBorderColor: =TextBox5_49.BorderColor
+                FocusedBorderColor: =HD_RO_Finance.BorderColor
                 FontWeight: =FontWeight.Semibold
                 Height: =32
-                HoverBorderColor: =TextBox5_49.BorderColor
-                HoverColor: =TextBox5_49.Color
-                HoverFill: =TextBox5_49.Fill
-                PressedBorderColor: =TextBox5_49.BorderColor
-                PressedColor: =TextBox5_49.Color
-                PressedFill: =TextBox5_49.Fill
+                HoverBorderColor: =HD_RO_Finance.BorderColor
+                HoverColor: =HD_RO_Finance.Color
+                HoverFill: =HD_RO_Finance.Fill
+                PressedBorderColor: =HD_RO_Finance.BorderColor
+                PressedColor: =HD_RO_Finance.Color
+                PressedFill: =HD_RO_Finance.Fill
                 Text: ="Tài chính"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =161
-                X: =312
+                X: =333
                 Y: =711
                 ZIndex: =22
 
@@ -750,7 +691,7 @@
                 Text: ="Phi tài chính"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =161
-                X: =538
+                X: =597
                 Y: =711
                 ZIndex: =24
 
@@ -784,7 +725,7 @@
                 SearchItems: =[]
                 SelectMultiple: =false
                 Width: =158
-                X: =312
+                X: =333
                 Y: =743
                 ZIndex: =26
 
@@ -818,7 +759,7 @@
                 SearchItems: =[]
                 SelectMultiple: =false
                 Width: =158
-                X: =538
+                X: =597
                 Y: =743
                 ZIndex: =27
 
@@ -838,7 +779,7 @@
                 Text: ="Tổng thể"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =118
-                X: =772
+                X: =842
                 Y: =711
                 ZIndex: =28
 
@@ -846,7 +787,7 @@
                 Height: =37
                 Text: =varRiskGOPOverall_Text
                 Width: =118
-                X: =772
+                X: =842
                 Y: =743
                 ZIndex: =29
 
@@ -914,7 +855,7 @@
                 Text: ="Điểm"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =118
-                X: =942
+                X: =1020
                 Y: =711
                 ZIndex: =32
 
@@ -922,7 +863,7 @@
                 Height: =37
                 Text: =RO_PossibleRate.Selected.Index&"-"&varRiskGOPOverall_Index
                 Width: =87
-                X: =942
+                X: =1020
                 Y: =743
                 ZIndex: =33
 
@@ -942,7 +883,7 @@
                 Text: ="Xếp hạng"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =118
-                X: =1101
+                X: =1158
                 Y: =711
                 ZIndex: =34
 
@@ -950,9 +891,447 @@
                 Height: =37
                 Text: =varRiskGOPRank
                 Width: =118
-                X: =1101
+                X: =1158
                 Y: =743
                 ZIndex: =35
+
+            TextBox5_55 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(92,92,92,1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =TextBox5_55.BorderColor
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                HoverBorderColor: =TextBox5_55.BorderColor
+                HoverColor: =TextBox5_55.Color
+                HoverFill: =TextBox5_55.Fill
+                PressedBorderColor: =TextBox5_55.BorderColor
+                PressedColor: =TextBox5_55.Color
+                PressedFill: =TextBox5_55.Fill
+                Text: ="Cơ sở đánh giá"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =161
+                X: =87
+                Y: =803
+                ZIndex: =36
+
+            card_id_6 As text:
+                AccessibleLabel: ="Input ticket creator"
+                BorderColor: =RGBA(230,230,230,1)
+                Color: =RGBA(47, 41, 43, 1)
+                Default: =
+                DisabledBorderColor: =RGBA(159, 167, 165, 1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
+                DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
+                FocusedBorderColor: =card_id_6.BorderColor
+                FocusedBorderThickness: =3
+                Height: =172
+                HoverBorderColor: =card_id_6.BorderColor
+                HoverColor: =card_id_6.Color
+                HoverFill: =card_id_6.Fill
+                Mode: =TextMode.MultiLine
+                PressedBorderColor: =card_id_6.HoverBorderColor
+                PressedColor: =card_id_6.Color
+                PressedFill: =card_id_6.Fill
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Reset: =
+                Width: =1193
+                X: =83
+                Y: =835
+                ZIndex: =37
+
+            Rectangle5_1 As rectangle:
+                BorderColor: =RGBA(219, 219, 219, 1)
+                BorderThickness: =2
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =342
+                Width: =1280
+                X: =36
+                Y: =1112
+                ZIndex: =38
+
+            TextBox5_56 As label:
+                BorderColor: =RGBA(219, 219, 219, 1)
+                Color: =RGBA(92,92,92,1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =TextBox5_56.BorderColor
+                FontWeight: =FontWeight.Bold
+                Height: =36
+                HoverBorderColor: =TextBox5_56.BorderColor
+                HoverColor: =TextBox5_56.Color
+                HoverFill: =TextBox5_56.Fill
+                PressedBorderColor: =TextBox5_56.BorderColor
+                PressedColor: =TextBox5_56.Color
+                PressedFill: =TextBox5_56.Fill
+                Size: =15
+                Text: ="RỦI RO THUẦN"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =180
+                X: =40
+                Y: =1076
+                ZIndex: =39
+
+            TextBox5_57 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(92,92,92,1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =TextBox5_57.BorderColor
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                HoverBorderColor: =TextBox5_57.BorderColor
+                HoverColor: =TextBox5_57.Color
+                HoverFill: =TextBox5_57.Fill
+                PressedBorderColor: =TextBox5_57.BorderColor
+                PressedColor: =TextBox5_57.Color
+                PressedFill: =TextBox5_57.Fill
+                Text: ="Tài chính"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =161
+                X: =333
+                Y: =1130
+                ZIndex: =40
+
+            TextBox5_58 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(92,92,92,1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =TextBox5_58.BorderColor
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                HoverBorderColor: =TextBox5_58.BorderColor
+                HoverColor: =TextBox5_58.Color
+                HoverFill: =TextBox5_58.Fill
+                PressedBorderColor: =TextBox5_58.BorderColor
+                PressedColor: =TextBox5_58.Color
+                PressedFill: =TextBox5_58.Fill
+                Text: ="Phi tài chính"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =161
+                X: =597
+                Y: =1130
+                ZIndex: =41
+
+            ComboBox1_2 As combobox:
+                BorderColor: =RGBA(219, 219, 219, 1)
+                ChevronBackground: =RGBA(255, 255, 255, 1)
+                ChevronFill: =RGBA(219, 219, 219, 1)
+                DefaultSelectedItems: =["Nhỏ"]
+                DisplayFields: =["Value"]
+                Height: =37
+                HoverFill: =
+                IsSearchable: =false
+                Items: |-
+                    =Table({Value:"Nhỏ",Index:1},
+                    {Value:"Trung bình",Index:2},
+                    {Value:"Lớn",Index:3},
+                    {Value:"Rất lớn",Index:4})
+                OnChange: |-
+                    =If(ComboBox1_2.Selected.Index = ComboBox1_3.Selected.Index,
+                    UpdateContext({varRiskGOPOverall_Text:ComboBox1_2.Selected.Value,varRiskGOPOverall_Index:ComboBox1_2.Selected.Index}),
+                    If(ComboBox1_2.Selected.Index > ComboBox1_3.Selected.Index,
+                    UpdateContext({varRiskGOPOverall_Text:ComboBox1_2.Selected.Value,varRiskGOPOverall_Index:ComboBox1_2.Selected.Index}),
+                    UpdateContext({varRiskGOPOverall_Text:ComboBox1_3.Selected.Value,varRiskGOPOverall_Index:ComboBox1_3.Selected.Index})));
+                    
+                    UpdateContext({varTemp:varRiskGOPOverall_Index*RO_PossibleRate_1.Selected.Index});
+                    If(!(varRiskGOPOverall_Index=2) && varTemp >= 8, UpdateContext({varRiskGOPRank:"Rất cao"}),
+                    If((varRiskGOPOverall_Index>=3 || RO_PossibleRate_1.Selected.Index>=3) && varTemp >=4, UpdateContext({varRiskGOPRank:"Cao"}),
+                    If(RO_PossibleRate_1.Selected.Index=1 && varRiskGOPOverall_Index<=2,  UpdateContext({varRiskGOPRank:"Thấp"}),
+                    UpdateContext({varRiskGOPRank:"Trung bình"}))))
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectMultiple: =false
+                Width: =158
+                X: =333
+                Y: =1162
+                ZIndex: =42
+
+            ComboBox1_3 As combobox:
+                BorderColor: =RGBA(219, 219, 219, 1)
+                ChevronBackground: =RGBA(255, 255, 255, 1)
+                ChevronFill: =RGBA(219, 219, 219, 1)
+                DefaultSelectedItems: =["Nhỏ"]
+                DisplayFields: =["Value"]
+                Height: =37
+                HoverFill: =
+                IsSearchable: =false
+                Items: |-
+                    =Table({Value:"Nhỏ",Index:1},
+                    {Value:"Trung bình",Index:2},
+                    {Value:"Lớn",Index:3},
+                    {Value:"Rất lớn",Index:4})
+                OnChange: |-
+                    =If(ComboBox1_2.Selected.Index = ComboBox1_3.Selected.Index,
+                    UpdateContext({varRiskGOPOverall_Text:ComboBox1_2.Selected.Value,varRiskGOPOverall_Index:ComboBox1_2.Selected.Index}),
+                    If(ComboBox1_2.Selected.Index > ComboBox1_3.Selected.Index,
+                    UpdateContext({varRiskGOPOverall_Text:ComboBox1_2.Selected.Value,varRiskGOPOverall_Index:ComboBox1_2.Selected.Index}),
+                    UpdateContext({varRiskGOPOverall_Text:ComboBox1_3.Selected.Value,varRiskGOPOverall_Index:ComboBox1_3.Selected.Index})));
+                    
+                    UpdateContext({varTemp:varRiskGOPOverall_Index*RO_PossibleRate_1.Selected.Index});
+                    If(!(varRiskGOPOverall_Index=2) && varTemp >= 8, UpdateContext({varRiskGOPRank:"Rất cao"}),
+                    If((varRiskGOPOverall_Index>=3 || RO_PossibleRate_1.Selected.Index>=3) && varTemp >=4, UpdateContext({varRiskGOPRank:"Cao"}),
+                    If(RO_PossibleRate_1.Selected.Index=1 && varRiskGOPOverall_Index<=2,  UpdateContext({varRiskGOPRank:"Thấp"}),
+                    UpdateContext({varRiskGOPRank:"Trung bình"}))))
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectMultiple: =false
+                Width: =158
+                X: =597
+                Y: =1162
+                ZIndex: =43
+
+            TextBox5_59 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(92,92,92,1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =TextBox5_59.BorderColor
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                HoverBorderColor: =TextBox5_59.BorderColor
+                HoverColor: =TextBox5_59.Color
+                HoverFill: =TextBox5_59.Fill
+                PressedBorderColor: =TextBox5_59.BorderColor
+                PressedColor: =TextBox5_59.Color
+                PressedFill: =TextBox5_59.Fill
+                Text: ="Tổng thể"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =118
+                X: =842
+                Y: =1130
+                ZIndex: =44
+
+            Label7_3 As label:
+                Height: =37
+                Text: =varRiskGOPOverall_Text
+                Width: =118
+                X: =842
+                Y: =1162
+                ZIndex: =45
+
+            TextBox5_60 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(92,92,92,1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =TextBox5_60.BorderColor
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                HoverBorderColor: =TextBox5_60.BorderColor
+                HoverColor: =TextBox5_60.Color
+                HoverFill: =TextBox5_60.Fill
+                PressedBorderColor: =TextBox5_60.BorderColor
+                PressedColor: =TextBox5_60.Color
+                PressedFill: =TextBox5_60.Fill
+                Text: ="Khả năng xảy ra"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =161
+                X: =87
+                Y: =1130
+                ZIndex: =46
+
+            RO_PossibleRate_1 As combobox:
+                BorderColor: =RGBA(219, 219, 219, 1)
+                ChevronBackground: =RGBA(255, 255, 255, 1)
+                ChevronFill: =RGBA(219, 219, 219, 1)
+                DefaultSelectedItems: =["Nhỏ"]
+                DisplayFields: =["Value"]
+                Height: =37
+                HoverFill: =
+                IsSearchable: =false
+                Items: |-
+                    =Table({Value:"Nhỏ",Index:1},
+                    {Value:"Trung bình",Index:2},
+                    {Value:"Cao",Index:3},
+                    {Value:"Rất cao",Index:4})
+                OnChange: |-
+                    =UpdateContext({varTemp:varRiskGOPOverall_Index*RO_PossibleRate_1.Selected.Index});
+                    If(!(varRiskGOPOverall_Index=2) && varTemp >= 8, UpdateContext({varRiskGOPRank:"Rất cao"}),
+                    If((varRiskGOPOverall_Index>=3 || RO_PossibleRate_1.Selected.Index>=3) && varTemp >=4, UpdateContext({varRiskGOPRank:"Cao"}),
+                    If(RO_PossibleRate_1.Selected.Index=1 && varRiskGOPOverall_Index<=2,  UpdateContext({varRiskGOPRank:"Thấp"}),
+                    UpdateContext({varRiskGOPRank:"Trung bình"}))))
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectMultiple: =false
+                Width: =158
+                X: =87
+                Y: =1162
+                ZIndex: =47
+
+            TextBox5_61 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(92,92,92,1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =TextBox5_61.BorderColor
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                HoverBorderColor: =TextBox5_61.BorderColor
+                HoverColor: =TextBox5_61.Color
+                HoverFill: =TextBox5_61.Fill
+                PressedBorderColor: =TextBox5_61.BorderColor
+                PressedColor: =TextBox5_61.Color
+                PressedFill: =TextBox5_61.Fill
+                Text: ="Điểm"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =118
+                X: =1020
+                Y: =1130
+                ZIndex: =48
+
+            Label7_4 As label:
+                Height: =37
+                Text: =RO_PossibleRate_1.Selected.Index&"-"&varRiskGOPOverall_Index
+                Width: =87
+                X: =1020
+                Y: =1162
+                ZIndex: =49
+
+            TextBox5_62 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(92,92,92,1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =TextBox5_62.BorderColor
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                HoverBorderColor: =TextBox5_62.BorderColor
+                HoverColor: =TextBox5_62.Color
+                HoverFill: =TextBox5_62.Fill
+                PressedBorderColor: =TextBox5_62.BorderColor
+                PressedColor: =TextBox5_62.Color
+                PressedFill: =TextBox5_62.Fill
+                Text: ="Xếp hạng"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =118
+                X: =1158
+                Y: =1130
+                ZIndex: =50
+
+            Label7_5 As label:
+                Height: =37
+                Text: =varRiskGOPRank
+                Width: =118
+                X: =1158
+                Y: =1162
+                ZIndex: =51
+
+            TextBox5_63 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(92,92,92,1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =TextBox5_63.BorderColor
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                HoverBorderColor: =TextBox5_63.BorderColor
+                HoverColor: =TextBox5_63.Color
+                HoverFill: =TextBox5_63.Fill
+                PressedBorderColor: =TextBox5_63.BorderColor
+                PressedColor: =TextBox5_63.Color
+                PressedFill: =TextBox5_63.Fill
+                Text: ="Cơ sở đánh giá"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =161
+                X: =87
+                Y: =1222
+                ZIndex: =52
+
+            card_id_7 As text:
+                AccessibleLabel: ="Input ticket creator"
+                BorderColor: =RGBA(230,230,230,1)
+                Color: =RGBA(47, 41, 43, 1)
+                Default: =
+                DisabledBorderColor: =RGBA(159, 167, 165, 1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
+                DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
+                FocusedBorderColor: =card_id_7.BorderColor
+                FocusedBorderThickness: =3
+                Height: =172
+                HoverBorderColor: =card_id_7.BorderColor
+                HoverColor: =card_id_7.Color
+                HoverFill: =card_id_7.Fill
+                Mode: =TextMode.MultiLine
+                PressedBorderColor: =card_id_7.HoverBorderColor
+                PressedColor: =card_id_7.Color
+                PressedFill: =card_id_7.Fill
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Reset: =
+                Width: =1193
+                X: =83
+                Y: =1254
+                ZIndex: =53
+
+            ComboBox1_4 As combobox:
+                BorderColor: =RGBA(219, 219, 219, 1)
+                ChevronBackground: =RGBA(255, 255, 255, 1)
+                ChevronFill: =RGBA(219, 219, 219, 1)
+                DefaultSelectedItems: =["Nhỏ"]
+                DisplayFields: =["Value"]
+                Height: =37
+                HoverFill: =
+                IsSearchable: =false
+                Items: |-
+                    =Table({Value:"Mới",Index:1},
+                    {Value:"Chờ duyệt V1",Index:2},
+                    {Value:"Chờ duyệt 2",Index:3},
+                    {Value:"Theo dõi",Index:4},
+                    {Value:"Đóng",Index:5},
+                    {Value:"Hủy",Index:6},
+                    {Value:"Trả lại",Index:7})
+                OnChange: |-
+                    =If(ComboBox1_4.Selected.Index = ComboBox1_1.Selected.Index,
+                    UpdateContext({varRiskGOPOverall_Text:ComboBox1_4.Selected.Value,varRiskGOPOverall_Index:ComboBox1_4.Selected.Index}),
+                    If(ComboBox1_4.Selected.Index > ComboBox1_1.Selected.Index,
+                    UpdateContext({varRiskGOPOverall_Text:ComboBox1_4.Selected.Value,varRiskGOPOverall_Index:ComboBox1_4.Selected.Index}),
+                    UpdateContext({varRiskGOPOverall_Text:ComboBox1_1.Selected.Value,varRiskGOPOverall_Index:ComboBox1_1.Selected.Index})));
+                    
+                    UpdateContext({varTemp:varRiskGOPOverall_Index*RO_PossibleRate.Selected.Index});
+                    If(!(varRiskGOPOverall_Index=2) && varTemp >= 8, UpdateContext({varRiskGOPRank:"Rất cao"}),
+                    If((varRiskGOPOverall_Index>=3 || RO_PossibleRate.Selected.Index>=3) && varTemp >=4, UpdateContext({varRiskGOPRank:"Cao"}),
+                    If(RO_PossibleRate.Selected.Index=1 && varRiskGOPOverall_Index<=2,  UpdateContext({varRiskGOPRank:"Thấp"}),
+                    UpdateContext({varRiskGOPRank:"Trung bình"}))))
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectMultiple: =false
+                Width: =158
+                X: =555
+                Y: =44
+                ZIndex: =54
+
+            ComboBox1_5 As combobox:
+                BorderColor: =RGBA(219, 219, 219, 1)
+                ChevronBackground: =RGBA(255, 255, 255, 1)
+                ChevronFill: =RGBA(219, 219, 219, 1)
+                DefaultSelectedItems: =["Nhỏ"]
+                DisplayFields: =["Value"]
+                Height: =38
+                HoverFill: =
+                IsSearchable: =false
+                Items: |-
+                    =Table({Value:"Có",Index:1},
+                    {Value:"Không",Index:2})
+                OnChange: |-
+                    =If(ComboBox1_5.Selected.Index = ComboBox1_1.Selected.Index,
+                    UpdateContext({varRiskGOPOverall_Text:ComboBox1_5.Selected.Value,varRiskGOPOverall_Index:ComboBox1_5.Selected.Index}),
+                    If(ComboBox1_5.Selected.Index > ComboBox1_1.Selected.Index,
+                    UpdateContext({varRiskGOPOverall_Text:ComboBox1_5.Selected.Value,varRiskGOPOverall_Index:ComboBox1_5.Selected.Index}),
+                    UpdateContext({varRiskGOPOverall_Text:ComboBox1_1.Selected.Value,varRiskGOPOverall_Index:ComboBox1_1.Selected.Index})));
+                    
+                    UpdateContext({varTemp:varRiskGOPOverall_Index*RO_PossibleRate.Selected.Index});
+                    If(!(varRiskGOPOverall_Index=2) && varTemp >= 8, UpdateContext({varRiskGOPRank:"Rất cao"}),
+                    If((varRiskGOPOverall_Index>=3 || RO_PossibleRate.Selected.Index>=3) && varTemp >=4, UpdateContext({varRiskGOPRank:"Cao"}),
+                    If(RO_PossibleRate.Selected.Index=1 && varRiskGOPOverall_Index<=2,  UpdateContext({varRiskGOPRank:"Thấp"}),
+                    UpdateContext({varRiskGOPRank:"Trung bình"}))))
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectMultiple: =false
+                Width: =149
+                X: =793
+                Y: =43
+                ZIndex: =55
 
     Label6 As label:
         Color: =RGBA(255, 255, 255, 1)

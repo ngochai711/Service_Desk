@@ -2634,6 +2634,54 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 5
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 5
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 5
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 5
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
             }
           ]
         }
@@ -4713,19 +4761,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.ComboBox1.AccessibleLabel"
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_Finance.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.ComboBox1.AccessibleLabel",
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_Finance.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "frmRisk",
-                "type": "frmRisk.Canvas3_1.DataCard3_1.ComboBox1"
+                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_Finance"
               }
             }
           ],
@@ -4743,19 +4791,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.ComboBox1_1.AccessibleLabel"
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_nonFinance.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.ComboBox1_1.AccessibleLabel",
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_nonFinance.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "frmRisk",
-                "type": "frmRisk.Canvas3_1.DataCard3_1.ComboBox1_1"
+                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_nonFinance"
               }
             }
           ],
@@ -4773,19 +4821,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.RO_PossibleRate.AccessibleLabel"
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_RiskRate.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.RO_PossibleRate.AccessibleLabel",
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_RiskRate.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "frmRisk",
-                "type": "frmRisk.Canvas3_1.DataCard3_1.RO_PossibleRate"
+                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_RiskRate"
               }
             }
           ],
@@ -4803,19 +4851,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.ComboBox1_2.AccessibleLabel"
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_Finance.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.ComboBox1_2.AccessibleLabel",
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_Finance.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "frmRisk",
-                "type": "frmRisk.Canvas3_1.DataCard3_1.ComboBox1_2"
+                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_Finance"
               }
             }
           ],
@@ -4833,19 +4881,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.ComboBox1_3.AccessibleLabel"
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_nonFinance.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.ComboBox1_3.AccessibleLabel",
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_nonFinance.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "frmRisk",
-                "type": "frmRisk.Canvas3_1.DataCard3_1.ComboBox1_3"
+                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_nonFinance"
               }
             }
           ],
@@ -4863,19 +4911,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.RO_PossibleRate_1.AccessibleLabel"
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_RiskRate.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.RO_PossibleRate_1.AccessibleLabel",
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_RiskRate.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "frmRisk",
-                "type": "frmRisk.Canvas3_1.DataCard3_1.RO_PossibleRate_1"
+                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_RiskRate"
               }
             }
           ],
@@ -4893,19 +4941,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.ComboBox1_4.AccessibleLabel"
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RiskStatus.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.ComboBox1_4.AccessibleLabel",
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RiskStatus.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "frmRisk",
-                "type": "frmRisk.Canvas3_1.DataCard3_1.ComboBox1_4"
+                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RiskStatus"
               }
             }
           ],
@@ -4923,19 +4971,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.ComboBox1_5.AccessibleLabel"
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RiskImportant.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.ComboBox1_5.AccessibleLabel",
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RiskImportant.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "frmRisk",
-                "type": "frmRisk.Canvas3_1.DataCard3_1.ComboBox1_5"
+                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RiskImportant"
               }
             }
           ],
@@ -4947,6 +4995,126 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.LB_RiskOwner.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.LB_RiskOwner.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "frmRisk",
+                "type": "frmRisk.Canvas3_1.DataCard3_1.LB_RiskOwner"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.LB_RiskOwner.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.LB_RiskOwner.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "frmRisk",
+                "type": "frmRisk.Canvas3_1.DataCard3_1.LB_RiskOwner"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.Gal_RiskSelecttOwner.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.Gal_RiskSelecttOwner.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "frmRisk",
+                "type": "frmRisk.Canvas3_1.DataCard3_1.Gal_RiskSelecttOwner"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.Gal_RiskSelecttOwner.LabelPersonDisplayName_1.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.Gal_RiskSelecttOwner.LabelPersonDisplayName_1.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "frmRisk",
+                "type": "frmRisk.Canvas3_1.DataCard3_1.Gal_RiskSelecttOwner.LabelPersonDisplayName_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
         },
         {
           "locations": [

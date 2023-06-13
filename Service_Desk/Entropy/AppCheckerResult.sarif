@@ -3110,7 +3110,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 236,
+                  "charOffset": 238,
                   "snippet": {
                     "text": "Risks"
                   }
@@ -3134,6 +3134,366 @@
           },
           "ruleId": "app-ErrWriteToReadOnlyDataSource",
           "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmMain.Gallery5_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmMain.Gallery5_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "frmMain",
+                "type": "frmMain.Gallery5_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmMain.Gallery5_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmMain.Gallery5_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "frmMain",
+                "type": "frmMain.Gallery5_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmMain.Gallery5_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmMain.Gallery5_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "frmMain",
+                "type": "frmMain.Gallery5_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmMain.Gallery5_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmMain.Gallery5_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "frmMain",
+                "type": "frmMain.Gallery5_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRiskControl.Rectangle3_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRiskControl.Rectangle3_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "frmRiskControl",
+                "type": "frmRiskControl.Rectangle3_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRiskControl.Rectangle3_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRiskControl.Rectangle3_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "frmRiskControl",
+                "type": "frmRiskControl.Rectangle3_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRiskControl.Canvas1.DataCard1.Gallery4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRiskControl.Canvas1.DataCard1.Gallery4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "frmRiskControl",
+                "type": "frmRiskControl.Canvas1.DataCard1.Gallery4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRiskControl.Canvas1.DataCard1.Gallery4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRiskControl.Canvas1.DataCard1.Gallery4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "frmRiskControl",
+                "type": "frmRiskControl.Canvas1.DataCard1.Gallery4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRiskFix.Rectangle3_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRiskFix.Rectangle3_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "frmRiskFix",
+                "type": "frmRiskFix.Rectangle3_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRiskFix.Rectangle3_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRiskFix.Rectangle3_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "frmRiskFix",
+                "type": "frmRiskFix.Rectangle3_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRiskFix.Canvas1_1.DataCard1_1.Gallery4_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRiskFix.Canvas1_1.DataCard1_1.Gallery4_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "frmRiskFix",
+                "type": "frmRiskFix.Canvas1_1.DataCard1_1.Gallery4_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRiskFix.Canvas1_1.DataCard1_1.Gallery4_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRiskFix.Canvas1_1.DataCard1_1.Gallery4_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "frmRiskFix",
+                "type": "frmRiskFix.Canvas1_1.DataCard1_1.Gallery4_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -3513,6 +3873,366 @@
                 "member": "AccessibleLabel",
                 "module": "frmRisk",
                 "type": "frmRisk.Canvas3_1.DataCard3_1.DP_RiskRecordDate"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RiskImportant.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RiskImportant.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "frmRisk",
+                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RiskImportant"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RiskStatus.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RiskStatus.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "frmRisk",
+                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RiskStatus"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.LB_RiskOwner.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.LB_RiskOwner.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "frmRisk",
+                "type": "frmRisk.Canvas3_1.DataCard3_1.LB_RiskOwner"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.LB_RiskOwner.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.LB_RiskOwner.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "frmRisk",
+                "type": "frmRisk.Canvas3_1.DataCard3_1.LB_RiskOwner"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.Gal_RiskSelecttOwner.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.Gal_RiskSelecttOwner.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "frmRisk",
+                "type": "frmRisk.Canvas3_1.DataCard3_1.Gal_RiskSelecttOwner"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.Gal_RiskSelecttOwner.LabelPersonDisplayName_1.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.Gal_RiskSelecttOwner.LabelPersonDisplayName_1.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "frmRisk",
+                "type": "frmRisk.Canvas3_1.DataCard3_1.Gal_RiskSelecttOwner.LabelPersonDisplayName_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_RiskRate.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_RiskRate.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "frmRisk",
+                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_RiskRate"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_Finance.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_Finance.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "frmRisk",
+                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_Finance"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_nonFinance.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_nonFinance.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "frmRisk",
+                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_nonFinance"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_RiskRate.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_RiskRate.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "frmRisk",
+                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_RiskRate"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_Finance.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_Finance.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "frmRisk",
+                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_Finance"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_nonFinance.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_nonFinance.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "frmRisk",
+                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_nonFinance"
               }
             }
           ],
@@ -4100,6 +4820,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "frmRiskStatistic.Risk.Gallery1.NextArrow1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRiskStatistic.Risk.Gallery1.NextArrow1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "frmRiskStatistic",
+                "type": "frmRiskStatistic.Risk.Gallery1.NextArrow1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "frmRiskStatistic.GallerySelectedPerson.TabIndex"
                 }
               ],
@@ -4220,49 +4970,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRiskFix.Canvas1_1.DataCard1_1.Gallery4_1.TabIndex"
+                  "fullyQualifiedName": "frmRiskStatistic.'Risk Control'.TextBox2_26.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "frmRiskFix.Canvas1_1.DataCard1_1.Gallery4_1.TabIndex",
+                  "fullyQualifiedName": "frmRiskStatistic.'Risk Control'.TextBox2_26.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "frmRiskFix",
-                "type": "frmRiskFix.Canvas1_1.DataCard1_1.Gallery4_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskFix.Rectangle3_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskFix.Rectangle3_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "frmRiskFix",
-                "type": "frmRiskFix.Rectangle3_2"
+                "module": "frmRiskStatistic",
+                "type": "frmRiskStatistic.'Risk Control'.TextBox2_26"
               }
             }
           ],
@@ -4304,96 +5024,6 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskStatistic.'Risk Control'.TextBox2_26.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskStatistic.'Risk Control'.TextBox2_26.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "frmRiskStatistic",
-                "type": "frmRiskStatistic.'Risk Control'.TextBox2_26"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskFix.Canvas1_1.DataCard1_1.Gallery4_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskFix.Canvas1_1.DataCard1_1.Gallery4_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "frmRiskFix",
-                "type": "frmRiskFix.Canvas1_1.DataCard1_1.Gallery4_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskFix.Rectangle3_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskFix.Rectangle3_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "frmRiskFix",
-                "type": "frmRiskFix.Rectangle3_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
         },
         {
           "locations": [
@@ -4814,636 +5444,6 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskControl.Rectangle3_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskControl.Rectangle3_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "frmRiskControl",
-                "type": "frmRiskControl.Rectangle3_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmMain.Gallery5_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmMain.Gallery5_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "frmMain",
-                "type": "frmMain.Gallery5_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmMain.Gallery5_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmMain.Gallery5_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "frmMain",
-                "type": "frmMain.Gallery5_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmMain.Gallery5_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmMain.Gallery5_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "frmMain",
-                "type": "frmMain.Gallery5_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmMain.Gallery5_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmMain.Gallery5_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "frmMain",
-                "type": "frmMain.Gallery5_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_Finance.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_Finance.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "frmRisk",
-                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_Finance"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_nonFinance.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_nonFinance.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "frmRisk",
-                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_nonFinance"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_RiskRate.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_RiskRate.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "frmRisk",
-                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RG_RiskRate"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_Finance.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_Finance.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "frmRisk",
-                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_Finance"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_nonFinance.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_nonFinance.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "frmRisk",
-                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_nonFinance"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_RiskRate.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_RiskRate.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "frmRisk",
-                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RT_RiskRate"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RiskStatus.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RiskStatus.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "frmRisk",
-                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RiskStatus"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RiskImportant.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.CB_RiskImportant.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "frmRisk",
-                "type": "frmRisk.Canvas3_1.DataCard3_1.CB_RiskImportant"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.LB_RiskOwner.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.LB_RiskOwner.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "frmRisk",
-                "type": "frmRisk.Canvas3_1.DataCard3_1.LB_RiskOwner"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.LB_RiskOwner.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.LB_RiskOwner.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "frmRisk",
-                "type": "frmRisk.Canvas3_1.DataCard3_1.LB_RiskOwner"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.Gal_RiskSelecttOwner.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.Gal_RiskSelecttOwner.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "frmRisk",
-                "type": "frmRisk.Canvas3_1.DataCard3_1.Gal_RiskSelecttOwner"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.Gal_RiskSelecttOwner.LabelPersonDisplayName_1.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRisk.Canvas3_1.DataCard3_1.Gal_RiskSelecttOwner.LabelPersonDisplayName_1.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "frmRisk",
-                "type": "frmRisk.Canvas3_1.DataCard3_1.Gal_RiskSelecttOwner.LabelPersonDisplayName_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskControl.Rectangle3_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskControl.Rectangle3_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "frmRiskControl",
-                "type": "frmRiskControl.Rectangle3_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskStatistic.Risk.Gallery1.NextArrow1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskStatistic.Risk.Gallery1.NextArrow1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "frmRiskStatistic",
-                "type": "frmRiskStatistic.Risk.Gallery1.NextArrow1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskControl.Canvas1.DataCard1.Gallery4.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskControl.Canvas1.DataCard1.Gallery4.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "frmRiskControl",
-                "type": "frmRiskControl.Canvas1.DataCard1.Gallery4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskControl.Canvas1.DataCard1.Gallery4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskControl.Canvas1.DataCard1.Gallery4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "frmRiskControl",
-                "type": "frmRiskControl.Canvas1.DataCard1.Gallery4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
         },
         {
           "locations": [

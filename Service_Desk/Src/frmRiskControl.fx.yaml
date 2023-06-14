@@ -89,7 +89,7 @@
                     VerticalAlign: =VerticalAlign.Top
                     Width: =161
                     X: =153
-                    Y: =68
+                    Y: =100
                     ZIndex: =9
 
                 HD_RiskRecordDate_1 As label:
@@ -110,7 +110,7 @@
                     VerticalAlign: =VerticalAlign.Top
                     Width: =200
                     X: =153
-                    Y: =36
+                    Y: =56
                     ZIndex: =10
 
                 HD_RiskImportant_1 As label:
@@ -131,7 +131,7 @@
                     VerticalAlign: =VerticalAlign.Top
                     Width: =161
                     X: =153
-                    Y: =100
+                    Y: =140
                     ZIndex: =11
 
                 HD_RiskName_1 As label:
@@ -232,7 +232,7 @@
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.RiskCreateDate
                     X: =353
-                    Y: =36
+                    Y: =56
                     ZIndex: =37
 
                 Label17 As label:
@@ -240,7 +240,7 @@
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.RiskStatus
                     X: =353
-                    Y: =68
+                    Y: =100
                     ZIndex: =39
 
                 Label17_1 As label:
@@ -248,7 +248,7 @@
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.RiskImportant
                     X: =353
-                    Y: =103
+                    Y: =143
                     ZIndex: =40
 
                 Label17_2 As label:
@@ -257,15 +257,15 @@
                     Text: =ThisItem.RiskOwner
                     VerticalAlign: =VerticalAlign.Top
                     Width: =396
-                    X: =871
-                    Y: =56
+                    X: =915
+                    Y: =58
                     ZIndex: =41
 
                 Label17_3 As label:
                     Height: =32
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.RiskName
-                    X: =893
+                    X: =915
                     Y: =13
                     ZIndex: =42
 

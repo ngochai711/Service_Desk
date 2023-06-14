@@ -306,7 +306,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =Text(ThisItem.'NGAY TẠO',"mm/dd/yyyy")
+                Text: =Text(ThisItem.'NGAY TẠO',"[$-en-US]dd/mm/yyyy")
                 VerticalAlign: =VerticalAlign.Top
                 Width: =Parent.TemplateWidth - 173
                 X: =24
@@ -340,7 +340,7 @@
                         {
                             RiskId: ThisItem.RR_MA,
                             RiskStatus: ThisItem.RR_TRANGTHAI,
-                            RiskCreateDate: ThisItem.'NGAY TẠO',
+                            RiskCreateDate: Text(ThisItem.'NGAY TẠO',"dd/mm/yyyy"),
                             RiskImportant: ThisItem.RR_TRONGYEU,
                             RiskName: ThisItem.RR_TEN,
                             RiskDescribe: ThisItem.RR_MOTA,

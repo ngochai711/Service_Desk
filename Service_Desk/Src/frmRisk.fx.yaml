@@ -362,6 +362,8 @@
 
             DP_RiskRecordDate As datepicker:
                 BorderColor: =RGBA(219, 219, 219, 1)
+                ContentLanguage: ="vn-VN"
+                Format: ="dd/mm/yyyy"
                 Height: =38
                 IconBackground: =
                 IconFill: =

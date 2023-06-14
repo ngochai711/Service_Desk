@@ -6198,6 +6198,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "frmRiskStatistic.Risk.Gallery1.DatePicker2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRiskStatistic.Risk.Gallery1.DatePicker2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "frmRiskStatistic",
+                "type": "frmRiskStatistic.Risk.Gallery1.DatePicker2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.varVisible"
                 }
               ],

@@ -47,6 +47,12 @@
     "datasets": {
       "groups%252F0be597da-943b-43c0-ac9a-4da2ac0e7e5d,b%2521isfcMv9O60qSdNmoNPYqVVQL-DBOXCRAupISYaIEdk8VFGxm1q-wTJcQykTCqcs6,01TCJVRABBIRWZBD3V4NGZEN5DHAAZTS4A": {
         "dataSources": {
+          "Risk_Control": {
+            "tableName": "{E15490D9-EC06-45D1-8759-524BB4B8567B}"
+          },
+          "Risk_Fix": {
+            "tableName": "{A6400B47-2B57-42B0-AAF2-CA0CC6FD96FC}"
+          },
           "Risks": {
             "tableName": "{6081F979-7556-4810-8CFB-D7FD8972FDC1}"
           }
@@ -54,7 +60,9 @@
       }
     },
     "dataSources": [
-      "Risks"
+      "Risks",
+      "Risk_Fix",
+      "Risk_Control"
     ],
     "dependencies": {},
     "dependents": [],

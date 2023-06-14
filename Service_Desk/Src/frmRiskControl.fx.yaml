@@ -25,7 +25,7 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =216
+            Height: =200
             Width: =Parent.Width
             X: =0
             Y: =0
@@ -33,12 +33,12 @@
 
             "Gallery4 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
                 DelayItemLoading: =true
-                Height: =238
+                Height: =200
                 Items: =RiskInfo
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =0
-                TemplateSize: =335
+                TemplateSize: =200
                 Width: =1363
                 ZIndex: =1
 
@@ -63,10 +63,11 @@
                     PressedBorderColor: =HD_RiskID_1.BorderColor
                     PressedColor: =HD_RiskID_1.Color
                     PressedFill: =HD_RiskID_1.Fill
-                    Text: ="Mã rủi ro"
+                    Text: |-
+                        ="Mã rủi ro:"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =93
-                    X: =49
+                    X: =153
                     Y: =9
                     ZIndex: =8
 
@@ -83,10 +84,11 @@
                     PressedBorderColor: =HD_RiskStatus_1.BorderColor
                     PressedColor: =HD_RiskStatus_1.Color
                     PressedFill: =HD_RiskStatus_1.Fill
-                    Text: ="Trạng thái rủi ro"
+                    Text: |-
+                        ="Trạng thái rủi ro:"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =161
-                    X: =49
+                    X: =153
                     Y: =68
                     ZIndex: =9
 
@@ -103,10 +105,11 @@
                     PressedBorderColor: =HD_RiskRecordDate_1.BorderColor
                     PressedColor: =HD_RiskRecordDate_1.Color
                     PressedFill: =HD_RiskRecordDate_1.Fill
-                    Text: ="Ngày ghi nhận rủi ro"
+                    Text: |-
+                        ="Ngày ghi nhận rủi ro:"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =200
-                    X: =49
+                    X: =153
                     Y: =36
                     ZIndex: =10
 
@@ -123,10 +126,11 @@
                     PressedBorderColor: =HD_RiskImportant_1.BorderColor
                     PressedColor: =HD_RiskImportant_1.Color
                     PressedFill: =HD_RiskImportant_1.Fill
-                    Text: ="Rủi ro trọng yếu"
+                    Text: |-
+                        ="Rủi ro trọng yếu:"
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =149
-                    X: =49
+                    Width: =161
+                    X: =153
                     Y: =100
                     ZIndex: =11
 
@@ -143,11 +147,12 @@
                     PressedBorderColor: =HD_RiskName_1.BorderColor
                     PressedColor: =HD_RiskName_1.Color
                     PressedFill: =HD_RiskName_1.Fill
-                    Text: ="Tên rủi ro"
+                    Text: |-
+                        ="Tên rủi ro:"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =122
-                    X: =49
-                    Y: =198
+                    X: =693
+                    Y: =9
                     ZIndex: =12
 
                 HD_RiskDescribe_1 As label:
@@ -163,11 +168,12 @@
                     PressedBorderColor: =HD_RiskDescribe_1.BorderColor
                     PressedColor: =HD_RiskDescribe_1.Color
                     PressedFill: =HD_RiskDescribe_1.Fill
-                    Text: ="Mô tả rủi ro"
+                    Text: |-
+                        ="Rủi ro thuận - Xếp hạng:"
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =122
-                    X: =399
-                    Y: =119
+                    Width: =222
+                    X: =693
+                    Y: =149
                     ZIndex: =13
 
                 HD_RiskReason_1 As label:
@@ -183,11 +189,12 @@
                     PressedBorderColor: =HD_RiskReason_1.BorderColor
                     PressedColor: =HD_RiskReason_1.Color
                     PressedFill: =HD_RiskReason_1.Fill
-                    Text: ="Nguyên nhân cốt lõi"
+                    Text: |-
+                        ="Rủi ro gộp - Xếp hạng:"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =212
-                    X: =399
-                    Y: =9
+                    X: =693
+                    Y: =105
                     ZIndex: =14
 
                 HD_RiskOwner_1 As label:
@@ -203,75 +210,36 @@
                     PressedBorderColor: =HD_RiskOwner_1.BorderColor
                     PressedColor: =HD_RiskOwner_1.Color
                     PressedFill: =HD_RiskOwner_1.Fill
-                    Text: ="Chủ sở hữu rủi ro"
+                    Text: |-
+                        ="Chủ sở hữu rủi ro:"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =178
-                    X: =49
-                    Y: =149
+                    X: =693
+                    Y: =55
                     ZIndex: =15
-
-                HD_RiskConsequence_1 As label:
-                    BorderColor: =RGBA(0, 0, 0, 1)
-                    Color: =RGBA(92,92,92,1)
-                    DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                    FocusedBorderColor: =HD_RiskConsequence_1.BorderColor
-                    FontWeight: =FontWeight.Semibold
-                    Height: =35
-                    HoverBorderColor: =HD_RiskConsequence_1.BorderColor
-                    HoverColor: =HD_RiskConsequence_1.Color
-                    HoverFill: =HD_RiskConsequence_1.Fill
-                    PressedBorderColor: =HD_RiskConsequence_1.BorderColor
-                    PressedColor: =HD_RiskConsequence_1.Color
-                    PressedFill: =HD_RiskConsequence_1.Fill
-                    Text: ="Hậu quả rủi ro"
-                    VerticalAlign: =VerticalAlign.Top
-                    Width: =169
-                    X: =834
-                    Y: =184
-                    ZIndex: =16
 
                 Label12 As label:
                     Height: =27
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.RiskId
                     Width: =117
-                    X: =249
+                    X: =353
                     Y: =9
                     ZIndex: =35
-
-                Label13 As label:
-                    Height: =159
-                    OnSelect: =Select(Parent)
-                    Text: =ThisItem.RiskConsequence
-                    VerticalAlign: =VerticalAlign.Top
-                    Width: =400
-                    X: =399
-                    Y: =39
-                    ZIndex: =36
 
                 Label14 As label:
                     Height: =32
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.RiskCreateDate
-                    X: =249
+                    X: =353
                     Y: =36
                     ZIndex: =37
-
-                Label15 As label:
-                    Height: =116
-                    OnSelect: =Select(Parent)
-                    Text: =ThisItem.RiskDescribe
-                    VerticalAlign: =VerticalAlign.Top
-                    Width: =462
-                    X: =399
-                    Y: =140
-                    ZIndex: =38
 
                 Label17 As label:
                     Height: =32
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.RiskStatus
-                    X: =249
+                    X: =353
                     Y: =68
                     ZIndex: =39
 
@@ -279,26 +247,50 @@
                     Height: =32
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.RiskImportant
-                    X: =249
+                    X: =353
                     Y: =103
                     ZIndex: =40
 
                 Label17_2 As label:
-                    Height: =62
+                    Height: =34
                     OnSelect: =Select(Parent)
                     Text: =ThisItem.RiskOwner
                     VerticalAlign: =VerticalAlign.Top
-                    X: =249
-                    Y: =139
+                    Width: =396
+                    X: =871
+                    Y: =56
                     ZIndex: =41
 
                 Label17_3 As label:
                     Height: =32
                     OnSelect: =Select(Parent)
-                    Text: =ThisItem.RiskImportant
-                    X: =249
-                    Y: =202
+                    Text: =ThisItem.RiskName
+                    X: =893
+                    Y: =13
                     ZIndex: =42
+
+                Label17_8 As label:
+                    Height: =32
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.RiskGOPRank
+                    X: =915
+                    Y: =110
+                    ZIndex: =43
+
+                Label17_9 As label:
+                    Height: =32
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.RiskTHUANRank
+                    X: =915
+                    Y: =152
+                    ZIndex: =44
+
+            Rectangle5 As rectangle:
+                BorderThickness: =0.5
+                Height: =0
+                Width: =1366
+                Y: =200
+                ZIndex: =2
 
         DataCard2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)

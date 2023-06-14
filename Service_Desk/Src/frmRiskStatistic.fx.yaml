@@ -1000,7 +1000,7 @@
         Height: =42
         OnSelect: |-
             = UpdateContext({HidePeopleGallery:false, IsShowPeopleDetails: false})
-        Text: =SelectedPerson.RR_CSH
+        Text: =SelectedPerson.DisplayName
         Visible: =HidePeopleGallery
         Width: =153
         X: =161
@@ -1043,7 +1043,7 @@
             HoverFill: =GallerySelectedPerson.Fill
             Items: |
                 =If(!IsBlank(TextInputSearchPerson.Text), 
-                Search(Risks,Trim(TextInputSearchPerson.Text),"RR_CSH"))
+                Office365Users.SearchUser({searchTerm:Trim(TextInputSearchPerson.Text)}))
             Layout: =Layout.Vertical
             LoadingSpinnerColor: =GallerySelectedPerson.BorderColor
             OnSelect: |-
@@ -1076,7 +1076,7 @@
                 PressedFill: =LabelPersonDisplayName.Fill
                 Size: =10
                 TabIndex: =0
-                Text: =ThisItem.RR_CSH
+                Text: =ThisItem.DisplayName
                 Width: =335
                 ZIndex: =1
 

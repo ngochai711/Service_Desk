@@ -1328,7 +1328,7 @@
                 OnSelect: |-
                     =UpdateContext({varLBRiskOwner:false,
                     HidePeopleGallery:false})
-                Text: =SelectedOwner.RR_CSH
+                Text: =SelectedPerson
                 Visible: =varLBRiskOwner
                 Width: =312
                 X: =1004

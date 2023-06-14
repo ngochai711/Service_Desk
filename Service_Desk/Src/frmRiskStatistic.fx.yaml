@@ -357,16 +357,6 @@
                 Width: =4
                 ZIndex: =6
 
-            DatePicker2 As datepicker:
-                DefaultDate: =ThisItem.'NGAY TẠO'
-                DisplayMode: =DisplayMode.View
-                Format: ="dd/mm/yyyy"
-                InputTextPlaceholder: =ThisItem.'NGAY TẠO'
-                OnSelect: =Select(Parent)
-                X: =35
-                Y: =21
-                ZIndex: =7
-
             Label6 As label:
                 Height: =32
                 OnSelect: =Select(Parent)
@@ -375,6 +365,13 @@
                 X: =35
                 Y: =64
                 ZIndex: =8
+
+            Label7 As label:
+                OnSelect: =Select(Parent)
+                Text: =Text(DateValue(ThisItem.'NGAY TẠO',"vi-VN"),"dd/mm/yyyy")
+                X: =35
+                Y: =24
+                ZIndex: =9
 
         Label1_2 As label:
             Align: =Align.Center

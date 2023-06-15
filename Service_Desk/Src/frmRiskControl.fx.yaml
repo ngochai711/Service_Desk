@@ -1,4 +1,12 @@
 "frmRiskControl As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    OnVisible: |-
+        =Reset(CB_RiskImportant_1);
+        Reset(CB_RiskStatus_1);
+        Reset(CB_RiskStatus_2);
+        Reset(CB_RiskStatus_3);
+        Reset(CB_RiskStatus_4);
+        Reset(CB_RiskStatus_5);
+        UpdateContext({varRiskControlKey:Last(Risk_Control).KSRR_MA + 1})
 
     RectQuickActionBar2 As rectangle:
         Height: =88
@@ -297,16 +305,622 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =480
+            Height: =462
             Width: =1366
             X: =0
             Y: =1
             ZIndex: =2
 
+            HD_RiskID_3 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(92,92,92,1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =HD_RiskID_3.BorderColor
+                FontWeight: =FontWeight.Semibold
+                Height: =39
+                HoverBorderColor: =HD_RiskID_3.BorderColor
+                HoverColor: =HD_RiskID_3.Color
+                HoverFill: =HD_RiskID_3.Fill
+                PressedBorderColor: =HD_RiskID_3.BorderColor
+                PressedColor: =HD_RiskID_3.Color
+                PressedFill: =HD_RiskID_3.Fill
+                Text: ="Mã chốt kiểm soát"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =183
+                X: =98
+                Y: =10
+                ZIndex: =1
+
+            LB_RiskID_1 As text:
+                AccessibleLabel: ="Input ticket creator"
+                BorderColor: =RGBA(230,230,230,1)
+                Color: =RGBA(47, 41, 43, 1)
+                Default: =varRiskControlKey
+                DisabledBorderColor: =RGBA(159, 167, 165, 1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
+                DisplayMode: =DisplayMode.View
+                FocusedBorderColor: =LB_RiskID_1.BorderColor
+                FocusedBorderThickness: =3
+                Height: =37
+                HoverBorderColor: =LB_RiskID_1.BorderColor
+                HoverColor: =LB_RiskID_1.Color
+                HoverFill: =LB_RiskID_1.Fill
+                PressedBorderColor: =LB_RiskID_1.HoverBorderColor
+                PressedColor: =LB_RiskID_1.Color
+                PressedFill: =LB_RiskID_1.Fill
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Reset: =
+                Width: =183
+                X: =98
+                Y: =43
+                ZIndex: =2
+
+            HD_RiskStatus_3 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(92,92,92,1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =HD_RiskStatus_3.BorderColor
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                HoverBorderColor: =HD_RiskStatus_3.BorderColor
+                HoverColor: =HD_RiskStatus_3.Color
+                HoverFill: =HD_RiskStatus_3.Fill
+                PressedBorderColor: =HD_RiskStatus_3.BorderColor
+                PressedColor: =HD_RiskStatus_3.Color
+                PressedFill: =HD_RiskStatus_3.Fill
+                Text: ="Loại kiểm soát"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =161
+                X: =588
+                Y: =110
+                ZIndex: =3
+
+            HD_RiskRecordDate_3 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(92,92,92,1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =HD_RiskRecordDate_3.BorderColor
+                FontWeight: =FontWeight.Semibold
+                Height: =35
+                HoverBorderColor: =HD_RiskRecordDate_3.BorderColor
+                HoverColor: =HD_RiskRecordDate_3.Color
+                HoverFill: =HD_RiskRecordDate_3.Fill
+                PressedBorderColor: =HD_RiskRecordDate_3.BorderColor
+                PressedColor: =HD_RiskRecordDate_3.Color
+                PressedFill: =HD_RiskRecordDate_3.Fill
+                Text: ="Ngày tạo chốt kiểm soát"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =217
+                X: =332
+                Y: =10
+                ZIndex: =4
+
+            DP_RiskRecordDate_1 As datepicker:
+                BorderColor: =RGBA(219, 219, 219, 1)
+                ContentLanguage: ="vn-VN"
+                Format: ="dd/mm/yyyy"
+                Height: =38
+                IconBackground: =
+                IconFill: =
+                Width: =217
+                X: =332
+                Y: =45
+                ZIndex: =5
+
+            HD_RiskImportant_3 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(92,92,92,1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =HD_RiskImportant_3.BorderColor
+                FontWeight: =FontWeight.Semibold
+                Height: =35
+                HoverBorderColor: =HD_RiskImportant_3.BorderColor
+                HoverColor: =HD_RiskImportant_3.Color
+                HoverFill: =HD_RiskImportant_3.Fill
+                PressedBorderColor: =HD_RiskImportant_3.BorderColor
+                PressedColor: =HD_RiskImportant_3.Color
+                PressedFill: =HD_RiskImportant_3.Fill
+                Text: ="Kiểm soát chính"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =149
+                X: =986
+                Y: =7
+                ZIndex: =6
+
+            HD_RiskName_3 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(92,92,92,1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =HD_RiskName_3.BorderColor
+                FontWeight: =FontWeight.Semibold
+                Height: =36
+                HoverBorderColor: =HD_RiskName_3.BorderColor
+                HoverColor: =HD_RiskName_3.Color
+                HoverFill: =HD_RiskName_3.Fill
+                PressedBorderColor: =HD_RiskName_3.BorderColor
+                PressedColor: =HD_RiskName_3.Color
+                PressedFill: =HD_RiskName_3.Fill
+                Text: ="Nội dung chốt kiểm soát"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =225
+                X: =98
+                Y: =98
+                ZIndex: =7
+
+            TIn_RiskName_1 As text:
+                AccessibleLabel: ="Input ticket creator"
+                BorderColor: =RGBA(230,230,230,1)
+                Color: =RGBA(47, 41, 43, 1)
+                Default: =
+                DisabledBorderColor: =RGBA(159, 167, 165, 1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
+                DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
+                FocusedBorderColor: =TIn_RiskName_1.BorderColor
+                FocusedBorderThickness: =3
+                Height: =80
+                HoverBorderColor: =TIn_RiskName_1.BorderColor
+                HoverColor: =TIn_RiskName_1.Color
+                HoverFill: =TIn_RiskName_1.Fill
+                Mode: =TextMode.MultiLine
+                PressedBorderColor: =TIn_RiskName_1.HoverBorderColor
+                PressedColor: =TIn_RiskName_1.Color
+                PressedFill: =TIn_RiskName_1.Fill
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Reset: =
+                Width: =451
+                X: =98
+                Y: =139
+                ZIndex: =8
+
+            HD_RiskDescribe_3 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(92,92,92,1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =HD_RiskDescribe_3.BorderColor
+                FontWeight: =FontWeight.Semibold
+                Height: =35
+                HoverBorderColor: =HD_RiskDescribe_3.BorderColor
+                HoverColor: =HD_RiskDescribe_3.Color
+                HoverFill: =HD_RiskDescribe_3.Fill
+                PressedBorderColor: =HD_RiskDescribe_3.BorderColor
+                PressedColor: =HD_RiskDescribe_3.Color
+                PressedFill: =HD_RiskDescribe_3.Fill
+                Text: ="Cơ sở đánh giá chốt kiểm soát"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =264
+                X: =98
+                Y: =298
+                ZIndex: =9
+
+            TIn_RiskDescribe_1 As text:
+                AccessibleLabel: ="Input ticket creator"
+                BorderColor: =RGBA(230,230,230,1)
+                Color: =RGBA(47, 41, 43, 1)
+                Default: =
+                DisabledBorderColor: =RGBA(159, 167, 165, 1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
+                DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
+                FocusedBorderColor: =TIn_RiskDescribe_1.BorderColor
+                FocusedBorderThickness: =3
+                Height: =85
+                HoverBorderColor: =TIn_RiskDescribe_1.BorderColor
+                HoverColor: =TIn_RiskDescribe_1.Color
+                HoverFill: =TIn_RiskDescribe_1.Fill
+                Mode: =TextMode.MultiLine
+                PressedBorderColor: =TIn_RiskDescribe_1.HoverBorderColor
+                PressedColor: =TIn_RiskDescribe_1.Color
+                PressedFill: =TIn_RiskDescribe_1.Fill
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Reset: =
+                Width: =451
+                X: =98
+                Y: =331
+                ZIndex: =10
+
+            HD_RiskReason_3 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(92,92,92,1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =HD_RiskReason_3.BorderColor
+                FontWeight: =FontWeight.Semibold
+                Height: =35
+                HoverBorderColor: =HD_RiskReason_3.BorderColor
+                HoverColor: =HD_RiskReason_3.Color
+                HoverFill: =HD_RiskReason_3.Fill
+                PressedBorderColor: =HD_RiskReason_3.BorderColor
+                PressedColor: =HD_RiskReason_3.Color
+                PressedFill: =HD_RiskReason_3.Fill
+                Text: ="Cơ sở đánh giá chốt kiểm soát tổng thể"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =347
+                X: =643
+                Y: =298
+                ZIndex: =11
+
+            TIn_RiskReason_1 As text:
+                AccessibleLabel: ="Input ticket creator"
+                BorderColor: =RGBA(230,230,230,1)
+                Color: =RGBA(47, 41, 43, 1)
+                Default: =
+                DisabledBorderColor: =RGBA(159, 167, 165, 1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
+                DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
+                FocusedBorderColor: =TIn_RiskReason_1.BorderColor
+                FocusedBorderThickness: =3
+                Height: =74
+                HoverBorderColor: =TIn_RiskReason_1.BorderColor
+                HoverColor: =TIn_RiskReason_1.Color
+                HoverFill: =TIn_RiskReason_1.Fill
+                Mode: =TextMode.MultiLine
+                PressedBorderColor: =TIn_RiskReason_1.HoverBorderColor
+                PressedColor: =TIn_RiskReason_1.Color
+                PressedFill: =TIn_RiskReason_1.Fill
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Reset: =
+                Width: =503
+                X: =645
+                Y: =333
+                ZIndex: =12
+
+            CB_RiskStatus_1 As combobox:
+                BorderColor: =RGBA(219, 219, 219, 1)
+                ChevronBackground: =RGBA(255, 255, 255, 1)
+                ChevronFill: =RGBA(219, 219, 219, 1)
+                DefaultSelectedItems: =["Tự động"]
+                DisplayFields: =["Value"]
+                Height: =37
+                HoverFill: =
+                IsSearchable: =false
+                Items: |-
+                    =Table({Value:"Tự động",Index:1},
+                    {Value:"Thủ công",Index:2})
+                OnChange: =
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectMultiple: =false
+                Width: =158
+                X: =589
+                Y: =143
+                ZIndex: =14
+
+            CB_RiskImportant_1 As combobox:
+                BorderColor: =RGBA(219, 219, 219, 1)
+                ChevronBackground: =RGBA(255, 255, 255, 1)
+                ChevronFill: =RGBA(219, 219, 219, 1)
+                DefaultSelectedItems: =["Có"]
+                DisplayFields: =["Value"]
+                Height: =38
+                HoverFill: =
+                IsSearchable: =false
+                Items: |-
+                    =Table({Value:"Có",Index:1},
+                    {Value:"Không",Index:2})
+                OnChange: =
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectMultiple: =false
+                Width: =149
+                X: =986
+                Y: =42
+                ZIndex: =15
+
+            HD_RiskStatus_4 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(92,92,92,1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =HD_RiskStatus_4.BorderColor
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                HoverBorderColor: =HD_RiskStatus_4.BorderColor
+                HoverColor: =HD_RiskStatus_4.Color
+                HoverFill: =HD_RiskStatus_4.Fill
+                PressedBorderColor: =HD_RiskStatus_4.BorderColor
+                PressedColor: =HD_RiskStatus_4.Color
+                PressedFill: =HD_RiskStatus_4.Fill
+                Text: ="Tần suất kiểm soát"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =178
+                X: =785
+                Y: =110
+                ZIndex: =19
+
+            Group1 As group:
+                Height: =5
+                Width: =5
+                X: =60
+                Y: =60
+                ZIndex: =19
+
+                HD_RiskOwner_3 As label:
+                    BorderColor: =RGBA(0, 0, 0, 1)
+                    Color: =RGBA(92,92,92,1)
+                    DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                    FocusedBorderColor: =HD_RiskOwner_3.BorderColor
+                    FontWeight: =FontWeight.Semibold
+                    Height: =35
+                    HoverBorderColor: =HD_RiskOwner_3.BorderColor
+                    HoverColor: =HD_RiskOwner_3.Color
+                    HoverFill: =HD_RiskOwner_3.Fill
+                    PressedBorderColor: =HD_RiskOwner_3.BorderColor
+                    PressedColor: =HD_RiskOwner_3.Color
+                    PressedFill: =HD_RiskOwner_3.Fill
+                    Text: ="Chủ sở hữu rủi ro"
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =198
+                    X: =588
+                    Y: =10
+                    ZIndex: =13
+
+                TIn_RiskOwner_1 As text:
+                    AccessibleLabel: ="Input ticket creator"
+                    BorderColor: =RGBA(230,230,230,1)
+                    Color: =RGBA(47, 41, 43, 1)
+                    Default: =
+                    DisabledBorderColor: =RGBA(159, 167, 165, 1)
+                    DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                    DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
+                    DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
+                    FocusedBorderColor: =TIn_RiskOwner_1.BorderColor
+                    FocusedBorderThickness: =3
+                    Height: =37
+                    HoverBorderColor: =TIn_RiskOwner_1.BorderColor
+                    HoverColor: =TIn_RiskOwner_1.Color
+                    HoverFill: =TIn_RiskOwner_1.Fill
+                    OnChange: =false 
+                    PressedBorderColor: =TIn_RiskOwner_1.HoverBorderColor
+                    PressedColor: =TIn_RiskOwner_1.Color
+                    PressedFill: =TIn_RiskOwner_1.Fill
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Reset: =
+                    Width: =356
+                    X: =588
+                    Y: =45
+                    ZIndex: =16
+
+                LB_RiskOwner_1 As label:
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =25
+                    OnSelect: |-
+                        =UpdateContext({varLBRiskControlOwner:false,
+                        HidePeopleGallery1:false})
+                    Text: =SelectedRCOwner.DisplayName
+                    Visible: =varLBRiskControlOwner
+                    Width: =347
+                    X: =592
+                    Y: =52
+                    ZIndex: =17
+
+                Gal_RiskSelecttOwner_1 As gallery.galleryVertical:
+                    AccessibleLabel: ="People for selection"
+                    BorderColor: =RGBA(0, 0, 0, 0.16)
+                    BorderThickness: =1
+                    DisabledBorderColor: =Gal_RiskSelecttOwner_1.BorderColor
+                    DisabledFill: =Gal_RiskSelecttOwner_1.Fill
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =250
+                    HoverBorderColor: =Gal_RiskSelecttOwner_1.BorderColor
+                    HoverFill: =Gal_RiskSelecttOwner_1.Fill
+                    Items: |
+                        =If(!IsBlank(TIn_RiskOwner_1.Text), 
+                        Office365Users.SearchUser({searchTerm:Trim(TIn_RiskOwner_1.Text)}))
+                    Layout: =Layout.Vertical
+                    LoadingSpinnerColor: =Gal_RiskSelecttOwner_1.BorderColor
+                    OnSelect: |-
+                        = UpdateContext({SelectedRCOwner:ThisItem, HidePeopleGallery1:true, 
+                        varLBRiskControlOwner: true})
+                    PressedBorderColor: =Gal_RiskSelecttOwner_1.BorderColor
+                    PressedFill: =Gal_RiskSelecttOwner_1.Fill
+                    TemplateSize: =53
+                    Visible: |-
+                        =Not(IsBlank(TIn_RiskOwner_1)) &&
+                        !HidePeopleGallery1
+                    Width: =356
+                    X: =588
+                    Y: =98
+                    ZIndex: =18
+
+                    LabelPersonDisplayName_2 As label:
+                        BorderColor: =RGBA(101, 128, 187, 1)
+                        FocusedBorderColor: =LabelPersonDisplayName_2.BorderColor
+                        Font: =Font.'Segoe UI'
+                        Height: =53
+                        HoverBorderColor: =LabelPersonDisplayName_2.BorderColor
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =RGBA(244, 244, 244, 1)
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =15
+                        PaddingLeft: =20
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        PressedBorderColor: =LabelPersonDisplayName_2.BorderColor
+                        PressedColor: =LabelPersonDisplayName_2.Color
+                        PressedFill: =LabelPersonDisplayName_2.Fill
+                        Size: =10
+                        TabIndex: =0
+                        Text: =ThisItem.DisplayName
+                        Width: =310
+                        ZIndex: =1
+
+            CB_RiskStatus_2 As combobox:
+                BorderColor: =RGBA(219, 219, 219, 1)
+                ChevronBackground: =RGBA(255, 255, 255, 1)
+                ChevronFill: =RGBA(219, 219, 219, 1)
+                DefaultSelectedItems: =["Hàng ngày"]
+                DisplayFields: =["Value"]
+                Height: =37
+                HoverFill: =
+                IsSearchable: =false
+                Items: |-
+                    =Table({Value:"Hàng ngày",Index:1},
+                    {Value:"Hàng tuần",Index:2},
+                    {Value:"Hàng tháng",Index:3},
+                    {Value:"Hàng quý",Index:4},
+                    {Value:"Hàng năm",Index:5},
+                    {Value:"Khi phát sinh",Index:6})
+                OnChange: =
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectMultiple: =false
+                Width: =158
+                X: =786
+                Y: =143
+                ZIndex: =20
+
+            HD_RiskStatus_5 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(92,92,92,1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =HD_RiskStatus_5.BorderColor
+                FontWeight: =FontWeight.Semibold
+                Height: =33
+                HoverBorderColor: =HD_RiskStatus_5.BorderColor
+                HoverColor: =HD_RiskStatus_5.Color
+                HoverFill: =HD_RiskStatus_5.Fill
+                PressedBorderColor: =HD_RiskStatus_5.BorderColor
+                PressedColor: =HD_RiskStatus_5.Color
+                PressedFill: =HD_RiskStatus_5.Fill
+                Text: ="Phân loại chốt kiểm soát"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =232
+                X: =986
+                Y: =110
+                ZIndex: =21
+
+            CB_RiskStatus_3 As combobox:
+                BorderColor: =RGBA(219, 219, 219, 1)
+                ChevronBackground: =RGBA(255, 255, 255, 1)
+                ChevronFill: =RGBA(219, 219, 219, 1)
+                DefaultSelectedItems: =["Phòng ngừa"]
+                DisplayFields: =["Value"]
+                Height: =37
+                HoverFill: =
+                IsSearchable: =false
+                Items: |-
+                    =Table({Value:"Phòng ngừa",Index:1},
+                    {Value:"Phát hiện",Index:2},
+                    {Value:"Sửa chữa",Index:3})
+                OnChange: =
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectMultiple: =false
+                Width: =158
+                X: =990
+                Y: =143
+                ZIndex: =22
+
+            HD_RiskStatus_6 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(92,92,92,1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =HD_RiskStatus_6.BorderColor
+                FontWeight: =FontWeight.Semibold
+                Height: =32
+                HoverBorderColor: =HD_RiskStatus_6.BorderColor
+                HoverColor: =HD_RiskStatus_6.Color
+                HoverFill: =HD_RiskStatus_6.Fill
+                PressedBorderColor: =HD_RiskStatus_6.BorderColor
+                PressedColor: =HD_RiskStatus_6.Color
+                PressedFill: =HD_RiskStatus_6.Fill
+                Text: ="Đánh giá chốt kiểm soát"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =221
+                X: =98
+                Y: =243
+                ZIndex: =23
+
+            CB_RiskStatus_4 As combobox:
+                BorderColor: =RGBA(219, 219, 219, 1)
+                ChevronBackground: =RGBA(255, 255, 255, 1)
+                ChevronFill: =RGBA(219, 219, 219, 1)
+                DefaultSelectedItems: =["Không hiệu quả"]
+                DisplayFields: =["Value"]
+                Height: =37
+                HoverFill: =
+                IsSearchable: =false
+                Items: |-
+                    =Table({Value:"Không hiệu quả",Index:1},
+                    {Value:"Hiệu quả một phần",Index:2},
+                    {Value:"Hiệu quả",Index:3})
+                OnChange: =
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectMultiple: =false
+                Width: =210
+                X: =339
+                Y: =243
+                ZIndex: =24
+
+            HD_RiskStatus_7 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(92,92,92,1)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =HD_RiskStatus_7.BorderColor
+                FontWeight: =FontWeight.Semibold
+                Height: =33
+                HoverBorderColor: =HD_RiskStatus_7.BorderColor
+                HoverColor: =HD_RiskStatus_7.Color
+                HoverFill: =HD_RiskStatus_7.Fill
+                PressedBorderColor: =HD_RiskStatus_7.BorderColor
+                PressedColor: =HD_RiskStatus_7.Color
+                PressedFill: =HD_RiskStatus_7.Fill
+                Text: ="Đánh giá chốt kiểm soát tổng thể"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =301
+                X: =643
+                Y: =247
+                ZIndex: =25
+
+            CB_RiskStatus_5 As combobox:
+                BorderColor: =RGBA(219, 219, 219, 1)
+                ChevronBackground: =RGBA(255, 255, 255, 1)
+                ChevronFill: =RGBA(219, 219, 219, 1)
+                DefaultSelectedItems: =["Không hiệu quả"]
+                DisplayFields: =["Value"]
+                Height: =33
+                HoverFill: =
+                IsSearchable: =false
+                Items: |-
+                    =Table({Value:"Không hiệu quả",Index:1},
+                    {Value:"Hiệu quả một phần",Index:2},
+                    {Value:"Hiệu quả",Index:3})
+                OnChange: =
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectMultiple: =false
+                Width: =201
+                X: =947
+                Y: =247
+                ZIndex: =26
+
     RiskAdd_1 As label:
         Color: =RGBA(255, 255, 255, 1)
         Height: =85
-        OnSelect: =
+        OnSelect: |-
+            =If(IsBlank(LB_RiskOwner_1) || IsBlank(TIn_RiskReason_1) || IsBlank(TIn_RiskDescribe_1) || IsBlank(TIn_RiskName_1),
+            UpdateContext({varTemp2:false}),
+            Patch(Risk_Control,Defaults(Risk_Control),{KSRR_MA: varRiskControlKey,KS_HIENCO:TIn_RiskName_1.Text,'NGAY TẠO':Text(DP_RiskRecordDate_1.SelectedDate,"dd/mm/yyyy"),KS_CHINH: CB_RiskImportant_1.Selected.Value,CSH:LB_RiskOwner_1.Text,KS_LOAI:CB_RiskStatus_1.Selected.Value,KS_TANSUAT:CB_RiskStatus_2.Selected.Value,KS:CB_RiskStatus_3.Selected.Value,KS_DANHGIA:CB_RiskStatus_4.Selected.Value, KS_COSODG:TIn_RiskDescribe_1.Text,KS_COSO_TONGTHE:CB_RiskStatus_5.Selected.Value,KS_COSO_MOTA:TIn_RiskReason_1.Text})
+            );
+            
+            Navigate(frmRiskStatistic,ScreenTransition.Fade)
         Size: =20
         Text: ="Lưu"
         Width: =91

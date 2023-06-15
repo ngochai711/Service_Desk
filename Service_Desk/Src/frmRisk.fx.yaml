@@ -1328,7 +1328,7 @@
                 OnSelect: |-
                     =UpdateContext({varLBRiskOwner:false,
                     HidePeopleGallery:false})
-                Text: =SelectedPerson
+                Text: =SelectedOwner.DisplayName
                 Visible: =varLBRiskOwner
                 Width: =312
                 X: =1004
@@ -1347,7 +1347,7 @@
                 HoverFill: =Gal_RiskSelecttOwner.Fill
                 Items: |
                     =If(!IsBlank(TIn_RiskOwner.Text), 
-                    Search(Risks,Trim(TIn_RiskOwner.Text),"RR_CSH"))
+                    Office365Users.SearchUser({searchTerm:Trim(TIn_RiskOwner.Text)}))
                 Layout: =Layout.Vertical
                 LoadingSpinnerColor: =Gal_RiskSelecttOwner.BorderColor
                 OnSelect: |-
@@ -1382,7 +1382,7 @@
                     PressedFill: =LabelPersonDisplayName_1.Fill
                     Size: =10
                     TabIndex: =0
-                    Text: =ThisItem.RR_CSH
+                    Text: =ThisItem.DisplayName
                     Width: =335
                     ZIndex: =1
 
@@ -1392,7 +1392,7 @@
         OnSelect: |-
             =If(IsBlank(TIn_RiskOwner) || IsBlank(TIn_RiskName) || IsBlank(TIn_RiskDescribe) || IsBlank(TIn_RiskReason) || IsBlank(TIn_RiskConsequence) || IsBlank(TIn_RG_Evaluate) || IsBlank(TIn_RT_RiskEvaluate),
             UpdateContext({varTemp2:false}),
-            Patch(Risks,Defaults(Risks),{RR_MA:varRiskKey,RR_TRANGTHAI:CB_RiskStatus.Selected.Value,'NGAY TẠO':Text(DP_RiskRecordDate.SelectedDate,"dd/mm/yyyy"),RR_TRONGYEU:CB_RiskImportant.Selected.Value,RR_TEN:TIn_RiskName.Text,RR_MOTA:TIn_RiskDescribe.Text,RR_NGUYENNHAN:TIn_RiskReason.Text,RR_HAUQUA:TIn_RiskConsequence.Text,RR_CSH:SelectedOwner.RR_CSH,RR_GOP_TAICHINH:CB_RG_Finance.Selected.Value,RR_GOP_PHITAICHINH:CB_RG_nonFinance.Selected.Value,RR_GOP_TONGTHE:LB_RG_RiskOverall.Text,RR_GOP_KHANANGXAYRA:CB_RG_RiskRate.Selected.Value,RR_GOP_DIEM:2,RR_GOP_XEPHANG:LB_RG_RiskRank.Text,RR_GOP_CSDANHGIA:TIn_RG_Evaluate.Text,RR_THUAN_TAICHINH:CB_RT_Finance.Selected.Value,RR_THUAN_PHITAICHINH:CB_RT_nonFinance.Selected.Value,RR_THUAN_TONGTHE:LB_RT_RiskOverall.Text,RR_THUAN_KHANANGXAYRA:CB_RG_RiskRate.Selected.Value,RR_THUAN_DIEM:2,RR_THUAN_XEPHANG:LB_RT_RiskRank.Text,RR_THUAN_CSDANHGIA:TIn_RT_RiskEvaluate.Text})
+            Patch(Risks,Defaults(Risks),{RR_MA:varRiskKey,RR_TRANGTHAI:CB_RiskStatus.Selected.Value,'NGAY TẠO':Text(DP_RiskRecordDate.SelectedDate,"dd/mm/yyyy"),RR_TRONGYEU:CB_RiskImportant.Selected.Value,RR_TEN:TIn_RiskName.Text,RR_MOTA:TIn_RiskDescribe.Text,RR_NGUYENNHAN:TIn_RiskReason.Text,RR_HAUQUA:TIn_RiskConsequence.Text,RR_CSH:SelectedOwner.DisplayName,RR_GOP_TAICHINH:CB_RG_Finance.Selected.Value,RR_GOP_PHITAICHINH:CB_RG_nonFinance.Selected.Value,RR_GOP_TONGTHE:LB_RG_RiskOverall.Text,RR_GOP_KHANANGXAYRA:CB_RG_RiskRate.Selected.Value,RR_GOP_DIEM:CB_RG_RiskRate.Selected.Index&"-"&varRiskGOPOverall_Index,RR_GOP_XEPHANG:LB_RG_RiskRank.Text,RR_GOP_CSDANHGIA:TIn_RG_Evaluate.Text,RR_THUAN_TAICHINH:CB_RT_Finance.Selected.Value,RR_THUAN_PHITAICHINH:CB_RT_nonFinance.Selected.Value,RR_THUAN_TONGTHE:LB_RT_RiskOverall.Text,RR_THUAN_KHANANGXAYRA:CB_RG_RiskRate.Selected.Value,RR_THUAN_DIEM:CB_RT_RiskRate.Selected.Index&"-"&varRiskTHUANOverall_Index,RR_THUAN_XEPHANG:LB_RT_RiskRank.Text,RR_THUAN_CSDANHGIA:TIn_RT_RiskEvaluate.Text}); Patch(Risk_Connection,{R_ID:varRiskKey,RC_ID:"",RS_ID:""})
             );
             
             Navigate(frmRiskStatistic,ScreenTransition.Fade)

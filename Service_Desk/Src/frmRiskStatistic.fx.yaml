@@ -419,7 +419,7 @@
         "Gallery1_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
             Height: =454
-            Items: =Risk_Control
+            Items: =Filter(Risk_Control,KSRR_MA=LookUp(Risk_Connection,R_ID=Gallery1.Selected.RR_MA))
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0

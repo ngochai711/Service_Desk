@@ -21,6 +21,20 @@
     "dependents": [],
     "id": "1802da10-ad39-462c-a969-60fb5823496f"
   },
+  "88c1ac81-89e0-4ad5-9744-f9073c9503d6": {
+    "connectionRef": {
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/laborbol/partial-builds/390724148/1.0.1641.3326/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "88c1ac81-89e0-4ad5-9744-f9073c9503d6"
+  },
   "8b9b6a0b-05de-4a43-a8f1-d3ee4ba6a368": {
     "connectionRef": {
       "displayName": "Excel Online (Business)",

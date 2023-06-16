@@ -1271,8 +1271,7 @@
                 RadiusTopRight: =0
                 Reset: =
                 Width: =1193
-                X: =83
-                Y: =1245
+                Y: =1256
                 ZIndex: =53
 
             CB_RiskStatus As combobox:

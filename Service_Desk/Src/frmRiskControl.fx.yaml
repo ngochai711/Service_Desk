@@ -328,7 +328,7 @@
                 VerticalAlign: =VerticalAlign.Top
                 Width: =183
                 X: =98
-                Y: =10
+                Y: =20
                 ZIndex: =1
 
             LB_RiskID_1 As text:
@@ -356,7 +356,7 @@
                 Reset: =
                 Width: =183
                 X: =98
-                Y: =43
+                Y: =53
                 ZIndex: =2
 
             HD_RiskStatus_3 As label:
@@ -376,7 +376,7 @@
                 VerticalAlign: =VerticalAlign.Top
                 Width: =161
                 X: =588
-                Y: =110
+                Y: =120
                 ZIndex: =3
 
             HD_RiskRecordDate_3 As label:
@@ -396,7 +396,7 @@
                 VerticalAlign: =VerticalAlign.Top
                 Width: =217
                 X: =332
-                Y: =10
+                Y: =20
                 ZIndex: =4
 
             DP_RiskRecordDate_1 As datepicker:
@@ -408,7 +408,7 @@
                 IconFill: =
                 Width: =217
                 X: =332
-                Y: =45
+                Y: =55
                 ZIndex: =5
 
             HD_RiskImportant_3 As label:
@@ -428,7 +428,7 @@
                 VerticalAlign: =VerticalAlign.Top
                 Width: =149
                 X: =986
-                Y: =7
+                Y: =17
                 ZIndex: =6
 
             HD_RiskName_3 As label:
@@ -448,7 +448,7 @@
                 VerticalAlign: =VerticalAlign.Top
                 Width: =225
                 X: =98
-                Y: =98
+                Y: =108
                 ZIndex: =7
 
             TIn_RiskName_1 As text:
@@ -477,7 +477,7 @@
                 Reset: =
                 Width: =451
                 X: =98
-                Y: =139
+                Y: =149
                 ZIndex: =8
 
             HD_RiskDescribe_3 As label:
@@ -497,7 +497,7 @@
                 VerticalAlign: =VerticalAlign.Top
                 Width: =264
                 X: =98
-                Y: =298
+                Y: =308
                 ZIndex: =9
 
             TIn_RiskDescribe_1 As text:
@@ -526,7 +526,7 @@
                 Reset: =
                 Width: =451
                 X: =98
-                Y: =331
+                Y: =341
                 ZIndex: =10
 
             HD_RiskReason_3 As label:
@@ -546,7 +546,7 @@
                 VerticalAlign: =VerticalAlign.Top
                 Width: =347
                 X: =643
-                Y: =298
+                Y: =308
                 ZIndex: =11
 
             TIn_RiskReason_1 As text:
@@ -575,7 +575,7 @@
                 Reset: =
                 Width: =503
                 X: =645
-                Y: =333
+                Y: =343
                 ZIndex: =12
 
             CB_RiskStatus_1 As combobox:
@@ -596,7 +596,7 @@
                 SelectMultiple: =false
                 Width: =158
                 X: =589
-                Y: =143
+                Y: =153
                 ZIndex: =14
 
             CB_RiskImportant_1 As combobox:
@@ -617,7 +617,7 @@
                 SelectMultiple: =false
                 Width: =149
                 X: =986
-                Y: =42
+                Y: =52
                 ZIndex: =15
 
             HD_RiskStatus_4 As label:
@@ -637,7 +637,7 @@
                 VerticalAlign: =VerticalAlign.Top
                 Width: =178
                 X: =785
-                Y: =110
+                Y: =120
                 ZIndex: =19
 
             Group1 As group:
@@ -664,7 +664,7 @@
                     VerticalAlign: =VerticalAlign.Top
                     Width: =198
                     X: =588
-                    Y: =10
+                    Y: =20
                     ZIndex: =13
 
                 TIn_RiskOwner_1 As text:
@@ -693,7 +693,7 @@
                     Reset: =
                     Width: =356
                     X: =588
-                    Y: =45
+                    Y: =55
                     ZIndex: =16
 
                 LB_RiskOwner_1 As label:
@@ -706,7 +706,7 @@
                     Visible: =varLBRiskControlOwner
                     Width: =347
                     X: =592
-                    Y: =52
+                    Y: =62
                     ZIndex: =17
 
                 Gal_RiskSelecttOwner_1 As gallery.galleryVertical:
@@ -735,7 +735,7 @@
                         !HidePeopleGallery1
                     Width: =356
                     X: =588
-                    Y: =98
+                    Y: =108
                     ZIndex: =18
 
                     LabelPersonDisplayName_2 As label:
@@ -782,7 +782,7 @@
                 SelectMultiple: =false
                 Width: =158
                 X: =786
-                Y: =143
+                Y: =153
                 ZIndex: =20
 
             HD_RiskStatus_5 As label:
@@ -802,7 +802,7 @@
                 VerticalAlign: =VerticalAlign.Top
                 Width: =232
                 X: =986
-                Y: =110
+                Y: =120
                 ZIndex: =21
 
             CB_RiskStatus_3 As combobox:
@@ -824,7 +824,7 @@
                 SelectMultiple: =false
                 Width: =158
                 X: =990
-                Y: =143
+                Y: =153
                 ZIndex: =22
 
             HD_RiskStatus_6 As label:
@@ -844,7 +844,7 @@
                 VerticalAlign: =VerticalAlign.Top
                 Width: =221
                 X: =98
-                Y: =243
+                Y: =253
                 ZIndex: =23
 
             CB_RiskStatus_4 As combobox:
@@ -866,7 +866,7 @@
                 SelectMultiple: =false
                 Width: =210
                 X: =339
-                Y: =243
+                Y: =253
                 ZIndex: =24
 
             HD_RiskStatus_7 As label:
@@ -886,7 +886,7 @@
                 VerticalAlign: =VerticalAlign.Top
                 Width: =301
                 X: =643
-                Y: =247
+                Y: =257
                 ZIndex: =25
 
             CB_RiskStatus_5 As combobox:
@@ -908,7 +908,7 @@
                 SelectMultiple: =false
                 Width: =201
                 X: =947
-                Y: =247
+                Y: =257
                 ZIndex: =26
 
     RiskAdd_1 As label:

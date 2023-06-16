@@ -130,7 +130,6 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "frmMain",
     "frmRiskStatistic",
     "frmRisk",
     "frmRiskControl",

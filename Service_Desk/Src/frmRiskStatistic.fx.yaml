@@ -953,6 +953,7 @@
             Height: =88
             Image: ='Logo PNJ_v2'
             Width: =138
+            X: =30
             ZIndex: =21
 
     Group4 As group:

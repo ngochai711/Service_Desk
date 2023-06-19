@@ -1914,7 +1914,14 @@
         "X",
         "Y",
         "Width",
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisplayMode",
         "ZIndex",
         "BorderThickness",
@@ -1964,7 +1971,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CB_RiskImportant",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2301,7 +2308,14 @@
         "X",
         "Y",
         "Width",
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisplayMode",
         "ZIndex",
         "BorderThickness",
@@ -2351,7 +2365,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CB_RiskStatus",
-      "ParentIndex": 12,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3850,7 +3864,14 @@
         "Color",
         "DisabledColor",
         "Width",
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "X",
         "Y",
         "DisplayMode",
@@ -3889,7 +3910,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DP_RiskRecordDate",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4317,7 +4338,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gal_RiskSelecttOwner",
-      "ParentIndex": 17,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4555,7 +4576,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery3",
-      "ParentIndex": 0,
+      "ParentIndex": 21,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7058,7 +7079,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HD_RiskConsequence",
-      "ParentIndex": 20,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7361,7 +7382,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HD_RiskDescribe",
-      "ParentIndex": 15,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7664,7 +7685,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HD_RiskID",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7967,7 +7988,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HD_RiskImportant",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8270,7 +8291,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HD_RiskName",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8573,7 +8594,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HD_RiskOwner",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8876,7 +8897,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HD_RiskReason",
-      "ParentIndex": 16,
+      "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9179,7 +9200,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HD_RiskRecordDate",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9482,7 +9503,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HD_RiskStatus",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12620,7 +12641,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14226,7 +14247,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LB_RiskID",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14544,7 +14565,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LB_RiskOwner",
-      "ParentIndex": 14,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16878,11 +16899,11 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
           "InvariantPropertyName": "Height",
           "IsLockable": false,
-          "NameMapSourceSchema": "*[]"
+          "NameMapSourceSchema": "?"
         },
         {
           "AFDDataSourceName": "",
@@ -16895,10 +16916,10 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "320",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "Width",
           "IsLockable": false,
-          "NameMapSourceSchema": "*[]"
+          "NameMapSourceSchema": "?"
         },
         {
           "AFDDataSourceName": "",
@@ -16966,7 +16987,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TIn_RiskConsequence",
-      "ParentIndex": 21,
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17331,10 +17352,10 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "320",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "Width",
           "IsLockable": false,
-          "NameMapSourceSchema": "*[]"
+          "NameMapSourceSchema": "?"
         },
         {
           "AFDDataSourceName": "",
@@ -17352,7 +17373,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "*[]"
         },
-        "Align",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Align",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "BorderStyle",
         {
           "AFDDataSourceName": "",
@@ -17403,7 +17431,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TIn_RiskDescribe",
-      "ParentIndex": 18,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17756,11 +17784,11 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
           "InvariantPropertyName": "Height",
           "IsLockable": false,
-          "NameMapSourceSchema": "*[]"
+          "NameMapSourceSchema": "?"
         },
         {
           "AFDDataSourceName": "",
@@ -17837,7 +17865,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TIn_RiskName",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -18185,11 +18213,11 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
           "InvariantPropertyName": "Height",
           "IsLockable": false,
-          "NameMapSourceSchema": "*[]"
+          "NameMapSourceSchema": "?"
         },
         {
           "AFDDataSourceName": "",
@@ -18277,7 +18305,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TIn_RiskOwner",
-      "ParentIndex": 13,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -18645,11 +18673,11 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
           "InvariantPropertyName": "Height",
           "IsLockable": false,
-          "NameMapSourceSchema": "*[]"
+          "NameMapSourceSchema": "?"
         },
         {
           "AFDDataSourceName": "",
@@ -18733,7 +18761,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TIn_RiskReason",
-      "ParentIndex": 19,
+      "ParentIndex": 20,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

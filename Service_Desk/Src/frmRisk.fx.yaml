@@ -35,7 +35,7 @@
         Height: =679
         Width: =Parent.Width
         Y: =89
-        ZIndex: =16
+        ZIndex: =1
 
         DataCard3_1 As dataCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -1282,7 +1282,7 @@
         Height: =88
         Width: =Parent.Width
         Y: =1
-        ZIndex: =17
+        ZIndex: =2
 
     LblAppName2_3 As label:
         Align: =Align.Center
@@ -1294,7 +1294,7 @@
         Text: ="RỦI RO"
         Width: =Parent.Width
         Y: =1
-        ZIndex: =18
+        ZIndex: =3
 
     Image2_1 As image:
         Height: =88
@@ -1302,7 +1302,7 @@
         Width: =138
         X: =93
         Y: =1
-        ZIndex: =21
+        ZIndex: =5
 
     Button1 As button:
         BorderStyle: =BorderStyle.None
@@ -1318,7 +1318,7 @@
         Width: =168
         X: =1198
         Y: =1
-        ZIndex: =22
+        ZIndex: =6
 
     Group1_1 As group:
         Height: =5
@@ -1330,12 +1330,13 @@
         Rectangle3_3 As rectangle:
             Fill: =RGBA(0, 52, 104, 1)
             Height: =88
+            HoverFill: =ColorFade(Self.BorderColor, 20%)
             OnSelect: |-
                 =Navigate(frmRiskStatistic,ScreenTransition.Fade);
                 Clear(RiskInfo)
             Width: =86
             Y: =1
-            ZIndex: =19
+            ZIndex: =4
 
         ic_Back_3 As icon.ChevronLeft:
             AccessibleLabel: ="Navigate to previous page"
@@ -1344,21 +1345,21 @@
             DisabledBorderColor: =RGBA(56, 56, 56, 1)
             DisabledColor: =RGBA(193, 193, 193, 0.95)
             DisabledFill: =ic_Back_3.Fill
+            DisplayMode: =DisplayMode.View
             FocusedBorderColor: =ic_Back_3.BorderColor
             Height: =42
             HoverBorderColor: =ColorFade(ic_Back_3.BorderColor, 20%)
-            HoverColor: =ColorFade(ic_Back_3.Color, 20%)
-            HoverFill: =ic_Back_3.Fill
+            HoverColor: =ColorFade(Self.BorderColor, 20%)
+            HoverFill: =ColorFade(Self.BorderColor, 20%)
             Icon: =Icon.ChevronLeft
             OnSelect: |-
                 =Navigate(frmRiskStatistic,ScreenTransition.Fade);
                 Clear(RiskInfo)
             PressedBorderColor: =ColorFade(ic_Back_3.BorderColor, -20%)
-            PressedColor: =ColorFade(ic_Back_3.Color, -20%)
-            PressedFill: =ic_Back_3.Fill
+            PressedColor: =ColorFade(Self.BorderColor, 20%)
             TabIndex: =0
             Width: =29
             X: =28
             Y: =27
-            ZIndex: =20
+            ZIndex: =7
 

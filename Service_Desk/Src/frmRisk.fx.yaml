@@ -1205,20 +1205,24 @@
 
             Gallery3 As gallery.galleryHorizontal:
                 DelayItemLoading: =true
-                Height: =64
+                Height: =48
                 Items: |-
                     =Table({ID:1,Label:"RỦI RO GỘP"},{ID:2,Label:"RỦI RO THUẦN"})
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplateSize: =166
                 Width: =361
                 X: =33
-                Y: =309
+                Y: =316
                 ZIndex: =58
 
                 Button4 As button:
                     OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
                     Text: ="Button"
-                    Y: =4
+                    X: =6
                     ZIndex: =1
 
     RectQuickActionBar2_3 As rectangle:

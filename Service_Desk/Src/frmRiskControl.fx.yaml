@@ -9,23 +9,11 @@
     OnVisible: |-
         =UpdateContext({varRiskControlKey:Last(Risk_Control).KSRR_MA + 1})
 
-    RectQuickActionBar2 As rectangle:
-        Height: =88
-        Width: =Parent.Width
-        ZIndex: =1
-
-    LblAppName2 As label:
-        Align: =Align.Center
-        Height: =88
-        Text: ="RISK CONTROL"
-        Width: =Parent.Width
-        ZIndex: =2
-
     Canvas1 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =Parent.Height - Self.Y
+        Height: =680
         Width: =Parent.Width
-        Y: =RectQuickActionBar2.Y + RectQuickActionBar2.Height
+        Y: =88
         ZIndex: =3
 
         DataCard1 As dataCard:
@@ -987,9 +975,35 @@
                 Y: =17
                 ZIndex: =30
 
-    RiskAdd_1 As label:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =85
+    RectQuickActionBar2_4 As rectangle:
+        Fill: =RGBA(0, 52, 104, 1)
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =7
+
+    LblAppName2_4 As label:
+        Align: =Align.Center
+        Color: =RGBA(194, 160, 3, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =88
+        Size: =25
+        Text: ="RỦI RO"
+        Width: =Parent.Width
+        ZIndex: =8
+
+    Image2_2 As image:
+        Height: =88
+        Image: ='Logo PNJ_v2'
+        Width: =138
+        X: =93
+        ZIndex: =10
+
+    Button1_1 As button:
+        BorderStyle: =BorderStyle.None
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.'Segoe UI'
+        Height: =88
         OnSelect: |-
             =If(IsBlank(LB_RiskOwner_1) || IsBlank(TIn_RiskReason_1) || IsBlank(TIn_RiskDescribe_1) || IsBlank(TIn_RiskName_1),
             UpdateContext({varTemp2:false}),
@@ -999,50 +1013,55 @@
             );
             
             Navigate(frmRiskStatistic,ScreenTransition.Fade)
-        Size: =20
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =25
         Text: ="Lưu"
-        Width: =91
-        X: =1275
-        Y: =3
-        ZIndex: =6
+        Width: =168
+        X: =1198
+        ZIndex: =11
 
-    Back_1 As group:
+    Group1_2 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =20
-        ZIndex: =7
+        ZIndex: =13
 
-        Rectangle3_1 As rectangle:
+        Rectangle3_4 As rectangle:
+            Fill: =RGBA(0, 52, 104, 1)
             Height: =88
+            HoverFill: =ColorFade(Self.BorderColor, 20%)
             OnSelect: |-
                 =Navigate(frmRiskStatistic,ScreenTransition.Fade);
                 Clear(RiskInfo)
             Width: =86
-            ZIndex: =4
+            ZIndex: =9
 
-        ic_Back_1 As icon.ChevronLeft:
+        ic_Back_4 As icon.ChevronLeft:
             AccessibleLabel: ="Navigate to previous page"
             BorderColor: =RGBA(0, 0, 0, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(56, 56, 56, 1)
             DisabledColor: =RGBA(193, 193, 193, 0.95)
-            DisabledFill: =ic_Back_1.Fill
-            FocusedBorderColor: =ic_Back_1.BorderColor
+            DisabledFill: =ic_Back_4.Fill
+            DisplayMode: =DisplayMode.View
+            FocusedBorderColor: =ic_Back_4.BorderColor
             Height: =42
-            HoverBorderColor: =ColorFade(ic_Back_1.BorderColor, 20%)
-            HoverColor: =ColorFade(ic_Back_1.Color, 20%)
-            HoverFill: =ic_Back_1.Fill
+            HoverBorderColor: =ColorFade(ic_Back_4.BorderColor, 20%)
+            HoverColor: =ColorFade(Self.BorderColor, 20%)
+            HoverFill: =ColorFade(Self.BorderColor, 20%)
             Icon: =Icon.ChevronLeft
             OnSelect: |-
                 =Navigate(frmRiskStatistic,ScreenTransition.Fade);
                 Clear(RiskInfo)
-            PressedBorderColor: =ColorFade(ic_Back_1.BorderColor, -20%)
-            PressedColor: =ColorFade(ic_Back_1.Color, -20%)
-            PressedFill: =ic_Back_1.Fill
+            PressedBorderColor: =ColorFade(ic_Back_4.BorderColor, -20%)
+            PressedColor: =ColorFade(Self.BorderColor, 20%)
             TabIndex: =0
             Width: =29
             X: =28
             Y: =26
-            ZIndex: =5
+            ZIndex: =12
 

@@ -262,7 +262,7 @@
                 FocusedBorderColor: =TIn_RiskDescribe.BorderColor
                 FocusedBorderThickness: =3
                 Font: =Font.'Segoe UI'
-                Height: =39
+                Height: =28
                 HoverBorderColor: =TIn_RiskDescribe.BorderColor
                 HoverColor: =TIn_RiskDescribe.Color
                 HoverFill: =TIn_RiskDescribe.Fill
@@ -420,7 +420,7 @@
                 FocusedBorderColor: =TIn_RiskConsequence.BorderColor
                 FocusedBorderThickness: =3
                 Font: =Font.'Segoe UI'
-                Height: =39
+                Height: =30
                 HoverBorderColor: =TIn_RiskConsequence.BorderColor
                 HoverColor: =TIn_RiskConsequence.Color
                 HoverFill: =TIn_RiskConsequence.Fill

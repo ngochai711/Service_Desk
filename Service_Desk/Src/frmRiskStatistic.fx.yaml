@@ -218,6 +218,7 @@
 
         Label1_2 As label:
             Align: =Align.Center
+            Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Size: =17
             Text: ="RỦI RO"
@@ -333,13 +334,13 @@
 
         Label1_1 As label:
             Align: =Align.Center
+            Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =44
             Size: =17
             Text: ="THỦ TỤC KIỂM SOÁT"
             Width: =243
             X: =106
-            Y: =3
             ZIndex: =19
 
         R_CloseStatus_2 As group:
@@ -796,13 +797,13 @@
 
         Label1 As label:
             Align: =Align.Center
+            Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =44
             Size: =17
             Text: ="KHẮC PHỤC - SỬA CHỮA"
             Width: =281
             X: =87
-            Y: =3
             ZIndex: =19
 
     Risk_Owner As group:
@@ -828,7 +829,7 @@
             Size: =12
             Text: |-
                 ="Chủ sở hữu rủi ro: "
-            Width: =171
+            Width: =143
             X: =1003
             Y: =98
             ZIndex: =13
@@ -898,7 +899,7 @@
             FocusedBorderThickness: =1
             Font: =Font.'Segoe UI'
             Height: =36
-            HintText: ="Nhập tên"
+            HintText: ="Nhập tên - Mail"
             HoverBorderColor: =
             HoverColor: =
             HoverFill: =RGBA(255, 255, 255, 1)
@@ -910,22 +911,22 @@
             RadiusTopLeft: =0
             RadiusTopRight: =0
             Reset: =true
-            Width: =163
-            X: =1179
+            Width: =209
+            X: =1146
             Y: =104
             ZIndex: =15
 
         Label5 As label:
             Fill: =RGBA(215, 223, 240, 1)
             Font: =Font.'Segoe UI'
-            Height: =42
+            Height: =41
             OnSelect: |-
                 = UpdateContext({HidePeopleGallery:false, IsShowPeopleDetails: false})
             Size: =12
-            Text: =SelectedPerson.DisplayName
+            Text: =SelectedPerson.DisplayName&" - "&SelectedPerson.Mail
             Visible: =HidePeopleGallery
-            Width: =153
-            X: =1182
+            Width: =209
+            X: =1146
             Y: =101
             ZIndex: =18
 
@@ -978,14 +979,13 @@
 
         Label3 As label:
             Font: =Font.'Segoe UI'
-            Height: =38
+            Height: =52
             PaddingLeft: =2
             Size: =12
             Text: |-
                 ="Từ ngày:"
             Width: =77
-            X: =4
-            Y: =104
+            Y: =95
             ZIndex: =6
 
         DP_RiskRecordDate_2 As datepicker:
@@ -994,14 +994,14 @@
             Fill: =RGBA(215, 223, 240, 1)
             Font: =Font.'Segoe UI'
             Format: ="dd/mm/yyyy"
-            Height: =29
+            Height: =36
             IconBackground: =
             IconFill: =
             PaddingLeft: =2
             Size: =12
             Width: =125
             X: =75
-            Y: =111
+            Y: =104
             ZIndex: =22
 
     Group4_1 As group:
@@ -1023,12 +1023,13 @@
 
         Label3_1 As label:
             Font: =Font.'Segoe UI'
+            Height: =48
             Size: =12
             Text: |-
                 ="Đến ngày:"
             Width: =98
-            X: =220
-            Y: =102
+            X: =218
+            Y: =99
             ZIndex: =24
 
         DP_RiskRecordDate_3 As datepicker:
@@ -1037,13 +1038,13 @@
             Fill: =RGBA(215, 223, 240, 1)
             Font: =Font.'Segoe UI'
             Format: ="dd/mm/yyyy"
-            Height: =29
+            Height: =36
             IconBackground: =
             IconFill: =
             Size: =12
             Width: =136
             X: =306
-            Y: =111
+            Y: =104
             ZIndex: =25
 
     Group6 As group:
@@ -1065,13 +1066,13 @@
 
         Label3_2 As label:
             Font: =Font.'Segoe UI'
-            Height: =29
+            Height: =51
             Size: =12
             Text: |-
                 ="Xếp hạng gộp:"
             Width: =115
             X: =463
-            Y: =104
+            Y: =97
             ZIndex: =27
 
         CB_RT_RiskRate_1 As combobox:
@@ -1083,7 +1084,7 @@
             DisplayFields: =["Value"]
             Fill: =RGBA(215, 223, 240, 1)
             Font: =Font.'Segoe UI'
-            Height: =30
+            Height: =38
             HoverFill: =
             IsSearchable: =false
             Items: |-
@@ -1098,7 +1099,7 @@
             Size: =12
             Width: =134
             X: =581
-            Y: =105
+            Y: =104
             ZIndex: =28
 
     Group6_1 As group:
@@ -1120,13 +1121,13 @@
 
         Label3_3 As label:
             Font: =Font.'Segoe UI'
-            Height: =28
+            Height: =52
             Size: =12
             Text: |-
                 ="Xếp hạng thuần:"
             Width: =133
             X: =730
-            Y: =105
+            Y: =97
             ZIndex: =30
 
         CB_RT_RiskRate_2 As combobox:
@@ -1138,7 +1139,7 @@
             DisplayFields: =["Value"]
             Fill: =RGBA(215, 223, 240, 1)
             Font: =Font.'Segoe UI'
-            Height: =30
+            Height: =37
             HoverFill: =
             IsSearchable: =false
             Items: |-
@@ -1152,7 +1153,7 @@
             SelectMultiple: =false
             Size: =12
             Width: =134
-            X: =855
-            Y: =106
+            X: =858
+            Y: =104
             ZIndex: =31
 

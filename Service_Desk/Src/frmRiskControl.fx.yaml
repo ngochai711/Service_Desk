@@ -1047,7 +1047,6 @@
             DisabledBorderColor: =RGBA(56, 56, 56, 1)
             DisabledColor: =RGBA(193, 193, 193, 0.95)
             DisabledFill: =ic_Back_4.Fill
-            DisplayMode: =DisplayMode.View
             FocusedBorderColor: =ic_Back_4.BorderColor
             Height: =42
             HoverBorderColor: =ColorFade(ic_Back_4.BorderColor, 20%)

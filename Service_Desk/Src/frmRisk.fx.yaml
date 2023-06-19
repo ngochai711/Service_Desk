@@ -5,15 +5,21 @@
         Reset(CB_RiskStatus);
         Reset(CB_RiskImportant);
         Reset(TIn_RiskOwner);
-        UpdateContext({varSelectedOwner:""});
-    OnVisible: |+
-        =Reset(CB_RG_Finance);
+        Reset(TIn_RiskDescribe);
+        Reset(TIn_RiskConsequence);
+        Reset(TIn_RiskReason);
+        Reset(CB_RG_Finance);
         Reset(CB_RG_nonFinance);
         Reset(CB_RG_RiskRate);
+        Reset(TIn_RG_RiskEvaluate);
         Reset(CB_RT_Finance);
         Reset(CB_RT_nonFinance);
         Reset(CB_RT_RiskRate);
-        Set(SelectedOwner,Blank());
+        Reset(TIn_RT_RiskEvaluate);
+        UpdateContext({varLBRiskOwner:false,
+        HidePeopleGallery:false});
+    OnVisible: |+
+        =
         UpdateContext({varTemp2:true});
         UpdateContext({varRiskKey:Last(Risks).RR_MA + 1});
         UpdateContext({varRiskGOPOverall_Text:"Nhỏ"});
@@ -757,7 +763,7 @@
                 Y: =483
                 ZIndex: =36
 
-            TIn_RG_Evaluate As text:
+            TIn_RG_RiskEvaluate As text:
                 AccessibleLabel: ="Input ticket creator"
                 BorderColor: =RGBA(230,230,230,1)
                 Color: =RGBA(47, 41, 43, 1)
@@ -766,17 +772,17 @@
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
                 DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
-                FocusedBorderColor: =TIn_RG_Evaluate.BorderColor
+                FocusedBorderColor: =TIn_RG_RiskEvaluate.BorderColor
                 FocusedBorderThickness: =3
                 Font: =Font.'Segoe UI'
                 Height: =90
-                HoverBorderColor: =TIn_RG_Evaluate.BorderColor
-                HoverColor: =TIn_RG_Evaluate.Color
-                HoverFill: =TIn_RG_Evaluate.Fill
+                HoverBorderColor: =TIn_RG_RiskEvaluate.BorderColor
+                HoverColor: =TIn_RG_RiskEvaluate.Color
+                HoverFill: =TIn_RG_RiskEvaluate.Fill
                 Mode: =TextMode.MultiLine
-                PressedBorderColor: =TIn_RG_Evaluate.HoverBorderColor
-                PressedColor: =TIn_RG_Evaluate.Color
-                PressedFill: =TIn_RG_Evaluate.Fill
+                PressedBorderColor: =TIn_RG_RiskEvaluate.HoverBorderColor
+                PressedColor: =TIn_RG_RiskEvaluate.Color
+                PressedFill: =TIn_RG_RiskEvaluate.Fill
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -1179,7 +1185,7 @@
                     =UpdateContext({varLBRiskOwner:false,
                     HidePeopleGallery:false})
                 Size: =12
-                Text: =varSelectedOwner
+                Text: =SelectedOwner.DisplayName&" - "&SelectedOwner.Mail
                 Visible: =varLBRiskOwner
                 Width: =434
                 X: =864
@@ -1202,7 +1208,7 @@
                 Layout: =Layout.Vertical
                 LoadingSpinnerColor: =Gal_RiskSelecttOwner.BorderColor
                 OnSelect: |-
-                    = UpdateContext({varSelectedOwner:ThisItem.DisplayName&" - "&ThisItem.Mail, HidePeopleGallery:true, 
+                    = UpdateContext({SelectedOwner:ThisItem, HidePeopleGallery:true, 
                      varLBRiskOwner: true})
                 PressedBorderColor: =Gal_RiskSelecttOwner.BorderColor
                 PressedFill: =Gal_RiskSelecttOwner.Fill

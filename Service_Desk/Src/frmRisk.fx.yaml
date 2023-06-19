@@ -837,7 +837,7 @@
                 VerticalAlign: =VerticalAlign.Top
                 Visible: =varTabSelected=2
                 Width: =161
-                X: =597
+                X: =579
                 Y: =391
                 ZIndex: =41
 
@@ -911,7 +911,7 @@
                 Size: =12
                 Visible: =varTabSelected=2
                 Width: =158
-                X: =597
+                X: =579
                 Y: =423
                 ZIndex: =43
 

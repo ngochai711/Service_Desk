@@ -180,13 +180,14 @@
                 PaddingLeft: =16
                 PaddingRight: =16
                 PaddingTop: =16
-                Tooltip: ="View item details"
+                Tooltip: ="Hiện kiểm soát"
                 Width: =50
                 X: =Parent.TemplateWidth - Self.Width - 12
                 Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                 ZIndex: =4
 
             Separator1 As rectangle:
+                BorderThickness: =0.5
                 Height: =8
                 OnSelect: =Select(Parent)
                 Width: =Parent.TemplateWidth
@@ -200,21 +201,63 @@
                 Width: =4
                 ZIndex: =6
 
-            Label6 As label:
-                Height: =32
-                OnSelect: =Select(Parent)
-                Text: =ThisItem.RR_CSH
-                Width: =296
-                X: =35
-                Y: =64
-                ZIndex: =8
-
             Label7 As label:
+                Font: =Font.'Segoe UI'
+                Height: =27
                 OnSelect: =Select(Parent)
-                Text: =Text(DateValue(ThisItem.'NGAY TẠO',"vi-VN"),"dd/mm/yyyy")
-                X: =35
-                Y: =24
+                Size: =12
+                Text: =ThisItem.RR_MA&" - "&ThisItem.RR_TEN
+                Width: =390
+                X: =4
                 ZIndex: =9
+
+            Label7_1 As label:
+                Font: =Font.'Segoe UI'
+                Height: =27
+                OnSelect: =Select(Parent)
+                Size: =12
+                Text: |-
+                    ="CSH: "&ThisItem.RR_CSH
+                Width: =390
+                X: =4
+                Y: =27
+                ZIndex: =10
+
+            Label7_2 As label:
+                Font: =Font.'Segoe UI'
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =12
+                Text: |-
+                    ="Ngày: "&ThisItem.'NGAY TẠO'
+                Width: =145
+                X: =4
+                Y: =54
+                ZIndex: =11
+
+            Label7_3 As label:
+                Font: =Font.'Segoe UI'
+                Height: =23
+                OnSelect: =Select(Parent)
+                Size: =12
+                Text: |-
+                    ="Trạng thái: "&ThisItem.RR_TRANGTHAI
+                Width: =245
+                X: =149
+                Y: =54
+                ZIndex: =12
+
+            Label7_4 As label:
+                Font: =Font.'Segoe UI'
+                Height: =27
+                OnSelect: =Select(Parent)
+                Size: =12
+                Text: |-
+                    ="CSH: "&ThisItem.RR_CSH
+                Width: =390
+                X: =4
+                Y: =77
+                ZIndex: =13
 
         Label1_2 As label:
             Align: =Align.Center
@@ -222,13 +265,14 @@
             FontWeight: =FontWeight.Semibold
             Size: =17
             Text: ="RỦI RO"
-            X: =173
+            X: =153
             ZIndex: =19
 
         R_Add As icon.Add:
             Height: =28
             Icon: =Icon.Add
             OnSelect: =Navigate(frmRisk,ScreenTransition.Fade)
+            Tooltip: ="Tạo rủi ro"
             Width: =27
             X: =416
             Y: =12

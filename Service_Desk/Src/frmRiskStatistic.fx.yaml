@@ -1012,16 +1012,18 @@
             Fill: =RGBA(215, 223, 240, 1)
             Height: =51
             OnSelect: =
-            Width: =283
-            X: =281
+            Width: =238
+            X: =218
             Y: =97
             ZIndex: =23
 
         Label3_1 As label:
+            Font: =Font.'Segoe UI'
+            Size: =12
             Text: |-
                 ="Đến ngày:"
             Width: =98
-            X: =297
+            X: =220
             Y: =102
             ZIndex: =24
 
@@ -1029,13 +1031,15 @@
             BorderColor: =RGBA(175, 191, 224, 1)
             ContentLanguage: ="vn-VN"
             Fill: =RGBA(215, 223, 240, 1)
+            Font: =Font.'Segoe UI'
             Format: ="dd/mm/yyyy"
-            Height: =38
+            Height: =29
             IconBackground: =
             IconFill: =
-            Width: =162
-            X: =390
-            Y: =104
+            Size: =12
+            Width: =136
+            X: =306
+            Y: =111
             ZIndex: =25
 
     Group6 As group:

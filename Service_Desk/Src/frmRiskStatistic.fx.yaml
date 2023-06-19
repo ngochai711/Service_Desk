@@ -136,7 +136,7 @@
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
-            TemplateSize: =104
+            TemplateSize: =127
             Width: =456
             Y: =155
             ZIndex: =18
@@ -192,7 +192,7 @@
                 Height: =1
                 OnSelect: =Select(Parent)
                 Width: =Parent.TemplateWidth
-                Y: =103
+                Y: =126
                 ZIndex: =5
 
             Rectangle2 As rectangle:
@@ -212,17 +212,6 @@
                 Width: =390
                 ZIndex: =9
 
-            Label7_1 As label:
-                Font: =Font.'Segoe UI'
-                Height: =27
-                OnSelect: =Select(Parent)
-                Size: =12
-                Text: |-
-                    ="CSH: "&ThisItem.RR_CSH
-                Width: =390
-                Y: =27
-                ZIndex: =10
-
             Label7_2 As label:
                 Font: =Font.'Segoe UI'
                 Height: =23
@@ -231,19 +220,19 @@
                 Text: |-
                     ="Ngày: "&ThisItem.'NGAY TẠO'
                 Width: =145
+                X: =155
                 Y: =54
                 ZIndex: =11
 
             Label7_3 As label:
                 Font: =Font.'Segoe UI'
-                Height: =23
+                Height: =22
                 OnSelect: =Select(Parent)
                 Size: =12
                 Text: |-
                     ="Trạng thái: "&ThisItem.RR_TRANGTHAI
-                Width: =245
-                X: =149
-                Y: =54
+                Width: =300
+                Y: =78
                 ZIndex: =12
 
             Label7_4 As label:
@@ -254,8 +243,33 @@
                 Text: |-
                     ="Xếp hạng Thuần: "&ThisItem.RR_THUAN_XEPHANG&" - Gộp: "&ThisItem.RR_GOP_XEPHANG
                 Width: =390
-                Y: =77
+                Y: =100
                 ZIndex: =13
+
+            Label7_1 As label:
+                Font: =Font.'Segoe UI'
+                Height: =27
+                OnSelect: =Select(Parent)
+                PaddingBottom: =4
+                Size: =12
+                Text: |-
+                    ="CSH: "&ThisItem.RR_CSH 
+                Width: =390
+                Y: =27
+                ZIndex: =14
+
+            Label7_5 As label:
+                Font: =Font.'Segoe UI'
+                Height: =23
+                OnSelect: =Select(Parent)
+                PaddingBottom: =3
+                PaddingTop: =0
+                Size: =12
+                Text: |-
+                    ="Trọng yếu: "&ThisItem.RR_TRONGYEU
+                Width: =149
+                Y: =54
+                ZIndex: =15
 
         Label1_2 As label:
             Align: =Align.Center
@@ -486,6 +500,16 @@
                 X: =277
                 Y: =108
                 ZIndex: =25
+
+        R_Add_1 As icon.Add:
+            Height: =28
+            Icon: =Icon.Add
+            OnSelect: =Navigate(frmRisk,ScreenTransition.Fade)
+            Tooltip: ="Tạo thủ tục kiểm soát"
+            Width: =27
+            X: =417
+            Y: =9
+            ZIndex: =26
 
     "'Risk Fix' As groupContainer":
         Height: =609
@@ -847,6 +871,16 @@
             Width: =281
             X: =87
             ZIndex: =19
+
+        R_Add_2 As icon.Add:
+            Height: =28
+            Icon: =Icon.Add
+            OnSelect: =Navigate(frmRisk,ScreenTransition.Fade)
+            Tooltip: ="Tạo khắc phục - sửa chữa"
+            Width: =27
+            X: =416
+            Y: =9
+            ZIndex: =20
 
     Risk_Owner As group:
         Height: =5

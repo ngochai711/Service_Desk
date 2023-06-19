@@ -1309,6 +1309,14 @@
         Fill: =RGBA(0, 0, 0, 0)
         Font: =Font.'Segoe UI'
         Height: =88
+        OnSelect: |-
+            =If(IsBlank(TIn_RiskOwner) || IsBlank(TIn_RiskReason) || IsBlank(TIn_RiskDescribe) || IsBlank(TIn_RiskName) || IsBlank(TIn_RiskConsequence)|| IsBlank(TIn_RG_RiskEvaluate)|| IsBlank(TIn_RT_RiskEvaluate),
+            UpdateContext({varTemp2:false}),
+            Patch(Risks,Defaults(Risks),{: varRiskControlKey,KS_HIENCO:TIn_RiskName_1.Text,'NGAY TẠO':Text(DP_RiskRecordDate_1.SelectedDate,"dd/mm/yyyy"),KS_CHINH: CB_RiskImportant_1.Selected.Value,CSH:LB_RiskOwner_1.Text,KS_LOAI:CB_RiskStatus_1.Selected.Value,KS_TANSUAT:CB_RiskStatus_2.Selected.Value,KS:CB_RiskStatus_3.Selected.Value,KS_DANHGIA:CB_RiskStatus_4.Selected.Value, KS_COSODG:TIn_RiskDescribe_1.Text,KS_COSO_TONGTHE:CB_RiskStatus_5.Selected.Value,KS_COSO_MOTA:TIn_RiskReason_1.Text});
+            Patch(Risk_Connection,LookUp(Risk_Connection,R_ID=First(RiskInfo).RiskId),{RC_ID:varRiskControlKey,RS_ID:""})
+            );
+            
+            Navigate(frmRiskStatistic,ScreenTransition.Fade)
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0

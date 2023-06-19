@@ -988,7 +988,7 @@
         FontWeight: =FontWeight.Bold
         Height: =88
         Size: =25
-        Text: ="THỦ TỤC KIỂM SOÁT"
+        Text: ="THỦ TỤC KIỂM SOÁT RỦI RO"
         Width: =Parent.Width
         ZIndex: =8
 
@@ -1048,7 +1048,7 @@
             DisabledColor: =RGBA(193, 193, 193, 0.95)
             DisabledFill: =ic_Back_4.Fill
             FocusedBorderColor: =ic_Back_4.BorderColor
-            Height: =42
+            Height: =50
             HoverBorderColor: =ColorFade(ic_Back_4.BorderColor, 20%)
             HoverColor: =ColorFade(Self.BorderColor, 20%)
             HoverFill: =ColorFade(Self.BorderColor, 20%)
@@ -1059,8 +1059,8 @@
             PressedBorderColor: =ColorFade(ic_Back_4.BorderColor, -20%)
             PressedColor: =ColorFade(Self.BorderColor, 20%)
             TabIndex: =0
-            Width: =29
+            Width: =32
             X: =28
-            Y: =26
+            Y: =19
             ZIndex: =12
 

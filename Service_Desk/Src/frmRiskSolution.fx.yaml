@@ -649,7 +649,6 @@
                 =Navigate(frmRiskStatistic,ScreenTransition.Fade);
                 Clear(RiskInfo)
             Width: =86
-            X: =40
             ZIndex: =4
 
         ic_Back_2 As icon.ChevronLeft:
@@ -672,8 +671,8 @@
             PressedColor: =ColorFade(ic_Back_2.Color, -20%)
             PressedFill: =ic_Back_2.Fill
             TabIndex: =0
-            Width: =33
-            X: =66
+            Width: =32
+            X: =28
             Y: =19
             ZIndex: =5
 

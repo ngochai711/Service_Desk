@@ -8807,19 +8807,19 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
           "InvariantPropertyName": "X",
           "IsLockable": false,
-          "NameMapSourceSchema": "*[]"
+          "NameMapSourceSchema": "?"
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
           "InvariantPropertyName": "Y",
           "IsLockable": false,
-          "NameMapSourceSchema": "*[]"
+          "NameMapSourceSchema": "?"
         },
         {
           "AFDDataSourceName": "",
@@ -8831,11 +8831,11 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
           "InvariantPropertyName": "Width",
           "IsLockable": false,
-          "NameMapSourceSchema": "*[]"
+          "NameMapSourceSchema": "?"
         },
         {
           "AFDDataSourceName": "",

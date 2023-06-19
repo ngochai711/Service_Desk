@@ -52,7 +52,14 @@
         "Align",
         "VerticalAlign",
         "X",
-        "Y",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Y",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Width",
         "Height",
         "ZIndex",
@@ -4999,7 +5006,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Group1_1": {
+    "Group1_3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "X",
@@ -5017,7 +5024,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Group1_1",
+      "Name": "Group1_3",
       "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -12201,7 +12208,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "ic_Back_3": {
+    "ic_Back_5": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -12223,35 +12230,35 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
           "InvariantPropertyName": "X",
           "IsLockable": false,
-          "NameMapSourceSchema": "*[]"
+          "NameMapSourceSchema": "?"
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
           "InvariantPropertyName": "Y",
           "IsLockable": false,
-          "NameMapSourceSchema": "*[]"
+          "NameMapSourceSchema": "?"
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
           "InvariantPropertyName": "Height",
           "IsLockable": false,
-          "NameMapSourceSchema": "*[]"
+          "NameMapSourceSchema": "?"
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
           "InvariantPropertyName": "Width",
           "IsLockable": false,
-          "NameMapSourceSchema": "*[]"
+          "NameMapSourceSchema": "?"
         },
         {
           "AFDDataSourceName": "",
@@ -12272,7 +12279,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "ColorFade(ic_Back_3.Color, -20%)",
+          "AutoRuleBindingString": "ColorFade(ic_Back_5.Color, -20%)",
           "InvariantPropertyName": "PressedColor",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -12280,7 +12287,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "ColorFade(ic_Back_3.Color, 20%)",
+          "AutoRuleBindingString": "ColorFade(ic_Back_5.Color, 20%)",
           "InvariantPropertyName": "HoverColor",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -12290,7 +12297,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "ic_Back_3.Fill",
+          "AutoRuleBindingString": "ic_Back_5.Fill",
           "InvariantPropertyName": "PressedFill",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -12298,7 +12305,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "ic_Back_3.Fill",
+          "AutoRuleBindingString": "ic_Back_5.Fill",
           "InvariantPropertyName": "HoverFill",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -12346,7 +12353,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "ic_Back_3",
+      "Name": "ic_Back_5",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -15903,7 +15910,14 @@
         "Align",
         "VerticalAlign",
         "X",
-        "Y",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Y",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Width",
         "Height",
         "DisplayMode",
@@ -15927,7 +15941,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LblAppName2_3",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16218,7 +16232,7 @@
       "StyleName": "defaultRectangleStyle",
       "Type": "ControlInfo"
     },
-    "Rectangle3_3": {
+    "Rectangle3_5": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -16251,7 +16265,14 @@
           "NameMapSourceSchema": "?"
         },
         "X",
-        "Y",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Y",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Width",
         "Height",
         "ZIndex",
@@ -16275,8 +16296,8 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Rectangle3_3",
-      "ParentIndex": 2,
+      "Name": "Rectangle3_5",
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16389,7 +16410,14 @@
           "NameMapSourceSchema": "?"
         },
         "X",
-        "Y",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Y",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Width",
         "Height",
         "ZIndex"
@@ -16404,7 +16432,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "RectQuickActionBar2_3",
-      "ParentIndex": 0,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

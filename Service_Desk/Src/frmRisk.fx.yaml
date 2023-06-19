@@ -521,10 +521,10 @@
                 HoverFill: =
                 IsSearchable: =false
                 Items: |-
-                    =Table({Value:"Nhỏ",Index:1},
-                    {Value:"Trung bình",Index:2},
-                    {Value:"Lớn",Index:3},
-                    {Value:"Rất lớn",Index:4})
+                    =Table({Value:"1 Nhỏ",Index:1},
+                    {Value:"2 Trung bình",Index:2},
+                    {Value:"3 Lớn",Index:3},
+                    {Value:"4 Rất lớn",Index:4})
                 OnChange: |-
                     =If(CB_RG_Finance.Selected.Index = CB_RG_nonFinance.Selected.Index,
                     UpdateContext({varRiskGOPOverall_Text:CB_RG_Finance.Selected.Value,varRiskGOPOverall_Index:CB_RG_Finance.Selected.Index}),
@@ -558,10 +558,10 @@
                 HoverFill: =
                 IsSearchable: =false
                 Items: |-
-                    =Table({Value:"Nhỏ",Index:1},
-                    {Value:"Trung bình",Index:2},
-                    {Value:"Lớn",Index:3},
-                    {Value:"Rất lớn",Index:4})
+                    =Table({Value:"1 Nhỏ",Index:1},
+                    {Value:"2 Trung bình",Index:2},
+                    {Value:"3 Lớn",Index:3},
+                    {Value:"4 Rất lớn",Index:4})
                 OnChange: |-
                     =If(CB_RG_Finance.Selected.Index = CB_RG_nonFinance.Selected.Index,
                     UpdateContext({varRiskGOPOverall_Text:CB_RG_Finance.Selected.Value,varRiskGOPOverall_Index:CB_RG_Finance.Selected.Index}),
@@ -652,10 +652,10 @@
                 HoverFill: =
                 IsSearchable: =false
                 Items: |-
-                    =Table({Value:"Nhỏ",Index:1},
-                    {Value:"Trung bình",Index:2},
-                    {Value:"Cao",Index:3},
-                    {Value:"Rất cao",Index:4})
+                    =Table({Value:"1 Nhỏ",Index:1},
+                    {Value:"2 Trung bình",Index:2},
+                    {Value:"3 Cao",Index:3},
+                    {Value:"4 Rất cao",Index:4})
                 OnChange: |-
                     =UpdateContext({varTemp:varRiskGOPOverall_Index*CB_RG_RiskRate.Selected.Index});
                     If(!(varRiskGOPOverall_Index=2) && varTemp >= 8, UpdateContext({varRiskGOPRank:"Rất cao"}),
@@ -852,10 +852,10 @@
                 HoverFill: =
                 IsSearchable: =false
                 Items: |-
-                    =Table({Value:"Thấp",Index:1},
-                    {Value:"Trung bình",Index:2},
-                    {Value:"Lớn",Index:3},
-                    {Value:"Rất lớn",Index:4})
+                    =Table({Value:"1 Nhỏ",Index:1},
+                    {Value:"2 Trung bình",Index:2},
+                    {Value:"3 Lớn",Index:3},
+                    {Value:"4 Rất lớn",Index:4})
                 OnChange: |-
                     =If(CB_RT_Finance.Selected.Index = CB_RT_nonFinance.Selected.Index,
                     UpdateContext({varRiskTHUANOverall_Text:CB_RT_Finance.Selected.Value,varRiskTHUANOverall_Index:CB_RT_Finance.Selected.Index}),
@@ -889,10 +889,10 @@
                 HoverFill: =
                 IsSearchable: =false
                 Items: |-
-                    =Table({Value:"Thấp",Index:1},
-                    {Value:"Trung bình",Index:2},
-                    {Value:"Lớn",Index:3},
-                    {Value:"Rất lớn",Index:4})
+                    =Table({Value:"1 Nhỏ",Index:1},
+                    {Value:"2 Trung bình",Index:2},
+                    {Value:"3 Lớn",Index:3},
+                    {Value:"4 Rất lớn",Index:4})
                 OnChange: |-
                     =If(CB_RT_Finance.Selected.Index = CB_RT_nonFinance.Selected.Index,
                     UpdateContext({varRiskTHUANOverall_Text:CB_RT_Finance.Selected.Value,varRiskTHUANOverall_Index:CB_RT_Finance.Selected.Index}),
@@ -983,10 +983,10 @@
                 HoverFill: =
                 IsSearchable: =false
                 Items: |-
-                    =Table({Value:"Thấp",Index:1},
-                    {Value:"Trung bình",Index:2},
-                    {Value:"Cao",Index:3},
-                    {Value:"Rất cao",Index:4})
+                    =Table({Value:"1 Thấp",Index:1},
+                    {Value:"2 Trung bình",Index:2},
+                    {Value:"3 Cao",Index:3},
+                    {Value:"4 Rất cao",Index:4})
                 OnChange: |-
                     =UpdateContext({varTemp1:varRiskTHUANOverall_Index*CB_RT_RiskRate.Selected.Index});
                     If(!(varRiskTHUANOverall_Index=2) && varTemp1 >= 8, UpdateContext({varRiskTHUANRank:"Rất cao"}),

@@ -15,24 +15,11 @@
         UpdateContext({varRiskTHUANOverall_Index:1});
         UpdateContext({varRiskTHUANRank:"Nhỏ"})
 
-    RectQuickActionBar1 As rectangle:
-        Height: =88
-        Width: =Parent.Width
-        ZIndex: =1
-
-    LblAppName1 As label:
-        Align: =Align.Center
-        Height: =88
-        Size: =32
-        Text: ="RISK"
-        Width: =Parent.Width
-        ZIndex: =2
-
     Canvas3_1 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Height: =553
         Width: =Parent.Width
-        Y: =215
+        Y: =89
         ZIndex: =16
 
         DataCard3_1 As dataCard:
@@ -53,8 +40,8 @@
                 Size: =20
                 Text: ="Tạo thẻ"
                 Width: =105
-                X: =1236
-                Y: =27
+                X: =991
+                Y: =117
                 ZIndex: =1
 
             HD_RiskID As label:
@@ -63,7 +50,7 @@
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =HD_RiskID.BorderColor
                 FontWeight: =FontWeight.Semibold
-                Height: =39
+                Height: =36
                 HoverBorderColor: =HD_RiskID.BorderColor
                 HoverColor: =HD_RiskID.Color
                 HoverFill: =HD_RiskID.Fill
@@ -74,7 +61,7 @@
                 VerticalAlign: =VerticalAlign.Top
                 Width: =93
                 X: =40
-                Y: =11
+                Y: =8
                 ZIndex: =2
 
             LB_RiskID As text:
@@ -121,8 +108,8 @@
                 Text: ="Trạng thái rủi ro"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =161
-                X: =554
-                Y: =11
+                X: =309
+                Y: =101
                 ZIndex: =4
 
             HD_RiskRecordDate As label:
@@ -141,8 +128,8 @@
                 Text: ="Ngày ghi nhận rủi ro"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =200
-                X: =281
-                Y: =7
+                X: =36
+                Y: =97
                 ZIndex: =6
 
             DP_RiskRecordDate As datepicker:
@@ -153,8 +140,8 @@
                 IconBackground: =
                 IconFill: =
                 Width: =200
-                X: =281
-                Y: =43
+                X: =36
+                Y: =133
                 ZIndex: =7
 
             HD_RiskImportant As label:
@@ -173,8 +160,8 @@
                 Text: ="Rủi ro trọng yếu"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =149
-                X: =793
-                Y: =8
+                X: =548
+                Y: =98
                 ZIndex: =8
 
             HD_RiskName As label:
@@ -193,8 +180,8 @@
                 Text: ="Tên rủi ro"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =223
-                X: =40
-                Y: =97
+                X: =232
+                Y: =8
                 ZIndex: =10
 
             TIn_RiskName As text:
@@ -220,9 +207,9 @@
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Reset: =
-                Width: =1280
-                X: =40
-                Y: =133
+                Width: =1106
+                X: =232
+                Y: =45
                 ZIndex: =11
 
             HD_RiskDescribe As label:
@@ -339,8 +326,8 @@
                 Text: ="Chủ sở hữu rủi ro"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =178
-                X: =1000
-                Y: =8
+                X: =755
+                Y: =98
                 ZIndex: =16
 
             TIn_RiskOwner As text:
@@ -367,8 +354,8 @@
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Reset: =
-                X: =1000
-                Y: =44
+                X: =755
+                Y: =134
                 ZIndex: =17
 
             HD_RiskConsequence As label:
@@ -1081,8 +1068,8 @@
                 SearchItems: =[]
                 SelectMultiple: =false
                 Width: =158
-                X: =555
-                Y: =44
+                X: =310
+                Y: =134
                 ZIndex: =54
 
             CB_RiskImportant As combobox:
@@ -1102,8 +1089,8 @@
                 SearchItems: =[]
                 SelectMultiple: =false
                 Width: =149
-                X: =793
-                Y: =43
+                X: =548
+                Y: =133
                 ZIndex: =55
 
             LB_RiskOwner As label:
@@ -1115,8 +1102,8 @@
                 Text: =SelectedOwner.DisplayName
                 Visible: =varLBRiskOwner
                 Width: =312
-                X: =1004
-                Y: =50
+                X: =759
+                Y: =140
                 ZIndex: =56
 
             Gal_RiskSelecttOwner As gallery.galleryVertical:
@@ -1144,8 +1131,8 @@
                     =Not(IsBlank(TIn_RiskOwner)) &&
                     !HidePeopleGallery
                 Width: =320
-                X: =1000
-                Y: =97
+                X: =755
+                Y: =179
                 ZIndex: =57
 
                 LabelPersonDisplayName_1 As label:
@@ -1170,56 +1157,88 @@
                     Width: =335
                     ZIndex: =1
 
-    RiskAdd As label:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =85
-        OnSelect: |-
-            =If(IsBlank(TIn_RiskOwner) || IsBlank(TIn_RiskName) || IsBlank(TIn_RiskDescribe) || IsBlank(TIn_RiskReason) || IsBlank(TIn_RiskConsequence) || IsBlank(TIn_RG_Evaluate) || IsBlank(TIn_RT_RiskEvaluate),
-            UpdateContext({varTemp2:false}),
-            Patch(Risks,Defaults(Risks),{RR_MA:varRiskKey,RR_TRANGTHAI:CB_RiskStatus.Selected.Value,'NGAY TẠO':Text(DP_RiskRecordDate.SelectedDate,"dd/mm/yyyy"),RR_TRONGYEU:CB_RiskImportant.Selected.Value,RR_TEN:TIn_RiskName.Text,RR_MOTA:TIn_RiskDescribe.Text,RR_NGUYENNHAN:TIn_RiskReason.Text,RR_HAUQUA:TIn_RiskConsequence.Text,RR_CSH:SelectedOwner.DisplayName,RR_GOP_TAICHINH:CB_RG_Finance.Selected.Value,RR_GOP_PHITAICHINH:CB_RG_nonFinance.Selected.Value,RR_GOP_TONGTHE:LB_RG_RiskOverall.Text,RR_GOP_KHANANGXAYRA:CB_RG_RiskRate.Selected.Value,RR_GOP_DIEM:CB_RG_RiskRate.Selected.Index&"-"&varRiskGOPOverall_Index,RR_GOP_XEPHANG:LB_RG_RiskRank.Text,RR_GOP_CSDANHGIA:TIn_RG_Evaluate.Text,RR_THUAN_TAICHINH:CB_RT_Finance.Selected.Value,RR_THUAN_PHITAICHINH:CB_RT_nonFinance.Selected.Value,RR_THUAN_TONGTHE:LB_RT_RiskOverall.Text,RR_THUAN_KHANANGXAYRA:CB_RG_RiskRate.Selected.Value,RR_THUAN_DIEM:Text(CB_RT_RiskRate.Selected.Index&"-"&varRiskTHUANOverall_Index),RR_THUAN_XEPHANG:LB_RT_RiskRank.Text,RR_THUAN_CSDANHGIA:TIn_RT_RiskEvaluate.Text}); 
-            Patch(Risk_Connection,Defaults(Risk_Connection),{R_ID:varRiskKey,RC_ID:"",RS_ID:""})
-            );
-            
-            Navigate(frmRiskStatistic,ScreenTransition.Fade)
-        Size: =20
-        Text: ="Tạo thẻ"
-        Width: =129
-        X: =1237
+    RectQuickActionBar2_3 As rectangle:
+        Fill: =RGBA(0, 52, 104, 1)
+        Height: =88
+        Width: =Parent.Width
+        Y: =1
         ZIndex: =17
 
-    Back As group:
+    LblAppName2_3 As label:
+        Align: =Align.Center
+        Color: =RGBA(194, 160, 3, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =88
+        Size: =25
+        Text: ="RỦI RO"
+        Width: =Parent.Width
+        Y: =1
+        ZIndex: =18
+
+    Image2_1 As image:
+        Height: =88
+        Image: ='Logo PNJ_v2'
+        Width: =138
+        X: =86
+        Y: =1
+        ZIndex: =21
+
+    Button1 As button:
+        BorderStyle: =BorderStyle.None
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.'Segoe UI'
+        Height: =88
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =25
+        Text: ="Lưu"
+        Width: =168
+        X: =1198
+        Y: =1
+        ZIndex: =22
+
+    Group1_1 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
-        ZIndex: =17
+        ZIndex: =23
 
-        Rectangle3 As rectangle:
-            Height: =89
-            OnSelect: =Navigate(frmRiskStatistic,ScreenTransition.Fade)
+        Rectangle3_3 As rectangle:
+            Fill: =RGBA(0, 52, 104, 1)
+            Height: =88
+            OnSelect: |-
+                =Navigate(frmRiskStatistic,ScreenTransition.Fade);
+                Clear(RiskInfo)
             Width: =86
-            ZIndex: =3
+            Y: =1
+            ZIndex: =19
 
-        ic_Back As icon.ChevronLeft:
+        ic_Back_3 As icon.ChevronLeft:
             AccessibleLabel: ="Navigate to previous page"
             BorderColor: =RGBA(0, 0, 0, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(56, 56, 56, 1)
             DisabledColor: =RGBA(193, 193, 193, 0.95)
-            DisabledFill: =ic_Back.Fill
-            FocusedBorderColor: =ic_Back.BorderColor
+            DisabledFill: =ic_Back_3.Fill
+            FocusedBorderColor: =ic_Back_3.BorderColor
             Height: =42
-            HoverBorderColor: =ColorFade(ic_Back.BorderColor, 20%)
-            HoverColor: =ColorFade(ic_Back.Color, 20%)
-            HoverFill: =ic_Back.Fill
+            HoverBorderColor: =ColorFade(ic_Back_3.BorderColor, 20%)
+            HoverColor: =ColorFade(ic_Back_3.Color, 20%)
+            HoverFill: =ic_Back_3.Fill
             Icon: =Icon.ChevronLeft
-            OnSelect: =Navigate(frmRiskStatistic,ScreenTransition.Fade)
-            PressedBorderColor: =ColorFade(ic_Back.BorderColor, -20%)
-            PressedColor: =ColorFade(ic_Back.Color, -20%)
-            PressedFill: =ic_Back.Fill
+            OnSelect: |-
+                =Navigate(frmRiskStatistic,ScreenTransition.Fade);
+                Clear(RiskInfo)
+            PressedBorderColor: =ColorFade(ic_Back_3.BorderColor, -20%)
+            PressedColor: =ColorFade(ic_Back_3.Color, -20%)
+            PressedFill: =ic_Back_3.Fill
             TabIndex: =0
             Width: =29
             X: =28
-            Y: =21
-            ZIndex: =4
+            Y: =27
+            ZIndex: =20
 

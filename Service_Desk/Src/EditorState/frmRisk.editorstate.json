@@ -112,7 +112,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button1",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -319,7 +319,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Canvas3_1",
-      "ParentIndex": 0,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1571,7 +1571,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "FontWeight",
         "X",
         "Y",
@@ -1581,7 +1588,14 @@
         "ZIndex",
         "BorderThickness",
         "FocusedBorderThickness",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "IsSearchable",
         {
           "AFDDataSourceName": "",
@@ -1619,7 +1633,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CB_RiskImportant",
-      "ParentIndex": 7,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1944,7 +1958,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "FontWeight",
         "X",
         "Y",
@@ -1954,7 +1975,14 @@
         "ZIndex",
         "BorderThickness",
         "FocusedBorderThickness",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "IsSearchable",
         {
           "AFDDataSourceName": "",
@@ -1992,7 +2020,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CB_RiskStatus",
-      "ParentIndex": 9,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3479,7 +3507,14 @@
         "BorderStyle",
         "FocusedBorderColor",
         "Fill",
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "FontWeight",
         "Color",
         "DisabledColor",
@@ -3491,7 +3526,14 @@
         "ZIndex",
         "BorderThickness",
         "FocusedBorderThickness",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Italic",
         "PaddingTop",
         "PaddingRight",
@@ -3516,7 +3558,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DP_RiskRecordDate",
-      "ParentIndex": 6,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3944,7 +3986,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gal_RiskSelecttOwner",
-      "ParentIndex": 13,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6398,7 +6440,14 @@
         },
         "Align",
         "BorderStyle",
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Overflow",
         "VerticalAlign",
         "PressedColor",
@@ -6694,7 +6743,14 @@
         },
         "Align",
         "BorderStyle",
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Overflow",
         "VerticalAlign",
         "PressedColor",
@@ -6725,7 +6781,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HD_RiskDescribe",
-      "ParentIndex": 15,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7306,7 +7362,14 @@
         },
         "Align",
         "BorderStyle",
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Overflow",
         "VerticalAlign",
         "PressedColor",
@@ -7337,7 +7400,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HD_RiskID",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7602,7 +7665,14 @@
         },
         "Align",
         "BorderStyle",
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Overflow",
         "VerticalAlign",
         "PressedColor",
@@ -7633,7 +7703,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HD_RiskImportant",
-      "ParentIndex": 1,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7898,7 +7968,14 @@
         },
         "Align",
         "BorderStyle",
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Overflow",
         "VerticalAlign",
         "PressedColor",
@@ -7929,7 +8006,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HD_RiskName",
-      "ParentIndex": 12,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8194,7 +8271,14 @@
         },
         "Align",
         "BorderStyle",
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Overflow",
         "VerticalAlign",
         "PressedColor",
@@ -8225,7 +8309,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HD_RiskOwner",
-      "ParentIndex": 2,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8490,7 +8574,14 @@
         },
         "Align",
         "BorderStyle",
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Overflow",
         "VerticalAlign",
         "PressedColor",
@@ -8521,7 +8612,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HD_RiskReason",
-      "ParentIndex": 16,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8786,7 +8877,14 @@
         },
         "Align",
         "BorderStyle",
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Overflow",
         "VerticalAlign",
         "PressedColor",
@@ -8817,7 +8915,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HD_RiskRecordDate",
-      "ParentIndex": 0,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9082,7 +9180,14 @@
         },
         "Align",
         "BorderStyle",
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Overflow",
         "VerticalAlign",
         "PressedColor",
@@ -9113,7 +9218,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HD_RiskStatus",
-      "ParentIndex": 4,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11791,7 +11896,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ic_Back_3",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12018,7 +12123,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image2_1",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12251,7 +12356,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4",
-      "ParentIndex": 5,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13671,11 +13776,11 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
           "InvariantPropertyName": "Size",
           "IsLockable": false,
-          "NameMapSourceSchema": "*[]"
+          "NameMapSourceSchema": "?"
         },
         {
           "AFDDataSourceName": "",
@@ -13767,7 +13872,14 @@
         },
         "Align",
         "BorderStyle",
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "FontWeight",
         "Mode",
         "PressedBorderColor",
@@ -13808,7 +13920,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LB_RiskID",
-      "ParentIndex": 8,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14050,13 +14162,27 @@
         "DisabledFill",
         "PressedFill",
         "HoverFill",
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "FontWeight",
         "Align",
         "VerticalAlign",
         "X",
         "Y",
-        "Width",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Width",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -14070,7 +14196,14 @@
         "LineHeight",
         "BorderThickness",
         "FocusedBorderThickness",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Italic",
         "Underline",
         "Strikethrough",
@@ -14105,7 +14238,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LB_RiskOwner",
-      "ParentIndex": 11,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -15181,7 +15314,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LblAppName2_3",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -15662,7 +15795,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle3_3",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -15790,7 +15923,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "RectQuickActionBar2_3",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16376,11 +16509,11 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
           "InvariantPropertyName": "Size",
           "IsLockable": false,
-          "NameMapSourceSchema": "*[]"
+          "NameMapSourceSchema": "?"
         },
         {
           "AFDDataSourceName": "",
@@ -16472,7 +16605,14 @@
         },
         "Align",
         "BorderStyle",
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "FontWeight",
         {
           "AFDDataSourceName": "",
@@ -16805,11 +16945,11 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
           "InvariantPropertyName": "Size",
           "IsLockable": false,
-          "NameMapSourceSchema": "*[]"
+          "NameMapSourceSchema": "?"
         },
         {
           "AFDDataSourceName": "",
@@ -16901,7 +17041,14 @@
         },
         "Align",
         "BorderStyle",
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "FontWeight",
         {
           "AFDDataSourceName": "",
@@ -17240,11 +17387,11 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
           "InvariantPropertyName": "Size",
           "IsLockable": false,
-          "NameMapSourceSchema": "*[]"
+          "NameMapSourceSchema": "?"
         },
         {
           "AFDDataSourceName": "",
@@ -17336,7 +17483,14 @@
         },
         "Align",
         "BorderStyle",
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "FontWeight",
         "Mode",
         "PressedBorderColor",
@@ -17370,7 +17524,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TIn_RiskName",
-      "ParentIndex": 14,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17790,7 +17944,15 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Visible"
+        "Visible",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "HintText",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        }
       ],
       "HasDynamicProperties": false,
       "IsAutoGenerated": false,
@@ -17802,7 +17964,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TIn_RiskOwner",
-      "ParentIndex": 10,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17828,6 +17990,11 @@
         {
           "Category": "Data",
           "PropertyName": "ContentLanguage",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "HintText",
           "RuleProviderType": "Unknown"
         },
         {
@@ -18109,11 +18276,11 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
           "InvariantPropertyName": "Size",
           "IsLockable": false,
-          "NameMapSourceSchema": "*[]"
+          "NameMapSourceSchema": "?"
         },
         {
           "AFDDataSourceName": "",
@@ -18205,7 +18372,14 @@
         },
         "Align",
         "BorderStyle",
-        "Font",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "FontWeight",
         {
           "AFDDataSourceName": "",

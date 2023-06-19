@@ -434,7 +434,7 @@
                 ContentLanguage: ="vn-VN"
                 Font: =Font.'Segoe UI'
                 Format: ="dd/mm/yyyy"
-                Height: =38
+                Height: =29
                 IconBackground: =
                 IconFill: =
                 Size: =12
@@ -654,7 +654,7 @@
                 DefaultSelectedItems: =["Có"]
                 DisplayFields: =["Value"]
                 Font: =Font.'Segoe UI'
-                Height: =38
+                Height: =32
                 HoverFill: =
                 IsSearchable: =false
                 Items: |-
@@ -988,7 +988,7 @@
         FontWeight: =FontWeight.Bold
         Height: =88
         Size: =25
-        Text: ="RỦI RO"
+        Text: ="THỦ TỤC KIỂM SOÁT"
         Width: =Parent.Width
         ZIndex: =8
 

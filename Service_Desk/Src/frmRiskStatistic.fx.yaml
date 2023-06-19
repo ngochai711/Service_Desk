@@ -505,7 +505,7 @@
         R_Add_1 As icon.Add:
             Height: =28
             Icon: =Icon.Add
-            OnSelect: =Navigate(frmRisk,ScreenTransition.Fade)
+            OnSelect: =Navigate(frmRiskControl,ScreenTransition.Fade)
             Tooltip: ="Tạo thủ tục kiểm soát"
             Width: =27
             X: =417
@@ -1035,7 +1035,7 @@
             Height: =88
             Image: ='Logo PNJ_v2'
             Width: =138
-            X: =30
+            X: =9
             ZIndex: =21
 
     Group4 As group:

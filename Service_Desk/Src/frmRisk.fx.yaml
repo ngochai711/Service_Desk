@@ -1141,7 +1141,7 @@
                     {Value:"Chờ duyệt V1",Index:2},
                     {Value:"Chờ duyệt 2",Index:3},
                     {Value:"Theo dõi",Index:4},
-                    {Value:"Đóng",Index:5},
+                    {Value:"Hoàn thành",Index:5},
                     {Value:"Hủy",Index:6},
                     {Value:"Trả lại",Index:7})
                 OnChange: =

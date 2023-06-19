@@ -187,11 +187,12 @@
                 ZIndex: =4
 
             Separator1 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =0.5
-                Height: =8
+                Height: =1
                 OnSelect: =Select(Parent)
                 Width: =Parent.TemplateWidth
-                Y: =96
+                Y: =103
                 ZIndex: =5
 
             Rectangle2 As rectangle:
@@ -205,10 +206,10 @@
                 Font: =Font.'Segoe UI'
                 Height: =27
                 OnSelect: =Select(Parent)
+                PaddingBottom: =4
                 Size: =12
                 Text: =ThisItem.RR_MA&" - "&ThisItem.RR_TEN
                 Width: =390
-                X: =4
                 ZIndex: =9
 
             Label7_1 As label:
@@ -219,7 +220,6 @@
                 Text: |-
                     ="CSH: "&ThisItem.RR_CSH
                 Width: =390
-                X: =4
                 Y: =27
                 ZIndex: =10
 
@@ -231,7 +231,6 @@
                 Text: |-
                     ="Ngày: "&ThisItem.'NGAY TẠO'
                 Width: =145
-                X: =4
                 Y: =54
                 ZIndex: =11
 
@@ -253,9 +252,8 @@
                 OnSelect: =Select(Parent)
                 Size: =12
                 Text: |-
-                    ="CSH: "&ThisItem.RR_CSH
+                    ="Xếp hạng Thuần: "&ThisItem.RR_THUAN_XEPHANG&" - Gộp: "&ThisItem.RR_GOP_XEPHANG
                 Width: =390
-                X: =4
                 Y: =77
                 ZIndex: =13
 

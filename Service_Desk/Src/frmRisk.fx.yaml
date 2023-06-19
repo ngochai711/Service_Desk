@@ -5,6 +5,7 @@
         Reset(CB_RiskStatus);
         Reset(CB_RiskImportant);
         Reset(TIn_RiskOwner);
+        UpdateContext({varSelectedOwner:""});
     OnVisible: |+
         =Reset(CB_RG_Finance);
         Reset(CB_RG_nonFinance);
@@ -1178,7 +1179,7 @@
                     =UpdateContext({varLBRiskOwner:false,
                     HidePeopleGallery:false})
                 Size: =12
-                Text: =SelectedOwner.DisplayName&" - "&SelectedOwner.Mail
+                Text: =varSelectedOwner
                 Visible: =varLBRiskOwner
                 Width: =434
                 X: =864
@@ -1201,7 +1202,7 @@
                 Layout: =Layout.Vertical
                 LoadingSpinnerColor: =Gal_RiskSelecttOwner.BorderColor
                 OnSelect: |-
-                    = UpdateContext({SelectedOwner:ThisItem, HidePeopleGallery:true, 
+                    = UpdateContext({varSelectedOwner:ThisItem.DisplayName&" - "&ThisItem.Mail, HidePeopleGallery:true, 
                      varLBRiskOwner: true})
                 PressedBorderColor: =Gal_RiskSelecttOwner.BorderColor
                 PressedFill: =Gal_RiskSelecttOwner.Fill

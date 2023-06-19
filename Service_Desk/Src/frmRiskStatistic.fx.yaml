@@ -220,7 +220,7 @@
                 Text: |-
                     ="Ngày: "&ThisItem.'NGAY TẠO'
                 Width: =145
-                X: =155
+                X: =1
                 Y: =54
                 ZIndex: =11
 
@@ -268,6 +268,7 @@
                 Text: |-
                     ="Trọng yếu: "&ThisItem.RR_TRONGYEU
                 Width: =149
+                X: =175
                 Y: =54
                 ZIndex: =15
 

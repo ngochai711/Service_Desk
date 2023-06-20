@@ -116,10 +116,9 @@
         PressedColor: =HD_RiskID_22.Color
         PressedFill: =HD_RiskID_22.Fill
         Size: =12
-        Text: ="Mã kiểm soát"
-        Width: =180
-        X: =715
-        Y: =482
+        Text: ="Mã rủi ro"
+        X: =60
+        Y: =483
         ZIndex: =32
 
     HD_RiskStatus_5 As label:
@@ -135,10 +134,10 @@
         PressedColor: =HD_RiskStatus_5.Color
         PressedFill: =HD_RiskStatus_5.Fill
         Size: =12
-        Text: ="Trạng thái kiểm soát"
+        Text: ="Trạng thái rủi ro"
         Width: =180
-        X: =715
-        Y: =652
+        X: =709
+        Y: =608
         ZIndex: =33
 
     HD_RiskName_14 As label:
@@ -154,10 +153,9 @@
         PressedColor: =HD_RiskName_14.Color
         PressedFill: =HD_RiskName_14.Fill
         Size: =12
-        Text: ="Nội dung kiểm soát"
-        Width: =180
-        X: =715
-        Y: =527
+        Text: ="Mô tả rủi ro"
+        X: =60
+        Y: =528
         ZIndex: =34
 
     HD_RiskOwner_15 As label:
@@ -173,10 +171,9 @@
         PressedColor: =HD_RiskOwner_15.Color
         PressedFill: =HD_RiskOwner_15.Fill
         Size: =12
-        Text: ="Chủ sở hữu kiểm soát"
-        Width: =180
-        X: =715
-        Y: =607
+        Text: ="Chủ sở hữu rủi ro"
+        X: =60
+        Y: =608
         ZIndex: =35
 
     ComboBox1_13 As combobox:
@@ -192,8 +189,8 @@
             =Search(Table({Value:"Có",Index:1},
             {Value:"Không",Index:2}),ComboBox1_13.SearchText,"Value")
         Width: =415
-        X: =895
-        Y: =652
+        X: =880
+        Y: =608
         ZIndex: =36
 
     TextInput1_20 As text:
@@ -205,23 +202,23 @@
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Width: =415
-        X: =895
-        Y: =482
+        Width: =207
+        X: =210
+        Y: =483
         ZIndex: =37
 
     TextInput1_21 As text:
         BorderThickness: =1
         Default: =""
-        Height: =70
+        Height: =80
         OnSelect: =
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Width: =415
-        X: =895
-        Y: =527
+        Width: =1085
+        X: =210
+        Y: =528
         ZIndex: =38
 
     TextInput1_22 As text:
@@ -233,9 +230,9 @@
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Width: =415
-        X: =895
-        Y: =607
+        Width: =445
+        X: =210
+        Y: =608
         ZIndex: =39
 
     HD_RiskImportant_11 As label:
@@ -342,6 +339,40 @@
         X: =997
         Y: =237
         ZIndex: =45
+
+    HD_RiskName_17 As label:
+        Align: =Align.Center
+        Color: =RGBA(92,92,92,1)
+        FocusedBorderColor: =HD_RiskName_17.BorderColor
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =HD_RiskName_17.BorderColor
+        HoverColor: =HD_RiskName_17.Color
+        HoverFill: =HD_RiskName_17.Fill
+        PressedBorderColor: =HD_RiskName_17.BorderColor
+        PressedColor: =HD_RiskName_17.Color
+        PressedFill: =HD_RiskName_17.Fill
+        Size: =12
+        Text: ="Tên rủi ro"
+        Width: =120
+        X: =517
+        Y: =483
+        ZIndex: =46
+
+    TextInput1_27 As text:
+        BorderThickness: =1
+        Default: =""
+        Height: =35
+        OnSelect: =
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Width: =640
+        X: =655
+        Y: =483
+        ZIndex: =47
 
     Group8_1 As group:
         Height: =5

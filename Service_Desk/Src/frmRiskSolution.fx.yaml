@@ -226,7 +226,7 @@
         Items: |-
             =Table({Value:"Có",Index:1},
             {Value:"Không",Index:2})
-        OnSelect: =Select(Parent)
+        OnSelect: =
         SearchFields: =["Value"]
         SearchItems: |-
             =Search(Table({Value:"Có",Index:1},
@@ -243,7 +243,7 @@
         Items: |-
             =Table({Value:"Có",Index:1},
             {Value:"Không",Index:2})
-        OnSelect: =Select(Parent)
+        OnSelect: =
         SearchFields: =["Value"]
         SearchItems: |-
             =Search(Table({Value:"Có",Index:1},
@@ -256,7 +256,7 @@
     DatePicker1 As datepicker:
         BorderThickness: =1
         Height: =35
-        OnSelect: =Select(Parent)
+        OnSelect: =
         Width: =288
         X: =971
         Y: =639
@@ -280,7 +280,7 @@
         BorderThickness: =1
         Default: ="Text input"
         Height: =35
-        OnSelect: =Select(Parent)
+        OnSelect: =
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
@@ -294,7 +294,7 @@
         BorderThickness: =1
         Default: ="Text input"
         Height: =35
-        OnSelect: =Select(Parent)
+        OnSelect: =
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
@@ -649,6 +649,7 @@
             =Search(Table({Value:"Không hiệu quả",Index:1},
             {Value:"Hiệu quả một phần",Index:2},
             {Value:"Hiệu quả",Index:3}),ComboBox1_2.SearchText,"Value")
+        SelectionTagFill: =
         Width: =402
         X: =302
         Y: =292
@@ -669,6 +670,7 @@
         SearchFields: =["Value"]
         SearchItems: =[]
         SelectionFill: =RGBA(255, 255, 255, 1)
+        SelectionTagFill: =
         SelectMultiple: =false
         Width: =280
         X: =1017

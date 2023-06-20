@@ -23,7 +23,7 @@
         Height: =88
         Image: ='Logo PNJ_v2'
         Width: =138
-        X: =139
+        X: =93
         ZIndex: =5
 
     Back_2 As group:
@@ -346,7 +346,7 @@
         Text: ="Ngày tạo hành động"
         VerticalAlign: =VerticalAlign.Top
         Width: =232
-        X: =785
+        X: =765
         Y: =112
         ZIndex: =20
 
@@ -412,7 +412,7 @@
         Text: ="Bắt đầu theo kế hoạch"
         VerticalAlign: =VerticalAlign.Top
         Width: =232
-        X: =785
+        X: =765
         Y: =157
         ZIndex: =23
 
@@ -434,7 +434,7 @@
         Text: ="Kết thúc theo kế hoạch"
         VerticalAlign: =VerticalAlign.Top
         Width: =232
-        X: =785
+        X: =765
         Y: =202
         ZIndex: =24
 
@@ -456,7 +456,7 @@
         Text: ="Kết thúc thực tế"
         VerticalAlign: =VerticalAlign.Top
         Width: =232
-        X: =785
+        X: =765
         Y: =248
         ZIndex: =25
 
@@ -500,7 +500,7 @@
         Text: ="Đánh giá tổng thể hành động"
         VerticalAlign: =VerticalAlign.Top
         Width: =232
-        X: =785
+        X: =765
         Y: =292
         ZIndex: =27
 
@@ -544,7 +544,7 @@
         Text: ="Cơ sở xếp hạng"
         VerticalAlign: =VerticalAlign.Top
         Width: =232
-        X: =785
+        X: =765
         Y: =337
         ZIndex: =29
 
@@ -560,7 +560,7 @@
         RadiusTopRight: =0
         Width: =402
         X: =302
-        Y: =163
+        Y: =157
         ZIndex: =31
 
     TextInput1_5 As text:
@@ -583,8 +583,8 @@
         Format: ="dd/mm/yyyy"
         Height: =35
         OnSelect: =
-        Width: =280
-        X: =1017
+        Width: =320
+        X: =997
         Y: =157
         ZIndex: =33
 
@@ -593,8 +593,8 @@
         Format: ="dd/mm/yyyy"
         Height: =35
         OnSelect: =
-        Width: =280
-        X: =1017
+        Width: =320
+        X: =997
         Y: =202
         ZIndex: =34
 
@@ -603,8 +603,8 @@
         Format: ="dd/mm/yyyy"
         Height: =35
         OnSelect: =
-        Width: =280
-        X: =1017
+        Width: =320
+        X: =997
         Y: =247
         ZIndex: =35
 
@@ -618,8 +618,7 @@
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Width: =280
-        X: =1017
+        X: =997
         Y: =337
         ZIndex: =36
 
@@ -668,8 +667,8 @@
         SelectionFill: =
         SelectionTagFill: =
         SelectMultiple: =false
-        Width: =280
-        X: =1017
+        Width: =320
+        X: =997
         Y: =292
         ZIndex: =38
 
@@ -678,8 +677,8 @@
         Format: ="dd/mm/yyyy"
         Height: =35
         OnSelect: =
-        Width: =280
-        X: =1017
+        Width: =320
+        X: =997
         Y: =112
         ZIndex: =39
 

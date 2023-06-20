@@ -102,8 +102,8 @@
         Text: ="Mã rủi ro"
         VerticalAlign: =VerticalAlign.Top
         Width: =180
-        X: =44
-        Y: =448
+        X: =60
+        Y: =604
         ZIndex: =7
 
     HD_RiskStatus_2 As label:
@@ -194,8 +194,8 @@
         Text: ="Tên rủi ro"
         VerticalAlign: =VerticalAlign.Top
         Width: =180
-        X: =44
-        Y: =483
+        X: =60
+        Y: =639
         ZIndex: =11
 
     HD_RiskOwner_2 As label:
@@ -217,8 +217,8 @@
         Text: ="Chủ sở hữu rủi ro"
         VerticalAlign: =VerticalAlign.Top
         Width: =180
-        X: =44
-        Y: =518
+        X: =60
+        Y: =674
         ZIndex: =12
 
     ComboBox1 As combobox:
@@ -274,8 +274,8 @@
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Width: =476
-        X: =224
-        Y: =448
+        X: =240
+        Y: =604
         ZIndex: =16
 
     TextInput1_1 As text:
@@ -288,8 +288,8 @@
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Width: =476
-        X: =224
-        Y: =483
+        X: =240
+        Y: =639
         ZIndex: =17
 
     TextInput1_2 As text:
@@ -302,8 +302,8 @@
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Width: =476
-        X: =224
-        Y: =518
+        X: =240
+        Y: =674
         ZIndex: =18
 
     HD_RiskID_4 As label:
@@ -747,8 +747,8 @@
             =Not(IsBlank(TextInput1_5)) &&
             !HidePeopleGallery
         Width: =402
-        X: =302
-        Y: =299
+        X: =318
+        Y: =455
         ZIndex: =43
 
         LabelPersonDisplayName_3 As label:

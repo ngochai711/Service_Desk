@@ -48,9 +48,7 @@
                     ZIndex: =7
 
                 HD_RiskID_10 As label:
-                    BorderColor: =RGBA(0, 0, 0, 1)
                     Color: =RGBA(92,92,92,1)
-                    DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                     FocusedBorderColor: =HD_RiskID_10.BorderColor
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Semibold
@@ -64,16 +62,13 @@
                     Size: =12
                     Text: |-
                         ="Mã rủi ro:"
-                    VerticalAlign: =VerticalAlign.Top
                     Width: =93
                     X: =153
                     Y: =9
                     ZIndex: =8
 
                 HD_RiskStatus_8 As label:
-                    BorderColor: =RGBA(0, 0, 0, 1)
                     Color: =RGBA(92,92,92,1)
-                    DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                     FocusedBorderColor: =HD_RiskStatus_8.BorderColor
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Semibold
@@ -87,16 +82,13 @@
                     Size: =12
                     Text: |-
                         ="Trạng thái rủi ro:"
-                    VerticalAlign: =VerticalAlign.Top
                     Width: =161
                     X: =153
                     Y: =70
                     ZIndex: =9
 
                 HD_RiskRecordDate_5 As label:
-                    BorderColor: =RGBA(0, 0, 0, 1)
                     Color: =RGBA(92,92,92,1)
-                    DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                     FocusedBorderColor: =HD_RiskRecordDate_5.BorderColor
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Semibold
@@ -110,16 +102,13 @@
                     Size: =12
                     Text: |-
                         ="Ngày ghi nhận rủi ro:"
-                    VerticalAlign: =VerticalAlign.Top
                     Width: =200
                     X: =153
                     Y: =36
                     ZIndex: =10
 
                 HD_RiskImportant_4 As label:
-                    BorderColor: =RGBA(0, 0, 0, 1)
                     Color: =RGBA(92,92,92,1)
-                    DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                     FocusedBorderColor: =HD_RiskImportant_4.BorderColor
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Semibold
@@ -133,16 +122,13 @@
                     Size: =12
                     Text: |-
                         ="Rủi ro trọng yếu:"
-                    VerticalAlign: =VerticalAlign.Top
                     Width: =161
                     X: =153
                     Y: =105
                     ZIndex: =11
 
                 HD_RiskName_6 As label:
-                    BorderColor: =RGBA(0, 0, 0, 1)
                     Color: =RGBA(92,92,92,1)
-                    DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                     FocusedBorderColor: =HD_RiskName_6.BorderColor
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Semibold
@@ -156,16 +142,13 @@
                     Size: =12
                     Text: |-
                         ="Tên rủi ro:"
-                    VerticalAlign: =VerticalAlign.Top
                     Width: =122
                     X: =693
                     Y: =9
                     ZIndex: =12
 
                 HD_RiskDescribe_2 As label:
-                    BorderColor: =RGBA(0, 0, 0, 1)
                     Color: =RGBA(92,92,92,1)
-                    DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                     FocusedBorderColor: =HD_RiskDescribe_2.BorderColor
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Semibold
@@ -179,16 +162,13 @@
                     Size: =12
                     Text: |-
                         ="Rủi ro thuận - Xếp hạng:"
-                    VerticalAlign: =VerticalAlign.Top
                     Width: =222
                     X: =693
                     Y: =100
                     ZIndex: =13
 
                 HD_RiskReason_2 As label:
-                    BorderColor: =RGBA(0, 0, 0, 1)
                     Color: =RGBA(92,92,92,1)
-                    DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                     FocusedBorderColor: =HD_RiskReason_2.BorderColor
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Semibold
@@ -202,16 +182,13 @@
                     Size: =12
                     Text: |-
                         ="Rủi ro gộp - Xếp hạng:"
-                    VerticalAlign: =VerticalAlign.Top
                     Width: =212
                     X: =693
                     Y: =70
                     ZIndex: =14
 
                 HD_RiskOwner_6 As label:
-                    BorderColor: =RGBA(0, 0, 0, 1)
                     Color: =RGBA(92,92,92,1)
-                    DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                     FocusedBorderColor: =HD_RiskOwner_6.BorderColor
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Semibold
@@ -225,7 +202,6 @@
                     Size: =12
                     Text: |-
                         ="Chủ sở hữu rủi ro:"
-                    VerticalAlign: =VerticalAlign.Top
                     Width: =178
                     X: =693
                     Y: =36
@@ -334,9 +310,7 @@
             ZIndex: =2
 
             HD_RiskID_11 As label:
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =HD_RiskID_11.BorderColor
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
@@ -349,7 +323,6 @@
                 PressedFill: =HD_RiskID_11.Fill
                 Size: =12
                 Text: ="Mã chốt kiểm soát"
-                VerticalAlign: =VerticalAlign.Top
                 Width: =183
                 X: =98
                 Y: =20
@@ -358,22 +331,14 @@
             LB_RiskID_2 As text:
                 AccessibleLabel: ="Input ticket creator"
                 BorderColor: =RGBA(230,230,230,1)
-                Color: =RGBA(47, 41, 43, 1)
                 Default: =varRiskControlKey
-                DisabledBorderColor: =RGBA(159, 167, 165, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
                 DisplayMode: =DisplayMode.View
                 FocusedBorderColor: =LB_RiskID_2.BorderColor
-                FocusedBorderThickness: =3
                 Font: =Font.'Segoe UI'
                 Height: =37
                 HoverBorderColor: =LB_RiskID_2.BorderColor
                 HoverColor: =LB_RiskID_2.Color
                 HoverFill: =LB_RiskID_2.Fill
-                PressedBorderColor: =LB_RiskID_2.HoverBorderColor
-                PressedColor: =LB_RiskID_2.Color
-                PressedFill: =LB_RiskID_2.Fill
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -386,9 +351,7 @@
                 ZIndex: =2
 
             HD_RiskStatus_9 As label:
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =HD_RiskStatus_9.BorderColor
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
@@ -401,16 +364,13 @@
                 PressedFill: =HD_RiskStatus_9.Fill
                 Size: =12
                 Text: ="Loại kiểm soát"
-                VerticalAlign: =VerticalAlign.Top
                 Width: =161
                 X: =588
                 Y: =120
                 ZIndex: =3
 
             HD_RiskRecordDate_7 As label:
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =HD_RiskRecordDate_7.BorderColor
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
@@ -423,7 +383,6 @@
                 PressedFill: =HD_RiskRecordDate_7.Fill
                 Size: =12
                 Text: ="Ngày tạo chốt kiểm soát"
-                VerticalAlign: =VerticalAlign.Top
                 Width: =217
                 X: =332
                 Y: =20
@@ -444,9 +403,7 @@
                 ZIndex: =5
 
             HD_RiskImportant_5 As label:
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =HD_RiskImportant_5.BorderColor
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
@@ -459,16 +416,13 @@
                 PressedFill: =HD_RiskImportant_5.Fill
                 Size: =12
                 Text: ="Kiểm soát chính"
-                VerticalAlign: =VerticalAlign.Top
                 Width: =149
                 X: =986
                 Y: =17
                 ZIndex: =6
 
             HD_RiskName_7 As label:
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =HD_RiskName_7.BorderColor
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
@@ -481,7 +435,6 @@
                 PressedFill: =HD_RiskName_7.Fill
                 Size: =12
                 Text: ="Nội dung chốt kiểm soát"
-                VerticalAlign: =VerticalAlign.Top
                 Width: =225
                 X: =98
                 Y: =108
@@ -490,23 +443,15 @@
             TIn_RiskName_2 As text:
                 AccessibleLabel: ="Input ticket creator"
                 BorderColor: =RGBA(230,230,230,1)
-                Color: =RGBA(47, 41, 43, 1)
                 Default: =
-                DisabledBorderColor: =RGBA(159, 167, 165, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
                 DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
                 FocusedBorderColor: =TIn_RiskName_2.BorderColor
-                FocusedBorderThickness: =3
                 Font: =Font.'Segoe UI'
                 Height: =80
                 HoverBorderColor: =TIn_RiskName_2.BorderColor
                 HoverColor: =TIn_RiskName_2.Color
                 HoverFill: =TIn_RiskName_2.Fill
                 Mode: =TextMode.MultiLine
-                PressedBorderColor: =TIn_RiskName_2.HoverBorderColor
-                PressedColor: =TIn_RiskName_2.Color
-                PressedFill: =TIn_RiskName_2.Fill
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -519,9 +464,7 @@
                 ZIndex: =8
 
             HD_RiskDescribe_4 As label:
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =HD_RiskDescribe_4.BorderColor
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
@@ -534,7 +477,6 @@
                 PressedFill: =HD_RiskDescribe_4.Fill
                 Size: =12
                 Text: ="Cơ sở đánh giá chốt kiểm soát"
-                VerticalAlign: =VerticalAlign.Top
                 Width: =264
                 X: =98
                 Y: =308
@@ -543,23 +485,15 @@
             TIn_RiskDescribe_2 As text:
                 AccessibleLabel: ="Input ticket creator"
                 BorderColor: =RGBA(230,230,230,1)
-                Color: =RGBA(47, 41, 43, 1)
                 Default: =
-                DisabledBorderColor: =RGBA(159, 167, 165, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
                 DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
                 FocusedBorderColor: =TIn_RiskDescribe_2.BorderColor
-                FocusedBorderThickness: =3
                 Font: =Font.'Segoe UI'
                 Height: =85
                 HoverBorderColor: =TIn_RiskDescribe_2.BorderColor
                 HoverColor: =TIn_RiskDescribe_2.Color
                 HoverFill: =TIn_RiskDescribe_2.Fill
                 Mode: =TextMode.MultiLine
-                PressedBorderColor: =TIn_RiskDescribe_2.HoverBorderColor
-                PressedColor: =TIn_RiskDescribe_2.Color
-                PressedFill: =TIn_RiskDescribe_2.Fill
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -572,9 +506,7 @@
                 ZIndex: =10
 
             HD_RiskReason_4 As label:
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =HD_RiskReason_4.BorderColor
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
@@ -587,7 +519,6 @@
                 PressedFill: =HD_RiskReason_4.Fill
                 Size: =12
                 Text: ="Cơ sở đánh giá chốt kiểm soát tổng thể"
-                VerticalAlign: =VerticalAlign.Top
                 Width: =347
                 X: =643
                 Y: =308
@@ -596,23 +527,15 @@
             TIn_RiskReason_2 As text:
                 AccessibleLabel: ="Input ticket creator"
                 BorderColor: =RGBA(230,230,230,1)
-                Color: =RGBA(47, 41, 43, 1)
                 Default: =
-                DisabledBorderColor: =RGBA(159, 167, 165, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
                 DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
                 FocusedBorderColor: =TIn_RiskReason_2.BorderColor
-                FocusedBorderThickness: =3
                 Font: =Font.'Segoe UI'
                 Height: =74
                 HoverBorderColor: =TIn_RiskReason_2.BorderColor
                 HoverColor: =TIn_RiskReason_2.Color
                 HoverFill: =TIn_RiskReason_2.Fill
                 Mode: =TextMode.MultiLine
-                PressedBorderColor: =TIn_RiskReason_2.HoverBorderColor
-                PressedColor: =TIn_RiskReason_2.Color
-                PressedFill: =TIn_RiskReason_2.Fill
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -671,9 +594,7 @@
                 ZIndex: =15
 
             HD_RiskStatus_10 As label:
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =HD_RiskStatus_10.BorderColor
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
@@ -686,7 +607,6 @@
                 PressedFill: =HD_RiskStatus_10.Fill
                 Size: =12
                 Text: ="Tần suất kiểm soát"
-                VerticalAlign: =VerticalAlign.Top
                 Width: =178
                 X: =785
                 Y: =120
@@ -720,9 +640,7 @@
                 ZIndex: =20
 
             HD_RiskStatus_11 As label:
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =HD_RiskStatus_11.BorderColor
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
@@ -735,7 +653,6 @@
                 PressedFill: =HD_RiskStatus_11.Fill
                 Size: =12
                 Text: ="Phân loại chốt kiểm soát"
-                VerticalAlign: =VerticalAlign.Top
                 Width: =232
                 X: =986
                 Y: =120
@@ -766,9 +683,7 @@
                 ZIndex: =22
 
             HD_RiskStatus_12 As label:
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =HD_RiskStatus_12.BorderColor
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
@@ -781,7 +696,6 @@
                 PressedFill: =HD_RiskStatus_12.Fill
                 Size: =12
                 Text: ="Đánh giá chốt kiểm soát"
-                VerticalAlign: =VerticalAlign.Top
                 Width: =221
                 X: =98
                 Y: =253
@@ -812,9 +726,7 @@
                 ZIndex: =24
 
             HD_RiskStatus_13 As label:
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =HD_RiskStatus_13.BorderColor
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
@@ -827,7 +739,6 @@
                 PressedFill: =HD_RiskStatus_13.Fill
                 Size: =12
                 Text: ="Đánh giá chốt kiểm soát tổng thể"
-                VerticalAlign: =VerticalAlign.Top
                 Width: =301
                 X: =643
                 Y: =257
@@ -860,23 +771,15 @@
             TIn_RiskOwner_2 As text:
                 AccessibleLabel: ="Input ticket creator"
                 BorderColor: =RGBA(230,230,230,1)
-                Color: =RGBA(47, 41, 43, 1)
                 Default: =
-                DisabledBorderColor: =RGBA(159, 167, 165, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-                DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
                 DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
                 FocusedBorderColor: =TIn_RiskOwner_2.BorderColor
-                FocusedBorderThickness: =3
                 Height: =31
                 HintText: ="Nhập tên - Mail"
                 HoverBorderColor: =TIn_RiskOwner_2.BorderColor
                 HoverColor: =TIn_RiskOwner_2.Color
                 HoverFill: =TIn_RiskOwner_2.Fill
                 OnChange: =false 
-                PressedBorderColor: =TIn_RiskOwner_2.HoverBorderColor
-                PressedColor: =TIn_RiskOwner_2.Color
-                PressedFill: =TIn_RiskOwner_2.Fill
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -932,7 +835,6 @@
                 ZIndex: =29
 
                 LabelPersonDisplayName_5 As label:
-                    BorderColor: =RGBA(101, 128, 187, 1)
                     FocusedBorderColor: =LabelPersonDisplayName_5.BorderColor
                     Font: =Font.'Segoe UI'
                     Height: =53
@@ -954,9 +856,7 @@
                     ZIndex: =1
 
             HD_RiskRecordDate_6 As label:
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(92,92,92,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =HD_RiskRecordDate_6.BorderColor
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
@@ -969,7 +869,6 @@
                 PressedFill: =HD_RiskRecordDate_6.Fill
                 Size: =12
                 Text: ="Chủ sở hữu chốt kiểm soát"
-                VerticalAlign: =VerticalAlign.Top
                 Width: =217
                 X: =565
                 Y: =17
@@ -1042,21 +941,15 @@
 
         ic_Back_6 As icon.ChevronLeft:
             AccessibleLabel: ="Navigate to previous page"
-            BorderColor: =RGBA(0, 0, 0, 1)
             Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(56, 56, 56, 1)
-            DisabledColor: =RGBA(193, 193, 193, 0.95)
-            DisabledFill: =ic_Back_6.Fill
             FocusedBorderColor: =ic_Back_6.BorderColor
             Height: =50
-            HoverBorderColor: =ColorFade(ic_Back_6.BorderColor, 20%)
             HoverColor: =ColorFade(Self.BorderColor, 20%)
             HoverFill: =ColorFade(Self.BorderColor, 20%)
             Icon: =Icon.ChevronLeft
             OnSelect: |-
                 =Navigate(frmRiskStatistic,ScreenTransition.Fade);
                 Clear(RiskInfo)
-            PressedBorderColor: =ColorFade(ic_Back_6.BorderColor, -20%)
             PressedColor: =ColorFade(Self.BorderColor, 20%)
             TabIndex: =0
             Width: =32

@@ -44,9 +44,7 @@
 
             TextBox1_23 As label:
                 Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(54, 176, 75, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =TextBox1_23.BorderColor
                 FocusedBorderThickness: =02
                 FontWeight: =FontWeight.Semibold
@@ -67,9 +65,7 @@
 
             TextBox2_23 As label:
                 Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(54, 176, 75, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =TextBox2_23.BorderColor
                 FocusedBorderThickness: =02
                 Height: =29
@@ -95,9 +91,7 @@
 
             TextBox1_24 As label:
                 Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(255, 0, 0, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =TextBox1_24.BorderColor
                 FocusedBorderThickness: =02
                 FontWeight: =FontWeight.Semibold
@@ -118,9 +112,7 @@
 
             TextBox2_24 As label:
                 Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(255, 0, 0, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =TextBox2_24.BorderColor
                 FocusedBorderThickness: =02
                 Height: =29
@@ -367,7 +359,6 @@
             ZIndex: =18
 
             Title1_1 As label:
-                Font: =Font.'Segoe UI'
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                 Height: =27
                 OnSelect: =Select(Parent)
@@ -375,7 +366,6 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =12
                 Text: =ThisItem.KSRR_MA&" - "&ThisItem.KS_HIENCO
                 VerticalAlign: =VerticalAlign.Top
                 Width: =390
@@ -560,9 +550,7 @@
 
             TextBox1_25 As label:
                 Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(54, 176, 75, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =TextBox1_25.BorderColor
                 FocusedBorderThickness: =02
                 FontWeight: =FontWeight.Semibold
@@ -583,9 +571,7 @@
 
             TextBox2_25 As label:
                 Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(54, 176, 75, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =TextBox2_25.BorderColor
                 FocusedBorderThickness: =02
                 Height: =29
@@ -611,9 +597,7 @@
 
             TextBox1_26 As label:
                 Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(255, 0, 0, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =TextBox1_26.BorderColor
                 FocusedBorderThickness: =02
                 FontWeight: =FontWeight.Semibold
@@ -634,9 +618,7 @@
 
             TextBox2_26 As label:
                 Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(255, 0, 0, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =TextBox2_26.BorderColor
                 FocusedBorderThickness: =02
                 Height: =29
@@ -697,9 +679,7 @@
 
             TextBox1_30 As label:
                 Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(0,0,0,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =TextBox1_30.BorderColor
                 FocusedBorderThickness: =02
                 FontWeight: =FontWeight.Semibold
@@ -719,9 +699,7 @@
 
             TextBox2_30 As label:
                 Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(0,0,0,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =TextBox2_30.BorderColor
                 FocusedBorderThickness: =02
                 Height: =27
@@ -746,9 +724,7 @@
 
             TextBox1_31 As label:
                 Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(56,86,153,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =TextBox1_31.BorderColor
                 FocusedBorderThickness: =02
                 FontWeight: =FontWeight.Semibold
@@ -769,9 +745,7 @@
 
             TextBox2_31 As label:
                 Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(56,86,153,1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =TextBox2_31.BorderColor
                 FocusedBorderThickness: =02
                 Height: =29
@@ -797,9 +771,7 @@
 
             TextBox1_32 As label:
                 Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(255, 191, 0, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =TextBox1_32.BorderColor
                 FocusedBorderThickness: =02
                 FontWeight: =FontWeight.Semibold
@@ -820,9 +792,7 @@
 
             TextBox2_32 As label:
                 Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(255, 191, 0, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =TextBox2_32.BorderColor
                 FocusedBorderThickness: =02
                 Height: =29
@@ -848,9 +818,7 @@
 
             TextBox1_33 As label:
                 Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(54, 176, 75, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =TextBox1_33.BorderColor
                 FocusedBorderThickness: =02
                 FontWeight: =FontWeight.Semibold
@@ -871,9 +839,7 @@
 
             TextBox2_33 As label:
                 Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(54, 176, 75, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =TextBox2_33.BorderColor
                 FocusedBorderThickness: =02
                 Height: =29
@@ -899,9 +865,7 @@
 
             TextBox1_34 As label:
                 Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(255, 0, 0, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =TextBox1_34.BorderColor
                 FocusedBorderThickness: =02
                 FontWeight: =FontWeight.Semibold
@@ -922,9 +886,7 @@
 
             TextBox2_34 As label:
                 Align: =LayoutAlignItems.Center
-                BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(255, 0, 0, 1)
-                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 FocusedBorderColor: =TextBox2_34.BorderColor
                 FocusedBorderThickness: =02
                 Height: =29
@@ -954,7 +916,6 @@
             ZIndex: =18
 
             Title1_2 As label:
-                Font: =Font.'Segoe UI'
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                 Height: =39
                 OnSelect: =Select(Parent)
@@ -962,7 +923,6 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =12
                 Text: =ThisItem.Action_Code&" - "&ThisItem.Action_Description
                 VerticalAlign: =VerticalAlign.Top
                 Width: =376
@@ -1117,7 +1077,6 @@
             ZIndex: =9
 
             LabelPersonDisplayName As label:
-                BorderColor: =RGBA(101, 128, 187, 1)
                 FocusedBorderColor: =LabelPersonDisplayName.BorderColor
                 Font: =Font.'Segoe UI'
                 Height: =53
@@ -1154,8 +1113,6 @@
             Font: =Font.'Segoe UI'
             Height: =36
             HintText: ="Nhập tên - Mail"
-            HoverBorderColor: =
-            HoverColor: =
             HoverFill: =RGBA(255, 255, 255, 1)
             PressedBorderColor: =
             PressedColor: =

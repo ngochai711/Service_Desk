@@ -19,9 +19,8 @@
         UpdateContext({varLBRiskOwner:false,
         HidePeopleGallery:false});
     OnVisible: |+
-        =
-        UpdateContext({varTemp2:true});
-        UpdateContext({varRiskKey:Last(Risks).Risk_Code + 1});
+        =UpdateContext({varTemp2:true});
+        UpdateContext({varRiskKey:"RK"&Text(Last(Risks).Risk_Code + 1,"00000")});
         UpdateContext({varRiskGOPOverall_Text:"Nhỏ"});
         UpdateContext({varRiskGOPOverall_Index:1});
         UpdateContext({varRiskGOPRank:"Nhỏ"});
@@ -1311,8 +1310,7 @@
         OnSelect: |-
             =If(IsBlank(TIn_RiskOwner) || IsBlank(TIn_RiskName) || IsBlank(TIn_RiskDescribe) || IsBlank(TIn_RiskReason) || IsBlank(TIn_RiskConsequence) || IsBlank(TIn_RG_RiskEvaluate) || IsBlank(TIn_RT_RiskEvaluate),
             UpdateContext({varTemp2:false}),
-            Patch(Risks,Defaults(Risks),{Risk_Code:varRiskKey,Risk_Status:CB_RiskStatus.Selected.Value,Risk_Create_Date:Text(DP_RiskRecordDate.SelectedDate,"dd/mm/yyyy"),Risk_Important:CB_RiskImportant.Selected.Value,Risk_Name:TIn_RiskName.Text,Risk_Description:TIn_RiskDescribe.Text,Risk_Reason:TIn_RiskReason.Text,Risk_Consequence:TIn_RiskConsequence.Text,Risk_Owner:SelectedOwner.DisplayName&" - "&SelectedOwner.Mail,Gross_Finance:CB_RG_Finance.Selected.Value,Gross_Non_Finance:CB_RG_nonFinance.Selected.Value,Gross_Overall_Finance:LB_RG_RiskOverall.Text,Gross_Possibility:CB_RG_RiskRate.Selected.Value,Gross_Score:CB_RG_RiskRate.Selected.Index&"-"&varRiskGOPOverall_Index,RR_GOP_XEPHANG:LB_RG_RiskRank.Text,RR_GOP_CSDANHGIA:TIn_RG_RiskEvaluate.Text,RR_THUAN_TAICHINH:CB_RT_Finance.Selected.Value,RR_THUAN_PHITAICHINH:CB_RT_nonFinance.Selected.Value,RR_THUAN_TONGTHE:varRiskGOPOverall_Text,RR_THUAN_KHANANGXAYRA:CB_RG_RiskRate.Selected.Value,RR_THUAN_DIEM:CB_RT_RiskRate.Selected.Index&"-"&varRiskTHUANOverall_Index,RR_THUAN_XEPHANG:LB_RT_RiskRank.Text,RR_THUAN_CSDANHGIA:TIn_RT_RiskEvaluate.Text});
-            Patch(Risk_Connection,Defaults(Risk_Connection),{ID:Last(Risk_Connection).ID+1,R_ID:varRiskKey,RC_ID:"",RS_ID:""})
+            Patch(Risks,Defaults(Risks),{Risk_Code:varRiskKey,Risk_Status:CB_RiskStatus.Selected.Value,Risk_Create_Date:Text(DP_RiskRecordDate.SelectedDate,"dd/mm/yyyy"),Risk_Important:CB_RiskImportant.Selected.Value,Risk_Name:TIn_RiskName.Text,Risk_Description:TIn_RiskDescribe.Text,Risk_Reason:TIn_RiskReason.Text,Risk_Consequence:TIn_RiskConsequence.Text,Risk_Owner:SelectedOwner.DisplayName&" - "&SelectedOwner.Mail,Gross_Finance:CB_RG_Finance.Selected.Value,Gross_Non_Finance:CB_RG_nonFinance.Selected.Value,Gross_Overall_Finance:LB_RG_RiskOverall.Text,Gross_Possibility:CB_RG_RiskRate.Selected.Value,Gross_Score:CB_RG_RiskRate.Selected.Index&"-"&varRiskGOPOverall_Index,Gross_Rank:LB_RG_RiskRank.Text,Gross_Evaluation_Basis:TIn_RG_RiskEvaluate.Text,Net_Finance:CB_RT_Finance.Selected.Value,Net_Non_Finance:CB_RT_nonFinance.Selected.Value,Net_Overall_Finance:varRiskGOPOverall_Text,Net_Possibility:CB_RG_RiskRate.Selected.Value,Net_Score:CB_RT_RiskRate.Selected.Index&"-"&varRiskTHUANOverall_Index,Net_Rank:LB_RT_RiskRank.Text,Net_Evaluation_Basis:TIn_RT_RiskEvaluate.Text})
             );
             
             Navigate(frmRiskStatistic,ScreenTransition.Fade)

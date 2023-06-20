@@ -1,6 +1,6 @@
 "frmRiskSolution As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     OnVisible: |-
-        =UpdateContext({varRiskSolutionKey:CountRows(Risk_Solution)+1})
+        =UpdateContext({varRiskSolutionKey:"SL"&Text((CountRows(Risk_Solution)+1),"00000")});
 
     RectQuickActionBar2_1 As rectangle:
         Fill: =RGBA(0, 52, 104, 1)
@@ -36,9 +36,7 @@
         Rectangle3_2 As rectangle:
             Fill: =RGBA(0, 52, 104, 1)
             Height: =88
-            OnSelect: |-
-                =Navigate(frmRiskStatistic,ScreenTransition.Fade);
-                Clear(RiskInfo)
+            OnSelect: =Navigate(frmRiskStatistic,ScreenTransition.Fade)
             Width: =86
             ZIndex: =3
 
@@ -55,9 +53,7 @@
             HoverColor: =ColorFade(ic_Back_2.Color, 20%)
             HoverFill: =ic_Back_2.Fill
             Icon: =Icon.ChevronLeft
-            OnSelect: |-
-                =Navigate(frmRiskStatistic,ScreenTransition.Fade);
-                Clear(RiskInfo)
+            OnSelect: =Navigate(frmRiskStatistic,ScreenTransition.Fade)
             PressedBorderColor: =ColorFade(ic_Back_2.BorderColor, -20%)
             PressedColor: =ColorFade(ic_Back_2.Color, -20%)
             PressedFill: =ic_Back_2.Fill
@@ -564,7 +560,7 @@
         RadiusTopRight: =0
         Width: =402
         X: =302
-        Y: =157
+        Y: =163
         ZIndex: =31
 
     TextInput1_5 As text:

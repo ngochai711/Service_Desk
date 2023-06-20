@@ -233,11 +233,11 @@
 
                 Label12 As label:
                     Font: =Font.'Segoe UI'
-                    Height: =23
+                    Height: =26
                     OnSelect: =Select(Parent)
                     Size: =12
-                    Text: =ThisItem.RiskId
-                    Width: =117
+                    Text: =RiskInfo.RR_CSH
+                    Width: =235
                     X: =353
                     Y: =13
                     ZIndex: =35

@@ -1,5 +1,6 @@
 "frmRiskStatistic As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Height: =Max(App.Height, App.DesignHeight)
+    OnVisible: =Set(var_Click,0)
     Width: =Max(App.Width, App.DesignWidth)
 
     Risk As groupContainer:
@@ -133,11 +134,11 @@
             DelayItemLoading: =true
             Height: =454
             Items: |-
-                =//Risks
-                If(Dropdown2.Selected.Value= "All" && Dropdown2_1.Selected.Value="All",Risks,
+                =Risks
+                /*If(Dropdown2.Selected.Value= "All" && Dropdown2_1.Selected.Value="All",Risks,
                 If(Dropdown2.Selected.Value="All",Filter(Risks,RR_THUAN_XEPHANG=Dropdown2_1.Selected.Value),
                 If(Dropdown2_1.Selected.Value="All",Filter(Risks,RR_GOP_XEPHANG=Dropdown2_1.Selected.Value),
-                Filter(Risks,RR_THUAN_XEPHANG=Dropdown2_1.Selected.Value&&RR_GOP_XEPHANG=Dropdown2_1.Selected.Value))))
+                Filter(Risks,RR_THUAN_XEPHANG=Dropdown2_1.Selected.Value&&RR_GOP_XEPHANG=Dropdown2_1.Selected.Value))))*/
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
@@ -149,11 +150,11 @@
             NextArrow1 As icon.ChevronRight:
                 AccessibleLabel: =Self.Tooltip
                 Color: =RGBA(166, 166, 166, 1)
-                Height: =50
+                Height: =126
                 Icon: =Icon.ChevronRight
                 OnSelect: |-
-                    =Navigate(frmRiskControl,ScreenTransition.Fade);
-                    Collect(
+                    =
+                    /*Collect(
                         RiskInfo,
                         {
                             RiskId: ThisItem.RR_MA,
@@ -180,15 +181,14 @@
                             RiskTHUANRank: ThisItem.RR_THUAN_XEPHANG,
                             RiskTHUANEvaluate: ThisItem.RR_THUAN_CSDANHGIA
                         }
-                    )
+                    )*/
                 PaddingBottom: =16
                 PaddingLeft: =16
                 PaddingRight: =16
                 PaddingTop: =16
                 Tooltip: ="Hiện kiểm soát"
-                Width: =50
-                X: =Parent.TemplateWidth - Self.Width - 12
-                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                Width: =62
+                X: =376
                 ZIndex: =4
 
             Separator1 As rectangle:
@@ -223,7 +223,7 @@
                 OnSelect: =Select(Parent)
                 Size: =12
                 Text: |-
-                    ="Ngày: "&ThisItem.'NGAY TẠO'
+                    ="Ngày: "&ThisItem.Risk_Create_Date
                 Width: =145
                 X: =1
                 Y: =54
@@ -258,7 +258,7 @@
                 PaddingBottom: =4
                 Size: =12
                 Text: |-
-                    ="CSH: "&ThisItem.RR_CSH 
+                    ="CSH: "&ThisItem.RiskOwner 
                 Width: =390
                 Y: =27
                 ZIndex: =14
@@ -271,11 +271,33 @@
                 PaddingTop: =0
                 Size: =12
                 Text: |-
-                    ="Trọng yếu: "&ThisItem.RR_TRONGYEU
+                    ="Trọng yếu: "&ThisItem.Risk_Important
                 Width: =149
                 X: =175
                 Y: =54
                 ZIndex: =15
+
+            Button3 As button:
+                Color: =RGBA(0, 0, 0, 0)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(0, 0, 0, 0)
+                FocusedBorderColor: =
+                FocusedBorderThickness: =
+                Height: =126
+                HoverBorderColor: =
+                HoverColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =
+                OnSelect: |-
+                    =Set(var_Click,var_Click+1);
+                    If(var_Click=2,Navigate(frmRisk,ScreenTransition.Fade);var_Click=0;Set(RiskInfo, ThisItem))
+                PressedBorderColor: =
+                PressedColor: =
+                PressedFill: =
+                Text: =""
+                Width: =376
+                ZIndex: =16
 
         Label1_2 As label:
             Align: =Align.Center

@@ -3505,246 +3505,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRiskStatistic.Risk.Gallery1.Label7.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskStatistic.Risk.Gallery1.Label7.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".RR_MA"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "frmRiskStatistic",
-                "type": "frmRiskStatistic.Risk.Gallery1.Label7"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "RR_MA"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskStatistic.Risk.Gallery1.Label7.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskStatistic.Risk.Gallery1.Label7.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 29,
-                  "snippet": {
-                    "text": ".RR_TEN"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "frmRiskStatistic",
-                "type": "frmRiskStatistic.Risk.Gallery1.Label7"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "RR_TEN"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskStatistic.Risk.Gallery1.Label7_1.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskStatistic.Risk.Gallery1.Label7_1.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 16,
-                  "snippet": {
-                    "text": ".RiskOwner"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "frmRiskStatistic",
-                "type": "frmRiskStatistic.Risk.Gallery1.Label7_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "RiskOwner"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskStatistic.Risk.Gallery1.Label7_3.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskStatistic.Risk.Gallery1.Label7_3.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 23,
-                  "snippet": {
-                    "text": ".RR_TRANGTHAI"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "frmRiskStatistic",
-                "type": "frmRiskStatistic.Risk.Gallery1.Label7_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "RR_TRANGTHAI"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskStatistic.Risk.Gallery1.Label7_4.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskStatistic.Risk.Gallery1.Label7_4.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 27,
-                  "snippet": {
-                    "text": ".RR_THUAN_XEPHANG"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "frmRiskStatistic",
-                "type": "frmRiskStatistic.Risk.Gallery1.Label7_4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "RR_THUAN_XEPHANG"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskStatistic.Risk.Gallery1.Label7_4.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskStatistic.Risk.Gallery1.Label7_4.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 64,
-                  "snippet": {
-                    "text": ".RR_GOP_XEPHANG"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "frmRiskStatistic",
-                "type": "frmRiskStatistic.Risk.Gallery1.Label7_4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "RR_GOP_XEPHANG"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "frmRiskStatistic.'Risk Control'.TextBox1_25.Text"
                 }
               ],
@@ -4511,46 +4271,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRisk.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRisk.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 72,
-                  "snippet": {
-                    "text": ".RR_MA"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "frmRisk",
-                "type": "frmRisk"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "RR_MA"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "frmRisk.Button1.OnSelect"
                 }
               ],
@@ -4560,10 +4280,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 1054,
+                  "charLength": 1089,
                   "charOffset": 239,
                   "snippet": {
-                    "text": "Patch(Risks,Defaults(Risks),{RR_MA:varRiskKey,RR_TRANGTHAI:CB_RiskStatus.Selected.Value,'NGAY TẠO':Text(DP_RiskRecordDate.SelectedDate,\"dd/mm/yyyy\"),RR_TRONGYEU:CB_RiskImportant.Selected.Value,RR_TEN:TIn_RiskName.Text,RR_MOTA:TIn_RiskDescribe.Text,RR_NGUYENNHAN:TIn_RiskReason.Text,RR_HAUQUA:TIn_RiskConsequence.Text,RR_CSH:SelectedOwner.DisplayName&\" - \"&SelectedOwner.Mail,RR_GOP_TAICHINH:CB_RG_Finance.Selected.Value,RR_GOP_PHITAICHINH:CB_RG_nonFinance.Selected.Value,RR_GOP_TONGTHE:LB_RG_RiskOverall.Text,RR_GOP_KHANANGXAYRA:CB_RG_RiskRate.Selected.Value,RR_GOP_DIEM:CB_RG_RiskRate.Selected.Index&\"-\"&varRiskGOPOverall_Index,RR_GOP_XEPHANG:LB_RG_RiskRank.Text,RR_GOP_CSDANHGIA:TIn_RG_RiskEvaluate.Text,RR_THUAN_TAICHINH:CB_RT_Finance.Selected.Value,RR_THUAN_PHITAICHINH:CB_RT_nonFinance.Selected.Value,RR_THUAN_TONGTHE:varRiskGOPOverall_Text,RR_THUAN_KHANANGXAYRA:CB_RG_RiskRate.Selected.Value,RR_THUAN_DIEM:CB_RT_RiskRate.Selected.Index&\"-\"&varRiskTHUANOverall_Index,RR_THUAN_XEPHANG:LB_RT_RiskRank.Text,RR_THUAN_CSDANHGIA:TIn_RT_RiskEvaluate.Text})"
+                    "text": "Patch(Risks,Defaults(Risks),{Risk_Code:varRiskKey,Risk_Status:CB_RiskStatus.Selected.Value,Risk_Create_Date:Text(DP_RiskRecordDate.SelectedDate,\"dd/mm/yyyy\"),Risk_Important:CB_RiskImportant.Selected.Value,Risk_Name:TIn_RiskName.Text,Risk_Description:TIn_RiskDescribe.Text,Risk_Reason:TIn_RiskReason.Text,Risk_Consequence:TIn_RiskConsequence.Text,Risk_Owner:SelectedOwner.DisplayName&\" - \"&SelectedOwner.Mail,Gross_Finance:CB_RG_Finance.Selected.Value,Gross_Non_Finance:CB_RG_nonFinance.Selected.Value,Gross_Overall_Finance:LB_RG_RiskOverall.Text,Gross_Possibility:CB_RG_RiskRate.Selected.Value,Gross_Score:CB_RG_RiskRate.Selected.Index&\"-\"&varRiskGOPOverall_Index,RR_GOP_XEPHANG:LB_RG_RiskRank.Text,RR_GOP_CSDANHGIA:TIn_RG_RiskEvaluate.Text,RR_THUAN_TAICHINH:CB_RT_Finance.Selected.Value,RR_THUAN_PHITAICHINH:CB_RT_nonFinance.Selected.Value,RR_THUAN_TONGTHE:varRiskGOPOverall_Text,RR_THUAN_KHANANGXAYRA:CB_RG_RiskRate.Selected.Value,RR_THUAN_DIEM:CB_RT_RiskRate.Selected.Index&\"-\"&varRiskTHUANOverall_Index,RR_THUAN_XEPHANG:LB_RT_RiskRank.Text,RR_THUAN_CSDANHGIA:TIn_RT_RiskEvaluate.Text})"
                   }
                 }
               },
@@ -4600,10 +4320,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 1025,
+                  "charLength": 1060,
                   "charOffset": 267,
                   "snippet": {
-                    "text": "{RR_MA:varRiskKey,RR_TRANGTHAI:CB_RiskStatus.Selected.Value,'NGAY TẠO':Text(DP_RiskRecordDate.SelectedDate,\"dd/mm/yyyy\"),RR_TRONGYEU:CB_RiskImportant.Selected.Value,RR_TEN:TIn_RiskName.Text,RR_MOTA:TIn_RiskDescribe.Text,RR_NGUYENNHAN:TIn_RiskReason.Text,RR_HAUQUA:TIn_RiskConsequence.Text,RR_CSH:SelectedOwner.DisplayName&\" - \"&SelectedOwner.Mail,RR_GOP_TAICHINH:CB_RG_Finance.Selected.Value,RR_GOP_PHITAICHINH:CB_RG_nonFinance.Selected.Value,RR_GOP_TONGTHE:LB_RG_RiskOverall.Text,RR_GOP_KHANANGXAYRA:CB_RG_RiskRate.Selected.Value,RR_GOP_DIEM:CB_RG_RiskRate.Selected.Index&\"-\"&varRiskGOPOverall_Index,RR_GOP_XEPHANG:LB_RG_RiskRank.Text,RR_GOP_CSDANHGIA:TIn_RG_RiskEvaluate.Text,RR_THUAN_TAICHINH:CB_RT_Finance.Selected.Value,RR_THUAN_PHITAICHINH:CB_RT_nonFinance.Selected.Value,RR_THUAN_TONGTHE:varRiskGOPOverall_Text,RR_THUAN_KHANANGXAYRA:CB_RG_RiskRate.Selected.Value,RR_THUAN_DIEM:CB_RT_RiskRate.Selected.Index&\"-\"&varRiskTHUANOverall_Index,RR_THUAN_XEPHANG:LB_RT_RiskRank.Text,RR_THUAN_CSDANHGIA:TIn_RT_RiskEvaluate.Text}"
+                    "text": "{Risk_Code:varRiskKey,Risk_Status:CB_RiskStatus.Selected.Value,Risk_Create_Date:Text(DP_RiskRecordDate.SelectedDate,\"dd/mm/yyyy\"),Risk_Important:CB_RiskImportant.Selected.Value,Risk_Name:TIn_RiskName.Text,Risk_Description:TIn_RiskDescribe.Text,Risk_Reason:TIn_RiskReason.Text,Risk_Consequence:TIn_RiskConsequence.Text,Risk_Owner:SelectedOwner.DisplayName&\" - \"&SelectedOwner.Mail,Gross_Finance:CB_RG_Finance.Selected.Value,Gross_Non_Finance:CB_RG_nonFinance.Selected.Value,Gross_Overall_Finance:LB_RG_RiskOverall.Text,Gross_Possibility:CB_RG_RiskRate.Selected.Value,Gross_Score:CB_RG_RiskRate.Selected.Index&\"-\"&varRiskGOPOverall_Index,RR_GOP_XEPHANG:LB_RG_RiskRank.Text,RR_GOP_CSDANHGIA:TIn_RG_RiskEvaluate.Text,RR_THUAN_TAICHINH:CB_RT_Finance.Selected.Value,RR_THUAN_PHITAICHINH:CB_RT_nonFinance.Selected.Value,RR_THUAN_TONGTHE:varRiskGOPOverall_Text,RR_THUAN_KHANANGXAYRA:CB_RG_RiskRate.Selected.Value,RR_THUAN_DIEM:CB_RT_RiskRate.Selected.Index&\"-\"&varRiskTHUANOverall_Index,RR_THUAN_XEPHANG:LB_RT_RiskRank.Text,RR_THUAN_CSDANHGIA:TIn_RT_RiskEvaluate.Text}"
                   }
                 }
               },
@@ -4616,7 +4336,7 @@
           ],
           "message": {
             "arguments": [
-              "NGAY TẠO"
+              "RR_GOP_CSDANHGIA"
             ],
             "id": "issue"
           },

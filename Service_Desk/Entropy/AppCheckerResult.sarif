@@ -4675,91 +4675,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 12,
-                  "charOffset": 23,
-                  "snippet": {
-                    "text": "RR_TRANGTHAI"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "frmRiskStatistic",
-                "type": "frmRiskStatistic.'Risk Control'.TextBox1_25"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "RR_TRANGTHAI"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskStatistic.'Risk Control'.TextBox1_25.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskStatistic.'Risk Control'.TextBox1_25.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 35,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "frmRiskStatistic",
-                "type": "frmRiskStatistic.'Risk Control'.TextBox1_25"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskStatistic.'Risk Control'.TextBox1_25.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskStatistic.'Risk Control'.TextBox1_25.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 44,
+                  "charLength": 23,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "CountRows(Filter(Risks,RR_TRANGTHAI=\"Đóng\"))"
+                    "text": "CountRows(Risk_Control)"
                   }
                 }
               },

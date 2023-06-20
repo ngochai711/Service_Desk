@@ -574,7 +574,7 @@
                 PressedColor: =TextBox1_25.Color
                 PressedFill: =TextBox1_25.Fill
                 Size: =20
-                Text: =CountRows(Filter(Risks,RR_TRANGTHAI="Đóng"))
+                Text: =CountRows(Risk_Control)
                 Width: =91
                 Wrap: =false
                 X: =87

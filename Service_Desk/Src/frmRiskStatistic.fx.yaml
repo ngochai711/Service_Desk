@@ -196,7 +196,7 @@
                 PaddingTop: =16
                 Tooltip: ="Hiện kiểm soát"
                 Width: =62
-                X: =376
+                X: =383
                 ZIndex: =4
 
             Separator1 As rectangle:
@@ -361,70 +361,184 @@
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
-            TemplateSize: =104
+            TemplateSize: =127
             Width: =456
             Y: =155
             ZIndex: =18
 
             Title1_1 As label:
+                Font: =Font.'Segoe UI'
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =Self.Size * 1.8
+                Height: =27
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =ThisItem.CSH
+                Size: =12
+                Text: =ThisItem.KSRR_MA&" - "&ThisItem.KS_HIENCO
                 VerticalAlign: =VerticalAlign.Top
-                Width: =Parent.TemplateWidth - 173
-                X: =31
-                Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle1_1.Size * 1.8)) / 2
+                Width: =390
+                X: =7
                 ZIndex: =2
 
-            Subtitle1_1 As label:
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =Self.Size * 1.8
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =ThisItem.KS
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Title1_1.Width
-                X: =Title1_1.X
-                Y: =Title1_1.Y + Title1_1.Height
-                ZIndex: =3
-
-            NextArrow1_1 As icon.ChevronRight:
-                AccessibleLabel: =Self.Tooltip
-                Color: =RGBA(166, 166, 166, 1)
-                Height: =50
-                Icon: =Icon.ChevronRight
-                OnSelect: =Select(Parent)
-                PaddingBottom: =16
-                PaddingLeft: =16
-                PaddingRight: =16
-                PaddingTop: =16
-                Tooltip: ="View item details"
-                Width: =50
-                X: =Parent.TemplateWidth - Self.Width - 12
-                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                ZIndex: =4
-
-            Separator1_1 As rectangle:
-                Height: =8
-                OnSelect: =Select(Parent)
-                Width: =Parent.TemplateWidth
-                Y: =96
-                ZIndex: =5
-
             Rectangle2_1 As rectangle:
-                Height: =Parent.TemplateHeight - Separator1_1.Height
+                Height: =Parent.TemplateHeight - Separator1.Height
                 OnSelect: =Select(Parent)
                 Visible: =If(ThisItem.IsSelected, true, false)
                 Width: =4
                 ZIndex: =6
+
+            NextArrow1_1 As icon.ChevronRight:
+                AccessibleLabel: =Self.Tooltip
+                Color: =RGBA(166, 166, 166, 1)
+                Height: =126
+                Icon: =Icon.ChevronRight
+                OnSelect: |-
+                    =
+                    /*Collect(
+                        RiskInfo,
+                        {
+                            RiskId: ThisItem.RR_MA,
+                            RiskStatus: ThisItem.RR_TRANGTHAI,
+                            RiskCreateDate: Text(ThisItem.'NGAY TẠO',"dd/mm/yyyy"),
+                            RiskImportant: ThisItem.RR_TRONGYEU,
+                            RiskName: ThisItem.RR_TEN,
+                            RiskDescribe: ThisItem.RR_MOTA,
+                            RiskReason: ThisItem.RR_NGUYENNHAN,
+                            RiskConsequence: ThisItem.RR_HAUQUA,
+                            RiskOwner: ThisItem.RR_CSH,
+                            RiskGOPFinance: ThisItem.RR_GOP_TAICHINH,
+                            RiskGOPnonFinance: ThisItem.RR_GOP_PHITAICHINH,
+                            RiskGOPOverall: ThisItem.RR_GOP_TONGTHE,
+                            RiskGOPRate: ThisItem.RR_GOP_KHANANGXAYRA,
+                            RiskGOPGrade: ThisItem.RR_GOP_DIEM,
+                            RiskGOPRank: ThisItem.RR_GOP_XEPHANG,
+                            RiskGOPEvaluate: ThisItem.RR_GOP_CSDANHGIA,
+                            RiskTHUANFinance: ThisItem.RR_THUAN_TAICHINH,
+                            RiskTHUANnonFinance: ThisItem.RR_THUAN_PHITAICHINH,
+                            RiskTHUANOverall: ThisItem.RR_THUAN_TONGTHE,
+                            RiskTHUANRate: ThisItem.RR_THUAN_KHANANGXAYRA,
+                            RiskTHUANGrade: ThisItem.RR_THUAN_DIEM,
+                            RiskTHUANRank: ThisItem.RR_THUAN_XEPHANG,
+                            RiskTHUANEvaluate: ThisItem.RR_THUAN_CSDANHGIA
+                        }
+                    )*/
+                PaddingBottom: =16
+                PaddingLeft: =16
+                PaddingRight: =16
+                PaddingTop: =16
+                Tooltip: ="Hiện kiểm soát"
+                Width: =62
+                X: =386
+                ZIndex: =7
+
+            Title1_3 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =27
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: |-
+                    ="CSH: "&ThisItem.CSH
+                VerticalAlign: =VerticalAlign.Top
+                Width: =405
+                X: =7
+                Y: =27
+                ZIndex: =8
+
+            Title1_4 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =27
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: |-
+                    ="Ngày: "&ThisItem.'NGAY TẠO'
+                VerticalAlign: =VerticalAlign.Top
+                Width: =145
+                X: =7
+                Y: =54
+                ZIndex: =9
+
+            Separator1_3 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =0.5
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =126
+                ZIndex: =10
+
+            Title1_5 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =27
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: |-
+                    ="Phân loại: "&ThisItem.KS
+                VerticalAlign: =VerticalAlign.Top
+                Width: =196
+                X: =180
+                Y: =54
+                ZIndex: =11
+
+            Title1_6 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =27
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: |-
+                    ="Kiểm soát chính: "&ThisItem.KS_CHINH
+                VerticalAlign: =VerticalAlign.Top
+                Width: =196
+                X: =7
+                Y: =81
+                ZIndex: =12
+
+            Button3_1 As button:
+                Color: =RGBA(0, 0, 0, 0)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(0, 0, 0, 0)
+                FocusedBorderColor: =
+                FocusedBorderThickness: =
+                Height: =126
+                HoverBorderColor: =
+                HoverColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =
+                OnSelect: |-
+                    =Set(var_Timer,false);
+                    Set(var_Timer,true);
+                    Set(var_Click,var_Click+1);
+                    If(var_Click=2,Navigate(frmRiskControl,ScreenTransition.Fade);var_Click=0;Set(RiskInfo, ThisItem))
+                PressedBorderColor: =
+                PressedColor: =
+                PressedFill: =
+                Text: =""
+                Width: =382
+                X: =4
+                Y: =1
+                ZIndex: =13
 
         Label1_1 As label:
             Align: =Align.Center
@@ -834,70 +948,96 @@
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
-            TemplateSize: =104
+            TemplateSize: =127
             Width: =456
             Y: =155
             ZIndex: =18
 
             Title1_2 As label:
+                Font: =Font.'Segoe UI'
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =Self.Size * 1.8
+                Height: =39
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =ThisItem.Action_Code
+                Size: =12
+                Text: =ThisItem.Action_Code&" - "&ThisItem.Action_Description
                 VerticalAlign: =VerticalAlign.Top
-                Width: =Parent.TemplateWidth - 173
-                X: =28
-                Y: =35
+                Width: =376
+                X: =11
                 ZIndex: =2
 
-            Subtitle1_2 As label:
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =Self.Size * 1.8
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =ThisItem.Action_Code
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Title1_2.Width
-                X: =Title1_2.X
-                Y: =14
-                ZIndex: =3
-
-            NextArrow1_2 As icon.ChevronRight:
-                AccessibleLabel: =Self.Tooltip
-                Color: =RGBA(166, 166, 166, 1)
-                Height: =50
-                Icon: =Icon.ChevronRight
-                OnSelect: =Select(Parent)
-                PaddingBottom: =16
-                PaddingLeft: =16
-                PaddingRight: =16
-                PaddingTop: =16
-                Tooltip: ="View item details"
-                Width: =50
-                X: =Parent.TemplateWidth - Self.Width - 12
-                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                ZIndex: =4
-
-            Separator1_2 As rectangle:
-                Height: =8
-                OnSelect: =Select(Parent)
-                Width: =Parent.TemplateWidth
-                Y: =96
-                ZIndex: =5
-
             Rectangle2_4 As rectangle:
-                Height: =Parent.TemplateHeight - Separator1_2.Height
+                Height: =Parent.TemplateHeight - Separator1.Height
                 OnSelect: =Select(Parent)
                 Visible: =If(ThisItem.IsSelected, true, false)
                 Width: =4
                 ZIndex: =6
+
+            Separator1_4 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =0.5
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =126
+                ZIndex: =7
+
+            Title1_7 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =27
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: |-
+                    ="CSH: "&ThisItem.Action_Owner
+                VerticalAlign: =VerticalAlign.Top
+                Width: =393
+                X: =11
+                Y: =39
+                ZIndex: =8
+
+            Title1_8 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =27
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: |-
+                    ="Ngày: "&ThisItem.Action_Create_Date
+                VerticalAlign: =VerticalAlign.Top
+                Width: =163
+                X: =11
+                Y: =69
+                ZIndex: =9
+
+            Title1_9 As label:
+                Font: =Font.'Segoe UI'
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =27
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: |-
+                    ="Tình trạng: "&ThisItem.Action_Status
+                VerticalAlign: =VerticalAlign.Top
+                Width: =163
+                X: =11
+                Y: =93
+                ZIndex: =10
 
         Label1 As label:
             Align: =Align.Center

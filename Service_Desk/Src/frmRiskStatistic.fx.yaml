@@ -213,7 +213,7 @@
                 OnSelect: =Select(Parent)
                 PaddingBottom: =4
                 Size: =12
-                Text: =ThisItem.RR_MA&" - "&ThisItem.RR_TEN
+                Text: =ThisItem.Risk_Code&" - "&ThisItem.Risk_Name
                 Width: =390
                 ZIndex: =9
 
@@ -235,7 +235,7 @@
                 OnSelect: =Select(Parent)
                 Size: =12
                 Text: |-
-                    ="Trạng thái: "&ThisItem.RR_TRANGTHAI
+                    ="Trạng thái: "&ThisItem.Risk_Status
                 Width: =300
                 Y: =78
                 ZIndex: =12
@@ -246,7 +246,7 @@
                 OnSelect: =Select(Parent)
                 Size: =12
                 Text: |-
-                    ="Xếp hạng Thuần: "&ThisItem.RR_THUAN_XEPHANG&" - Gộp: "&ThisItem.RR_GOP_XEPHANG
+                    ="Xếp hạng Thuần: "&ThisItem.Net_Rank&" - Gộp: "&ThisItem.Gross_Rank
                 Width: =390
                 Y: =100
                 ZIndex: =13
@@ -258,7 +258,7 @@
                 PaddingBottom: =4
                 Size: =12
                 Text: |-
-                    ="CSH: "&ThisItem.RiskOwner 
+                    ="CSH: "&ThisItem.Risk_Owner 
                 Width: =390
                 Y: =27
                 ZIndex: =14

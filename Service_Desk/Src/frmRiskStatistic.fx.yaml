@@ -3,11 +3,19 @@
     OnVisible: =Set(var_Click,0)
     Width: =Max(App.Width, App.DesignWidth)
 
+    Timer1 As timer:
+        Duration: =200
+        OnTimerEnd: =Set(var_Click,0)
+        Start: =var_Timer
+        Visible: =false
+        Y: =24
+        ZIndex: =1
+
     Risk As groupContainer:
         Height: =609
         Width: =456
         Y: =159
-        ZIndex: =9
+        ZIndex: =4
 
         Rectangle1_3 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -290,7 +298,9 @@
                 HoverColor: =RGBA(0, 0, 0, 0)
                 HoverFill: =
                 OnSelect: |-
-                    =Set(var_Click,var_Click+1);
+                    =Set(var_Timer,false);
+                    Set(var_Timer,true);
+                    Set(var_Click,var_Click+1);
                     If(var_Click=2,Navigate(frmRisk,ScreenTransition.Fade);var_Click=0;Set(RiskInfo, ThisItem))
                 PressedBorderColor: =
                 PressedColor: =
@@ -323,7 +333,7 @@
         Width: =456
         X: =454
         Y: =159
-        ZIndex: =10
+        ZIndex: =5
 
         Rectangle1_4 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -347,7 +357,7 @@
         "Gallery1_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
             Height: =454
-            Items: =Risk_Control
+            Items: =Filter(Risk_Control,Risk_FK=Gallery1.Selected.Risk_Code)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
@@ -544,7 +554,7 @@
         Width: =456
         X: =910
         Y: =159
-        ZIndex: =11
+        ZIndex: =6
 
         Rectangle1_5 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -820,7 +830,7 @@
         "Gallery1_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
             Height: =454
-            Items: =Risk_Solution
+            Items: =Filter(Risk_Solution,RiskControl_FK=Gallery1_1.Selected.KSRR_MA)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
@@ -837,7 +847,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =ThisItem.Action_Actual_Finish_Date
+                Text: =ThisItem.Action_Code
                 VerticalAlign: =VerticalAlign.Top
                 Width: =Parent.TemplateWidth - 173
                 X: =28
@@ -856,7 +866,7 @@
                 VerticalAlign: =VerticalAlign.Top
                 Width: =Title1_2.Width
                 X: =Title1_2.X
-                Y: =Title1_2.Y + Title1_2.Height
+                Y: =14
                 ZIndex: =3
 
             NextArrow1_2 As icon.ChevronRight:
@@ -925,7 +935,7 @@
             Width: =360
             X: =1006
             Y: =97
-            ZIndex: =12
+            ZIndex: =7
 
         Label2 As label:
             Font: =Font.'Segoe UI'
@@ -936,7 +946,7 @@
             Width: =143
             X: =1003
             Y: =98
-            ZIndex: =13
+            ZIndex: =8
 
         GallerySelectedPerson As gallery.galleryVertical:
             AccessibleLabel: ="People for selection"
@@ -964,7 +974,7 @@
             Width: =345
             X: =1021
             Y: =160
-            ZIndex: =14
+            ZIndex: =9
 
             LabelPersonDisplayName As label:
                 BorderColor: =RGBA(101, 128, 187, 1)
@@ -1018,7 +1028,7 @@
             Width: =209
             X: =1146
             Y: =104
-            ZIndex: =15
+            ZIndex: =10
 
         Label5 As label:
             Fill: =RGBA(215, 223, 240, 1)
@@ -1032,7 +1042,7 @@
             Width: =209
             X: =1146
             Y: =101
-            ZIndex: =18
+            ZIndex: =11
 
     Group2 As group:
         Height: =5
@@ -1045,7 +1055,7 @@
             Fill: =RGBA(0, 52, 104, 1)
             Height: =88
             Width: =Parent.Width
-            ZIndex: =19
+            ZIndex: =12
 
         LblAppName2_2 As label:
             Align: =Align.Center
@@ -1056,14 +1066,14 @@
             Size: =25
             Text: ="RISK SAVVY"
             Width: =Parent.Width
-            ZIndex: =20
+            ZIndex: =13
 
         Image2 As image:
             Height: =88
             Image: ='Logo PNJ_v2'
             Width: =138
             X: =9
-            ZIndex: =21
+            ZIndex: =14
 
     Group4 As group:
         Height: =5
@@ -1079,7 +1089,7 @@
             OnSelect: =
             Width: =212
             Y: =98
-            ZIndex: =4
+            ZIndex: =2
 
         Label3 As label:
             Font: =Font.'Segoe UI'
@@ -1090,7 +1100,7 @@
                 ="Từ ngày:"
             Width: =77
             Y: =95
-            ZIndex: =6
+            ZIndex: =3
 
         DP_RiskRecordDate_2 As datepicker:
             BorderColor: =RGBA(175, 191, 224, 1)
@@ -1106,7 +1116,7 @@
             Width: =125
             X: =75
             Y: =104
-            ZIndex: =22
+            ZIndex: =15
 
     Group4_1 As group:
         Height: =5
@@ -1123,7 +1133,7 @@
             Width: =238
             X: =218
             Y: =97
-            ZIndex: =23
+            ZIndex: =16
 
         Label3_1 As label:
             Font: =Font.'Segoe UI'
@@ -1134,7 +1144,7 @@
             Width: =98
             X: =218
             Y: =99
-            ZIndex: =24
+            ZIndex: =17
 
         DP_RiskRecordDate_3 As datepicker:
             BorderColor: =RGBA(175, 191, 224, 1)
@@ -1149,7 +1159,7 @@
             Width: =136
             X: =306
             Y: =104
-            ZIndex: =25
+            ZIndex: =18
 
     Group1 As group:
         Height: =5
@@ -1166,7 +1176,7 @@
             Width: =270
             X: =729
             Y: =98
-            ZIndex: =29
+            ZIndex: =22
 
         Label3_3 As label:
             Font: =Font.'Segoe UI'
@@ -1177,7 +1187,7 @@
             Width: =133
             X: =730
             Y: =97
-            ZIndex: =30
+            ZIndex: =23
 
         CB_RT_RiskRate_2 As combobox:
             BorderColor: =RGBA(175, 191, 224, 1)
@@ -1205,7 +1215,7 @@
             Width: =134
             X: =858
             Y: =104
-            ZIndex: =31
+            ZIndex: =24
 
         Dropdown2 As dropdown:
             Default: ="All"
@@ -1219,7 +1229,7 @@
             Width: =141
             X: =858
             Y: =104
-            ZIndex: =32
+            ZIndex: =25
 
     Group3 As group:
         Height: =5
@@ -1236,7 +1246,7 @@
             Width: =264
             X: =462
             Y: =97
-            ZIndex: =26
+            ZIndex: =19
 
         Label3_2 As label:
             Font: =Font.'Segoe UI'
@@ -1247,7 +1257,7 @@
             Width: =115
             X: =463
             Y: =97
-            ZIndex: =27
+            ZIndex: =20
 
         CB_RT_RiskRate_1 As combobox:
             BorderColor: =RGBA(175, 191, 224, 1)
@@ -1274,7 +1284,7 @@
             Width: =134
             X: =581
             Y: =104
-            ZIndex: =28
+            ZIndex: =21
 
         Dropdown2_1 As dropdown:
             Default: ="All"
@@ -1287,5 +1297,5 @@
             Width: =141
             X: =581
             Y: =104
-            ZIndex: =33
+            ZIndex: =26
 

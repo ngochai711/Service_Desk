@@ -7,7 +7,6 @@
       "RevisionNumber": 2
     },
     "ConnectedDataSourceInfoNameMapping": {
-      "Column1": "Column1",
       "CSH": "CSH",
       "KS": "KS",
       "KS_CHINH": "KS_CHINH",
@@ -19,7 +18,8 @@
       "KS_LOAI": "KS_LOAI",
       "KS_TANSUAT": "KS_TANSUAT",
       "KSRR_MA": "KSRR_MA",
-      "NGAY TẠO": "NGAY TẠO"
+      "NGAY TẠO": "NGAY TẠO",
+      "Risk_FK": "Risk_FK"
     },
     "DatasetName": "groups%252F0be597da-943b-43c0-ac9a-4da2ac0e7e5d,b%2521isfcMv9O60qSdNmoNPYqVVQL-DBOXCRAupISYaIEdk8VFGxm1q-wTJcQykTCqcs6,01TCJVRABBIRWZBD3V4NGZEN5DHAAZTS4A",
     "EncodeDataset": false,

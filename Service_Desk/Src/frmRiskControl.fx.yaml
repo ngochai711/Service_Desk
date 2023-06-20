@@ -137,7 +137,7 @@
         Text: ="Trạng thái rủi ro"
         Width: =180
         X: =709
-        Y: =608
+        Y: =618
         ZIndex: =33
 
     HD_RiskName_14 As label:
@@ -173,7 +173,7 @@
         Size: =12
         Text: ="Chủ sở hữu rủi ro"
         X: =60
-        Y: =608
+        Y: =618
         ZIndex: =35
 
     ComboBox1_13 As combobox:
@@ -190,7 +190,7 @@
             {Value:"Không",Index:2}),ComboBox1_13.SearchText,"Value")
         Width: =415
         X: =880
-        Y: =608
+        Y: =618
         ZIndex: =36
 
     TextInput1_20 As text:
@@ -202,7 +202,7 @@
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Width: =207
+        Width: =295
         X: =210
         Y: =483
         ZIndex: =37
@@ -232,7 +232,7 @@
         RadiusTopRight: =0
         Width: =445
         X: =210
-        Y: =608
+        Y: =618
         ZIndex: =39
 
     HD_RiskImportant_11 As label:
@@ -248,10 +248,10 @@
         PressedColor: =HD_RiskImportant_11.Color
         PressedFill: =HD_RiskImportant_11.Fill
         Size: =12
-        Text: ="Loại kiểm soát"
+        Text: ="Rủi ro trọng  yếu"
         Width: =180
-        X: =715
-        Y: =697
+        X: =709
+        Y: =667
         ZIndex: =40
 
     ComboBox1_14 As combobox:
@@ -267,8 +267,8 @@
             =Search(Table({Value:"Có",Index:1},
             {Value:"Không",Index:2}),ComboBox1_14.SearchText,"Value")
         Width: =415
-        X: =895
-        Y: =697
+        X: =880
+        Y: =667
         ZIndex: =41
 
     ComboBox1_17 As combobox:

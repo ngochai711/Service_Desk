@@ -3,24 +3,6 @@
     OnVisible: |-
         =UpdateContext({varRiskSolutionKey:"SL"&Text((CountRows(Risk_Solution)+1),"00000")});
 
-    Rectangle3_1 As rectangle:
-        BorderThickness: =1
-        Fill: =RGBA(186, 202, 226, 1)
-        Height: =289
-        Width: =648
-        X: =690
-        Y: =457
-        ZIndex: =1
-
-    Rectangle3 As rectangle:
-        BorderThickness: =1
-        Fill: =RGBA(186, 202, 226, 1)
-        Height: =289
-        Width: =648
-        X: =28
-        Y: =457
-        ZIndex: =2
-
     RectQuickActionBar2_1 As rectangle:
         Fill: =RGBA(0, 52, 104, 1)
         Height: =88
@@ -74,6 +56,7 @@
 
     Button1_2 As button:
         BorderStyle: =BorderStyle.None
+        BorderThickness: =0
         Fill: =RGBA(0, 0, 0, 0)
         Font: =Font.'Segoe UI'
         Height: =88
@@ -91,376 +74,6 @@
         Width: =168
         X: =1198
         ZIndex: =8
-
-    HD_RiskID_2 As label:
-        Color: =RGBA(92,92,92,1)
-        FocusedBorderColor: =HD_RiskID_2.BorderColor
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =35
-        HoverBorderColor: =HD_RiskID_2.BorderColor
-        HoverColor: =HD_RiskID_2.Color
-        HoverFill: =HD_RiskID_2.Fill
-        PressedBorderColor: =HD_RiskID_2.BorderColor
-        PressedColor: =HD_RiskID_2.Color
-        PressedFill: =HD_RiskID_2.Fill
-        Size: =12
-        Text: ="Mã kiểm soát"
-        Width: =180
-        X: =51
-        Y: =483
-        ZIndex: =32
-
-    HD_RiskStatus_2 As label:
-        Color: =RGBA(92,92,92,1)
-        FocusedBorderColor: =HD_RiskStatus_2.BorderColor
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =35
-        HoverBorderColor: =HD_RiskStatus_2.BorderColor
-        HoverColor: =HD_RiskStatus_2.Color
-        HoverFill: =HD_RiskStatus_2.Fill
-        PressedBorderColor: =HD_RiskStatus_2.BorderColor
-        PressedColor: =HD_RiskStatus_2.Color
-        PressedFill: =HD_RiskStatus_2.Fill
-        Size: =12
-        Text: ="Trạng thái kiểm soát"
-        Width: =180
-        X: =51
-        Y: =653
-        ZIndex: =33
-
-    HD_RiskName_2 As label:
-        Color: =RGBA(92,92,92,1)
-        FocusedBorderColor: =HD_RiskName_2.BorderColor
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =35
-        HoverBorderColor: =HD_RiskName_2.BorderColor
-        HoverColor: =HD_RiskName_2.Color
-        HoverFill: =HD_RiskName_2.Fill
-        PressedBorderColor: =HD_RiskName_2.BorderColor
-        PressedColor: =HD_RiskName_2.Color
-        PressedFill: =HD_RiskName_2.Fill
-        Size: =12
-        Text: ="Nội dung kiểm soát"
-        Width: =180
-        X: =51
-        Y: =528
-        ZIndex: =34
-
-    HD_RiskOwner_2 As label:
-        Color: =RGBA(92,92,92,1)
-        FocusedBorderColor: =HD_RiskOwner_2.BorderColor
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =35
-        HoverBorderColor: =HD_RiskOwner_2.BorderColor
-        HoverColor: =HD_RiskOwner_2.Color
-        HoverFill: =HD_RiskOwner_2.Fill
-        PressedBorderColor: =HD_RiskOwner_2.BorderColor
-        PressedColor: =HD_RiskOwner_2.Color
-        PressedFill: =HD_RiskOwner_2.Fill
-        Size: =12
-        Text: ="Chủ sở hữu kiểm soát"
-        Width: =180
-        X: =51
-        Y: =608
-        ZIndex: =35
-
-    ComboBox1_1 As combobox:
-        BorderThickness: =1
-        DisplayFields: =["Value"]
-        Height: =35
-        Items: |-
-            =Table({Value:"Có",Index:1},
-            {Value:"Không",Index:2})
-        OnSelect: =
-        SearchFields: =["Value"]
-        SearchItems: |-
-            =Search(Table({Value:"Có",Index:1},
-            {Value:"Không",Index:2}),ComboBox1_1.SearchText,"Value")
-        Width: =415
-        X: =231
-        Y: =653
-        ZIndex: =36
-
-    TextInput1 As text:
-        BorderThickness: =1
-        Default: =""
-        Height: =35
-        OnSelect: =
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Width: =415
-        X: =231
-        Y: =483
-        ZIndex: =37
-
-    TextInput1_1 As text:
-        BorderThickness: =1
-        Default: =""
-        Height: =70
-        OnSelect: =
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Width: =415
-        X: =231
-        Y: =528
-        ZIndex: =38
-
-    TextInput1_2 As text:
-        BorderThickness: =1
-        Default: =""
-        Height: =35
-        OnSelect: =
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Width: =415
-        X: =231
-        Y: =608
-        ZIndex: =39
-
-    HD_RiskImportant_3 As label:
-        Color: =RGBA(92,92,92,1)
-        FocusedBorderColor: =HD_RiskImportant_3.BorderColor
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =35
-        HoverBorderColor: =HD_RiskImportant_3.BorderColor
-        HoverColor: =HD_RiskImportant_3.Color
-        HoverFill: =HD_RiskImportant_3.Fill
-        PressedBorderColor: =HD_RiskImportant_3.BorderColor
-        PressedColor: =HD_RiskImportant_3.Color
-        PressedFill: =HD_RiskImportant_3.Fill
-        Size: =12
-        Text: ="Loại kiểm soát"
-        Width: =180
-        X: =51
-        Y: =698
-        ZIndex: =42
-
-    ComboBox1_8 As combobox:
-        BorderThickness: =1
-        DisplayFields: =["Value"]
-        Height: =35
-        Items: |-
-            =Table({Value:"Có",Index:1},
-            {Value:"Không",Index:2})
-        OnSelect: =
-        SearchFields: =["Value"]
-        SearchItems: |-
-            =Search(Table({Value:"Có",Index:1},
-            {Value:"Không",Index:2}),ComboBox1_8.SearchText,"Value")
-        Width: =415
-        X: =231
-        Y: =698
-        ZIndex: =43
-
-    HD_RiskID_3 As label:
-        Color: =RGBA(92,92,92,1)
-        FocusedBorderColor: =HD_RiskID_3.BorderColor
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =35
-        HoverBorderColor: =HD_RiskID_3.BorderColor
-        HoverColor: =HD_RiskID_3.Color
-        HoverFill: =HD_RiskID_3.Fill
-        PressedBorderColor: =HD_RiskID_3.BorderColor
-        PressedColor: =HD_RiskID_3.Color
-        PressedFill: =HD_RiskID_3.Fill
-        Size: =12
-        Text: ="Mã kiểm soát"
-        Width: =180
-        X: =715
-        Y: =483
-        ZIndex: =44
-
-    HD_RiskStatus_3 As label:
-        Color: =RGBA(92,92,92,1)
-        FocusedBorderColor: =HD_RiskStatus_3.BorderColor
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =35
-        HoverBorderColor: =HD_RiskStatus_3.BorderColor
-        HoverColor: =HD_RiskStatus_3.Color
-        HoverFill: =HD_RiskStatus_3.Fill
-        PressedBorderColor: =HD_RiskStatus_3.BorderColor
-        PressedColor: =HD_RiskStatus_3.Color
-        PressedFill: =HD_RiskStatus_3.Fill
-        Size: =12
-        Text: ="Trạng thái kiểm soát"
-        Width: =180
-        X: =715
-        Y: =653
-        ZIndex: =45
-
-    Group9 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =45
-
-        Rectangle4 As rectangle:
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =45
-            Width: =320
-            X: =60
-            Y: =430
-            ZIndex: =40
-
-        Label6 As label:
-            Align: =Align.Center
-            Color: =RGBA(92, 92, 92, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Bold
-            Height: =45
-            Size: =14
-            Text: ="Thông tin tham chiếu - Kiểm soát"
-            Width: =320
-            X: =60
-            Y: =430
-            ZIndex: =41
-
-    HD_RiskName_3 As label:
-        Color: =RGBA(92,92,92,1)
-        FocusedBorderColor: =HD_RiskName_3.BorderColor
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =35
-        HoverBorderColor: =HD_RiskName_3.BorderColor
-        HoverColor: =HD_RiskName_3.Color
-        HoverFill: =HD_RiskName_3.Fill
-        PressedBorderColor: =HD_RiskName_3.BorderColor
-        PressedColor: =HD_RiskName_3.Color
-        PressedFill: =HD_RiskName_3.Fill
-        Size: =12
-        Text: ="Nội dung kiểm soát"
-        Width: =180
-        X: =715
-        Y: =528
-        ZIndex: =46
-
-    HD_RiskOwner_13 As label:
-        Color: =RGBA(92,92,92,1)
-        FocusedBorderColor: =HD_RiskOwner_13.BorderColor
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =35
-        HoverBorderColor: =HD_RiskOwner_13.BorderColor
-        HoverColor: =HD_RiskOwner_13.Color
-        HoverFill: =HD_RiskOwner_13.Fill
-        PressedBorderColor: =HD_RiskOwner_13.BorderColor
-        PressedColor: =HD_RiskOwner_13.Color
-        PressedFill: =HD_RiskOwner_13.Fill
-        Size: =12
-        Text: ="Chủ sở hữu kiểm soát"
-        Width: =180
-        X: =715
-        Y: =608
-        ZIndex: =47
-
-    ComboBox1_9 As combobox:
-        BorderThickness: =1
-        DisplayFields: =["Value"]
-        Height: =35
-        Items: |-
-            =Table({Value:"Có",Index:1},
-            {Value:"Không",Index:2})
-        OnSelect: =
-        SearchFields: =["Value"]
-        SearchItems: |-
-            =Search(Table({Value:"Có",Index:1},
-            {Value:"Không",Index:2}),ComboBox1_9.SearchText,"Value")
-        Width: =415
-        X: =895
-        Y: =653
-        ZIndex: =48
-
-    TextInput1_14 As text:
-        BorderThickness: =1
-        Default: =""
-        Height: =35
-        OnSelect: =
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Width: =415
-        X: =895
-        Y: =483
-        ZIndex: =49
-
-    TextInput1_15 As text:
-        BorderThickness: =1
-        Default: =""
-        Height: =70
-        OnSelect: =
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Width: =415
-        X: =895
-        Y: =528
-        ZIndex: =50
-
-    TextInput1_16 As text:
-        BorderThickness: =1
-        Default: =""
-        Height: =35
-        OnSelect: =
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Width: =415
-        X: =895
-        Y: =608
-        ZIndex: =51
-
-    HD_RiskImportant_9 As label:
-        Color: =RGBA(92,92,92,1)
-        FocusedBorderColor: =HD_RiskImportant_9.BorderColor
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =35
-        HoverBorderColor: =HD_RiskImportant_9.BorderColor
-        HoverColor: =HD_RiskImportant_9.Color
-        HoverFill: =HD_RiskImportant_9.Fill
-        PressedBorderColor: =HD_RiskImportant_9.BorderColor
-        PressedColor: =HD_RiskImportant_9.Color
-        PressedFill: =HD_RiskImportant_9.Fill
-        Size: =12
-        Text: ="Loại kiểm soát"
-        Width: =180
-        X: =715
-        Y: =698
-        ZIndex: =52
-
-    ComboBox1_10 As combobox:
-        BorderThickness: =1
-        DisplayFields: =["Value"]
-        Height: =35
-        Items: |-
-            =Table({Value:"Có",Index:1},
-            {Value:"Không",Index:2})
-        OnSelect: =
-        SearchFields: =["Value"]
-        SearchItems: |-
-            =Search(Table({Value:"Có",Index:1},
-            {Value:"Không",Index:2}),ComboBox1_10.SearchText,"Value")
-        Width: =415
-        X: =895
-        Y: =698
-        ZIndex: =53
 
     Group8 As group:
         Height: =5
@@ -485,7 +98,7 @@
             Text: ="Mã hành động khắc phục"
             Width: =258
             X: =44
-            Y: =112
+            Y: =102
             ZIndex: =9
 
         HD_RiskID_5 As label:
@@ -504,7 +117,7 @@
             Text: ="Ngày tạo hành động"
             Width: =232
             X: =765
-            Y: =112
+            Y: =102
             ZIndex: =10
 
         HD_RiskOwner_3 As label:
@@ -523,7 +136,7 @@
             Text: ="Mô tả hành động khắc phục"
             Width: =258
             X: =44
-            Y: =157
+            Y: =147
             ZIndex: =11
 
         HD_RiskID_6 As label:
@@ -539,10 +152,10 @@
             PressedColor: =HD_RiskID_6.Color
             PressedFill: =HD_RiskID_6.Fill
             Size: =12
-            Text: ="Chủ sở hữu hành động khắc phục"
+            Text: ="CSH hành động khắc phục"
             Width: =258
             X: =44
-            Y: =248
+            Y: =238
             ZIndex: =12
 
         HD_RiskID_7 As label:
@@ -561,7 +174,7 @@
             Text: ="Bắt đầu theo kế hoạch"
             Width: =232
             X: =765
-            Y: =157
+            Y: =147
             ZIndex: =13
 
         HD_RiskName_4 As label:
@@ -580,7 +193,7 @@
             Text: ="Kết thúc theo kế hoạch"
             Width: =232
             X: =765
-            Y: =202
+            Y: =192
             ZIndex: =14
 
         HD_RiskOwner_4 As label:
@@ -599,7 +212,7 @@
             Text: ="Kết thúc thực tế"
             Width: =232
             X: =765
-            Y: =248
+            Y: =238
             ZIndex: =15
 
         HD_RiskID_8 As label:
@@ -618,7 +231,7 @@
             Text: ="Đánh giá hành động"
             Width: =258
             X: =44
-            Y: =292
+            Y: =282
             ZIndex: =16
 
         HD_RiskName_5 As label:
@@ -637,7 +250,7 @@
             Text: ="Đánh giá tổng thể hành động"
             Width: =232
             X: =765
-            Y: =292
+            Y: =282
             ZIndex: =17
 
         HD_RiskOwner_5 As label:
@@ -656,7 +269,7 @@
             Text: ="Cơ sở đánh giá hành động"
             Width: =258
             X: =44
-            Y: =337
+            Y: =327
             ZIndex: =18
 
         HD_RiskID_9 As label:
@@ -675,7 +288,7 @@
             Text: ="Cơ sở xếp hạng"
             Width: =232
             X: =765
-            Y: =337
+            Y: =327
             ZIndex: =19
 
         TextInput1_4 As text:
@@ -692,7 +305,7 @@
             Size: =12
             Width: =402
             X: =302
-            Y: =157
+            Y: =147
             ZIndex: =20
 
         TextInput1_5 As text:
@@ -709,7 +322,7 @@
             Size: =12
             Width: =402
             X: =302
-            Y: =248
+            Y: =238
             ZIndex: =21
 
         DatePicker1_1 As datepicker:
@@ -721,7 +334,7 @@
             Size: =12
             Width: =320
             X: =997
-            Y: =157
+            Y: =147
             ZIndex: =22
 
         DatePicker1_2 As datepicker:
@@ -733,7 +346,7 @@
             Size: =12
             Width: =320
             X: =997
-            Y: =202
+            Y: =192
             ZIndex: =23
 
         DatePicker1_3 As datepicker:
@@ -745,7 +358,7 @@
             Size: =12
             Width: =320
             X: =997
-            Y: =247
+            Y: =237
             ZIndex: =24
 
         TextInput1_9 As text:
@@ -761,7 +374,7 @@
             RadiusTopRight: =0
             Size: =12
             X: =997
-            Y: =337
+            Y: =327
             ZIndex: =25
 
         ComboBox1_2 As combobox:
@@ -789,7 +402,7 @@
             Size: =12
             Width: =402
             X: =302
-            Y: =292
+            Y: =282
             ZIndex: =26
 
         ComboBox1_3 As combobox:
@@ -813,7 +426,7 @@
             Size: =12
             Width: =320
             X: =997
-            Y: =292
+            Y: =282
             ZIndex: =27
 
         DatePicker1_4 As datepicker:
@@ -825,7 +438,7 @@
             Size: =12
             Width: =320
             X: =997
-            Y: =112
+            Y: =102
             ZIndex: =28
 
         TextInput1_6 As text:
@@ -842,7 +455,7 @@
             Size: =12
             Width: =402
             X: =302
-            Y: =337
+            Y: =327
             ZIndex: =29
 
         Label8 As label:
@@ -853,7 +466,7 @@
             Text: =varRiskSolutionKey
             Width: =402
             X: =302
-            Y: =112
+            Y: =102
             ZIndex: =30
 
         LB_RiskOwner_2 As label:
@@ -868,15 +481,195 @@
             Visible: =varLBRiskOwner
             Width: =381
             X: =306
-            Y: =250
+            Y: =240
             ZIndex: =31
 
-    Group9_1 As group:
+    Group13 As group:
         Height: =5
         Width: =5
-        X: =20
-        Y: =20
-        ZIndex: =60
+        X: =40
+        Y: =40
+        ZIndex: =56
+
+        Rectangle3_1 As rectangle:
+            BorderThickness: =1
+            Fill: =RGBA(186, 202, 226, 1)
+            Height: =289
+            Width: =648
+            X: =690
+            Y: =457
+            ZIndex: =1
+
+        HD_RiskID_3 As label:
+            Color: =RGBA(92,92,92,1)
+            FocusedBorderColor: =HD_RiskID_3.BorderColor
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =35
+            HoverBorderColor: =HD_RiskID_3.BorderColor
+            HoverColor: =HD_RiskID_3.Color
+            HoverFill: =HD_RiskID_3.Fill
+            PressedBorderColor: =HD_RiskID_3.BorderColor
+            PressedColor: =HD_RiskID_3.Color
+            PressedFill: =HD_RiskID_3.Fill
+            Size: =12
+            Text: ="Mã rủi ro"
+            Width: =180
+            X: =715
+            Y: =483
+            ZIndex: =44
+
+        HD_RiskStatus_3 As label:
+            Color: =RGBA(92,92,92,1)
+            FocusedBorderColor: =HD_RiskStatus_3.BorderColor
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =35
+            HoverBorderColor: =HD_RiskStatus_3.BorderColor
+            HoverColor: =HD_RiskStatus_3.Color
+            HoverFill: =HD_RiskStatus_3.Fill
+            PressedBorderColor: =HD_RiskStatus_3.BorderColor
+            PressedColor: =HD_RiskStatus_3.Color
+            PressedFill: =HD_RiskStatus_3.Fill
+            Size: =12
+            Text: ="Trạng thái rủi ro"
+            Width: =180
+            X: =715
+            Y: =653
+            ZIndex: =45
+
+        HD_RiskName_3 As label:
+            Color: =RGBA(92,92,92,1)
+            FocusedBorderColor: =HD_RiskName_3.BorderColor
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =35
+            HoverBorderColor: =HD_RiskName_3.BorderColor
+            HoverColor: =HD_RiskName_3.Color
+            HoverFill: =HD_RiskName_3.Fill
+            PressedBorderColor: =HD_RiskName_3.BorderColor
+            PressedColor: =HD_RiskName_3.Color
+            PressedFill: =HD_RiskName_3.Fill
+            Size: =12
+            Text: ="Mô tả rủi ro"
+            Width: =180
+            X: =715
+            Y: =528
+            ZIndex: =46
+
+        HD_RiskOwner_13 As label:
+            Color: =RGBA(92,92,92,1)
+            FocusedBorderColor: =HD_RiskOwner_13.BorderColor
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =35
+            HoverBorderColor: =HD_RiskOwner_13.BorderColor
+            HoverColor: =HD_RiskOwner_13.Color
+            HoverFill: =HD_RiskOwner_13.Fill
+            PressedBorderColor: =HD_RiskOwner_13.BorderColor
+            PressedColor: =HD_RiskOwner_13.Color
+            PressedFill: =HD_RiskOwner_13.Fill
+            Size: =12
+            Text: ="Chủ sở hữu rủi ro"
+            Width: =180
+            X: =715
+            Y: =608
+            ZIndex: =47
+
+        ComboBox1_9 As combobox:
+            BorderThickness: =1
+            DisplayFields: =["Value"]
+            Height: =35
+            Items: |-
+                =Table({Value:"Có",Index:1},
+                {Value:"Không",Index:2})
+            OnSelect: =
+            SearchFields: =["Value"]
+            SearchItems: |-
+                =Search(Table({Value:"Có",Index:1},
+                {Value:"Không",Index:2}),ComboBox1_9.SearchText,"Value")
+            Width: =415
+            X: =895
+            Y: =653
+            ZIndex: =48
+
+        TextInput1_14 As text:
+            BorderThickness: =1
+            Default: =""
+            Height: =35
+            OnSelect: =
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =415
+            X: =895
+            Y: =483
+            ZIndex: =49
+
+        TextInput1_15 As text:
+            BorderThickness: =1
+            Default: =""
+            Height: =70
+            OnSelect: =
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =415
+            X: =895
+            Y: =528
+            ZIndex: =50
+
+        TextInput1_16 As text:
+            BorderThickness: =1
+            Default: =""
+            Height: =35
+            OnSelect: =
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =415
+            X: =895
+            Y: =608
+            ZIndex: =51
+
+        HD_RiskImportant_9 As label:
+            Color: =RGBA(92,92,92,1)
+            FocusedBorderColor: =HD_RiskImportant_9.BorderColor
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =35
+            HoverBorderColor: =HD_RiskImportant_9.BorderColor
+            HoverColor: =HD_RiskImportant_9.Color
+            HoverFill: =HD_RiskImportant_9.Fill
+            PressedBorderColor: =HD_RiskImportant_9.BorderColor
+            PressedColor: =HD_RiskImportant_9.Color
+            PressedFill: =HD_RiskImportant_9.Fill
+            Size: =12
+            Text: ="Xếp hạng"
+            Width: =180
+            X: =715
+            Y: =698
+            ZIndex: =52
+
+        ComboBox1_10 As combobox:
+            BorderThickness: =1
+            DisplayFields: =["Value"]
+            Height: =35
+            Items: |-
+                =Table({Value:"Có",Index:1},
+                {Value:"Không",Index:2})
+            OnSelect: =
+            SearchFields: =["Value"]
+            SearchItems: |-
+                =Search(Table({Value:"Có",Index:1},
+                {Value:"Không",Index:2}),ComboBox1_10.SearchText,"Value")
+            Width: =415
+            X: =895
+            Y: =698
+            ZIndex: =53
 
         Rectangle4_1 As rectangle:
             Fill: =RGBA(255, 255, 255, 1)
@@ -898,4 +691,212 @@
             X: =727
             Y: =430
             ZIndex: =55
+
+    Group12 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =56
+
+        Rectangle3 As rectangle:
+            BorderThickness: =1
+            Fill: =RGBA(186, 202, 226, 1)
+            Height: =289
+            Width: =648
+            X: =28
+            Y: =457
+            ZIndex: =2
+
+        HD_RiskID_2 As label:
+            Color: =RGBA(92,92,92,1)
+            FocusedBorderColor: =HD_RiskID_2.BorderColor
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =35
+            HoverBorderColor: =HD_RiskID_2.BorderColor
+            HoverColor: =HD_RiskID_2.Color
+            HoverFill: =HD_RiskID_2.Fill
+            PressedBorderColor: =HD_RiskID_2.BorderColor
+            PressedColor: =HD_RiskID_2.Color
+            PressedFill: =HD_RiskID_2.Fill
+            Size: =12
+            Text: ="Mã kiểm soát"
+            Width: =180
+            X: =51
+            Y: =483
+            ZIndex: =32
+
+        HD_RiskStatus_2 As label:
+            Color: =RGBA(92,92,92,1)
+            FocusedBorderColor: =HD_RiskStatus_2.BorderColor
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =35
+            HoverBorderColor: =HD_RiskStatus_2.BorderColor
+            HoverColor: =HD_RiskStatus_2.Color
+            HoverFill: =HD_RiskStatus_2.Fill
+            PressedBorderColor: =HD_RiskStatus_2.BorderColor
+            PressedColor: =HD_RiskStatus_2.Color
+            PressedFill: =HD_RiskStatus_2.Fill
+            Size: =12
+            Text: ="Trạng thái kiểm soát"
+            Width: =180
+            X: =51
+            Y: =653
+            ZIndex: =33
+
+        HD_RiskName_2 As label:
+            Color: =RGBA(92,92,92,1)
+            FocusedBorderColor: =HD_RiskName_2.BorderColor
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =35
+            HoverBorderColor: =HD_RiskName_2.BorderColor
+            HoverColor: =HD_RiskName_2.Color
+            HoverFill: =HD_RiskName_2.Fill
+            PressedBorderColor: =HD_RiskName_2.BorderColor
+            PressedColor: =HD_RiskName_2.Color
+            PressedFill: =HD_RiskName_2.Fill
+            Size: =12
+            Text: ="Nội dung kiểm soát"
+            Width: =180
+            X: =51
+            Y: =528
+            ZIndex: =34
+
+        HD_RiskOwner_2 As label:
+            Color: =RGBA(92,92,92,1)
+            FocusedBorderColor: =HD_RiskOwner_2.BorderColor
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =35
+            HoverBorderColor: =HD_RiskOwner_2.BorderColor
+            HoverColor: =HD_RiskOwner_2.Color
+            HoverFill: =HD_RiskOwner_2.Fill
+            PressedBorderColor: =HD_RiskOwner_2.BorderColor
+            PressedColor: =HD_RiskOwner_2.Color
+            PressedFill: =HD_RiskOwner_2.Fill
+            Size: =12
+            Text: ="Chủ sở hữu kiểm soát"
+            Width: =180
+            X: =51
+            Y: =608
+            ZIndex: =35
+
+        ComboBox1_1 As combobox:
+            BorderThickness: =1
+            DisplayFields: =["Value"]
+            Height: =35
+            Items: |-
+                =Table({Value:"Có",Index:1},
+                {Value:"Không",Index:2})
+            OnSelect: =
+            SearchFields: =["Value"]
+            SearchItems: |-
+                =Search(Table({Value:"Có",Index:1},
+                {Value:"Không",Index:2}),ComboBox1_1.SearchText,"Value")
+            Width: =415
+            X: =231
+            Y: =653
+            ZIndex: =36
+
+        TextInput1 As text:
+            BorderThickness: =1
+            Default: =""
+            Height: =35
+            OnSelect: =
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =415
+            X: =231
+            Y: =483
+            ZIndex: =37
+
+        TextInput1_1 As text:
+            BorderThickness: =1
+            Default: =""
+            Height: =70
+            OnSelect: =
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =415
+            X: =231
+            Y: =528
+            ZIndex: =38
+
+        TextInput1_2 As text:
+            BorderThickness: =1
+            Default: =""
+            Height: =35
+            OnSelect: =
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =415
+            X: =231
+            Y: =608
+            ZIndex: =39
+
+        Rectangle4 As rectangle:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =45
+            Width: =320
+            X: =60
+            Y: =430
+            ZIndex: =40
+
+        Label6 As label:
+            Align: =Align.Center
+            Color: =RGBA(92, 92, 92, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =45
+            Size: =14
+            Text: ="Thông tin tham chiếu - Kiểm soát"
+            Width: =320
+            X: =60
+            Y: =430
+            ZIndex: =41
+
+        HD_RiskImportant_3 As label:
+            Color: =RGBA(92,92,92,1)
+            FocusedBorderColor: =HD_RiskImportant_3.BorderColor
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =35
+            HoverBorderColor: =HD_RiskImportant_3.BorderColor
+            HoverColor: =HD_RiskImportant_3.Color
+            HoverFill: =HD_RiskImportant_3.Fill
+            PressedBorderColor: =HD_RiskImportant_3.BorderColor
+            PressedColor: =HD_RiskImportant_3.Color
+            PressedFill: =HD_RiskImportant_3.Fill
+            Size: =12
+            Text: ="Loại kiểm soát"
+            Width: =180
+            X: =51
+            Y: =698
+            ZIndex: =42
+
+        ComboBox1_8 As combobox:
+            BorderThickness: =1
+            DisplayFields: =["Value"]
+            Height: =35
+            Items: |-
+                =Table({Value:"Có",Index:1},
+                {Value:"Không",Index:2})
+            OnSelect: =
+            SearchFields: =["Value"]
+            SearchItems: |-
+                =Search(Table({Value:"Có",Index:1},
+                {Value:"Không",Index:2}),ComboBox1_8.SearchText,"Value")
+            Width: =415
+            X: =231
+            Y: =698
+            ZIndex: =43
 

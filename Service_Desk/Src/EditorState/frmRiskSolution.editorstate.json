@@ -146,7 +146,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "BorderThickness",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "BorderThickness",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "FocusedBorderThickness",
         {
           "AFDDataSourceName": "",
@@ -3952,7 +3959,7 @@
       "StyleName": "defaultScreenStyle",
       "Type": "ControlInfo"
     },
-    "Group8": {
+    "Group12": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "X",
@@ -3970,8 +3977,8 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Group8",
-      "ParentIndex": 55,
+      "Name": "Group12",
+      "ParentIndex": 58,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4003,7 +4010,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Group9": {
+    "Group13": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "X",
@@ -4021,7 +4028,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Group9",
+      "Name": "Group13",
       "ParentIndex": 57,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4054,7 +4061,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Group9_1": {
+    "Group8": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "X",
@@ -4072,8 +4079,8 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Group9_1",
-      "ParentIndex": 58,
+      "Name": "Group8",
+      "ParentIndex": 55,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

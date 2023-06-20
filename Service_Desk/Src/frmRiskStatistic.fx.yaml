@@ -134,9 +134,10 @@
             Height: =454
             Items: |-
                 =//Risks
-                If(Dropdown2.Selected.Value= "All",Filter(Risks, RR_GOP_XEPHANG=Dropdown2_1.Selected.Value,If(Dropdown2_1.Selected.Value="All", Filter(Risks, RR_GOP_XEPHANG=Dropdown2.Selected.Value),
-                If(Dropdown2.Selected.Value= "All" And Dropdown2_1.Selected.Value="All", Risks,
-                Filter(Risks, RR_GOP_XEPHANG=Dropdown2.Selected.Value And RR_GOP_XEPHANG=Dropdown2_1.Selected.Value))))
+                If(Dropdown2.Selected.Value= "All" && Dropdown2_1.Selected.Value="All",Risks,
+                If(Dropdown2.Selected.Value="All",Filter(Risks,RR_THUAN_XEPHANG=Dropdown2_1.Selected.Value),
+                If(Dropdown2_1.Selected.Value="All",Filter(Risks,RR_GOP_XEPHANG=Dropdown2_1.Selected.Value),
+                Filter(Risks,RR_THUAN_XEPHANG=Dropdown2_1.Selected.Value&&RR_GOP_XEPHANG=Dropdown2_1.Selected.Value))))
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0

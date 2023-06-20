@@ -560,7 +560,7 @@
                 PressedColor: =TextBox1_30.Color
                 PressedFill: =TextBox1_30.Fill
                 Size: =20
-                Text: =CountRows(Risk_Fix)
+                Text: =CountRows(Risk_Solution)
                 Width: =91
                 Wrap: =false
                 Y: =47
@@ -793,7 +793,7 @@
         "Gallery1_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
             Height: =454
-            Items: =Risk_Fix
+            Items: =Risk_Solution
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
@@ -810,7 +810,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =ThisItem.'NGAY TẠO'
+                Text: =ThisItem.Action_Actual_Finish_Date
                 VerticalAlign: =VerticalAlign.Top
                 Width: =Parent.TemplateWidth - 173
                 X: =28
@@ -825,7 +825,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =ThisItem.KP_COSO_XEPHANG
+                Text: =ThisItem.Action_Code
                 VerticalAlign: =VerticalAlign.Top
                 Width: =Title1_2.Width
                 X: =Title1_2.X

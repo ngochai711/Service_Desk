@@ -50,7 +50,7 @@
           "Risk_Control": {
             "tableName": "{E15490D9-EC06-45D1-8759-524BB4B8567B}"
           },
-          "Risk_Fix": {
+          "Risk_Solution": {
             "tableName": "{A6400B47-2B57-42B0-AAF2-CA0CC6FD96FC}"
           },
           "Risks": {
@@ -61,9 +61,9 @@
     },
     "dataSources": [
       "Risks",
-      "Risk_Fix",
       "Risk_Control",
-      "Risk_Connection"
+      "Risk_Connection",
+      "Risk_Solution"
     ],
     "dependencies": {},
     "dependents": [],

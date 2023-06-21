@@ -133,8 +133,8 @@
         PressedFill: =HD_RiskStatus_5.Fill
         Size: =12
         Text: ="Trạng thái rủi ro"
-        Width: =180
-        X: =709
+        Width: =130
+        X: =687
         Y: =618
         ZIndex: =33
 
@@ -186,8 +186,8 @@
         SearchItems: |-
             =Search(Table({Value:"Có",Index:1},
             {Value:"Không",Index:2}),ComboBox1_13.SearchText,"Value")
-        Width: =415
-        X: =880
+        Width: =472
+        X: =823
         Y: =618
         ZIndex: =36
 
@@ -200,7 +200,7 @@
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Width: =295
+        Width: =445
         X: =210
         Y: =483
         ZIndex: =37
@@ -247,9 +247,8 @@
         PressedFill: =HD_RiskImportant_11.Fill
         Size: =12
         Text: ="Rủi ro trọng  yếu"
-        Width: =180
-        X: =709
-        Y: =667
+        X: =60
+        Y: =663
         ZIndex: =40
 
     ComboBox1_14 As combobox:
@@ -264,9 +263,9 @@
         SearchItems: |-
             =Search(Table({Value:"Có",Index:1},
             {Value:"Không",Index:2}),ComboBox1_14.SearchText,"Value")
-        Width: =415
-        X: =880
-        Y: =667
+        Width: =445
+        X: =210
+        Y: =663
         ZIndex: =41
 
     ComboBox1_17 As combobox:
@@ -339,7 +338,6 @@
         ZIndex: =45
 
     HD_RiskName_17 As label:
-        Align: =Align.Center
         Color: =RGBA(92,92,92,1)
         FocusedBorderColor: =HD_RiskName_17.BorderColor
         Font: =Font.'Segoe UI'
@@ -353,8 +351,8 @@
         PressedFill: =HD_RiskName_17.Fill
         Size: =12
         Text: ="Tên rủi ro"
-        Width: =120
-        X: =517
+        Width: =130
+        X: =687
         Y: =483
         ZIndex: =46
 
@@ -367,8 +365,8 @@
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Width: =640
-        X: =655
+        Width: =472
+        X: =823
         Y: =483
         ZIndex: =47
 

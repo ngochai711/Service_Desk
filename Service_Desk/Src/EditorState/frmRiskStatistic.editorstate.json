@@ -9457,7 +9457,14 @@
         "PressedBorderColor",
         "HoverBorderColor",
         "FocusedBorderColor",
-        "OnSelect",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\r\n/*Collect(\r\n    RiskInfo,\r\n    {\r\n        RiskId: ThisItem.RR_MA,\r\n        RiskStatus: ThisItem.RR_TRANGTHAI,\r\n        RiskCreateDate: Text(ThisItem.'NGAY TẠO',\"dd/mm/yyyy\"),\r\n        RiskImportant: ThisItem.RR_TRONGYEU,\r\n        RiskName: ThisItem.RR_TEN,\r\n        RiskDescribe: ThisItem.RR_MOTA,\r\n        RiskReason: ThisItem.RR_NGUYENNHAN,\r\n        RiskConsequence: ThisItem.RR_HAUQUA,\r\n        RiskOwner: ThisItem.RR_CSH,\r\n        RiskGOPFinance: ThisItem.RR_GOP_TAICHINH,\r\n        RiskGOPnonFinance: ThisItem.RR_GOP_PHITAICHINH,\r\n        RiskGOPOverall: ThisItem.RR_GOP_TONGTHE,\r\n        RiskGOPRate: ThisItem.RR_GOP_KHANANGXAYRA,\r\n        RiskGOPGrade: ThisItem.RR_GOP_DIEM,\r\n        RiskGOPRank: ThisItem.RR_GOP_XEPHANG,\r\n        RiskGOPEvaluate: ThisItem.RR_GOP_CSDANHGIA,\r\n        RiskTHUANFinance: ThisItem.RR_THUAN_TAICHINH,\r\n        RiskTHUANnonFinance: ThisItem.RR_THUAN_PHITAICHINH,\r\n        RiskTHUANOverall: ThisItem.RR_THUAN_TONGTHE,\r\n        RiskTHUANRate: ThisItem.RR_THUAN_KHANANGXAYRA,\r\n        RiskTHUANGrade: ThisItem.RR_THUAN_DIEM,\r\n        RiskTHUANRank: ThisItem.RR_THUAN_XEPHANG,\r\n        RiskTHUANEvaluate: ThisItem.RR_THUAN_CSDANHGIA\r\n    }\r\n)*/",
+          "InvariantPropertyName": "OnSelect",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ZIndex",
         "Tooltip",
         "AccessibleLabel",

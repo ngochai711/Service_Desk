@@ -153,7 +153,7 @@
                 Height: =126
                 Icon: =Icon.ChevronRight
                 OnSelect: |-
-                    =
+                    =UpdateContext({varRiskCode:ThisItem.Risk_Code})
                     /*Collect(
                         RiskInfo,
                         {
@@ -349,7 +349,7 @@
         "Gallery1_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
             Height: =454
-            Items: =Filter(Risk_Control,Risk_ID=Gallery1.Selected.Risk_Code)
+            Items: =Filter(Risk_Control,Risk_ID=varRiskCode)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
@@ -385,7 +385,7 @@
                 Height: =126
                 Icon: =Icon.ChevronRight
                 OnSelect: |-
-                    =
+                    =UpdateContext({varControlCode:ThisItem.Control_Code})
                     /*Collect(
                         RiskInfo,
                         {
@@ -906,7 +906,7 @@
         "Gallery1_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
             Height: =454
-            Items: =Filter(Risk_Solution,RiskControl_ID=Gallery1_1.Selected.Control_Code)
+            Items: =Filter(Risk_Solution,RiskControl_ID=varControlCode)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0

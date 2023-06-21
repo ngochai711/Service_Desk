@@ -485,18 +485,6 @@
             Width: =282
             ZIndex: =1
 
-    Label8_3 As label:
-        BorderThickness: =1
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =Font.'Segoe UI'
-        Height: =35
-        Size: =12
-        Text: =SelectedRisk.Risk_Name
-        Width: =402
-        X: =823
-        Y: =483
-        ZIndex: =52
-
     Group8_1 As group:
         Height: =5
         Width: =5

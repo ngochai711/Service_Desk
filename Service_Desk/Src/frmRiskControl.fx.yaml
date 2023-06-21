@@ -423,18 +423,6 @@
             Width: =282
             ZIndex: =1
 
-    Label8_4 As label:
-        BorderThickness: =1
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =Font.'Segoe UI'
-        Height: =35
-        Size: =12
-        Text: =SelectedRisk.Risk_Name
-        Width: =402
-        X: =796
-        Y: =483
-        ZIndex: =52
-
     HD_RiskID_35 As label:
         Color: =RGBA(92,92,92,1)
         FocusedBorderColor: =HD_RiskID_35.BorderColor
@@ -454,18 +442,17 @@
         Y: =236
         ZIndex: =52
 
-    Label8_5 As label:
+    Label8_4 As label:
         BorderThickness: =1
         Fill: =RGBA(255, 255, 255, 1)
         Font: =Font.'Segoe UI'
-        Height: =77
-        Overflow: =Overflow.Scroll
+        Height: =35
         Size: =12
-        Text: =SelectedRisk.Risk_Description
-        Width: =1085
-        X: =210
-        Y: =528
-        ZIndex: =53
+        Text: =SelectedRisk.Risk_Name
+        Width: =402
+        X: =796
+        Y: =483
+        ZIndex: =52
 
     cb_ControlMain_1 As combobox:
         BorderThickness: =1
@@ -490,17 +477,18 @@
         Y: =236
         ZIndex: =53
 
-    Label8_6 As label:
+    Label8_5 As label:
         BorderThickness: =1
         Fill: =RGBA(255, 255, 255, 1)
         Font: =Font.'Segoe UI'
-        Height: =35
+        Height: =77
+        Overflow: =Overflow.Scroll
         Size: =12
-        Text: =SelectedRisk.Risk_Owner
-        Width: =445
+        Text: =SelectedRisk.Risk_Description
+        Width: =1085
         X: =210
-        Y: =618
-        ZIndex: =54
+        Y: =528
+        ZIndex: =53
 
     HD_RiskID_36 As label:
         Color: =RGBA(92,92,92,1)
@@ -521,17 +509,17 @@
         Y: =236
         ZIndex: =54
 
-    Label8_7 As label:
+    Label8_6 As label:
         BorderThickness: =1
         Fill: =RGBA(255, 255, 255, 1)
         Font: =Font.'Segoe UI'
         Height: =35
         Size: =12
-        Text: =SelectedRisk.Risk_Important
+        Text: =SelectedRisk.Risk_Owner
         Width: =445
         X: =210
-        Y: =663
-        ZIndex: =55
+        Y: =618
+        ZIndex: =54
 
     cb_ControlMain_2 As combobox:
         BorderThickness: =1
@@ -554,6 +542,18 @@
         Width: =402
         X: =302
         Y: =236
+        ZIndex: =55
+
+    Label8_7 As label:
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =35
+        Size: =12
+        Text: =SelectedRisk.Risk_Important
+        Width: =445
+        X: =210
+        Y: =663
         ZIndex: =55
 
     Label8_8 As label:

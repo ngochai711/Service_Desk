@@ -132,12 +132,12 @@
   "ScreenOrder": [
     "frmRiskStatistic",
     "frmRiskStatistic_1",
+    "frmRiskStatistic_2",
     "frmRisk",
     "frmRisk_1",
     "frmRiskControl",
     "frmRiskControlEdit",
     "frmRiskSolution",
-    "frmRiskSolutionEdit",
-    "frmRiskStatistic_2"
+    "frmRiskSolutionEdit"
   ]
 }

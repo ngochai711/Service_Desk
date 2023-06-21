@@ -293,7 +293,7 @@
                     =Set(var_Timer,false);
                     Set(var_Timer,true);
                     Set(var_Click,var_Click+1);
-                    If(var_Click=2,Navigate(frmRisk,ScreenTransition.Fade);var_Click=0;Set(varRiskInfo, ThisItem))
+                    If(var_Click=2,Navigate(frmRiskEdit,ScreenTransition.Fade);var_Click=0;Set(varRiskInfo, ThisItem))
                 PressedBorderColor: =
                 PressedColor: =
                 PressedFill: =
@@ -520,7 +520,7 @@
                     =Set(var_Timer,false);
                     Set(var_Timer,true);
                     Set(var_Click,var_Click+1);
-                    If(var_Click=2,Navigate(frmRiskControl,ScreenTransition.Fade);var_Click=0;Set(varRiskInfo, ThisItem))
+                    If(var_Click=2,Navigate(frmRiskControlEdit,ScreenTransition.Fade);var_Click=0;Set(varRiskInfo, ThisItem))
                 PressedBorderColor: =
                 PressedColor: =
                 PressedFill: =
@@ -948,7 +948,7 @@
             Title1_7 As label:
                 Font: =Font.'Segoe UI'
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =27
+                Height: =30
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -958,7 +958,7 @@
                 Text: |-
                     ="CSH: "&ThisItem.Action_Owner
                 VerticalAlign: =VerticalAlign.Top
-                Width: =393
+                Width: =424
                 X: =11
                 Y: =39
                 ZIndex: =8
@@ -998,6 +998,32 @@
                 X: =11
                 Y: =93
                 ZIndex: =10
+
+            Button3_4 As button:
+                Color: =RGBA(0, 0, 0, 0)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(0, 0, 0, 0)
+                FocusedBorderColor: =
+                FocusedBorderThickness: =
+                Height: =126
+                HoverBorderColor: =
+                HoverColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =
+                OnSelect: |-
+                    =Set(var_Timer,false);
+                    Set(var_Timer,true);
+                    Set(var_Click,var_Click+1);
+                    If(var_Click=2,Navigate(frmRiskSolutionEdit,ScreenTransition.Fade);var_Click=0;Set(varRiskInfo, ThisItem))
+                PressedBorderColor: =
+                PressedColor: =
+                PressedFill: =
+                Text: =""
+                Width: =451
+                X: =5
+                Y: =1
+                ZIndex: =11
 
         Label1 As label:
             Align: =Align.Center

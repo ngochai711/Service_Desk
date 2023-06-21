@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 36,
+    "BindingErrorCount": 49,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -137,6 +137,7 @@
     "frmRiskControl",
     "frmRiskControlEdit",
     "frmRiskSolution",
-    "frmRiskSolutionEdit"
+    "frmRiskSolutionEdit",
+    "frmRiskStatistic_2"
   ]
 }

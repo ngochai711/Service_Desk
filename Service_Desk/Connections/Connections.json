@@ -60,10 +60,10 @@
       }
     },
     "dataSources": [
-      "Risk_Control",
       "Risk_Connection",
       "Risk_Solution",
-      "Risks"
+      "Risks",
+      "Risk_Control"
     ],
     "dependencies": {},
     "dependents": [],

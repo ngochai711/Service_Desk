@@ -8,7 +8,7 @@
         Reset(CB_RiskStatus_4);
         Reset(CB_RiskStatus_5);
     OnVisible: |-
-        =UpdateContext({varRiskControlKey:"CT"&Text(Last(Risk_Control).Control_Code + 1,"00000")})
+        =UpdateContext({varRiskControlKey:"CT"&Text(CountRows(Risk_Control) + 1,"00000")})
 
     RectQuickActionBar2_4 As rectangle:
         Fill: =RGBA(0, 52, 104, 1)
@@ -40,9 +40,9 @@
         Font: =Font.'Segoe UI'
         Height: =88
         OnSelect: |-
-            =If(IsBlank(inp_ControlDescription) || IsBlank(inp_ControlEvaluation) || IsBlank(lb_ControlOwner) || IsBlank(inp_ControlRating),
+            =If(IsBlank(inp_ControlDescription) || IsBlank(inp_ControlEvaluation) || IsBlank(lb_ControlOwner) || IsBlank(inp_ControlOverallRating) || IsBlank(cb_ControlStatus) || IsBlank(cb_ControlType) || IsBlank(cb_ControlClassify) || IsBlank(cb_ControlEvaluation) || IsBlank(cb_ControlOverallRating),
             UpdateContext({varTemp2:false}),
-            Patch(Risk_Control,Defaults(Risk_Control),{Control_Code:varRiskControlKey,Control_Status:"Theo dõi",Control_Description:inp_ControlDescription.Text,Control_Create_Date:Text(dp_ControlCreateDate.SelectedDate,"dd/mm/yyyy"),Main_Control: cb_ControlMain.Selected.Value,Control_Owner:lb_ControlOwner.Text,Control_Type:CB_RiskStatus_1.Selected.Value,Control_Frequency:cb_ControlFrequency.Selected.Value,Control_Classify:cb_contr.Selected.Value,Control_Evaluation:CB_RiskStatus_4.Selected.Value, Control_Evaluation_Basis:TIn_RiskDescribe_1.Text,Control_Overall_Rating:CB_RiskStatus_5.Selected.Value,Control_Rating_Basis:TIn_RiskReason_1.Text});
+            Patch(Risk_Control,Defaults(Risk_Control),{Control_Code:varRiskControlKey,Control_Status:"Theo dõi",Control_Description:inp_ControlDescription.Text,Control_Create_Date:Text(dp_ControlCreateDate.SelectedDate,"dd/mm/yyyy"),Main_Control: cb_ControlMain.Selected.Value,Control_Owner:lb_ControlOwner.Text,Control_Type:cb_ControlType.Selected.Value,Control_Frequency:cb_ControlFrequency.Selected.Value,Control_Classify:cb_ControlClassify.Selected.Value,Control_Evaluation:cb_ControlEvaluation.Selected.Value, Control_Evaluation_Basis:inp_ControlEvaluation.Text,Control_Overall_Rating:cb_ControlOverallRating.Selected.Value,Control_Rating_Basis:inp_ControlOverallRating.Text,Risk_ID:SelectedRisk.Risk_Code});
             /*If(IsBlank(LookUp(Risk_Connection,R_ID=First(RiskInfo).RiskId)),Patch(Risk_Connection,LookUp(Risk_Connection,R_ID=First(RiskInfo).RiskId),{RC_ID:varRiskControlKey,RS_ID:""}),
             Patch(Risk_Connection,Defaults(Risk_Connection),{ID:Last(Risk_Connection).ID+1,R_ID:First(RiskInfo).RiskId,RC_ID:varRiskControlKey,RS_ID:""}))*/
             );
@@ -105,56 +105,6 @@
         X: =-6
         Y: =-60
         ZIndex: =39
-
-        Gal_RiskSelecttOwner_8 As gallery.galleryVertical:
-            AccessibleLabel: ="People for selection"
-            BorderColor: =RGBA(0, 0, 0, 0.16)
-            BorderThickness: =1
-            DisabledBorderColor: =Gal_RiskSelecttOwner_8.BorderColor
-            DisabledFill: =Gal_RiskSelecttOwner_8.Fill
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =256
-            HoverBorderColor: =Gal_RiskSelecttOwner_8.BorderColor
-            HoverFill: =Gal_RiskSelecttOwner_8.Fill
-            Items: |
-                =If(!IsBlank(inp_ControlOwner.Text), 
-                Office365Users.SearchUser({searchTerm:Trim(inp_ControlOwner.Text)}))
-            Layout: =Layout.Vertical
-            LoadingSpinnerColor: =Gal_RiskSelecttOwner_8.BorderColor
-            OnSelect: |-
-                = UpdateContext({SelectedControlOwner:ThisItem, HidePeopleGallery:true, 
-                 varLBControlOwner: true})
-            PressedBorderColor: =Gal_RiskSelecttOwner_8.BorderColor
-            PressedFill: =Gal_RiskSelecttOwner_8.Fill
-            TemplateSize: =53
-            Visible: |-
-                =Not(IsBlank(inp_ControlOwner)) &&
-                !HidePeopleGallery
-            Width: =398
-            X: =302
-            Y: =326
-            ZIndex: =9
-
-            LabelPersonDisplayName_10 As label:
-                FocusedBorderColor: =LabelPersonDisplayName_10.BorderColor
-                Font: =Font.'Segoe UI'
-                Height: =53
-                HoverBorderColor: =LabelPersonDisplayName_10.BorderColor
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(244, 244, 244, 1)
-                OnSelect: =Select(Parent)
-                PaddingBottom: =15
-                PaddingLeft: =20
-                PaddingRight: =0
-                PaddingTop: =0
-                PressedBorderColor: =LabelPersonDisplayName_10.BorderColor
-                PressedColor: =LabelPersonDisplayName_10.Color
-                PressedFill: =LabelPersonDisplayName_10.Fill
-                Size: =10
-                TabIndex: =0
-                Text: =ThisItem.DisplayName&" - "&ThisItem.Mail
-                Width: =388
-                ZIndex: =1
 
         HD_RiskID_20 As label:
             Color: =RGBA(92,92,92,1)
@@ -365,7 +315,7 @@
             Y: =369
             ZIndex: =20
 
-        inp_ActionDescription_1 As text:
+        inp_ControlDescription As text:
             BorderThickness: =1
             Default: =""
             Font: =Font.'Segoe UI'
@@ -382,7 +332,7 @@
             Y: =145
             ZIndex: =21
 
-        inp_ActionOwner_1 As text:
+        inp_ControlOwner As text:
             BorderThickness: =1
             Default: =""
             Font: =Font.'Segoe UI'
@@ -399,7 +349,7 @@
             Y: =280
             ZIndex: =22
 
-        TextInput1_14 As text:
+        inp_ControlOverallRating As text:
             BorderThickness: =1
             Default: =""
             Font: =Font.'Segoe UI'
@@ -416,7 +366,7 @@
             Y: =369
             ZIndex: =23
 
-        ComboBox1_10 As combobox:
+        cb_ControlEvaluation As combobox:
             BorderThickness: =1
             DefaultSelectedItems: =["Không hiệu quả"]
             DisplayFields: =["Value"]
@@ -433,7 +383,7 @@
             SearchItems: |-
                 =Search(Table({Value:"Không hiệu quả",Index:1},
                 {Value:"Hiệu quả một phần",Index:2},
-                {Value:"Hiệu quả",Index:3}),ComboBox1_10.SearchText,"Value")
+                {Value:"Hiệu quả",Index:3}),cb_ControlEvaluation.SearchText,"Value")
             SelectionColor: =
             SelectionFill: =
             SelectionTagFill: =
@@ -444,7 +394,7 @@
             Y: =324
             ZIndex: =24
 
-        ComboBox1_14 As combobox:
+        cb_ControlOverallRating As combobox:
             BorderThickness: =1
             ChevronHoverBackground: =RGBA(255, 255, 255, 1)
             DefaultSelectedItems: =
@@ -468,7 +418,7 @@
             Y: =324
             ZIndex: =25
 
-        DatePicker1_10 As datepicker:
+        dp_ControlCreateDate As datepicker:
             BorderThickness: =1
             Font: =Font.'Segoe UI'
             Format: ="dd/mm/yyyy"
@@ -480,7 +430,7 @@
             Y: =100
             ZIndex: =26
 
-        TextInput1_9 As text:
+        inp_ControlEvaluation As text:
             BorderThickness: =1
             Default: =""
             Font: =Font.'Segoe UI'
@@ -502,26 +452,11 @@
             Font: =Font.'Segoe UI'
             Height: =35
             Size: =12
-            Text: =varRiskSolutionKey
+            Text: =varRiskControlKey
             Width: =440
             X: =250
             Y: =100
             ZIndex: =28
-
-        LB_RiskOwner_6 As label:
-            Fill: =RGBA(255, 255, 255, 1)
-            Font: =Font.'Segoe UI'
-            Height: =30
-            OnSelect: |-
-                =UpdateContext({varLBRiskOwner:false,
-                HidePeopleGallery:false})
-            Size: =12
-            Text: =SelectedActionOwner.DisplayName&" - "&SelectedActionOwner.Mail
-            Visible: =varLBRiskOwner
-            Width: =381
-            X: =302
-            Y: =288
-            ZIndex: =29
 
         lb_ActionOwner_1 As label:
             Fill: =RGBA(255, 255, 255, 1)
@@ -549,8 +484,8 @@
             HoverBorderColor: =Gal_RiskSelecttOwner_12.BorderColor
             HoverFill: =Gal_RiskSelecttOwner_12.Fill
             Items: |
-                =If(!IsBlank(inp_ActionOwner_1.Text), 
-                Office365Users.SearchUser({searchTerm:Trim(inp_ActionOwner_1.Text)}))
+                =If(!IsBlank(inp_ControlOwner.Text), 
+                Office365Users.SearchUser({searchTerm:Trim(inp_ControlOwner.Text)}))
             Layout: =Layout.Vertical
             LoadingSpinnerColor: =Gal_RiskSelecttOwner_12.BorderColor
             OnSelect: |-
@@ -560,7 +495,7 @@
             PressedFill: =Gal_RiskSelecttOwner_12.Fill
             TemplateSize: =53
             Visible: |-
-                =Not(IsBlank(inp_ActionOwner_1)) &&
+                =Not(IsBlank(inp_ControlOwner)) &&
                 !HidePeopleGallery
             Width: =398
             X: =302
@@ -607,7 +542,7 @@
             Y: =235
             ZIndex: =32
 
-        ComboBox1_8 As combobox:
+        cb_ControlMain As combobox:
             BorderThickness: =1
             DefaultSelectedItems: =
             DisplayFields: =["Value"]
@@ -615,6 +550,9 @@
             Height: =35
             InputTextPlaceholder: =
             IsSearchable: =false
+            Items: |-
+                =Table({Value:"Có",Index:1},
+                {Value:"Không",Index:2})
             NoSelectionText: =
             OnSelect: =
             SearchFields: =["Value"]
@@ -648,10 +586,10 @@
             Y: =235
             ZIndex: =34
 
-        ComboBox1_9 As combobox:
+        cb_ControlFrequency As combobox:
             BorderThickness: =1
             ChevronHoverBackground: =RGBA(255, 255, 255, 1)
-            DefaultSelectedItems: =["Không hiệu quả"]a
+            DefaultSelectedItems: =
             DisplayFields: =["Value"]
             Font: =Font.'Segoe UI'
             Height: =35
@@ -672,7 +610,7 @@
             Y: =235
             ZIndex: =35
 
-        ComboBox1_11 As combobox:
+        cb_ControlStatus As combobox:
             BorderThickness: =1
             ChevronHoverBackground: =RGBA(255, 255, 255, 1)
             DefaultSelectedItems: =
@@ -681,6 +619,8 @@
             Height: =35
             InputTextPlaceholder: =""
             IsSearchable: =false
+            Items: |-
+                =Table({Value:"Tạo mới",Index:1})
             OnSelect: =
             SearchFields: =["Value"]
             SearchItems: =[]
@@ -692,7 +632,7 @@
             Y: =145
             ZIndex: =36
 
-        ComboBox1_12 As combobox:
+        cb_ControlClassify As combobox:
             BorderThickness: =1
             ChevronHoverBackground: =RGBA(255, 255, 255, 1)
             DefaultSelectedItems: =
@@ -716,7 +656,7 @@
             Y: =280
             ZIndex: =37
 
-        ComboBox1_13 As combobox:
+        cb_ControlType As combobox:
             BorderThickness: =1
             ChevronHoverBackground: =RGBA(255, 255, 255, 1)
             DefaultSelectedItems: =
@@ -725,6 +665,9 @@
             Height: =35
             InputTextPlaceholder: =""
             IsSearchable: =false
+            Items: |-
+                =Table({Value:"Thủ công",Index:1},
+                {Value:"Tự động",Index:2})
             OnSelect: =
             SearchFields: =["Value"]
             SearchItems: =[]
@@ -882,71 +825,6 @@
         Y: =514
         ZIndex: =48
 
-    lb_ControlOwner_1 As label:
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =Font.'Segoe UI'
-        Height: =23
-        OnSelect: |-
-            =UpdateContext({varLBRiskOwner:false,
-            HidePeopleGallery1:false})
-        Size: =12
-        Text: =SelectedRisk.Risk_Code
-        Visible: =varLBRiskOwner
-        Width: =283
-        X: =220
-        Y: =491
-        ZIndex: =49
-
-    Gal_RiskSelecttOwner_9 As gallery.galleryVertical:
-        AccessibleLabel: ="People for selection"
-        BorderColor: =RGBA(0, 0, 0, 0.16)
-        BorderThickness: =1
-        DisabledBorderColor: =Gal_RiskSelecttOwner_9.BorderColor
-        DisabledFill: =Gal_RiskSelecttOwner_9.Fill
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =200
-        HoverBorderColor: =Gal_RiskSelecttOwner_9.BorderColor
-        HoverFill: =Gal_RiskSelecttOwner_9.Fill
-        Items: |
-            =If(!IsBlank(inp_RiskID.Text), 
-            Search(Risks,inp_RiskID.Text,"Risk_Code"))
-        Layout: =Layout.Vertical
-        LoadingSpinnerColor: =Gal_RiskSelecttOwner_9.BorderColor
-        OnSelect: |-
-            = UpdateContext({SelectedRisk:ThisItem, HidePeopleGallery1:true, 
-             varLBRiskOwner: true})
-        PressedBorderColor: =Gal_RiskSelecttOwner_9.BorderColor
-        PressedFill: =Gal_RiskSelecttOwner_9.Fill
-        TemplateSize: =53
-        Visible: |-
-            =Not(IsBlank(inp_RiskID)) &&
-            !HidePeopleGallery1
-        Width: =295
-        X: =216
-        Y: =528
-        ZIndex: =50
-
-        LabelPersonDisplayName_11 As label:
-            FocusedBorderColor: =LabelPersonDisplayName_11.BorderColor
-            Font: =Font.'Segoe UI'
-            Height: =53
-            HoverBorderColor: =LabelPersonDisplayName_11.BorderColor
-            HoverColor: =RGBA(0, 0, 0, 1)
-            HoverFill: =RGBA(244, 244, 244, 1)
-            OnSelect: =Select(Parent)
-            PaddingBottom: =15
-            PaddingLeft: =20
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedBorderColor: =LabelPersonDisplayName_11.BorderColor
-            PressedColor: =LabelPersonDisplayName_11.Color
-            PressedFill: =LabelPersonDisplayName_11.Fill
-            Size: =10
-            TabIndex: =0
-            Text: =ThisItem.Risk_Code&" - "&ThisItem.Risk_Name
-            Width: =282
-            ZIndex: =1
-
     Label8_5 As label:
         BorderThickness: =1
         Fill: =RGBA(255, 255, 255, 1)
@@ -1007,4 +885,134 @@
         X: =829
         Y: =649
         ZIndex: =55
+
+    lb_ControlOwner As label:
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =26
+        OnSelect: |-
+            =UpdateContext({varLBControlOwner:false,
+            HidePeopleGallery:false})
+        Size: =12
+        Text: =SelectedControlOwner.DisplayName&" - "&SelectedControlOwner.Mail
+        Visible: =varLBControlOwner
+        Width: =419
+        X: =256
+        Y: =283
+        ZIndex: =56
+
+    Gal_RiskSelecttOwner_13 As gallery.galleryVertical:
+        AccessibleLabel: ="People for selection"
+        BorderColor: =RGBA(0, 0, 0, 0.16)
+        BorderThickness: =1
+        DisabledBorderColor: =Gal_RiskSelecttOwner_13.BorderColor
+        DisabledFill: =Gal_RiskSelecttOwner_13.Fill
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =274
+        HoverBorderColor: =Gal_RiskSelecttOwner_13.BorderColor
+        HoverFill: =Gal_RiskSelecttOwner_13.Fill
+        Items: |
+            =If(!IsBlank(inp_ControlOwner.Text), 
+            Office365Users.SearchUser({searchTerm:Trim(inp_ControlOwner.Text)}))
+        Layout: =Layout.Vertical
+        LoadingSpinnerColor: =Gal_RiskSelecttOwner_13.BorderColor
+        OnSelect: |-
+            = UpdateContext({SelectedControlOwner:ThisItem, HidePeopleGallery:true, 
+             varLBControlOwner: true})
+        PressedBorderColor: =Gal_RiskSelecttOwner_13.BorderColor
+        PressedFill: =Gal_RiskSelecttOwner_13.Fill
+        TemplateSize: =53
+        Visible: |-
+            =Not(IsBlank(inp_ControlOwner)) &&
+            !HidePeopleGallery
+        Width: =438
+        X: =252
+        Y: =320
+        ZIndex: =57
+
+        LabelPersonDisplayName_15 As label:
+            FocusedBorderColor: =LabelPersonDisplayName_15.BorderColor
+            Font: =Font.'Segoe UI'
+            Height: =53
+            HoverBorderColor: =LabelPersonDisplayName_15.BorderColor
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(244, 244, 244, 1)
+            OnSelect: =Select(Parent)
+            PaddingBottom: =15
+            PaddingLeft: =20
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =LabelPersonDisplayName_15.BorderColor
+            PressedColor: =LabelPersonDisplayName_15.Color
+            PressedFill: =LabelPersonDisplayName_15.Fill
+            Size: =10
+            TabIndex: =0
+            Text: =ThisItem.DisplayName&" - "&ThisItem.Mail
+            Width: =388
+            ZIndex: =1
+
+    lb_ControlOwner_3 As label:
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =23
+        OnSelect: |-
+            =UpdateContext({varLBRiskOwner:false,
+            HidePeopleGallery1:false})
+        Size: =12
+        Text: =SelectedRisk.Risk_Code
+        Visible: =varLBRiskOwner
+        Width: =282
+        X: =220
+        Y: =521
+        ZIndex: =58
+
+    Gal_RiskSelecttOwner_14 As gallery.galleryVertical:
+        AccessibleLabel: ="People for selection"
+        BorderColor: =RGBA(0, 0, 0, 0.16)
+        BorderThickness: =1
+        DisabledBorderColor: =Gal_RiskSelecttOwner_14.BorderColor
+        DisabledFill: =Gal_RiskSelecttOwner_14.Fill
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =200
+        HoverBorderColor: =Gal_RiskSelecttOwner_14.BorderColor
+        HoverFill: =Gal_RiskSelecttOwner_14.Fill
+        Items: |
+            =If(!IsBlank(inp_RiskID.Text), 
+            Search(Risks,inp_RiskID.Text,"Risk_Code"))
+        Layout: =Layout.Vertical
+        LoadingSpinnerColor: =Gal_RiskSelecttOwner_14.BorderColor
+        OnSelect: |
+            = UpdateContext({SelectedRisk:ThisItem, HidePeopleGallery1:true, 
+             varLBRiskOwner: true});
+        PressedBorderColor: =Gal_RiskSelecttOwner_14.BorderColor
+        PressedFill: =Gal_RiskSelecttOwner_14.Fill
+        TemplateSize: =53
+        Visible: |-
+            =Not(IsBlank(inp_RiskID)) &&
+            !HidePeopleGallery1
+        Width: =295
+        X: =216
+        Y: =558
+        ZIndex: =59
+
+        LabelPersonDisplayName_16 As label:
+            FocusedBorderColor: =LabelPersonDisplayName_16.BorderColor
+            Font: =Font.'Segoe UI'
+            Height: =53
+            HoverBorderColor: =LabelPersonDisplayName_16.BorderColor
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(244, 244, 244, 1)
+            OnSelect: =Select(Parent)
+            PaddingBottom: =15
+            PaddingLeft: =20
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =LabelPersonDisplayName_16.BorderColor
+            PressedColor: =LabelPersonDisplayName_16.Color
+            PressedFill: =LabelPersonDisplayName_16.Fill
+            Size: =10
+            TabIndex: =0
+            Text: =ThisItem.Risk_Code&" - "&ThisItem.Risk_Name
+            Width: =405
+            ZIndex: =1
 

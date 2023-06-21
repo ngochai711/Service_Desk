@@ -22,7 +22,7 @@
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =61
+            Height: =62
             OnSelect: =
             Width: =456
             Y: =47
@@ -245,8 +245,9 @@
                 Color: =RGBA(54, 176, 75, 1)
                 FocusedBorderColor: =TextBox1_23.BorderColor
                 FocusedBorderThickness: =02
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =61
+                Height: =25
                 HoverBorderColor: =TextBox1_23.BorderColor
                 HoverColor: =TextBox1_23.Color
                 HoverFill: =TextBox1_23.Fill
@@ -257,7 +258,7 @@
                 Text: =CountRows(Risks)
                 Width: =231
                 Wrap: =false
-                Y: =47
+                Y: =60
                 ZIndex: =3
 
             TextBox2_23 As label:
@@ -265,17 +266,19 @@
                 Color: =RGBA(54, 176, 75, 1)
                 FocusedBorderColor: =TextBox2_23.BorderColor
                 FocusedBorderThickness: =02
-                Height: =16
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =23
                 HoverBorderColor: =TextBox2_23.BorderColor
                 HoverColor: =TextBox2_23.Color
                 HoverFill: =TextBox2_23.Fill
                 PressedBorderColor: =TextBox2_23.BorderColor
                 PressedColor: =TextBox2_23.Color
                 PressedFill: =TextBox2_23.Fill
-                Size: =5
+                Size: =7
                 Text: ="Theo dõi"
                 Width: =231
-                Y: =82
+                Y: =85
                 ZIndex: =4
 
         R_OnHoldStatus As group:
@@ -290,8 +293,9 @@
                 Color: =RGBA(255, 0, 0, 1)
                 FocusedBorderColor: =TextBox1_24.BorderColor
                 FocusedBorderThickness: =02
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =61
+                Height: =25
                 HoverBorderColor: =TextBox1_24.BorderColor
                 HoverColor: =TextBox1_24.Color
                 HoverFill: =TextBox1_24.Fill
@@ -303,7 +307,7 @@
                 Width: =225
                 Wrap: =false
                 X: =231
-                Y: =47
+                Y: =60
                 ZIndex: =5
 
             TextBox2_24 As label:
@@ -311,18 +315,20 @@
                 Color: =RGBA(255, 0, 0, 1)
                 FocusedBorderColor: =TextBox2_24.BorderColor
                 FocusedBorderThickness: =02
-                Height: =16
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =23
                 HoverBorderColor: =TextBox2_24.BorderColor
                 HoverColor: =TextBox2_24.Color
                 HoverFill: =TextBox2_24.Fill
                 PressedBorderColor: =TextBox2_24.BorderColor
                 PressedColor: =TextBox2_24.Color
                 PressedFill: =TextBox2_24.Fill
-                Size: =5
+                Size: =7
                 Text: ="Trả lại"
                 Width: =225
                 X: =231
-                Y: =81
+                Y: =85
                 ZIndex: =6
 
     "'Risk Control' As groupContainer":
@@ -564,8 +570,9 @@
                 Color: =RGBA(54, 176, 75, 1)
                 FocusedBorderColor: =TextBox1_25.BorderColor
                 FocusedBorderThickness: =02
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =61
+                Height: =25
                 HoverBorderColor: =TextBox1_25.BorderColor
                 HoverColor: =TextBox1_25.Color
                 HoverFill: =TextBox1_25.Fill
@@ -574,10 +581,9 @@
                 PressedFill: =TextBox1_25.Fill
                 Size: =20
                 Text: =CountRows(Risk_Control)
-                Width: =91
+                Width: =231
                 Wrap: =false
-                X: =106
-                Y: =47
+                Y: =60
                 ZIndex: =5
 
             TextBox2_25 As label:
@@ -585,18 +591,19 @@
                 Color: =RGBA(54, 176, 75, 1)
                 FocusedBorderColor: =TextBox2_25.BorderColor
                 FocusedBorderThickness: =02
-                Height: =16
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =23
                 HoverBorderColor: =TextBox2_25.BorderColor
                 HoverColor: =TextBox2_25.Color
                 HoverFill: =TextBox2_25.Fill
                 PressedBorderColor: =TextBox2_25.BorderColor
                 PressedColor: =TextBox2_25.Color
                 PressedFill: =TextBox2_25.Fill
-                Size: =5
+                Size: =7
                 Text: ="Theo dõi"
-                Width: =91
-                X: =87
-                Y: =82
+                Width: =231
+                Y: =85
                 ZIndex: =6
 
         R_OnHoldStatus_2 As group:
@@ -612,7 +619,7 @@
                 FocusedBorderColor: =TextBox1_26.BorderColor
                 FocusedBorderThickness: =02
                 FontWeight: =FontWeight.Semibold
-                Height: =62
+                Height: =25
                 HoverBorderColor: =TextBox1_26.BorderColor
                 HoverColor: =TextBox1_26.Color
                 HoverFill: =TextBox1_26.Fill
@@ -621,10 +628,10 @@
                 PressedFill: =TextBox1_26.Fill
                 Size: =20
                 Text: =CountRows(Filter(Risks,RR_TRANGTHAI="Đang chờ"))
-                Width: =92
+                Width: =222
                 Wrap: =false
-                X: =277
-                Y: =47
+                X: =233
+                Y: =60
                 ZIndex: =7
 
             TextBox2_26 As label:
@@ -632,18 +639,20 @@
                 Color: =RGBA(255, 0, 0, 1)
                 FocusedBorderColor: =TextBox2_26.BorderColor
                 FocusedBorderThickness: =02
-                Height: =17
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =23
                 HoverBorderColor: =TextBox2_26.BorderColor
                 HoverColor: =TextBox2_26.Color
                 HoverFill: =TextBox2_26.Fill
                 PressedBorderColor: =TextBox2_26.BorderColor
                 PressedColor: =TextBox2_26.Color
                 PressedFill: =TextBox2_26.Fill
-                Size: =5
+                Size: =7
                 Text: ="Trả lại"
-                Width: =92
-                X: =277
-                Y: =82
+                Width: =222
+                X: =233
+                Y: =85
                 ZIndex: =8
 
     "'Risk Fix' As groupContainer":
@@ -665,7 +674,7 @@
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =63
+            Height: =62
             OnSelect: =
             Width: =455
             Y: =47
@@ -683,8 +692,9 @@
                 Color: =RGBA(0,0,0,1)
                 FocusedBorderColor: =TextBox1_30.BorderColor
                 FocusedBorderThickness: =02
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =61
+                Height: =25
                 HoverBorderColor: =TextBox1_30.BorderColor
                 HoverColor: =TextBox1_30.Color
                 HoverFill: =TextBox1_30.Fill
@@ -693,9 +703,9 @@
                 PressedFill: =TextBox1_30.Fill
                 Size: =20
                 Text: =CountRows(Risk_Solution)
-                Width: =82
+                Width: =91
                 Wrap: =false
-                Y: =47
+                Y: =60
                 ZIndex: =4
 
             TextBox2_30 As label:
@@ -703,17 +713,19 @@
                 Color: =RGBA(0,0,0,1)
                 FocusedBorderColor: =TextBox2_30.BorderColor
                 FocusedBorderThickness: =02
-                Height: =15
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =23
                 HoverBorderColor: =TextBox2_30.BorderColor
                 HoverColor: =TextBox2_30.Color
                 HoverFill: =TextBox2_30.Fill
                 PressedBorderColor: =TextBox2_30.BorderColor
                 PressedColor: =TextBox2_30.Color
                 PressedFill: =TextBox2_30.Fill
-                Size: =5
+                Size: =7
                 Text: ="Tổng"
-                Width: =82
-                Y: =83
+                Width: =91
+                Y: =85
                 ZIndex: =5
 
         RF_NewStatus As group:
@@ -728,8 +740,9 @@
                 Color: =RGBA(56,86,153,1)
                 FocusedBorderColor: =TextBox1_31.BorderColor
                 FocusedBorderThickness: =02
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =61
+                Height: =25
                 HoverBorderColor: =TextBox1_31.BorderColor
                 HoverColor: =TextBox1_31.Color
                 HoverFill: =TextBox1_31.Fill
@@ -740,8 +753,8 @@
                 Text: =CountRows(Filter(Risks,RR_TRANGTHAI="Mới"))
                 Width: =91
                 Wrap: =false
-                X: =82
-                Y: =47
+                X: =91
+                Y: =60
                 ZIndex: =7
 
             TextBox2_31 As label:
@@ -749,18 +762,20 @@
                 Color: =RGBA(56,86,153,1)
                 FocusedBorderColor: =TextBox2_31.BorderColor
                 FocusedBorderThickness: =02
-                Height: =16
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =23
                 HoverBorderColor: =TextBox2_31.BorderColor
                 HoverColor: =TextBox2_31.Color
                 HoverFill: =TextBox2_31.Fill
                 PressedBorderColor: =TextBox2_31.BorderColor
                 PressedColor: =TextBox2_31.Color
                 PressedFill: =TextBox2_31.Fill
-                Size: =5
+                Size: =7
                 Text: ="Mới"
                 Width: =91
-                X: =82
-                Y: =81
+                X: =91
+                Y: =85
                 ZIndex: =8
 
         RF_ProgressStatus As group:
@@ -775,8 +790,9 @@
                 Color: =RGBA(255, 191, 0, 1)
                 FocusedBorderColor: =TextBox1_32.BorderColor
                 FocusedBorderThickness: =02
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =61
+                Height: =25
                 HoverBorderColor: =TextBox1_32.BorderColor
                 HoverColor: =TextBox1_32.Color
                 HoverFill: =TextBox1_32.Fill
@@ -788,7 +804,7 @@
                 Width: =91
                 Wrap: =false
                 X: =182
-                Y: =47
+                Y: =60
                 ZIndex: =10
 
             TextBox2_32 As label:
@@ -796,18 +812,20 @@
                 Color: =RGBA(255, 191, 0, 1)
                 FocusedBorderColor: =TextBox2_32.BorderColor
                 FocusedBorderThickness: =02
-                Height: =16
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =23
                 HoverBorderColor: =TextBox2_32.BorderColor
                 HoverColor: =TextBox2_32.Color
                 HoverFill: =TextBox2_32.Fill
                 PressedBorderColor: =TextBox2_32.BorderColor
                 PressedColor: =TextBox2_32.Color
                 PressedFill: =TextBox2_32.Fill
-                Size: =5
+                Size: =7
                 Text: ="Đang xử lý"
                 Width: =91
                 X: =182
-                Y: =81
+                Y: =85
                 ZIndex: =11
 
         RF_CloseStatus As group:
@@ -822,8 +840,9 @@
                 Color: =RGBA(54, 176, 75, 1)
                 FocusedBorderColor: =TextBox1_33.BorderColor
                 FocusedBorderThickness: =02
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =61
+                Height: =25
                 HoverBorderColor: =TextBox1_33.BorderColor
                 HoverColor: =TextBox1_33.Color
                 HoverFill: =TextBox1_33.Fill
@@ -835,7 +854,7 @@
                 Width: =91
                 Wrap: =false
                 X: =273
-                Y: =47
+                Y: =60
                 ZIndex: =13
 
             TextBox2_33 As label:
@@ -843,18 +862,20 @@
                 Color: =RGBA(54, 176, 75, 1)
                 FocusedBorderColor: =TextBox2_33.BorderColor
                 FocusedBorderThickness: =02
-                Height: =16
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =23
                 HoverBorderColor: =TextBox2_33.BorderColor
                 HoverColor: =TextBox2_33.Color
                 HoverFill: =TextBox2_33.Fill
                 PressedBorderColor: =TextBox2_33.BorderColor
                 PressedColor: =TextBox2_33.Color
                 PressedFill: =TextBox2_33.Fill
-                Size: =5
+                Size: =7
                 Text: ="Đóng"
                 Width: =91
                 X: =273
-                Y: =81
+                Y: =85
                 ZIndex: =14
 
         RF_OnHoldStatus As group:
@@ -869,8 +890,9 @@
                 Color: =RGBA(255, 0, 0, 1)
                 FocusedBorderColor: =TextBox1_34.BorderColor
                 FocusedBorderThickness: =02
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =61
+                Height: =25
                 HoverBorderColor: =TextBox1_34.BorderColor
                 HoverColor: =TextBox1_34.Color
                 HoverFill: =TextBox1_34.Fill
@@ -879,10 +901,10 @@
                 PressedFill: =TextBox1_34.Fill
                 Size: =20
                 Text: =CountRows(Filter(Risks,RR_TRANGTHAI="Đang chờ"))
-                Width: =92
+                Width: =91
                 Wrap: =false
                 X: =364
-                Y: =47
+                Y: =60
                 ZIndex: =16
 
             TextBox2_34 As label:
@@ -890,18 +912,20 @@
                 Color: =RGBA(255, 0, 0, 1)
                 FocusedBorderColor: =TextBox2_34.BorderColor
                 FocusedBorderThickness: =02
-                Height: =16
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =23
                 HoverBorderColor: =TextBox2_34.BorderColor
                 HoverColor: =TextBox2_34.Color
                 HoverFill: =TextBox2_34.Fill
                 PressedBorderColor: =TextBox2_34.BorderColor
                 PressedColor: =TextBox2_34.Color
                 PressedFill: =TextBox2_34.Fill
-                Size: =5
+                Size: =7
                 Text: ="Đang chờ"
-                Width: =92
+                Width: =91
                 X: =364
-                Y: =82
+                Y: =85
                 ZIndex: =17
 
         "Gallery1_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":

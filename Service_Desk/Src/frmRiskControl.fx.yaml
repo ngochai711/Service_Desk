@@ -8,7 +8,7 @@
         Reset(CB_RiskStatus_4);
         Reset(CB_RiskStatus_5);
     OnVisible: |-
-        =UpdateContext({varRiskControlKey:Last(Risk_Control).KSRR_MA + 1})
+        =UpdateContext({varRiskControlKey:"CT"&Text(Last(Risk_Control).Control_Code + 1,"00000")})
 
     Rectangle3_8 As rectangle:
         BorderThickness: =1
@@ -93,9 +93,7 @@
             HoverColor: =ColorFade(Self.BorderColor, 20%)
             HoverFill: =ColorFade(Self.BorderColor, 20%)
             Icon: =Icon.ChevronLeft
-            OnSelect: |-
-                =Navigate(frmRiskStatistic,ScreenTransition.Fade);
-                Clear(RiskInfo)
+            OnSelect: =Navigate(frmRiskStatistic,ScreenTransition.Fade);
             PressedColor: =ColorFade(Self.BorderColor, 20%)
             TabIndex: =0
             Width: =32
@@ -726,7 +724,7 @@
             Font: =Font.'Segoe UI'
             Height: =35
             Size: =12
-            Text: =varRiskSolutionKey
+            Text: =varRiskControlKey
             Width: =402
             X: =302
             Y: =101

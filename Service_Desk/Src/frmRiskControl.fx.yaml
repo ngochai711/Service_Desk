@@ -49,9 +49,9 @@
         Font: =Font.'Segoe UI'
         Height: =88
         OnSelect: |-
-            =If(IsBlank(LB_RiskOwner_1) || IsBlank(TIn_RiskReason_1) || IsBlank(TIn_RiskDescribe_1) || IsBlank(TIn_RiskName_1),
+            =If(IsBlank(inp_ControlDescription) || IsBlank(inp_ControlEvaluation) || IsBlank(lb_ControlOwner) || IsBlank(inp_ControlRating),
             UpdateContext({varTemp2:false}),
-            Patch(Risk_Control,Defaults(Risk_Control),{Control_Code:varRiskControlKey,Control_Status:"Theo dõi",Control_Description:TIn_RiskName_1.Text,Control_Create_Date:Text(DP_RiskRecordDate_1.SelectedDate,"dd/mm/yyyy"),Main_Control: CB_RiskImportant_1.Selected.Value,Control_Owner:LB_RiskOwner_1.Text,Control_Type:CB_RiskStatus_1.Selected.Value,Control_Frequency:CB_RiskStatus_2.Selected.Value,Control_Classify:CB_RiskStatus_3.Selected.Value,Control_Evaluation:CB_RiskStatus_4.Selected.Value, Control_Evaluation_Basis:TIn_RiskDescribe_1.Text,Control_Overall_Rating:CB_RiskStatus_5.Selected.Value,Control_Rating_Basis:TIn_RiskReason_1.Text});
+            Patch(Risk_Control,Defaults(Risk_Control),{Control_Code:varRiskControlKey,Control_Status:"Theo dõi",Control_Description:inp_ControlDescription.Text,Control_Create_Date:Text(dp_ControlCreateDate.SelectedDate,"dd/mm/yyyy"),Main_Control: cb_ControlMain.Selected.Value,Control_Owner:lb_ControlOwner.Text,Control_Type:CB_RiskStatus_1.Selected.Value,Control_Frequency:cb_ControlFrequency.Selected.Value,Control_Classify:cb_contr.Selected.Value,Control_Evaluation:CB_RiskStatus_4.Selected.Value, Control_Evaluation_Basis:TIn_RiskDescribe_1.Text,Control_Overall_Rating:CB_RiskStatus_5.Selected.Value,Control_Rating_Basis:TIn_RiskReason_1.Text});
             /*If(IsBlank(LookUp(Risk_Connection,R_ID=First(RiskInfo).RiskId)),Patch(Risk_Connection,LookUp(Risk_Connection,R_ID=First(RiskInfo).RiskId),{RC_ID:varRiskControlKey,RS_ID:""}),
             Patch(Risk_Connection,Defaults(Risk_Connection),{ID:Last(Risk_Connection).ID+1,R_ID:First(RiskInfo).RiskId,RC_ID:varRiskControlKey,RS_ID:""}))*/
             );
@@ -172,23 +172,6 @@
         Y: =618
         ZIndex: =35
 
-    ComboBox1_13 As combobox:
-        BorderThickness: =1
-        DisplayFields: =["Value"]
-        Height: =35
-        Items: |-
-            =Table({Value:"Có",Index:1},
-            {Value:"Không",Index:2})
-        OnSelect: =
-        SearchFields: =["Value"]
-        SearchItems: |-
-            =Search(Table({Value:"Có",Index:1},
-            {Value:"Không",Index:2}),ComboBox1_13.SearchText,"Value")
-        Width: =472
-        X: =823
-        Y: =618
-        ZIndex: =36
-
     inp_RiskID As text:
         BorderThickness: =1
         Default: =""
@@ -203,34 +186,6 @@
         X: =210
         Y: =483
         ZIndex: =37
-
-    TextInput1_21 As text:
-        BorderThickness: =1
-        Default: =""
-        Height: =80
-        OnSelect: =
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Width: =1085
-        X: =210
-        Y: =528
-        ZIndex: =38
-
-    TextInput1_22 As text:
-        BorderThickness: =1
-        Default: =""
-        Height: =35
-        OnSelect: =
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Width: =433
-        X: =210
-        Y: =618
-        ZIndex: =39
 
     HD_RiskImportant_11 As label:
         Color: =RGBA(92,92,92,1)
@@ -249,23 +204,6 @@
         X: =60
         Y: =663
         ZIndex: =40
-
-    ComboBox1_14 As combobox:
-        BorderThickness: =1
-        DisplayFields: =["Value"]
-        Height: =35
-        Items: |-
-            =Table({Value:"Có",Index:1},
-            {Value:"Không",Index:2})
-        OnSelect: =
-        SearchFields: =["Value"]
-        SearchItems: |-
-            =Search(Table({Value:"Có",Index:1},
-            {Value:"Không",Index:2}),ComboBox1_14.SearchText,"Value")
-        Width: =445
-        X: =210
-        Y: =663
-        ZIndex: =41
 
     cb_ControlMain As combobox:
         BorderThickness: =1
@@ -484,6 +422,67 @@
             Text: =ThisItem.Risk_Code&" - "&ThisItem.Risk_Name
             Width: =282
             ZIndex: =1
+
+    Label8_4 As label:
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =35
+        Size: =12
+        Text: =SelectedRisk.Risk_Name
+        Width: =402
+        X: =796
+        Y: =483
+        ZIndex: =52
+
+    Label8_5 As label:
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =77
+        Overflow: =Overflow.Scroll
+        Size: =12
+        Text: =SelectedRisk.Risk_Description
+        Width: =1085
+        X: =210
+        Y: =528
+        ZIndex: =53
+
+    Label8_6 As label:
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =35
+        Size: =12
+        Text: =SelectedRisk.Risk_Owner
+        Width: =445
+        X: =210
+        Y: =618
+        ZIndex: =54
+
+    Label8_7 As label:
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =35
+        Size: =12
+        Text: =SelectedRisk.Risk_Important
+        Width: =445
+        X: =210
+        Y: =663
+        ZIndex: =55
+
+    Label8_8 As label:
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =35
+        Size: =12
+        Text: =SelectedRisk.Risk_Status
+        Width: =472
+        X: =823
+        Y: =618
+        ZIndex: =56
 
     Group8_1 As group:
         Height: =5
@@ -735,7 +734,7 @@
             Y: =237
             ZIndex: =21
 
-        TextInput1_26 As text:
+        inp_ControlRating As text:
             BorderThickness: =1
             Default: =""
             Font: =Font.'Segoe UI'

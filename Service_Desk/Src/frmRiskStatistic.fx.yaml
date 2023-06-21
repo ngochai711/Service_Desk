@@ -520,7 +520,7 @@
                     =Set(var_Timer,false);
                     Set(var_Timer,true);
                     Set(var_Click,var_Click+1);
-                    If(var_Click=2,Navigate(frmRiskControl,ScreenTransition.Fade);var_Click=0;Set(RiskInfo, ThisItem))
+                    If(var_Click=2,Navigate(frmRiskControl,ScreenTransition.Fade);var_Click=0;Set(varRiskInfo, ThisItem))
                 PressedBorderColor: =
                 PressedColor: =
                 PressedFill: =

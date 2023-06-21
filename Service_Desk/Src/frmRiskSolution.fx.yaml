@@ -88,6 +88,108 @@
         Width: =381
         X: =310
         Y: =244
+        ZIndex: =51
+
+    Gal_RiskSelecttOwner_10 As gallery.galleryVertical:
+        AccessibleLabel: ="People for selection"
+        BorderColor: =RGBA(0, 0, 0, 0.16)
+        BorderThickness: =1
+        DisabledBorderColor: =Gal_RiskSelecttOwner_10.BorderColor
+        DisabledFill: =Gal_RiskSelecttOwner_10.Fill
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =256
+        HoverBorderColor: =Gal_RiskSelecttOwner_10.BorderColor
+        HoverFill: =Gal_RiskSelecttOwner_10.Fill
+        Items: |
+            =If(!IsBlank(inp_ActionOwner.Text), 
+            Office365Users.SearchUser({searchTerm:Trim(inp_ActionOwner.Text)}))
+        Layout: =Layout.Vertical
+        LoadingSpinnerColor: =Gal_RiskSelecttOwner_10.BorderColor
+        OnSelect: |-
+            = UpdateContext({SelectedActionOwner:ThisItem, HidePeopleGallery:true, 
+             varLBActionOwner: true})
+        PressedBorderColor: =Gal_RiskSelecttOwner_10.BorderColor
+        PressedFill: =Gal_RiskSelecttOwner_10.Fill
+        TemplateSize: =53
+        Visible: |-
+            =Not(IsBlank(inp_ActionOwner)) &&
+            !HidePeopleGallery
+        Width: =398
+        X: =306
+        Y: =281
+        ZIndex: =52
+
+        LabelPersonDisplayName_12 As label:
+            FocusedBorderColor: =LabelPersonDisplayName_12.BorderColor
+            Font: =Font.'Segoe UI'
+            Height: =53
+            HoverBorderColor: =LabelPersonDisplayName_12.BorderColor
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(244, 244, 244, 1)
+            OnSelect: =Select(Parent)
+            PaddingBottom: =15
+            PaddingLeft: =20
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =LabelPersonDisplayName_12.BorderColor
+            PressedColor: =LabelPersonDisplayName_12.Color
+            PressedFill: =LabelPersonDisplayName_12.Fill
+            Size: =10
+            TabIndex: =0
+            Text: =ThisItem.DisplayName&" - "&ThisItem.Mail
+            Width: =388
+            ZIndex: =1
+
+    lb_ControlOwner_2 As label:
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =23
+        OnSelect: |-
+            =UpdateContext({varLBControlOwner:false,
+            HidePeopleGallery1:false})
+        Size: =12
+        Text: =SelectedControl.Control_Code
+        Visible: =varLBControlOwner
+        Width: =398
+        X: =235
+        Y: =489
+        ZIndex: =53
+
+    Label8_2 As label:
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =70
+        Overflow: =Overflow.Scroll
+        Size: =12
+        Text: =SelectedControl.Control_Description
+        Width: =415
+        X: =231
+        Y: =528
+        ZIndex: =54
+
+    Label8_3 As label:
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =35
+        Size: =12
+        Text: =SelectedControl.Control_Owner
+        Width: =415
+        X: =231
+        Y: =608
+        ZIndex: =55
+
+    Label8_9 As label:
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =35
+        Size: =12
+        Text: =SelectedControl.Control_Status
+        Width: =415
+        X: =231
+        Y: =653
         ZIndex: =56
 
     Group8 As group:
@@ -532,7 +634,7 @@
             Width: =180
             X: =715
             Y: =483
-            ZIndex: =44
+            ZIndex: =40
 
         HD_RiskStatus_3 As label:
             Color: =RGBA(92,92,92,1)
@@ -551,7 +653,7 @@
             Width: =180
             X: =715
             Y: =653
-            ZIndex: =45
+            ZIndex: =41
 
         HD_RiskName_3 As label:
             Color: =RGBA(92,92,92,1)
@@ -570,7 +672,7 @@
             Width: =180
             X: =715
             Y: =528
-            ZIndex: =46
+            ZIndex: =42
 
         HD_RiskOwner_13 As label:
             Color: =RGBA(92,92,92,1)
@@ -589,66 +691,7 @@
             Width: =180
             X: =715
             Y: =608
-            ZIndex: =47
-
-        ComboBox1_9 As combobox:
-            BorderThickness: =1
-            DisplayFields: =["Value"]
-            Height: =35
-            Items: |-
-                =Table({Value:"Có",Index:1},
-                {Value:"Không",Index:2})
-            OnSelect: =
-            SearchFields: =["Value"]
-            SearchItems: |-
-                =Search(Table({Value:"Có",Index:1},
-                {Value:"Không",Index:2}),ComboBox1_9.SearchText,"Value")
-            Width: =415
-            X: =895
-            Y: =653
-            ZIndex: =48
-
-        TextInput1_14 As text:
-            BorderThickness: =1
-            Default: =""
-            Height: =35
-            OnSelect: =
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            Width: =415
-            X: =895
-            Y: =483
-            ZIndex: =49
-
-        TextInput1_15 As text:
-            BorderThickness: =1
-            Default: =""
-            Height: =70
-            OnSelect: =
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            Width: =415
-            X: =895
-            Y: =528
-            ZIndex: =50
-
-        TextInput1_16 As text:
-            BorderThickness: =1
-            Default: =""
-            Height: =35
-            OnSelect: =
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            Width: =415
-            X: =895
-            Y: =608
-            ZIndex: =51
+            ZIndex: =43
 
         HD_RiskImportant_9 As label:
             Color: =RGBA(92,92,92,1)
@@ -667,24 +710,7 @@
             Width: =180
             X: =715
             Y: =698
-            ZIndex: =52
-
-        ComboBox1_10 As combobox:
-            BorderThickness: =1
-            DisplayFields: =["Value"]
-            Height: =35
-            Items: |-
-                =Table({Value:"Có",Index:1},
-                {Value:"Không",Index:2})
-            OnSelect: =
-            SearchFields: =["Value"]
-            SearchItems: |-
-                =Search(Table({Value:"Có",Index:1},
-                {Value:"Không",Index:2}),ComboBox1_10.SearchText,"Value")
-            Width: =415
-            X: =895
-            Y: =698
-            ZIndex: =53
+            ZIndex: =47
 
         Rectangle4_1 As rectangle:
             Fill: =RGBA(255, 255, 255, 1)
@@ -692,7 +718,7 @@
             Width: =280
             X: =727
             Y: =430
-            ZIndex: =54
+            ZIndex: =49
 
         Label6_1 As label:
             Align: =Align.Center
@@ -705,7 +731,7 @@
             Width: =280
             X: =727
             Y: =430
-            ZIndex: =55
+            ZIndex: =50
 
     Group12 As group:
         Height: =5
@@ -799,23 +825,6 @@
             Y: =608
             ZIndex: =35
 
-        ComboBox1_1 As combobox:
-            BorderThickness: =1
-            DisplayFields: =["Value"]
-            Height: =35
-            Items: |-
-                =Table({Value:"Có",Index:1},
-                {Value:"Không",Index:2})
-            OnSelect: =
-            SearchFields: =["Value"]
-            SearchItems: |-
-                =Search(Table({Value:"Có",Index:1},
-                {Value:"Không",Index:2}),ComboBox1_1.SearchText,"Value")
-            Width: =415
-            X: =231
-            Y: =653
-            ZIndex: =36
-
         inp_ControlID As text:
             BorderThickness: =1
             Default: =""
@@ -828,35 +837,7 @@
             Width: =415
             X: =231
             Y: =483
-            ZIndex: =37
-
-        TextInput1_1 As text:
-            BorderThickness: =1
-            Default: =""
-            Height: =70
-            OnSelect: =
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            Width: =415
-            X: =231
-            Y: =528
-            ZIndex: =38
-
-        TextInput1_2 As text:
-            BorderThickness: =1
-            Default: =""
-            Height: =35
-            OnSelect: =
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            Width: =415
-            X: =231
-            Y: =608
-            ZIndex: =39
+            ZIndex: =36
 
         Rectangle4 As rectangle:
             Fill: =RGBA(255, 255, 255, 1)
@@ -864,7 +845,7 @@
             Width: =320
             X: =60
             Y: =430
-            ZIndex: =40
+            ZIndex: =37
 
         Label6 As label:
             Align: =Align.Center
@@ -877,7 +858,7 @@
             Width: =320
             X: =60
             Y: =430
-            ZIndex: =41
+            ZIndex: =38
 
         HD_RiskImportant_3 As label:
             Color: =RGBA(92,92,92,1)
@@ -896,88 +877,30 @@
             Width: =180
             X: =51
             Y: =698
-            ZIndex: =42
+            ZIndex: =39
 
-        ComboBox1_8 As combobox:
-            BorderThickness: =1
-            DisplayFields: =["Value"]
-            Height: =35
-            Items: |-
-                =Table({Value:"Có",Index:1},
-                {Value:"Không",Index:2})
-            OnSelect: =
-            SearchFields: =["Value"]
-            SearchItems: |-
-                =Search(Table({Value:"Có",Index:1},
-                {Value:"Không",Index:2}),ComboBox1_8.SearchText,"Value")
-            Width: =415
-            X: =231
-            Y: =698
-            ZIndex: =43
-
-    Gal_RiskSelecttOwner_10 As gallery.galleryVertical:
-        AccessibleLabel: ="People for selection"
-        BorderColor: =RGBA(0, 0, 0, 0.16)
+    Label8_10 As label:
         BorderThickness: =1
-        DisabledBorderColor: =Gal_RiskSelecttOwner_10.BorderColor
-        DisabledFill: =Gal_RiskSelecttOwner_10.Fill
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =256
-        HoverBorderColor: =Gal_RiskSelecttOwner_10.BorderColor
-        HoverFill: =Gal_RiskSelecttOwner_10.Fill
-        Items: |
-            =If(!IsBlank(inp_ActionOwner.Text), 
-            Office365Users.SearchUser({searchTerm:Trim(inp_ActionOwner.Text)}))
-        Layout: =Layout.Vertical
-        LoadingSpinnerColor: =Gal_RiskSelecttOwner_10.BorderColor
-        OnSelect: |-
-            = UpdateContext({SelectedActionOwner:ThisItem, HidePeopleGallery:true, 
-             varLBActionOwner: true})
-        PressedBorderColor: =Gal_RiskSelecttOwner_10.BorderColor
-        PressedFill: =Gal_RiskSelecttOwner_10.Fill
-        TemplateSize: =53
-        Visible: |-
-            =Not(IsBlank(inp_ActionOwner)) &&
-            !HidePeopleGallery
-        Width: =398
-        X: =306
-        Y: =281
-        ZIndex: =57
-
-        LabelPersonDisplayName_12 As label:
-            FocusedBorderColor: =LabelPersonDisplayName_12.BorderColor
-            Font: =Font.'Segoe UI'
-            Height: =53
-            HoverBorderColor: =LabelPersonDisplayName_12.BorderColor
-            HoverColor: =RGBA(0, 0, 0, 1)
-            HoverFill: =RGBA(244, 244, 244, 1)
-            OnSelect: =Select(Parent)
-            PaddingBottom: =15
-            PaddingLeft: =20
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedBorderColor: =LabelPersonDisplayName_12.BorderColor
-            PressedColor: =LabelPersonDisplayName_12.Color
-            PressedFill: =LabelPersonDisplayName_12.Fill
-            Size: =10
-            TabIndex: =0
-            Text: =ThisItem.DisplayName&" - "&ThisItem.Mail
-            Width: =388
-            ZIndex: =1
-
-    lb_ControlOwner_2 As label:
         Fill: =RGBA(255, 255, 255, 1)
         Font: =Font.'Segoe UI'
-        Height: =23
-        OnSelect: |-
-            =UpdateContext({varLBControlOwner:false,
-            HidePeopleGallery1:false})
+        Height: =35
         Size: =12
-        Text: =SelectedControl.Control_Code
-        Visible: =varLBControlOwner
-        Width: =398
-        X: =235
-        Y: =489
+        Text: =SelectedControl.Control_Type
+        Width: =415
+        X: =231
+        Y: =698
+        ZIndex: =57
+
+    Label8_11 As label:
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =35
+        Size: =12
+        Text: =SelectedRisk.Risk_Code
+        Width: =415
+        X: =895
+        Y: =483
         ZIndex: =58
 
     Gal_RiskSelecttOwner_11 As gallery.galleryVertical:
@@ -997,7 +920,8 @@
         LoadingSpinnerColor: =Gal_RiskSelecttOwner_11.BorderColor
         OnSelect: |-
             = UpdateContext({SelectedControl:ThisItem, HidePeopleGallery1:true, 
-             varLBControlOwner: true})
+             varLBControlOwner: true});
+             UpdateContext({SelectedRisk:LookUp(Risks,Risk_Code=ThisItem.Risk_ID)})
         PressedBorderColor: =Gal_RiskSelecttOwner_11.BorderColor
         PressedFill: =Gal_RiskSelecttOwner_11.Fill
         TemplateSize: =53
@@ -1029,4 +953,53 @@
             Text: =ThisItem.Control_Code&" - "&ThisItem.Control_Description
             Width: =405
             ZIndex: =1
+
+    Label8_12 As label:
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =70
+        Overflow: =Overflow.Scroll
+        Size: =12
+        Text: =SelectedRisk.Risk_Description
+        Width: =415
+        X: =895
+        Y: =529
+        ZIndex: =60
+
+    Label8_13 As label:
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =35
+        Size: =12
+        Text: =SelectedRisk.Risk_Owner
+        Width: =415
+        X: =895
+        Y: =608
+        ZIndex: =61
+
+    Label8_14 As label:
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =35
+        Size: =12
+        Text: =SelectedRisk.Risk_Status
+        Width: =415
+        X: =895
+        Y: =653
+        ZIndex: =62
+
+    Label8_15 As label:
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =35
+        Size: =12
+        Text: =SelectedControl.Control_Type
+        Width: =415
+        X: =895
+        Y: =698
+        ZIndex: =63
 

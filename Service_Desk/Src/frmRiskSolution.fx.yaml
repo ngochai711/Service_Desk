@@ -75,21 +75,6 @@
         X: =1198
         ZIndex: =8
 
-    lb_ActionOwner As label:
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =Font.'Segoe UI'
-        Height: =25
-        OnSelect: |-
-            =UpdateContext({varLBActionOwner:false,
-            HidePeopleGallery:false})
-        Size: =12
-        Text: =SelectedActionOwner.DisplayName&" - "&SelectedActionOwner.Mail
-        Visible: =varLBActionOwner
-        Width: =381
-        X: =310
-        Y: =244
-        ZIndex: =56
-
     Group8 As group:
         Height: =5
         Width: =5
@@ -914,6 +899,21 @@
             X: =231
             Y: =698
             ZIndex: =43
+
+    lb_ActionOwner As label:
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =25
+        OnSelect: |-
+            =UpdateContext({varLBActionOwner:false,
+            HidePeopleGallery:false})
+        Size: =12
+        Text: =SelectedActionOwner.DisplayName&" - "&SelectedActionOwner.Mail
+        Visible: =varLBActionOwner
+        Width: =381
+        X: =310
+        Y: =244
+        ZIndex: =56
 
     Gal_RiskSelecttOwner_10 As gallery.galleryVertical:
         AccessibleLabel: ="People for selection"

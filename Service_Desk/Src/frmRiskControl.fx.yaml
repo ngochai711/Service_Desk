@@ -355,20 +355,6 @@
         Y: =483
         ZIndex: =46
 
-    TextInput1_27 As text:
-        BorderThickness: =1
-        Default: =""
-        Height: =35
-        OnSelect: =
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Width: =472
-        X: =823
-        Y: =483
-        ZIndex: =47
-
     lb_ControlOwner As label:
         Fill: =RGBA(255, 255, 255, 1)
         Font: =Font.'Segoe UI'
@@ -377,7 +363,7 @@
             =UpdateContext({varLBControlOwner:false,
             HidePeopleGallery:false})
         Size: =12
-        Text: =SelectedOwner.DisplayName&" - "&SelectedOwner.Mail
+        Text: =SelectedControlOwner.DisplayName&" - "&SelectedControlOwner.Mail
         Visible: =varLBControlOwner
         Width: =381
         X: =306
@@ -400,7 +386,7 @@
         Layout: =Layout.Vertical
         LoadingSpinnerColor: =Gal_RiskSelecttOwner_8.BorderColor
         OnSelect: |-
-            = UpdateContext({SelectedOwner:ThisItem, HidePeopleGallery:true, 
+            = UpdateContext({SelectedControlOwner:ThisItem, HidePeopleGallery:true, 
              varLBControlOwner: true})
         PressedBorderColor: =Gal_RiskSelecttOwner_8.BorderColor
         PressedFill: =Gal_RiskSelecttOwner_8.Fill
@@ -431,7 +417,7 @@
             Size: =10
             TabIndex: =0
             Text: =ThisItem.DisplayName&" - "&ThisItem.Mail
-            Width: =335
+            Width: =388
             ZIndex: =1
 
     lb_ControlOwner_1 As label:
@@ -440,9 +426,9 @@
         Height: =23
         OnSelect: |-
             =UpdateContext({varLBRiskOwner:false,
-            HidePeopleGallery:false})
+            HidePeopleGallery1:false})
         Size: =12
-        Text: =SelectedOwner.DisplayName&" - "&SelectedOwner.Mail
+        Text: =SelectedRisk.Risk_Code
         Visible: =varLBRiskOwner
         Width: =283
         X: =214
@@ -461,7 +447,7 @@
         HoverFill: =Gal_RiskSelecttOwner_9.Fill
         Items: |
             =If(!IsBlank(inp_RiskName.Text), 
-            Search(Risks,inp_RiskName.Text,"Risk_Code"))
+            Search(Risks,inp_RiskName.Text,"Risk_Name"))
         Layout: =Layout.Vertical
         LoadingSpinnerColor: =Gal_RiskSelecttOwner_9.BorderColor
         OnSelect: |-
@@ -472,7 +458,7 @@
         TemplateSize: =53
         Visible: |-
             =Not(IsBlank(inp_RiskName)) &&
-            !HidePeopleGallery
+            !HidePeopleGallery1
         Width: =295
         X: =210
         Y: =527
@@ -496,8 +482,20 @@
             Size: =10
             TabIndex: =0
             Text: =ThisItem.Risk_Code&" - "&ThisItem.Risk_Name
-            Width: =335
+            Width: =282
             ZIndex: =1
+
+    Label8_3 As label:
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =35
+        Size: =12
+        Text: =SelectedRisk.Risk_Name
+        Width: =402
+        X: =823
+        Y: =483
+        ZIndex: =52
 
     Group8_1 As group:
         Height: =5
@@ -865,7 +863,7 @@
                 =UpdateContext({varLBRiskOwner:false,
                 HidePeopleGallery:false})
             Size: =12
-            Text: =SelectedOwner.DisplayName&" - "&SelectedOwner.Mail
+            Text: =SelectedControlOwner.DisplayName&" - "&SelectedControlOwner.Mail
             Visible: =varLBRiskOwner
             Width: =381
             X: =306

@@ -706,7 +706,7 @@
             PressedColor: =HD_RiskImportant_9.Color
             PressedFill: =HD_RiskImportant_9.Fill
             Size: =12
-            Text: ="Xếp hạng"
+            Text: ="Rủi ro trọng yếu"
             Width: =180
             X: =715
             Y: =698
@@ -997,7 +997,7 @@
         Font: =Font.'Segoe UI'
         Height: =35
         Size: =12
-        Text: =SelectedControl.Control_Type
+        Text: =SelectedRisk.Risk_Important
         Width: =415
         X: =895
         Y: =698

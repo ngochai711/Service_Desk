@@ -293,7 +293,7 @@
                     =Set(var_Timer,false);
                     Set(var_Timer,true);
                     Set(var_Click,var_Click+1);
-                    If(var_Click=2,Navigate(frmRisk,ScreenTransition.Fade);var_Click=0;Set(RiskInfo, ThisItem))
+                    If(var_Click=2,Navigate(frmRisk,ScreenTransition.Fade);var_Click=0;Set(varRiskInfo, ThisItem))
                 PressedBorderColor: =
                 PressedColor: =
                 PressedFill: =
@@ -349,7 +349,7 @@
         "Gallery1_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
             Height: =454
-            Items: =Filter(Risk_Control,Risk_FK=Gallery1.Selected.Risk_Code)
+            Items: =Filter(Risk_Control,Risk_ID=Gallery1.Selected.Risk_Code)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
@@ -366,7 +366,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =ThisItem.KSRR_MA&" - "&ThisItem.KS_HIENCO
+                Text: =ThisItem.Control_Code&" - "&ThisItem.Control_Description
                 VerticalAlign: =VerticalAlign.Top
                 Width: =390
                 X: =7
@@ -434,7 +434,7 @@
                 PaddingTop: =0
                 Size: =12
                 Text: |-
-                    ="CSH: "&ThisItem.CSH
+                    ="CSH: "&ThisItem.Control_Owner
                 VerticalAlign: =VerticalAlign.Top
                 Width: =405
                 X: =7
@@ -452,7 +452,7 @@
                 PaddingTop: =0
                 Size: =12
                 Text: |-
-                    ="Ngày: "&ThisItem.'NGAY TẠO'
+                    ="Ngày: "&ThisItem.Control_Create_Date
                 VerticalAlign: =VerticalAlign.Top
                 Width: =145
                 X: =7
@@ -479,7 +479,7 @@
                 PaddingTop: =0
                 Size: =12
                 Text: |-
-                    ="Phân loại: "&ThisItem.KS
+                    ="Phân loại: "&ThisItem.Control_Classify
                 VerticalAlign: =VerticalAlign.Top
                 Width: =196
                 X: =180
@@ -497,7 +497,7 @@
                 PaddingTop: =0
                 Size: =12
                 Text: |-
-                    ="Kiểm soát chính: "&ThisItem.KS_CHINH
+                    ="Kiểm soát chính: "&ThisItem.Main_Control
                 VerticalAlign: =VerticalAlign.Top
                 Width: =196
                 X: =7
@@ -906,7 +906,7 @@
         "Gallery1_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
             Height: =454
-            Items: =Filter(Risk_Solution,RiskControl_FK=Gallery1_1.Selected.KSRR_MA)
+            Items: =Filter(Risk_Solution,RiskControl_FK=Gallery1_1.Selected.Control_Code)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0

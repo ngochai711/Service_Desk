@@ -189,11 +189,11 @@
         Y: =618
         ZIndex: =36
 
-    inp_RiskName As text:
+    inp_RiskID As text:
         BorderThickness: =1
         Default: =""
         Height: =35
-        HintText: ="Nhập ID hoặc tên rủi ro"
+        HintText: ="Nhập ID rủi ro"
         OnSelect: =
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
@@ -446,8 +446,8 @@
         HoverBorderColor: =Gal_RiskSelecttOwner_9.BorderColor
         HoverFill: =Gal_RiskSelecttOwner_9.Fill
         Items: |
-            =If(!IsBlank(inp_RiskName.Text), 
-            Search(Risks,inp_RiskName.Text,"Risk_Name"))
+            =If(!IsBlank(inp_RiskID.Text), 
+            Search(Risks,inp_RiskID.Text,"Risk_Code"))
         Layout: =Layout.Vertical
         LoadingSpinnerColor: =Gal_RiskSelecttOwner_9.BorderColor
         OnSelect: |-
@@ -457,7 +457,7 @@
         PressedFill: =Gal_RiskSelecttOwner_9.Fill
         TemplateSize: =53
         Visible: |-
-            =Not(IsBlank(inp_RiskName)) &&
+            =Not(IsBlank(inp_RiskID)) &&
             !HidePeopleGallery1
         Width: =295
         X: =210

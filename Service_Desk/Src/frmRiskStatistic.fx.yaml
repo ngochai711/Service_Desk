@@ -1145,7 +1145,7 @@
                 PressedFill: =LabelPersonDisplayName.Fill
                 Size: =10
                 TabIndex: =0
-                Text: =ThisItem.DisplayName
+                Text: =ThisItem.DisplayName&ThisItem.Department
                 Width: =335
                 ZIndex: =1
 

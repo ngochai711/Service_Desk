@@ -215,6 +215,8 @@
 
         Label1_2 As label:
             Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(82, 94, 117, 1)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =47
@@ -540,6 +542,7 @@
 
         Label1_1 As label:
             Align: =Align.Center
+            Fill: =RGBA(120, 147, 138, 1)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =47
@@ -706,7 +709,7 @@
                 Width: =91
                 Wrap: =false
                 Y: =60
-                ZIndex: =4
+                ZIndex: =3
 
             TextBox2_30 As label:
                 Align: =LayoutAlignItems.Center
@@ -726,7 +729,7 @@
                 Text: ="Tổng"
                 Width: =91
                 Y: =85
-                ZIndex: =5
+                ZIndex: =4
 
         RF_NewStatus As group:
             Height: =150
@@ -755,7 +758,7 @@
                 Wrap: =false
                 X: =91
                 Y: =60
-                ZIndex: =7
+                ZIndex: =5
 
             TextBox2_31 As label:
                 Align: =LayoutAlignItems.Center
@@ -776,7 +779,7 @@
                 Width: =91
                 X: =91
                 Y: =85
-                ZIndex: =8
+                ZIndex: =6
 
         RF_ProgressStatus As group:
             Height: =150
@@ -805,7 +808,7 @@
                 Wrap: =false
                 X: =182
                 Y: =60
-                ZIndex: =10
+                ZIndex: =7
 
             TextBox2_32 As label:
                 Align: =LayoutAlignItems.Center
@@ -826,7 +829,7 @@
                 Width: =91
                 X: =182
                 Y: =85
-                ZIndex: =11
+                ZIndex: =8
 
         RF_CloseStatus As group:
             Height: =150
@@ -855,7 +858,7 @@
                 Wrap: =false
                 X: =273
                 Y: =60
-                ZIndex: =13
+                ZIndex: =9
 
             TextBox2_33 As label:
                 Align: =LayoutAlignItems.Center
@@ -876,57 +879,7 @@
                 Width: =91
                 X: =273
                 Y: =85
-                ZIndex: =14
-
-        RF_OnHoldStatus As group:
-            Height: =150
-            Width: =150.00000000000003
-            X: =-42
-            Y: =-7
-            ZIndex: =15
-
-            TextBox1_34 As label:
-                Align: =LayoutAlignItems.Center
-                Color: =RGBA(255, 0, 0, 1)
-                FocusedBorderColor: =TextBox1_34.BorderColor
-                FocusedBorderThickness: =02
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =25
-                HoverBorderColor: =TextBox1_34.BorderColor
-                HoverColor: =TextBox1_34.Color
-                HoverFill: =TextBox1_34.Fill
-                PressedBorderColor: =TextBox1_34.BorderColor
-                PressedColor: =TextBox1_34.Color
-                PressedFill: =TextBox1_34.Fill
-                Size: =20
-                Text: =CountRows(Filter(Risks,RR_TRANGTHAI="Đang chờ"))
-                Width: =91
-                Wrap: =false
-                X: =364
-                Y: =60
-                ZIndex: =16
-
-            TextBox2_34 As label:
-                Align: =LayoutAlignItems.Center
-                Color: =RGBA(255, 0, 0, 1)
-                FocusedBorderColor: =TextBox2_34.BorderColor
-                FocusedBorderThickness: =02
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =23
-                HoverBorderColor: =TextBox2_34.BorderColor
-                HoverColor: =TextBox2_34.Color
-                HoverFill: =TextBox2_34.Fill
-                PressedBorderColor: =TextBox2_34.BorderColor
-                PressedColor: =TextBox2_34.Color
-                PressedFill: =TextBox2_34.Fill
-                Size: =7
-                Text: ="Đang chờ"
-                Width: =91
-                X: =364
-                Y: =85
-                ZIndex: =17
+                ZIndex: =10
 
         "Gallery1_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
@@ -938,7 +891,7 @@
             TemplateSize: =127
             Width: =456
             Y: =110
-            ZIndex: =18
+            ZIndex: =13
 
             Title1_2 As label:
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -1050,13 +1003,14 @@
 
         Label1 As label:
             Align: =Align.Center
+            Fill: =RGBA(241, 221, 191, 1)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =47
             Size: =17
             Text: ="GIẢI PHÁP KHẮC PHỤC"
             Width: =455
-            ZIndex: =19
+            ZIndex: =14
 
         R_Add_2 As icon.Add:
             Height: =28
@@ -1066,7 +1020,57 @@
             Width: =27
             X: =416
             Y: =9
-            ZIndex: =20
+            ZIndex: =15
+
+        RF_OnHoldStatus As group:
+            Height: =150
+            Width: =150.00000000000003
+            X: =-42
+            Y: =-7
+            ZIndex: =15
+
+            TextBox1_34 As label:
+                Align: =LayoutAlignItems.Center
+                Color: =RGBA(255, 0, 0, 1)
+                FocusedBorderColor: =TextBox1_34.BorderColor
+                FocusedBorderThickness: =02
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =25
+                HoverBorderColor: =TextBox1_34.BorderColor
+                HoverColor: =TextBox1_34.Color
+                HoverFill: =TextBox1_34.Fill
+                PressedBorderColor: =TextBox1_34.BorderColor
+                PressedColor: =TextBox1_34.Color
+                PressedFill: =TextBox1_34.Fill
+                Size: =20
+                Text: =CountRows(Filter(Risks,RR_TRANGTHAI="Đang chờ"))
+                Width: =91
+                Wrap: =false
+                X: =364
+                Y: =60
+                ZIndex: =11
+
+            TextBox2_34 As label:
+                Align: =LayoutAlignItems.Center
+                Color: =RGBA(255, 0, 0, 1)
+                FocusedBorderColor: =TextBox2_34.BorderColor
+                FocusedBorderThickness: =02
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =23
+                HoverBorderColor: =TextBox2_34.BorderColor
+                HoverColor: =TextBox2_34.Color
+                HoverFill: =TextBox2_34.Fill
+                PressedBorderColor: =TextBox2_34.BorderColor
+                PressedColor: =TextBox2_34.Color
+                PressedFill: =TextBox2_34.Fill
+                Size: =7
+                Text: ="Đang chờ"
+                Width: =91
+                X: =364
+                Y: =85
+                ZIndex: =12
 
     Risk_Owner As group:
         Height: =5

@@ -7266,6 +7266,18 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 12
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
             }
           ]
         }
@@ -9723,606 +9735,6 @@
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
           "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 6,
-                  "snippet": {
-                    "text": "TIn_RiskName_3"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnHidden",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "TIn_RiskName_3"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 19,
-                  "charOffset": 30,
-                  "snippet": {
-                    "text": "DP_RiskRecordDate_5"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnHidden",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DP_RiskRecordDate_5"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 16,
-                  "charOffset": 59,
-                  "snippet": {
-                    "text": "CB_RiskStatus_11"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnHidden",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CB_RiskStatus_11"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 18,
-                  "charOffset": 85,
-                  "snippet": {
-                    "text": "CB_RiskImportant_3"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnHidden",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CB_RiskImportant_3"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 113,
-                  "snippet": {
-                    "text": "TIn_RiskOwner_3"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnHidden",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "TIn_RiskOwner_3"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 18,
-                  "charOffset": 138,
-                  "snippet": {
-                    "text": "TIn_RiskDescribe_3"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnHidden",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "TIn_RiskDescribe_3"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 166,
-                  "snippet": {
-                    "text": "TIn_RiskConsequence_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnHidden",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "TIn_RiskConsequence_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 16,
-                  "charOffset": 197,
-                  "snippet": {
-                    "text": "TIn_RiskReason_3"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnHidden",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "TIn_RiskReason_3"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 223,
-                  "snippet": {
-                    "text": "CB_RG_Finance_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnHidden",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CB_RG_Finance_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 16,
-                  "charOffset": 276,
-                  "snippet": {
-                    "text": "CB_RG_RiskRate_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnHidden",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CB_RG_RiskRate_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 302,
-                  "snippet": {
-                    "text": "TIn_RG_RiskEvaluate_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnHidden",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "TIn_RG_RiskEvaluate_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 333,
-                  "snippet": {
-                    "text": "CB_RT_Finance_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnHidden",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CB_RT_Finance_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 18,
-                  "charOffset": 358,
-                  "snippet": {
-                    "text": "CB_RT_nonFinance_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnHidden",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CB_RT_nonFinance_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 16,
-                  "charOffset": 386,
-                  "snippet": {
-                    "text": "CB_RT_RiskRate_3"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnHidden",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CB_RT_RiskRate_3"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.OnHidden",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 412,
-                  "snippet": {
-                    "text": "TIn_RT_RiskEvaluate_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnHidden",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "TIn_RT_RiskEvaluate_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
         },
         {
           "locations": [
@@ -17332,6 +16744,66 @@
                 "member": "TabIndex",
                 "module": "frmRiskEdit",
                 "type": "frmRiskEdit.Gal_RiskSelecttOwner_22"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRiskEdit.lb_GrossScore_2.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRiskEdit.lb_GrossScore_2.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "frmRiskEdit",
+                "type": "frmRiskEdit.lb_GrossScore_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRiskEdit.lb_GrossScore_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRiskEdit.lb_GrossScore_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "frmRiskEdit",
+                "type": "frmRiskEdit.lb_GrossScore_2"
               }
             }
           ],

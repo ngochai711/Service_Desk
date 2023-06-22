@@ -1,27 +1,14 @@
 "frmRiskEdit As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
-    OnHidden: |
-        =Reset(TIn_RiskName_3);
-        Reset(DP_RiskRecordDate_5);
-        Reset(CB_RiskStatus_11);
-        Reset(CB_RiskImportant_3);
-        Reset(TIn_RiskOwner_3);
-        Reset(TIn_RiskDescribe_3);
-        Reset(TIn_RiskConsequence_1);
-        Reset(TIn_RiskReason_3);
-        Reset(CB_RG_Finance_1);
-        Reset(CB_RG_nonFinance_1);
-        Reset(CB_RG_RiskRate_1);
-        Reset(TIn_RG_RiskEvaluate_1);
-        Reset(CB_RT_Finance_1);
-        Reset(CB_RT_nonFinance_1);
-        Reset(CB_RT_RiskRate_3);
-        Reset(TIn_RT_RiskEvaluate_1);
-        UpdateContext({varLBRiskOwner:false,
-        HidePeopleGallery:false});
-    OnVisible: |+
+    OnHidden: =
+    OnVisible: |-
         =UpdateContext({varTemp2:true});
-        UpdateContext({varRiskKey:"RK"&Text(Last(Risks).Risk_Code + 1,"00000")});
-        
+        UpdateContext({varRiskKey:varRiskInfo.Risk_Code});
+        UpdateContext({HidePeopleGallery:true, varLBRiskOwner: true});
+        UpdateContext({varRiskGOPOverall_Text:varRiskInfo.Gross_Overall_Finance});
+        UpdateContext({varTabSelected1:true});
+        UpdateContext({varRiskGOPRank:varRiskInfo.Gross_Rank});
+        UpdateContext({varRiskTHUANOverall_Text:varRiskInfo.Net_Overall_Finance});
+        UpdateContext({varRiskTHUANRank:varRiskInfo.Net_Rank});
 
     RectQuickActionBar2_6 As rectangle:
         Fill: =RGBA(0, 52, 104, 1)
@@ -287,7 +274,7 @@
 
     inp_RiskName_1 As text:
         BorderThickness: =1
-        Default: =""
+        Default: =varRiskInfo.Risk_Name
         Font: =Font.'Segoe UI'
         Height: =35
         Mode: =TextMode.MultiLine
@@ -304,7 +291,7 @@
 
     inp_RiskConsequence_1 As text:
         BorderThickness: =1
-        Default: =""
+        Default: =varRiskInfo.Risk_Consequence
         Font: =Font.'Segoe UI'
         Height: =150
         Mode: =TextMode.MultiLine
@@ -321,6 +308,7 @@
 
     dp_RiskCreateDate_1 As datepicker:
         BorderThickness: =1
+        DefaultDate: =varRiskInfo.Risk_Create_Date
         Font: =Font.'Segoe UI'
         Format: ="dd/mm/yyyy"
         Height: =35
@@ -333,7 +321,7 @@
 
     inp_RiskReason_1 As text:
         BorderThickness: =1
-        Default: =""
+        Default: =varRiskInfo.Risk_Reason
         Font: =Font.'Segoe UI'
         Height: =150
         Mode: =TextMode.MultiLine
@@ -381,7 +369,7 @@
     cb_RiskStatus_1 As combobox:
         BorderThickness: =1
         ChevronHoverBackground: =RGBA(255, 255, 255, 1)
-        DefaultSelectedItems: =
+        DefaultSelectedItems: =[varRiskInfo.Risk_Status]
         DisplayFields: =["Value"]
         Font: =Font.'Segoe UI'
         Height: =35
@@ -409,7 +397,7 @@
     cb_RiskImportant_1 As combobox:
         BorderThickness: =1
         ChevronHoverBackground: =RGBA(255, 255, 255, 1)
-        DefaultSelectedItems: =
+        DefaultSelectedItems: =[varRiskInfo.Risk_Important]
         DisplayFields: =["Value"]
         Font: =Font.'Segoe UI'
         Height: =35
@@ -482,7 +470,7 @@
     cb_GrossFinance_1 As combobox:
         BorderThickness: =1
         ChevronFill: =RGBA(219, 219, 219, 1)
-        DefaultSelectedItems: =["1 Thấp"]
+        DefaultSelectedItems: =[varRiskInfo.Gross_Finance]
         DisplayFields: =["Value"]
         Font: =Font.'Segoe UI'
         Height: =35
@@ -606,7 +594,7 @@
     cb_GrossPossibility_1 As combobox:
         BorderThickness: =1
         ChevronFill: =RGBA(219, 219, 219, 1)
-        DefaultSelectedItems: =["1 Thấp"]
+        DefaultSelectedItems: =[varRiskInfo.Gross_Possibility]
         DisplayFields: =["Value"]
         Font: =Font.'Segoe UI'
         Height: =35
@@ -720,7 +708,7 @@
     inp_GrossEvaluation_1 As text:
         AccessibleLabel: ="Input ticket creator"
         BorderThickness: =1
-        Default: =
+        Default: =varRiskInfo.Gross_Evaluation_Basis
         DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
         FocusedBorderColor: =inp_GrossEvaluation_1.BorderColor
         Font: =Font.'Segoe UI'
@@ -777,7 +765,7 @@
 
     inp_RiskDescription_1 As text:
         BorderThickness: =1
-        Default: =""
+        Default: =varRiskInfo.Risk_Description
         Font: =Font.'Segoe UI'
         Height: =80
         Mode: =TextMode.MultiLine
@@ -831,7 +819,7 @@
     cb_GrossnonFinance_1 As combobox:
         BorderThickness: =1
         ChevronFill: =RGBA(219, 219, 219, 1)
-        DefaultSelectedItems: =["1 Thấp"]
+        DefaultSelectedItems: =[varRiskInfo.Gross_Non_Finance]
         DisplayFields: =["Value"]
         Font: =Font.'Segoe UI'
         Height: =35
@@ -974,7 +962,7 @@
     cb_NetFinance_1 As combobox:
         BorderThickness: =1
         ChevronFill: =RGBA(219, 219, 219, 1)
-        DefaultSelectedItems: =["Nhỏ"]
+        DefaultSelectedItems: =[varRiskInfo.Net_Finance]
         DisplayFields: =["Value"]
         Font: =Font.'Segoe UI'
         Height: =35
@@ -1066,7 +1054,7 @@
     cb_NetPossibility_1 As combobox:
         BorderThickness: =1
         ChevronFill: =RGBA(219, 219, 219, 1)
-        DefaultSelectedItems: =["Nhỏ"]
+        DefaultSelectedItems: =[varRiskInfo.Net_Possibility]
         DisplayFields: =["Value"]
         Font: =Font.'Segoe UI'
         Height: =35
@@ -1186,7 +1174,7 @@
     inp_NetEvaluation_1 As text:
         AccessibleLabel: ="Input ticket creator"
         BorderThickness: =1
-        Default: =
+        Default: =varRiskInfo.Net_Evaluation_Basis
         DisplayMode: =If(false,DisplayMode.View,DisplayMode.Edit)
         FocusedBorderColor: =inp_NetEvaluation_1.BorderColor
         Font: =Font.'Segoe UI'
@@ -1211,7 +1199,7 @@
     cb_NetnonFinance_1 As combobox:
         BorderThickness: =1
         ChevronFill: =RGBA(219, 219, 219, 1)
-        DefaultSelectedItems: =["Nhỏ"]
+        DefaultSelectedItems: =[varRiskInfo.Net_Non_Finance]
         DisplayFields: =["Value"]
         Font: =Font.'Segoe UI'
         Height: =35
@@ -1244,4 +1232,19 @@
         X: =270
         Y: =535
         ZIndex: =59
+
+    lb_GrossScore_2 As label:
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =35
+        OnSelect: |-
+            =UpdateContext({varTabSelected1:false});
+        Size: =12
+        Text: =varRiskInfo.Gross_Score
+        Visible: =varTabSelected1
+        Width: =200
+        X: =900
+        Y: =535
+        ZIndex: =60
 

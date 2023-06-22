@@ -1175,7 +1175,7 @@
             Reset: =true
             Width: =205
             X: =1145
-            Y: =103
+            Y: =104
             ZIndex: =10
 
         Label5 As label:

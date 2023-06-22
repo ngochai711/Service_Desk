@@ -14080,10 +14080,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 45,
-                  "charOffset": 103,
+                  "charLength": 42,
+                  "charOffset": 151,
                   "snippet": {
-                    "text": "UpdateContext({varRiskGOPOverall_Text:\"Nhỏ\"})"
+                    "text": "UpdateContext({varRiskGOPOverall_Index:1})"
                   }
                 }
               },
@@ -14117,10 +14117,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 42,
-                  "charOffset": 151,
+                  "charLength": 45,
+                  "charOffset": 103,
                   "snippet": {
-                    "text": "UpdateContext({varRiskGOPOverall_Index:1})"
+                    "text": "UpdateContext({varRiskGOPOverall_Text:\"Nhỏ\"})"
                   }
                 }
               },
@@ -14428,6 +14428,117 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "frmRisk.cb_GrossFinance.OnChange"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.cb_GrossFinance.OnChange",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 131,
+                  "charOffset": 400,
+                  "snippet": {
+                    "text": "UpdateContext({varRiskGOPOverall_Text:cb_GrossnonFinance.Selected.Value,varRiskGOPOverall_Index:cb_GrossnonFinance.Selected.Index})"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnChange",
+                "module": "frmRisk",
+                "type": "frmRisk.cb_GrossFinance"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.cb_GrossFinance.OnChange"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.cb_GrossFinance.OnChange",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 125,
+                  "charOffset": 272,
+                  "snippet": {
+                    "text": "UpdateContext({varRiskGOPOverall_Text:cb_GrossFinance.Selected.Value,varRiskGOPOverall_Index:cb_GrossFinance.Selected.Index})"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnChange",
+                "module": "frmRisk",
+                "type": "frmRisk.cb_GrossFinance"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.cb_GrossFinance.OnChange"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.cb_GrossFinance.OnChange",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 125,
+                  "charOffset": 72,
+                  "snippet": {
+                    "text": "UpdateContext({varRiskGOPOverall_Text:cb_GrossFinance.Selected.Value,varRiskGOPOverall_Index:cb_GrossFinance.Selected.Index})"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnChange",
+                "module": "frmRisk",
+                "type": "frmRisk.cb_GrossFinance"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "frmRisk.CB_RG_nonFinance.OnChange"
                 }
               ],
@@ -14583,6 +14694,117 @@
           },
           "ruleId": "app-ErrBadType-ExpectedTypesCSV",
           "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.CB_RG_nonFinance.OnChange"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.CB_RG_nonFinance.OnChange",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 125,
+                  "charOffset": 70,
+                  "snippet": {
+                    "text": "UpdateContext({varRiskGOPOverall_Text:cb_GrossFinance.Selected.Value,varRiskGOPOverall_Index:cb_GrossFinance.Selected.Index})"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnChange",
+                "module": "frmRisk",
+                "type": "frmRisk.CB_RG_nonFinance"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.CB_RG_nonFinance.OnChange"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.CB_RG_nonFinance.OnChange",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 125,
+                  "charOffset": 268,
+                  "snippet": {
+                    "text": "UpdateContext({varRiskGOPOverall_Text:cb_GrossFinance.Selected.Value,varRiskGOPOverall_Index:cb_GrossFinance.Selected.Index})"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnChange",
+                "module": "frmRisk",
+                "type": "frmRisk.CB_RG_nonFinance"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.CB_RG_nonFinance.OnChange"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.CB_RG_nonFinance.OnChange",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 127,
+                  "charOffset": 396,
+                  "snippet": {
+                    "text": "UpdateContext({varRiskGOPOverall_Text:CB_RG_nonFinance.Selected.Value,varRiskGOPOverall_Index:CB_RG_nonFinance.Selected.Index})"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnChange",
+                "module": "frmRisk",
+                "type": "frmRisk.CB_RG_nonFinance"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -15852,6 +16074,117 @@
           },
           "ruleId": "app-ErrBadType-ExpectedTypesCSV",
           "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.cb_GrossnonFinance.OnChange"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.cb_GrossnonFinance.OnChange",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 131,
+                  "charOffset": 400,
+                  "snippet": {
+                    "text": "UpdateContext({varRiskGOPOverall_Text:cb_GrossnonFinance.Selected.Value,varRiskGOPOverall_Index:cb_GrossnonFinance.Selected.Index})"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnChange",
+                "module": "frmRisk",
+                "type": "frmRisk.cb_GrossnonFinance"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.cb_GrossnonFinance.OnChange"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.cb_GrossnonFinance.OnChange",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 125,
+                  "charOffset": 72,
+                  "snippet": {
+                    "text": "UpdateContext({varRiskGOPOverall_Text:CB_RG_Finance_1.Selected.Value,varRiskGOPOverall_Index:CB_RG_Finance_1.Selected.Index})"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnChange",
+                "module": "frmRisk",
+                "type": "frmRisk.cb_GrossnonFinance"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.cb_GrossnonFinance.OnChange"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.cb_GrossnonFinance.OnChange",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 125,
+                  "charOffset": 272,
+                  "snippet": {
+                    "text": "UpdateContext({varRiskGOPOverall_Text:CB_RG_Finance_1.Selected.Value,varRiskGOPOverall_Index:CB_RG_Finance_1.Selected.Index})"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnChange",
+                "module": "frmRisk",
+                "type": "frmRisk.cb_GrossnonFinance"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 2
         },
         {
           "locations": [

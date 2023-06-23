@@ -480,7 +480,7 @@
                     =Set(var_Timer,false);
                     Set(var_Timer,true);
                     Set(var_Click,var_Click+1);
-                    If(var_Click=2,Navigate(frmRiskControlEdit,ScreenTransition.Fade);var_Click=0;Set(varRiskControl, ThisItem);Set(varRiskCode,Gallery1.Selected.Risk_Code))
+                    If(var_Click=2,Navigate(frmRiskControlEdit,ScreenTransition.Fade);var_Click=0;Set(varRiskControl, ThisItem);Set(varRiskCode,Gallery1.Selected))
                 PressedBorderColor: =
                 PressedColor: =
                 PressedFill: =

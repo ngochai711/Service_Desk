@@ -939,7 +939,7 @@
         Font: =Font.'Segoe UI'
         Height: =35
         Size: =12
-        Text: =varRiskCode.Risk_Code
+        Text: =varRiskCode.
         Width: =402
         X: =216
         Y: =514

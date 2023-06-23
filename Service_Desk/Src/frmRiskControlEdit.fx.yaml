@@ -813,7 +813,7 @@
         Font: =Font.'Segoe UI'
         Height: =35
         Size: =12
-        Text: =SelectedRisk.Risk_Name
+        Text: =varRiskCode.Risk_Name
         Width: =402
         X: =802
         Y: =514
@@ -826,7 +826,7 @@
         Height: =77
         Overflow: =Overflow.Scroll
         Size: =12
-        Text: =SelectedRisk.Risk_Description
+        Text: =varRiskCode.Risk_Description
         Width: =1085
         X: =216
         Y: =559
@@ -838,7 +838,7 @@
         Font: =Font.'Segoe UI'
         Height: =35
         Size: =12
-        Text: =SelectedRisk.Risk_Owner
+        Text: =varRiskCode.Risk_Owner
         Width: =445
         X: =216
         Y: =649
@@ -862,7 +862,7 @@
         Font: =Font.'Segoe UI'
         Height: =35
         Size: =12
-        Text: =SelectedRisk.Risk_Status
+        Text: =varRiskCode.Risk_Status
         Width: =472
         X: =829
         Y: =649
@@ -939,7 +939,7 @@
         Font: =Font.'Segoe UI'
         Height: =35
         Size: =12
-        Text: =varRiskCode.
+        Text: =varRiskCode.Risk_Code
         Width: =402
         X: =216
         Y: =514

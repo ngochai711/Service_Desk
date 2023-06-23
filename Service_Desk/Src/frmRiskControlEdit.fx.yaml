@@ -313,7 +313,7 @@
 
         inp_ControlDescription_1 As text:
             BorderThickness: =1
-            Default: =varRiskInfo.Control_Description
+            Default: =varRiskControl.Control_Description
             Font: =Font.'Segoe UI'
             Height: =80
             Mode: =TextMode.MultiLine
@@ -449,7 +449,7 @@
             Font: =Font.'Segoe UI'
             Height: =35
             Size: =12
-            Text: =varRiskInfo.Control_Code
+            Text: =varRiskControl.Control_Code
             Width: =440
             X: =250
             Y: =100
@@ -946,70 +946,5 @@
             TabIndex: =0
             Text: =ThisItem.DisplayName&" - "&ThisItem.Mail
             Width: =388
-            ZIndex: =1
-
-    lb_ControlOwner_4 As label:
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =Font.'Segoe UI'
-        Height: =23
-        OnSelect: |-
-            =UpdateContext({varLBRiskOwner:false,
-            HidePeopleGallery1:false})
-        Size: =12
-        Text: =SelectedRisk.Risk_Code
-        Visible: =varLBRiskOwner
-        Width: =282
-        X: =220
-        Y: =521
-        ZIndex: =54
-
-    Gal_RiskSelecttOwner_18 As gallery.galleryVertical:
-        AccessibleLabel: ="People for selection"
-        BorderColor: =RGBA(0, 0, 0, 0.16)
-        BorderThickness: =1
-        DisabledBorderColor: =Gal_RiskSelecttOwner_18.BorderColor
-        DisabledFill: =Gal_RiskSelecttOwner_18.Fill
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =200
-        HoverBorderColor: =Gal_RiskSelecttOwner_18.BorderColor
-        HoverFill: =Gal_RiskSelecttOwner_18.Fill
-        Items: |
-            =If(!IsBlank(inp_RiskID_1.Text), 
-            Search(Risks,inp_RiskID_1.Text,"Risk_Code"))
-        Layout: =Layout.Vertical
-        LoadingSpinnerColor: =Gal_RiskSelecttOwner_18.BorderColor
-        OnSelect: |
-            = UpdateContext({SelectedRisk:ThisItem, HidePeopleGallery1:true, 
-             varLBRiskOwner: true});
-        PressedBorderColor: =Gal_RiskSelecttOwner_18.BorderColor
-        PressedFill: =Gal_RiskSelecttOwner_18.Fill
-        TemplateSize: =53
-        Visible: |-
-            =Not(IsBlank(inp_RiskID_1)) &&
-            !HidePeopleGallery1
-        Width: =295
-        X: =216
-        Y: =558
-        ZIndex: =55
-
-        LabelPersonDisplayName_20 As label:
-            FocusedBorderColor: =LabelPersonDisplayName_20.BorderColor
-            Font: =Font.'Segoe UI'
-            Height: =53
-            HoverBorderColor: =LabelPersonDisplayName_20.BorderColor
-            HoverColor: =RGBA(0, 0, 0, 1)
-            HoverFill: =RGBA(244, 244, 244, 1)
-            OnSelect: =Select(Parent)
-            PaddingBottom: =15
-            PaddingLeft: =20
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedBorderColor: =LabelPersonDisplayName_20.BorderColor
-            PressedColor: =LabelPersonDisplayName_20.Color
-            PressedFill: =LabelPersonDisplayName_20.Fill
-            Size: =10
-            TabIndex: =0
-            Text: =ThisItem.Risk_Code&" - "&ThisItem.Risk_Name
-            Width: =285
             ZIndex: =1
 

@@ -364,7 +364,7 @@
 
         cb_ControlEvaluation_1 As combobox:
             BorderThickness: =1
-            DefaultSelectedItems: =[varRiskInfo.Control_Evaluation]
+            DefaultSelectedItems: =[varRiskControl.Control_Evaluation]
             DisplayFields: =["Value"]
             Font: =Font.'Segoe UI'
             Height: =35
@@ -429,7 +429,7 @@
 
         inp_ControlEvaluation_1 As text:
             BorderThickness: =1
-            Default: =varRiskInfo.Control_Evaluation_Basis
+            Default: =varRiskControl.Control_Evaluation_Basis
             Font: =Font.'Segoe UI'
             Height: =80
             Mode: =TextMode.MultiLine
@@ -541,7 +541,7 @@
 
         cb_ControlMain_1 As combobox:
             BorderThickness: =1
-            DefaultSelectedItems: =[varRiskInfo.Main_Control]
+            DefaultSelectedItems: =[varRiskControl.Main_Control]
             DisplayFields: =["Value"]
             Font: =Font.'Segoe UI'
             Height: =35
@@ -586,7 +586,7 @@
         cb_ControlFrequency_1 As combobox:
             BorderThickness: =1
             ChevronHoverBackground: =RGBA(255, 255, 255, 1)
-            DefaultSelectedItems: =[varRiskInfo.Control_Frequency]
+            DefaultSelectedItems: =[varRiskControl.Control_Frequency]
             DisplayFields: =["Value"]
             Font: =Font.'Segoe UI'
             Height: =35
@@ -610,7 +610,7 @@
         cb_ControlStatus_1 As combobox:
             BorderThickness: =1
             ChevronHoverBackground: =RGBA(255, 255, 255, 1)
-            DefaultSelectedItems: =[varRiskInfo.Control_Status]
+            DefaultSelectedItems: =[varRiskControl.Control_Status]
             DisplayFields: =["Value"]
             Font: =Font.'Segoe UI'
             Height: =35
@@ -632,7 +632,7 @@
         cb_ControlClassify_1 As combobox:
             BorderThickness: =1
             ChevronHoverBackground: =RGBA(255, 255, 255, 1)
-            DefaultSelectedItems: =[varRiskInfo.Control_Classify]
+            DefaultSelectedItems: =[varRiskControl.Control_Classify]
             DisplayFields: =["Value"]
             Font: =Font.'Segoe UI'
             Height: =35
@@ -656,7 +656,7 @@
         cb_ControlType_1 As combobox:
             BorderThickness: =1
             ChevronHoverBackground: =RGBA(255, 255, 255, 1)
-            DefaultSelectedItems: =[varRiskInfo.Control_Type]
+            DefaultSelectedItems: =[varRiskControl.Control_Type]
             DisplayFields: =["Value"]
             Font: =Font.'Segoe UI'
             Height: =35
@@ -891,7 +891,7 @@
             =UpdateContext({varLBControlOwner:false,
             HidePeopleGallery:false})
         Size: =12
-        Text: =If(varRiskInfo.Control_Owner="",SelectedControlOwner.DisplayName&" - "&SelectedControlOwner.Mail,varRiskInfo.Control_Owner)
+        Text: =SelectedControlOwner.DisplayName&" - "&SelectedControlOwner.Mail
         Visible: =varLBControlOwner
         Width: =419
         X: =256

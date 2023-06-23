@@ -347,7 +347,7 @@
 
         inp_ControlOverallRating_1 As text:
             BorderThickness: =1
-            Default: =varRiskInfo.Control_Rating_Basis
+            Default: =varRiskControl.Control_Rating_Basis
             Font: =Font.'Segoe UI'
             Height: =80
             Mode: =TextMode.MultiLine
@@ -393,7 +393,7 @@
         cb_ControlOverallRating_1 As combobox:
             BorderThickness: =1
             ChevronHoverBackground: =RGBA(255, 255, 255, 1)
-            DefaultSelectedItems: =[varRiskInfo.Control_Overall_Rating]
+            DefaultSelectedItems: =[varRiskControl.Control_Overall_Rating]
             DisplayFields: =["Value"]
             Font: =Font.'Segoe UI'
             Height: =35
@@ -757,21 +757,6 @@
         Y: =649
         ZIndex: =42
 
-    inp_RiskID_1 As text:
-        BorderThickness: =1
-        Default: =""
-        Height: =35
-        HintText: ="Nhập ID rủi ro"
-        OnSelect: =
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Width: =295
-        X: =216
-        Y: =514
-        ZIndex: =43
-
     HD_RiskImportant_12 As label:
         Color: =RGBA(92,92,92,1)
         FocusedBorderColor: =HD_RiskImportant_12.BorderColor
@@ -947,4 +932,16 @@
             Text: =ThisItem.DisplayName&" - "&ThisItem.Mail
             Width: =388
             ZIndex: =1
+
+    Label8_34 As label:
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =35
+        Size: =12
+        Text: =varRiskCode.Risk_Code
+        Width: =402
+        X: =216
+        Y: =514
+        ZIndex: =54
 

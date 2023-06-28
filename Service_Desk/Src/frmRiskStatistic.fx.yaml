@@ -414,7 +414,7 @@
                 Text: |-
                     ="Ngày: "&ThisItem.Control_Create_Date
                 VerticalAlign: =VerticalAlign.Top
-                Width: =145
+                Width: =141
                 X: =5
                 Y: =50
                 ZIndex: =4

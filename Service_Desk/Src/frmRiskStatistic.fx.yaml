@@ -83,7 +83,7 @@
                 OnSelect: =Select(Parent)
                 Size: =12
                 Text: |-
-                    ="Ngày: "&ThisItem.Risk_Create_Date
+                    ="Ngày: "&Text(ThisItem.Risk_Create_Date,"dd/mm/yyyy")
                 Width: =145
                 X: =5
                 Y: =50
@@ -407,7 +407,7 @@
                 PaddingTop: =0
                 Size: =12
                 Text: |-
-                    ="Ngày: "&ThisItem.Control_Create_Date
+                    ="Ngày: "&Text(ThisItem.Control_Create_Date,"dd/mm/yyyy")
                 VerticalAlign: =VerticalAlign.Top
                 Width: =141
                 X: =5
@@ -903,7 +903,7 @@
                 PaddingTop: =0
                 Size: =12
                 Text: |-
-                    ="Ngày: "&ThisItem.Action_Create_Date
+                    ="Ngày: "&Text(ThisItem.Action_Create_Date,"dd/mm/yyyy")
                 VerticalAlign: =VerticalAlign.Top
                 Width: =390
                 X: =5

@@ -600,6 +600,7 @@
                     Set(var_Timer,true);
                     Set(var_Click,var_Click+1);
                     If(var_Click=2,Navigate(frmRiskSolutionEdit,ScreenTransition.Fade);Set(varRiskSolution,ThisItem));
+                    Dropdown2.Selected.INDEX;
                 PressedBorderColor: =
                 PressedColor: =
                 PressedFill: =

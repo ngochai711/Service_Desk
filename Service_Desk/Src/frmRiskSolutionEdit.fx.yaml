@@ -87,7 +87,7 @@
             =UpdateContext({varLBActionOwner:false,
             HidePeopleGallery:false})
         Size: =12
-        Text: =varRiskInfo.Action_Owner
+        Text: =varRiskSolution.Action_Owner
         Visible: =varLBActionOwner
         Width: =381
         X: =310
@@ -414,7 +414,7 @@
 
         inp_ActionDescription_1 As text:
             BorderThickness: =1
-            Default: =varRiskInfo.Action_Description
+            Default: =varRiskSolution.Action_Description
             Font: =Font.'Segoe UI'
             Height: =80
             Mode: =TextMode.MultiLine
@@ -448,7 +448,7 @@
 
         dp_ActionStartDate_1 As datepicker:
             BorderThickness: =1
-            DefaultDate: =varRiskInfo.Action_Plan_Start_Date
+            DefaultDate: =varRiskSolution.Action_Plan_Start_Date
             Font: =Font.'Segoe UI'
             Format: ="dd/mm/yyyy"
             Height: =35
@@ -461,7 +461,7 @@
 
         dp_ActionEndDate_1 As datepicker:
             BorderThickness: =1
-            DefaultDate: =varRiskInfo.Action_Plan_Finish_Date
+            DefaultDate: =varRiskSolution.Action_Plan_Finish_Date
             Font: =Font.'Segoe UI'
             Format: ="dd/mm/yyyy"
             Height: =35
@@ -474,7 +474,7 @@
 
         dp_ActionRealEndDate_1 As datepicker:
             BorderThickness: =1
-            DefaultDate: =varRiskInfo.Action_Actual_Finish_Date
+            DefaultDate: =varRiskSolution.Action_Actual_Finish_Date
             Font: =Font.'Segoe UI'
             Format: ="dd/mm/yyyy"
             Height: =35
@@ -487,7 +487,7 @@
 
         inp_ActionRank_1 As text:
             BorderThickness: =1
-            Default: =varRiskInfo.Action_Rank
+            Default: =varRiskSolution.Action_Rank
             Font: =Font.'Segoe UI'
             Height: =80
             Mode: =TextMode.MultiLine
@@ -503,7 +503,7 @@
 
         cb_ActionEvaluation_1 As combobox:
             BorderThickness: =1
-            DefaultSelectedItems: =["Không hiệu quả"]
+            DefaultSelectedItems: =[varRiskSolution.Action_Evaluation]
             DisplayFields: =["Value"]
             Font: =Font.'Segoe UI'
             Height: =35
@@ -532,7 +532,7 @@
         cb_ActionOveralEvaluation_1 As combobox:
             BorderThickness: =1
             ChevronHoverBackground: =RGBA(255, 255, 255, 1)
-            DefaultSelectedItems: =[varRiskInfo.Action_Overal_Rating]
+            DefaultSelectedItems: =[varRiskSolution.Action_Overal_Rating]
             DisplayFields: =["Value"]
             Font: =Font.'Segoe UI'
             Height: =35
@@ -555,7 +555,7 @@
 
         dp_ActionCreateDate_1 As datepicker:
             BorderThickness: =1
-            DefaultDate: =varRiskInfo.Action_Create_Date
+            DefaultDate: =varRiskSolution.Action_Create_Date
             Font: =Font.'Segoe UI'
             Format: ="dd/mm/yyyy"
             Height: =35
@@ -568,7 +568,7 @@
 
         inp_ActionEvaluationBasis_1 As text:
             BorderThickness: =1
-            Default: =varRiskInfo.Action_Evaluation_Basis
+            Default: =varRiskSolution.Action_Evaluation_Basis
             Font: =Font.'Segoe UI'
             Height: =80
             Mode: =TextMode.MultiLine
@@ -588,7 +588,7 @@
             Font: =Font.'Segoe UI'
             Height: =35
             Size: =12
-            Text: =varRiskInfo.Action_Code
+            Text: =varRiskSolution.Action_Code
             Width: =402
             X: =302
             Y: =102

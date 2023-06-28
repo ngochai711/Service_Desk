@@ -77,6 +77,392 @@
         X: =1198
         ZIndex: =8
 
+    HD_RiskID_4 As label:
+        Color: =RGBA(92,92,92,1)
+        FocusedBorderColor: =HD_RiskID_4.BorderColor
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =HD_RiskID_4.BorderColor
+        HoverColor: =HD_RiskID_4.Color
+        HoverFill: =HD_RiskID_4.Fill
+        PressedBorderColor: =HD_RiskID_4.BorderColor
+        PressedColor: =HD_RiskID_4.Color
+        PressedFill: =HD_RiskID_4.Fill
+        Size: =12
+        Text: ="Mã hành động khắc phục"
+        Width: =258
+        X: =44
+        Y: =102
+        ZIndex: =9
+
+    HD_RiskID_5 As label:
+        Color: =RGBA(92,92,92,1)
+        FocusedBorderColor: =HD_RiskID_5.BorderColor
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =HD_RiskID_5.BorderColor
+        HoverColor: =HD_RiskID_5.Color
+        HoverFill: =HD_RiskID_5.Fill
+        PressedBorderColor: =HD_RiskID_5.BorderColor
+        PressedColor: =HD_RiskID_5.Color
+        PressedFill: =HD_RiskID_5.Fill
+        Size: =12
+        Text: ="Ngày tạo hành động"
+        Width: =232
+        X: =765
+        Y: =102
+        ZIndex: =10
+
+    HD_RiskOwner_3 As label:
+        Color: =RGBA(92,92,92,1)
+        FocusedBorderColor: =HD_RiskOwner_3.BorderColor
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =HD_RiskOwner_3.BorderColor
+        HoverColor: =HD_RiskOwner_3.Color
+        HoverFill: =HD_RiskOwner_3.Fill
+        PressedBorderColor: =HD_RiskOwner_3.BorderColor
+        PressedColor: =HD_RiskOwner_3.Color
+        PressedFill: =HD_RiskOwner_3.Fill
+        Size: =12
+        Text: ="Mô tả hành động khắc phục"
+        Width: =258
+        X: =44
+        Y: =147
+        ZIndex: =11
+
+    HD_RiskID_6 As label:
+        Color: =RGBA(92,92,92,1)
+        FocusedBorderColor: =HD_RiskID_6.BorderColor
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =HD_RiskID_6.BorderColor
+        HoverColor: =HD_RiskID_6.Color
+        HoverFill: =HD_RiskID_6.Fill
+        PressedBorderColor: =HD_RiskID_6.BorderColor
+        PressedColor: =HD_RiskID_6.Color
+        PressedFill: =HD_RiskID_6.Fill
+        Size: =12
+        Text: ="CSH hành động khắc phục"
+        Width: =258
+        X: =44
+        Y: =238
+        ZIndex: =12
+
+    HD_RiskID_7 As label:
+        Color: =RGBA(92,92,92,1)
+        FocusedBorderColor: =HD_RiskID_7.BorderColor
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =HD_RiskID_7.BorderColor
+        HoverColor: =HD_RiskID_7.Color
+        HoverFill: =HD_RiskID_7.Fill
+        PressedBorderColor: =HD_RiskID_7.BorderColor
+        PressedColor: =HD_RiskID_7.Color
+        PressedFill: =HD_RiskID_7.Fill
+        Size: =12
+        Text: ="Bắt đầu theo kế hoạch"
+        Width: =232
+        X: =765
+        Y: =192
+        ZIndex: =13
+
+    HD_RiskName_4 As label:
+        Color: =RGBA(92,92,92,1)
+        FocusedBorderColor: =HD_RiskName_4.BorderColor
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =HD_RiskName_4.BorderColor
+        HoverColor: =HD_RiskName_4.Color
+        HoverFill: =HD_RiskName_4.Fill
+        PressedBorderColor: =HD_RiskName_4.BorderColor
+        PressedColor: =HD_RiskName_4.Color
+        PressedFill: =HD_RiskName_4.Fill
+        Size: =12
+        Text: ="Kết thúc theo kế hoạch"
+        Width: =232
+        X: =765
+        Y: =237
+        ZIndex: =14
+
+    HD_RiskOwner_4 As label:
+        Color: =RGBA(92,92,92,1)
+        FocusedBorderColor: =HD_RiskOwner_4.BorderColor
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =HD_RiskOwner_4.BorderColor
+        HoverColor: =HD_RiskOwner_4.Color
+        HoverFill: =HD_RiskOwner_4.Fill
+        PressedBorderColor: =HD_RiskOwner_4.BorderColor
+        PressedColor: =HD_RiskOwner_4.Color
+        PressedFill: =HD_RiskOwner_4.Fill
+        Size: =12
+        Text: ="Kết thúc thực tế"
+        Width: =232
+        X: =765
+        Y: =283
+        ZIndex: =15
+
+    HD_RiskID_8 As label:
+        Color: =RGBA(92,92,92,1)
+        FocusedBorderColor: =HD_RiskID_8.BorderColor
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =HD_RiskID_8.BorderColor
+        HoverColor: =HD_RiskID_8.Color
+        HoverFill: =HD_RiskID_8.Fill
+        PressedBorderColor: =HD_RiskID_8.BorderColor
+        PressedColor: =HD_RiskID_8.Color
+        PressedFill: =HD_RiskID_8.Fill
+        Size: =12
+        Text: ="Đơn vị CSH"
+        Width: =258
+        X: =44
+        Y: =282
+        ZIndex: =16
+
+    HD_RiskName_5 As label:
+        Color: =RGBA(92,92,92,1)
+        FocusedBorderColor: =HD_RiskName_5.BorderColor
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =HD_RiskName_5.BorderColor
+        HoverColor: =HD_RiskName_5.Color
+        HoverFill: =HD_RiskName_5.Fill
+        PressedBorderColor: =HD_RiskName_5.BorderColor
+        PressedColor: =HD_RiskName_5.Color
+        PressedFill: =HD_RiskName_5.Fill
+        Size: =12
+        Text: ="Đánh giá tổng thể hành động"
+        Width: =232
+        X: =765
+        Y: =327
+        ZIndex: =17
+
+    HD_RiskOwner_5 As label:
+        Color: =RGBA(92,92,92,1)
+        FocusedBorderColor: =HD_RiskOwner_5.BorderColor
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =HD_RiskOwner_5.BorderColor
+        HoverColor: =HD_RiskOwner_5.Color
+        HoverFill: =HD_RiskOwner_5.Fill
+        PressedBorderColor: =HD_RiskOwner_5.BorderColor
+        PressedColor: =HD_RiskOwner_5.Color
+        PressedFill: =HD_RiskOwner_5.Fill
+        Size: =12
+        Text: ="Đánh giá hành động"
+        Width: =258
+        X: =44
+        Y: =327
+        ZIndex: =18
+
+    HD_RiskID_9 As label:
+        Color: =RGBA(92,92,92,1)
+        FocusedBorderColor: =HD_RiskID_9.BorderColor
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =HD_RiskID_9.BorderColor
+        HoverColor: =HD_RiskID_9.Color
+        HoverFill: =HD_RiskID_9.Fill
+        PressedBorderColor: =HD_RiskID_9.BorderColor
+        PressedColor: =HD_RiskID_9.Color
+        PressedFill: =HD_RiskID_9.Fill
+        Size: =12
+        Text: ="Trạng thái"
+        Width: =232
+        X: =765
+        Y: =147
+        ZIndex: =19
+
+    inp_ActionDescription As text:
+        BorderThickness: =1
+        Default: =""
+        Font: =Font.'Segoe UI'
+        Height: =80
+        Mode: =TextMode.MultiLine
+        OnSelect: =
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =12
+        Width: =402
+        X: =302
+        Y: =147
+        ZIndex: =20
+
+    inp_ActionOwner As text:
+        BorderThickness: =1
+        Default: =""
+        Font: =Font.'Segoe UI'
+        Height: =35
+        HintText: ="Nhập tên hoặc email"
+        OnSelect: =
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =12
+        Width: =402
+        X: =302
+        Y: =238
+        ZIndex: =21
+
+    dp_ActionStartDate As datepicker:
+        BorderThickness: =1
+        Font: =Font.'Segoe UI'
+        Format: ="dd/mm/yyyy"
+        Height: =35
+        OnSelect: =
+        Size: =12
+        Width: =320
+        X: =997
+        Y: =192
+        ZIndex: =22
+
+    dp_ActionEndDate As datepicker:
+        BorderThickness: =1
+        Font: =Font.'Segoe UI'
+        Format: ="dd/mm/yyyy"
+        Height: =35
+        OnSelect: =
+        Size: =12
+        Width: =320
+        X: =997
+        Y: =237
+        ZIndex: =23
+
+    dp_ActionRealEndDate As datepicker:
+        BorderThickness: =1
+        Font: =Font.'Segoe UI'
+        Format: ="dd/mm/yyyy"
+        Height: =35
+        OnSelect: =
+        Size: =12
+        Width: =320
+        X: =997
+        Y: =282
+        ZIndex: =24
+
+    cb_ActionEvaluation As combobox:
+        BorderThickness: =1
+        DefaultSelectedItems: =["Không hiệu quả"]
+        DisplayFields: =["Value"]
+        Font: =Font.'Segoe UI'
+        Height: =35
+        InputTextPlaceholder: ="Chọn Đánh giá hành động"
+        Items: |-
+            =Table({Value:"Không hiệu quả",Index:1},
+            {Value:"Hiệu quả một phần",Index:2},
+            {Value:"Hiệu quả",Index:3})
+        NoSelectionText: ="Không hiệu quả"
+        OnSelect: =
+        SearchFields: =["Value"]
+        SearchItems: |-
+            =Search(Table({Value:"Không hiệu quả",Index:1},
+            {Value:"Hiệu quả một phần",Index:2},
+            {Value:"Hiệu quả",Index:3}),cb_ActionEvaluation.SearchText,"Value")
+        SelectionColor: =
+        SelectionFill: =
+        SelectionTagFill: =
+        SelectMultiple: =false
+        Size: =12
+        Width: =402
+        X: =302
+        Y: =327
+        ZIndex: =26
+
+    cb_ActionOveralEvaluation As combobox:
+        BorderThickness: =1
+        ChevronHoverBackground: =RGBA(255, 255, 255, 1)
+        DefaultSelectedItems: =["Không hiệu quả"]
+        DisplayFields: =["Value"]
+        Font: =Font.'Segoe UI'
+        Height: =35
+        InputTextPlaceholder: =""
+        IsSearchable: =false
+        Items: |-
+            =Table({Value:"Không hiệu quả",Index:1},
+            {Value:"Hiệu quả một phần",Index:2},
+            {Value:"Hiệu quả",Index:3})
+        OnSelect: =
+        SearchFields: =["Value"]
+        SearchItems: =[]
+        SelectionTagFill: =
+        SelectMultiple: =false
+        Size: =12
+        Width: =320
+        X: =997
+        Y: =327
+        ZIndex: =27
+
+    dp_ActionCreateDate As datepicker:
+        BorderThickness: =1
+        Font: =Font.'Segoe UI'
+        Format: ="dd/mm/yyyy"
+        Height: =35
+        OnSelect: =
+        Size: =12
+        Width: =320
+        X: =997
+        Y: =102
+        ZIndex: =28
+
+    inp_ActionEvaluationBasis As text:
+        BorderThickness: =1
+        Default: =""
+        Font: =Font.'Segoe UI'
+        Height: =35
+        Mode: =TextMode.MultiLine
+        OnSelect: =
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =12
+        Width: =402
+        X: =302
+        Y: =283
+        ZIndex: =29
+
+    Label8 As label:
+        BorderThickness: =1
+        Font: =Font.'Segoe UI'
+        Height: =35
+        Size: =12
+        Text: =varRiskSolutionKey
+        Width: =402
+        X: =302
+        Y: =102
+        ZIndex: =30
+
+    LB_RiskOwner_2 As label:
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =30
+        OnSelect: |-
+            =UpdateContext({varLBRiskOwner:false,
+            HidePeopleGallery:false})
+        Size: =12
+        Text: =SelectedActionOwner.DisplayName&" - "&SelectedActionOwner.Mail
+        Visible: =varLBRiskOwner
+        Width: =381
+        X: =306
+        Y: =240
+        ZIndex: =31
+
     lb_ActionOwner As label:
         Fill: =RGBA(255, 255, 255, 1)
         Font: =Font.'Segoe UI'
@@ -142,866 +528,261 @@
             Width: =388
             ZIndex: =1
 
-    lb_ControlOwner_2 As label:
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =Font.'Segoe UI'
-        Height: =23
-        OnSelect: |-
-            =UpdateContext({varLBControlOwner:false,
-            HidePeopleGallery1:false})
-        Size: =12
-        Text: =SelectedControl.Control_Code
-        Visible: =varLBControlOwner
-        Width: =398
-        X: =235
-        Y: =489
-        ZIndex: =53
-
-    Label8_2 As label:
+    cb_ActionOveralEvaluation_2 As combobox:
         BorderThickness: =1
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =Font.'Segoe UI'
-        Height: =70
-        Overflow: =Overflow.Scroll
-        Size: =12
-        Text: =SelectedControl.Control_Description
-        Width: =415
-        X: =231
-        Y: =528
-        ZIndex: =54
-
-    Label8_3 As label:
-        BorderThickness: =1
-        Fill: =RGBA(255, 255, 255, 1)
+        ChevronHoverBackground: =RGBA(255, 255, 255, 1)
+        DefaultSelectedItems: =
+        DisplayFields: =["Value"]
         Font: =Font.'Segoe UI'
         Height: =35
+        InputTextPlaceholder: =""
+        IsSearchable: =false
+        OnSelect: =
+        SearchFields: =["Value"]
+        SearchItems: =[]
+        SelectionTagFill: =
+        SelectMultiple: =false
         Size: =12
-        Text: =SelectedControl.Control_Owner
-        Width: =415
-        X: =231
-        Y: =608
-        ZIndex: =55
+        Width: =320
+        X: =997
+        Y: =147
+        ZIndex: =70
 
-    Label8_9 As label:
-        BorderThickness: =1
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =Font.'Segoe UI'
-        Height: =35
-        Size: =12
-        Text: =SelectedControl.Control_Status
-        Width: =415
-        X: =231
-        Y: =653
-        ZIndex: =56
-
-    Group8 As group:
+    Group5 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
-        ZIndex: =56
+        ZIndex: =71
 
-        HD_RiskID_4 As label:
-            Color: =RGBA(92,92,92,1)
-            FocusedBorderColor: =HD_RiskID_4.BorderColor
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =35
-            HoverBorderColor: =HD_RiskID_4.BorderColor
-            HoverColor: =HD_RiskID_4.Color
-            HoverFill: =HD_RiskID_4.Fill
-            PressedBorderColor: =HD_RiskID_4.BorderColor
-            PressedColor: =HD_RiskID_4.Color
-            PressedFill: =HD_RiskID_4.Fill
-            Size: =12
-            Text: ="Mã hành động khắc phục"
-            Width: =258
-            X: =44
-            Y: =102
-            ZIndex: =9
-
-        HD_RiskID_5 As label:
-            Color: =RGBA(92,92,92,1)
-            FocusedBorderColor: =HD_RiskID_5.BorderColor
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =35
-            HoverBorderColor: =HD_RiskID_5.BorderColor
-            HoverColor: =HD_RiskID_5.Color
-            HoverFill: =HD_RiskID_5.Fill
-            PressedBorderColor: =HD_RiskID_5.BorderColor
-            PressedColor: =HD_RiskID_5.Color
-            PressedFill: =HD_RiskID_5.Fill
-            Size: =12
-            Text: ="Ngày tạo hành động"
-            Width: =232
-            X: =765
-            Y: =102
-            ZIndex: =10
-
-        HD_RiskOwner_3 As label:
-            Color: =RGBA(92,92,92,1)
-            FocusedBorderColor: =HD_RiskOwner_3.BorderColor
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =35
-            HoverBorderColor: =HD_RiskOwner_3.BorderColor
-            HoverColor: =HD_RiskOwner_3.Color
-            HoverFill: =HD_RiskOwner_3.Fill
-            PressedBorderColor: =HD_RiskOwner_3.BorderColor
-            PressedColor: =HD_RiskOwner_3.Color
-            PressedFill: =HD_RiskOwner_3.Fill
-            Size: =12
-            Text: ="Mô tả hành động khắc phục"
-            Width: =258
-            X: =44
-            Y: =147
-            ZIndex: =11
-
-        HD_RiskID_6 As label:
-            Color: =RGBA(92,92,92,1)
-            FocusedBorderColor: =HD_RiskID_6.BorderColor
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =35
-            HoverBorderColor: =HD_RiskID_6.BorderColor
-            HoverColor: =HD_RiskID_6.Color
-            HoverFill: =HD_RiskID_6.Fill
-            PressedBorderColor: =HD_RiskID_6.BorderColor
-            PressedColor: =HD_RiskID_6.Color
-            PressedFill: =HD_RiskID_6.Fill
-            Size: =12
-            Text: ="CSH hành động khắc phục"
-            Width: =258
-            X: =44
-            Y: =238
-            ZIndex: =12
-
-        HD_RiskID_7 As label:
-            Color: =RGBA(92,92,92,1)
-            FocusedBorderColor: =HD_RiskID_7.BorderColor
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =35
-            HoverBorderColor: =HD_RiskID_7.BorderColor
-            HoverColor: =HD_RiskID_7.Color
-            HoverFill: =HD_RiskID_7.Fill
-            PressedBorderColor: =HD_RiskID_7.BorderColor
-            PressedColor: =HD_RiskID_7.Color
-            PressedFill: =HD_RiskID_7.Fill
-            Size: =12
-            Text: ="Bắt đầu theo kế hoạch"
-            Width: =232
-            X: =765
-            Y: =147
-            ZIndex: =13
-
-        HD_RiskName_4 As label:
-            Color: =RGBA(92,92,92,1)
-            FocusedBorderColor: =HD_RiskName_4.BorderColor
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =35
-            HoverBorderColor: =HD_RiskName_4.BorderColor
-            HoverColor: =HD_RiskName_4.Color
-            HoverFill: =HD_RiskName_4.Fill
-            PressedBorderColor: =HD_RiskName_4.BorderColor
-            PressedColor: =HD_RiskName_4.Color
-            PressedFill: =HD_RiskName_4.Fill
-            Size: =12
-            Text: ="Kết thúc theo kế hoạch"
-            Width: =232
-            X: =765
-            Y: =192
-            ZIndex: =14
-
-        HD_RiskOwner_4 As label:
-            Color: =RGBA(92,92,92,1)
-            FocusedBorderColor: =HD_RiskOwner_4.BorderColor
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =35
-            HoverBorderColor: =HD_RiskOwner_4.BorderColor
-            HoverColor: =HD_RiskOwner_4.Color
-            HoverFill: =HD_RiskOwner_4.Fill
-            PressedBorderColor: =HD_RiskOwner_4.BorderColor
-            PressedColor: =HD_RiskOwner_4.Color
-            PressedFill: =HD_RiskOwner_4.Fill
-            Size: =12
-            Text: ="Kết thúc thực tế"
-            Width: =232
-            X: =765
-            Y: =238
-            ZIndex: =15
-
-        HD_RiskID_8 As label:
-            Color: =RGBA(92,92,92,1)
-            FocusedBorderColor: =HD_RiskID_8.BorderColor
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =35
-            HoverBorderColor: =HD_RiskID_8.BorderColor
-            HoverColor: =HD_RiskID_8.Color
-            HoverFill: =HD_RiskID_8.Fill
-            PressedBorderColor: =HD_RiskID_8.BorderColor
-            PressedColor: =HD_RiskID_8.Color
-            PressedFill: =HD_RiskID_8.Fill
-            Size: =12
-            Text: ="Đánh giá hành động"
-            Width: =258
-            X: =44
-            Y: =282
-            ZIndex: =16
-
-        HD_RiskName_5 As label:
-            Color: =RGBA(92,92,92,1)
-            FocusedBorderColor: =HD_RiskName_5.BorderColor
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =35
-            HoverBorderColor: =HD_RiskName_5.BorderColor
-            HoverColor: =HD_RiskName_5.Color
-            HoverFill: =HD_RiskName_5.Fill
-            PressedBorderColor: =HD_RiskName_5.BorderColor
-            PressedColor: =HD_RiskName_5.Color
-            PressedFill: =HD_RiskName_5.Fill
-            Size: =12
-            Text: ="Đánh giá tổng thể hành động"
-            Width: =232
-            X: =765
-            Y: =282
-            ZIndex: =17
-
-        HD_RiskOwner_5 As label:
-            Color: =RGBA(92,92,92,1)
-            FocusedBorderColor: =HD_RiskOwner_5.BorderColor
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =35
-            HoverBorderColor: =HD_RiskOwner_5.BorderColor
-            HoverColor: =HD_RiskOwner_5.Color
-            HoverFill: =HD_RiskOwner_5.Fill
-            PressedBorderColor: =HD_RiskOwner_5.BorderColor
-            PressedColor: =HD_RiskOwner_5.Color
-            PressedFill: =HD_RiskOwner_5.Fill
-            Size: =12
-            Text: ="Cơ sở đánh giá hành động"
-            Width: =258
-            X: =44
-            Y: =327
-            ZIndex: =18
-
-        HD_RiskID_9 As label:
-            Color: =RGBA(92,92,92,1)
-            FocusedBorderColor: =HD_RiskID_9.BorderColor
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =35
-            HoverBorderColor: =HD_RiskID_9.BorderColor
-            HoverColor: =HD_RiskID_9.Color
-            HoverFill: =HD_RiskID_9.Fill
-            PressedBorderColor: =HD_RiskID_9.BorderColor
-            PressedColor: =HD_RiskID_9.Color
-            PressedFill: =HD_RiskID_9.Fill
-            Size: =12
-            Text: ="Cơ sở xếp hạng"
-            Width: =232
-            X: =765
-            Y: =327
-            ZIndex: =19
-
-        inp_ActionDescription As text:
-            BorderThickness: =1
-            Default: =""
-            Font: =Font.'Segoe UI'
-            Height: =80
-            Mode: =TextMode.MultiLine
-            OnSelect: =
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            Size: =12
-            Width: =402
-            X: =302
-            Y: =147
-            ZIndex: =20
-
-        inp_ActionOwner As text:
-            BorderThickness: =1
-            Default: =""
-            Font: =Font.'Segoe UI'
-            Height: =35
-            HintText: ="Nhập tên hoặc email"
-            OnSelect: =
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            Size: =12
-            Width: =402
-            X: =302
-            Y: =238
-            ZIndex: =21
-
-        dp_ActionStartDate As datepicker:
-            BorderThickness: =1
-            Font: =Font.'Segoe UI'
-            Format: ="dd/mm/yyyy"
-            Height: =35
-            OnSelect: =
-            Size: =12
-            Width: =320
-            X: =997
-            Y: =147
-            ZIndex: =22
-
-        dp_ActionEndDate As datepicker:
-            BorderThickness: =1
-            Font: =Font.'Segoe UI'
-            Format: ="dd/mm/yyyy"
-            Height: =35
-            OnSelect: =
-            Size: =12
-            Width: =320
-            X: =997
-            Y: =192
-            ZIndex: =23
-
-        dp_ActionRealEndDate As datepicker:
-            BorderThickness: =1
-            Font: =Font.'Segoe UI'
-            Format: ="dd/mm/yyyy"
-            Height: =35
-            OnSelect: =
-            Size: =12
-            Width: =320
-            X: =997
-            Y: =237
-            ZIndex: =24
-
-        inp_ActionRank As text:
-            BorderThickness: =1
-            Default: =""
-            Font: =Font.'Segoe UI'
-            Height: =80
-            Mode: =TextMode.MultiLine
-            OnSelect: =
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            Size: =12
-            X: =997
-            Y: =327
-            ZIndex: =25
-
-        cb_ActionEvaluation As combobox:
-            BorderThickness: =1
-            DefaultSelectedItems: =["Không hiệu quả"]
-            DisplayFields: =["Value"]
-            Font: =Font.'Segoe UI'
-            Height: =35
-            InputTextPlaceholder: ="Chọn Đánh giá hành động"
-            Items: |-
-                =Table({Value:"Không hiệu quả",Index:1},
-                {Value:"Hiệu quả một phần",Index:2},
-                {Value:"Hiệu quả",Index:3})
-            NoSelectionText: ="Không hiệu quả"
-            OnSelect: =
-            SearchFields: =["Value"]
-            SearchItems: |-
-                =Search(Table({Value:"Không hiệu quả",Index:1},
-                {Value:"Hiệu quả một phần",Index:2},
-                {Value:"Hiệu quả",Index:3}),cb_ActionEvaluation.SearchText,"Value")
-            SelectionColor: =
-            SelectionFill: =
-            SelectionTagFill: =
-            SelectMultiple: =false
-            Size: =12
-            Width: =402
-            X: =302
-            Y: =282
-            ZIndex: =26
-
-        cb_ActionOveralEvaluation As combobox:
-            BorderThickness: =1
-            ChevronHoverBackground: =RGBA(255, 255, 255, 1)
-            DefaultSelectedItems: =["Không hiệu quả"]
-            DisplayFields: =["Value"]
-            Font: =Font.'Segoe UI'
-            Height: =35
-            InputTextPlaceholder: =""
-            IsSearchable: =false
-            Items: |-
-                =Table({Value:"Không hiệu quả",Index:1},
-                {Value:"Hiệu quả một phần",Index:2},
-                {Value:"Hiệu quả",Index:3})
-            OnSelect: =
-            SearchFields: =["Value"]
-            SearchItems: =[]
-            SelectionTagFill: =
-            SelectMultiple: =false
-            Size: =12
-            Width: =320
-            X: =997
-            Y: =282
-            ZIndex: =27
-
-        dp_ActionCreateDate As datepicker:
-            BorderThickness: =1
-            Font: =Font.'Segoe UI'
-            Format: ="dd/mm/yyyy"
-            Height: =35
-            OnSelect: =
-            Size: =12
-            Width: =320
-            X: =997
-            Y: =102
-            ZIndex: =28
-
-        inp_ActionEvaluationBasis As text:
-            BorderThickness: =1
-            Default: =""
-            Font: =Font.'Segoe UI'
-            Height: =80
-            Mode: =TextMode.MultiLine
-            OnSelect: =
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            Size: =12
-            Width: =402
-            X: =302
-            Y: =327
-            ZIndex: =29
-
-        Label8 As label:
-            BorderThickness: =1
-            Font: =Font.'Segoe UI'
-            Height: =35
-            Size: =12
-            Text: =varRiskSolutionKey
-            Width: =402
-            X: =302
-            Y: =102
-            ZIndex: =30
-
-        LB_RiskOwner_2 As label:
-            Fill: =RGBA(255, 255, 255, 1)
-            Font: =Font.'Segoe UI'
-            Height: =30
-            OnSelect: |-
-                =UpdateContext({varLBRiskOwner:false,
-                HidePeopleGallery:false})
-            Size: =12
-            Text: =SelectedActionOwner.DisplayName&" - "&SelectedActionOwner.Mail
-            Visible: =varLBRiskOwner
-            Width: =381
-            X: =306
-            Y: =240
-            ZIndex: =31
-
-    Group13 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =56
-
-        Rectangle3_1 As rectangle:
+        Rectangle3_12 As rectangle:
             BorderThickness: =1
             Fill: =RGBA(186, 202, 226, 1)
-            Height: =289
-            Width: =648
-            X: =690
-            Y: =457
-            ZIndex: =1
+            Height: =292
+            Width: =1310
+            X: =30
+            Y: =454
+            ZIndex: =53
 
-        HD_RiskID_3 As label:
+        Rectangle4_6 As rectangle:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =52
+            Width: =280
+            X: =78
+            Y: =418
+            ZIndex: =54
+
+        HD_RiskID_48 As label:
             Color: =RGBA(92,92,92,1)
-            FocusedBorderColor: =HD_RiskID_3.BorderColor
+            FocusedBorderColor: =HD_RiskID_48.BorderColor
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
-            Height: =35
-            HoverBorderColor: =HD_RiskID_3.BorderColor
-            HoverColor: =HD_RiskID_3.Color
-            HoverFill: =HD_RiskID_3.Fill
-            PressedBorderColor: =HD_RiskID_3.BorderColor
-            PressedColor: =HD_RiskID_3.Color
-            PressedFill: =HD_RiskID_3.Fill
+            HoverBorderColor: =HD_RiskID_48.BorderColor
+            HoverColor: =HD_RiskID_48.Color
+            HoverFill: =HD_RiskID_48.Fill
+            PressedBorderColor: =HD_RiskID_48.BorderColor
+            PressedColor: =HD_RiskID_48.Color
+            PressedFill: =HD_RiskID_48.Fill
             Size: =12
             Text: ="Mã rủi ro"
-            Width: =180
-            X: =715
-            Y: =483
-            ZIndex: =40
+            X: =68
+            Y: =480
+            ZIndex: =55
 
-        HD_RiskStatus_3 As label:
+        HD_RiskStatus_8 As label:
             Color: =RGBA(92,92,92,1)
-            FocusedBorderColor: =HD_RiskStatus_3.BorderColor
+            FocusedBorderColor: =HD_RiskStatus_8.BorderColor
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
-            Height: =35
-            HoverBorderColor: =HD_RiskStatus_3.BorderColor
-            HoverColor: =HD_RiskStatus_3.Color
-            HoverFill: =HD_RiskStatus_3.Fill
-            PressedBorderColor: =HD_RiskStatus_3.BorderColor
-            PressedColor: =HD_RiskStatus_3.Color
-            PressedFill: =HD_RiskStatus_3.Fill
+            HoverBorderColor: =HD_RiskStatus_8.BorderColor
+            HoverColor: =HD_RiskStatus_8.Color
+            HoverFill: =HD_RiskStatus_8.Fill
+            PressedBorderColor: =HD_RiskStatus_8.BorderColor
+            PressedColor: =HD_RiskStatus_8.Color
+            PressedFill: =HD_RiskStatus_8.Fill
             Size: =12
             Text: ="Trạng thái rủi ro"
-            Width: =180
-            X: =715
-            Y: =653
-            ZIndex: =41
+            Width: =130
+            X: =695
+            Y: =686
+            ZIndex: =56
 
-        HD_RiskName_3 As label:
+        HD_RiskName_24 As label:
             Color: =RGBA(92,92,92,1)
-            FocusedBorderColor: =HD_RiskName_3.BorderColor
+            FocusedBorderColor: =HD_RiskName_24.BorderColor
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
-            Height: =35
-            HoverBorderColor: =HD_RiskName_3.BorderColor
-            HoverColor: =HD_RiskName_3.Color
-            HoverFill: =HD_RiskName_3.Fill
-            PressedBorderColor: =HD_RiskName_3.BorderColor
-            PressedColor: =HD_RiskName_3.Color
-            PressedFill: =HD_RiskName_3.Fill
+            HoverBorderColor: =HD_RiskName_24.BorderColor
+            HoverColor: =HD_RiskName_24.Color
+            HoverFill: =HD_RiskName_24.Fill
+            PressedBorderColor: =HD_RiskName_24.BorderColor
+            PressedColor: =HD_RiskName_24.Color
+            PressedFill: =HD_RiskName_24.Fill
             Size: =12
             Text: ="Mô tả rủi ro"
-            Width: =180
-            X: =715
-            Y: =528
-            ZIndex: =42
+            X: =68
+            Y: =531
+            ZIndex: =57
 
-        HD_RiskOwner_13 As label:
+        HD_RiskOwner_26 As label:
             Color: =RGBA(92,92,92,1)
-            FocusedBorderColor: =HD_RiskOwner_13.BorderColor
+            FocusedBorderColor: =HD_RiskOwner_26.BorderColor
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
-            Height: =35
-            HoverBorderColor: =HD_RiskOwner_13.BorderColor
-            HoverColor: =HD_RiskOwner_13.Color
-            HoverFill: =HD_RiskOwner_13.Fill
-            PressedBorderColor: =HD_RiskOwner_13.BorderColor
-            PressedColor: =HD_RiskOwner_13.Color
-            PressedFill: =HD_RiskOwner_13.Fill
+            HoverBorderColor: =HD_RiskOwner_26.BorderColor
+            HoverColor: =HD_RiskOwner_26.Color
+            HoverFill: =HD_RiskOwner_26.Fill
+            PressedBorderColor: =HD_RiskOwner_26.BorderColor
+            PressedColor: =HD_RiskOwner_26.Color
+            PressedFill: =HD_RiskOwner_26.Fill
             Size: =12
             Text: ="Chủ sở hữu rủi ro"
-            Width: =180
-            X: =715
-            Y: =608
-            ZIndex: =43
+            X: =68
+            Y: =634
+            ZIndex: =58
 
-        HD_RiskImportant_9 As label:
+        HD_RiskImportant_13 As label:
             Color: =RGBA(92,92,92,1)
-            FocusedBorderColor: =HD_RiskImportant_9.BorderColor
+            FocusedBorderColor: =HD_RiskImportant_13.BorderColor
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
-            Height: =35
-            HoverBorderColor: =HD_RiskImportant_9.BorderColor
-            HoverColor: =HD_RiskImportant_9.Color
-            HoverFill: =HD_RiskImportant_9.Fill
-            PressedBorderColor: =HD_RiskImportant_9.BorderColor
-            PressedColor: =HD_RiskImportant_9.Color
-            PressedFill: =HD_RiskImportant_9.Fill
+            HoverBorderColor: =HD_RiskImportant_13.BorderColor
+            HoverColor: =HD_RiskImportant_13.Color
+            HoverFill: =HD_RiskImportant_13.Fill
+            PressedBorderColor: =HD_RiskImportant_13.BorderColor
+            PressedColor: =HD_RiskImportant_13.Color
+            PressedFill: =HD_RiskImportant_13.Fill
             Size: =12
-            Text: ="Rủi ro trọng yếu"
-            Width: =180
-            X: =715
-            Y: =698
-            ZIndex: =47
+            Text: ="Rủi ro trọng  yếu"
+            X: =68
+            Y: =686
+            ZIndex: =59
 
-        Rectangle4_1 As rectangle:
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =45
-            Width: =280
-            X: =727
-            Y: =430
-            ZIndex: =49
-
-        Label6_1 As label:
+        Label6_6 As label:
             Align: =Align.Center
             Color: =RGBA(92, 92, 92, 1)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Bold
-            Height: =45
+            Height: =52
             Size: =14
             Text: ="Thông tin tham chiếu - Rủi ro"
             Width: =280
-            X: =727
-            Y: =430
-            ZIndex: =50
+            X: =78
+            Y: =418
+            ZIndex: =60
 
-    Group12 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =56
+        HD_RiskName_25 As label:
+            Color: =RGBA(92,92,92,1)
+            FocusedBorderColor: =HD_RiskName_25.BorderColor
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            HoverBorderColor: =HD_RiskName_25.BorderColor
+            HoverColor: =HD_RiskName_25.Color
+            HoverFill: =HD_RiskName_25.Fill
+            PressedBorderColor: =HD_RiskName_25.BorderColor
+            PressedColor: =HD_RiskName_25.Color
+            PressedFill: =HD_RiskName_25.Fill
+            Size: =12
+            Text: ="Tên rủi ro"
+            Width: =130
+            X: =695
+            Y: =480
+            ZIndex: =61
 
-        Rectangle3 As rectangle:
+        Label8_9 As label:
             BorderThickness: =1
-            Fill: =RGBA(186, 202, 226, 1)
-            Height: =289
-            Width: =648
-            X: =28
-            Y: =457
-            ZIndex: =2
-
-        HD_RiskID_2 As label:
-            Color: =RGBA(92,92,92,1)
-            FocusedBorderColor: =HD_RiskID_2.BorderColor
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =35
-            HoverBorderColor: =HD_RiskID_2.BorderColor
-            HoverColor: =HD_RiskID_2.Color
-            HoverFill: =HD_RiskID_2.Fill
-            PressedBorderColor: =HD_RiskID_2.BorderColor
-            PressedColor: =HD_RiskID_2.Color
-            PressedFill: =HD_RiskID_2.Fill
-            Size: =12
-            Text: ="Mã kiểm soát"
-            Width: =180
-            X: =51
-            Y: =483
-            ZIndex: =32
-
-        HD_RiskStatus_2 As label:
-            Color: =RGBA(92,92,92,1)
-            FocusedBorderColor: =HD_RiskStatus_2.BorderColor
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =35
-            HoverBorderColor: =HD_RiskStatus_2.BorderColor
-            HoverColor: =HD_RiskStatus_2.Color
-            HoverFill: =HD_RiskStatus_2.Fill
-            PressedBorderColor: =HD_RiskStatus_2.BorderColor
-            PressedColor: =HD_RiskStatus_2.Color
-            PressedFill: =HD_RiskStatus_2.Fill
-            Size: =12
-            Text: ="Trạng thái kiểm soát"
-            Width: =180
-            X: =51
-            Y: =653
-            ZIndex: =33
-
-        HD_RiskName_2 As label:
-            Color: =RGBA(92,92,92,1)
-            FocusedBorderColor: =HD_RiskName_2.BorderColor
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =35
-            HoverBorderColor: =HD_RiskName_2.BorderColor
-            HoverColor: =HD_RiskName_2.Color
-            HoverFill: =HD_RiskName_2.Fill
-            PressedBorderColor: =HD_RiskName_2.BorderColor
-            PressedColor: =HD_RiskName_2.Color
-            PressedFill: =HD_RiskName_2.Fill
-            Size: =12
-            Text: ="Nội dung kiểm soát"
-            Width: =180
-            X: =51
-            Y: =528
-            ZIndex: =34
-
-        HD_RiskOwner_2 As label:
-            Color: =RGBA(92,92,92,1)
-            FocusedBorderColor: =HD_RiskOwner_2.BorderColor
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =35
-            HoverBorderColor: =HD_RiskOwner_2.BorderColor
-            HoverColor: =HD_RiskOwner_2.Color
-            HoverFill: =HD_RiskOwner_2.Fill
-            PressedBorderColor: =HD_RiskOwner_2.BorderColor
-            PressedColor: =HD_RiskOwner_2.Color
-            PressedFill: =HD_RiskOwner_2.Fill
-            Size: =12
-            Text: ="Chủ sở hữu kiểm soát"
-            Width: =180
-            X: =51
-            Y: =608
-            ZIndex: =35
-
-        inp_ControlID As text:
-            BorderThickness: =1
-            Default: =""
-            Height: =35
-            OnSelect: =
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            Width: =415
-            X: =231
-            Y: =483
-            ZIndex: =36
-
-        Rectangle4 As rectangle:
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =45
-            Width: =320
-            X: =60
-            Y: =430
-            ZIndex: =37
-
-        Label6 As label:
-            Align: =Align.Center
-            Color: =RGBA(92, 92, 92, 1)
             Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Bold
-            Height: =45
-            Size: =14
-            Text: ="Thông tin tham chiếu - Kiểm soát"
-            Width: =320
-            X: =60
-            Y: =430
-            ZIndex: =38
+            Size: =12
+            Text: =varRiskCode.Risk_Name
+            Width: =472
+            X: =831
+            Y: =480
+            ZIndex: =62
 
-        HD_RiskImportant_3 As label:
+        Label8_10 As label:
+            BorderThickness: =1
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Segoe UI'
+            Height: =88
+            Overflow: =Overflow.Scroll
+            Size: =12
+            Text: =varRiskCode.Risk_Description
+            Width: =1085
+            X: =218
+            Y: =531
+            ZIndex: =63
+
+        Label8_11 As label:
+            BorderThickness: =1
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Segoe UI'
+            Size: =12
+            Text: =varRiskCode.Risk_Owner
+            Width: =445
+            X: =218
+            Y: =634
+            ZIndex: =64
+
+        Label8_12 As label:
+            BorderThickness: =1
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Segoe UI'
+            Size: =12
+            Text: =varRiskCode.Risk_Important
+            Width: =445
+            X: =218
+            Y: =686
+            ZIndex: =65
+
+        Label8_36 As label:
+            BorderThickness: =1
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Segoe UI'
+            Size: =12
+            Text: =varRiskCode.Risk_Status
+            Width: =472
+            X: =831
+            Y: =686
+            ZIndex: =66
+
+        Label8_37 As label:
+            BorderThickness: =1
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Segoe UI'
+            Size: =12
+            Text: =varRiskCode.Risk_Code
+            Width: =446
+            X: =217
+            Y: =480
+            ZIndex: =67
+
+        HD_RiskStatus_9 As label:
             Color: =RGBA(92,92,92,1)
-            FocusedBorderColor: =HD_RiskImportant_3.BorderColor
+            FocusedBorderColor: =HD_RiskStatus_9.BorderColor
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
-            Height: =35
-            HoverBorderColor: =HD_RiskImportant_3.BorderColor
-            HoverColor: =HD_RiskImportant_3.Color
-            HoverFill: =HD_RiskImportant_3.Fill
-            PressedBorderColor: =HD_RiskImportant_3.BorderColor
-            PressedColor: =HD_RiskImportant_3.Color
-            PressedFill: =HD_RiskImportant_3.Fill
+            HoverBorderColor: =HD_RiskStatus_9.BorderColor
+            HoverColor: =HD_RiskStatus_9.Color
+            HoverFill: =HD_RiskStatus_9.Fill
+            PressedBorderColor: =HD_RiskStatus_9.BorderColor
+            PressedColor: =HD_RiskStatus_9.Color
+            PressedFill: =HD_RiskStatus_9.Fill
             Size: =12
-            Text: ="Loại kiểm soát"
-            Width: =180
-            X: =51
-            Y: =698
-            ZIndex: =39
+            Text: ="Đơn vị CSH"
+            Width: =130
+            X: =695
+            Y: =634
+            ZIndex: =68
 
-    Label8_10 As label:
-        BorderThickness: =1
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =Font.'Segoe UI'
-        Height: =35
-        Size: =12
-        Text: =SelectedControl.Control_Type
-        Width: =415
-        X: =231
-        Y: =698
-        ZIndex: =57
-
-    Label8_11 As label:
-        BorderThickness: =1
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =Font.'Segoe UI'
-        Height: =35
-        Size: =12
-        Text: =SelectedRisk.Risk_Code
-        Width: =415
-        X: =895
-        Y: =483
-        ZIndex: =58
-
-    Gal_RiskSelecttOwner_11 As gallery.galleryVertical:
-        AccessibleLabel: ="People for selection"
-        BorderColor: =RGBA(0, 0, 0, 0.16)
-        BorderThickness: =1
-        DisabledBorderColor: =Gal_RiskSelecttOwner_11.BorderColor
-        DisabledFill: =Gal_RiskSelecttOwner_11.Fill
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =200
-        HoverBorderColor: =Gal_RiskSelecttOwner_11.BorderColor
-        HoverFill: =Gal_RiskSelecttOwner_11.Fill
-        Items: |
-            =If(!IsBlank(inp_ControlID.Text), 
-            Search(Risk_Control,inp_ControlID.Text,"Control_Code"))
-        Layout: =Layout.Vertical
-        LoadingSpinnerColor: =Gal_RiskSelecttOwner_11.BorderColor
-        OnSelect: |-
-            = UpdateContext({SelectedControl:ThisItem, HidePeopleGallery1:true, 
-             varLBControlOwner: true});
-             UpdateContext({SelectedRisk:LookUp(Risks,Risk_Code=ThisItem.Risk_ID)})
-        PressedBorderColor: =Gal_RiskSelecttOwner_11.BorderColor
-        PressedFill: =Gal_RiskSelecttOwner_11.Fill
-        TemplateSize: =53
-        Visible: |-
-            =Not(IsBlank(inp_ControlID)) &&
-            !HidePeopleGallery1
-        Width: =415
-        X: =231
-        Y: =526
-        ZIndex: =59
-
-        LabelPersonDisplayName_13 As label:
-            FocusedBorderColor: =LabelPersonDisplayName_13.BorderColor
+        Label8_38 As label:
+            BorderThickness: =1
+            Fill: =RGBA(255, 255, 255, 1)
             Font: =Font.'Segoe UI'
-            Height: =53
-            HoverBorderColor: =LabelPersonDisplayName_13.BorderColor
-            HoverColor: =RGBA(0, 0, 0, 1)
-            HoverFill: =RGBA(244, 244, 244, 1)
-            OnSelect: =Select(Parent)
-            PaddingBottom: =15
-            PaddingLeft: =20
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedBorderColor: =LabelPersonDisplayName_13.BorderColor
-            PressedColor: =LabelPersonDisplayName_13.Color
-            PressedFill: =LabelPersonDisplayName_13.Fill
-            Size: =10
-            TabIndex: =0
-            Text: =ThisItem.Control_Code&" - "&ThisItem.Control_Description
-            Width: =405
-            ZIndex: =1
-
-    Label8_12 As label:
-        BorderThickness: =1
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =Font.'Segoe UI'
-        Height: =70
-        Overflow: =Overflow.Scroll
-        Size: =12
-        Text: =SelectedRisk.Risk_Description
-        Width: =415
-        X: =895
-        Y: =529
-        ZIndex: =60
-
-    Label8_13 As label:
-        BorderThickness: =1
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =Font.'Segoe UI'
-        Height: =35
-        Size: =12
-        Text: =SelectedRisk.Risk_Owner
-        Width: =415
-        X: =895
-        Y: =608
-        ZIndex: =61
-
-    Label8_14 As label:
-        BorderThickness: =1
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =Font.'Segoe UI'
-        Height: =35
-        Size: =12
-        Text: =SelectedRisk.Risk_Status
-        Width: =415
-        X: =895
-        Y: =653
-        ZIndex: =62
-
-    Label8_15 As label:
-        BorderThickness: =1
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =Font.'Segoe UI'
-        Height: =35
-        Size: =12
-        Text: =SelectedRisk.Risk_Important
-        Width: =415
-        X: =895
-        Y: =698
-        ZIndex: =63
+            Size: =12
+            Text: =varRiskCode.Risk_Status
+            Width: =472
+            X: =831
+            Y: =634
+            ZIndex: =69
 

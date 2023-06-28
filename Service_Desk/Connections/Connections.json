@@ -8,11 +8,11 @@
     "datasets": {
       "https://pnjcomvn.sharepoint.com/sites/PNJDataTeam": {
         "dataSources": {
-          "Issue tracker list": {
-            "tableName": "f3942b34-0b80-4edd-8404-f8ad2abee355"
-          },
           "Table_Risk": {
             "tableName": "b37422e0-2fe5-4c78-a97e-385e4fcd9976"
+          },
+          "Table_Risk_Configure": {
+            "tableName": "ee05c82c-a8d4-43bd-9f9e-7d66069b083d"
           },
           "Table_Risk_Control": {
             "tableName": "15ef443b-d535-45ae-ae64-dfb72857b554"
@@ -24,10 +24,10 @@
       }
     },
     "dataSources": [
-      "Issue tracker list",
       "Table_Risk",
       "Table_Risk_Control",
-      "Table_Risk_Solution"
+      "Table_Risk_Solution",
+      "Table_Risk_Configure"
     ],
     "dependencies": {},
     "dependents": [],

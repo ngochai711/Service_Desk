@@ -2,7 +2,7 @@
     Fill: =RGBA(237, 237, 237, 1)
     OnHidden: =
     OnVisible: |-
-        =UpdateContext({varRiskControlKey:"CT"&Text(CountRows(Risk_Control) + 1,"00000")})
+        =UpdateContext({varRiskControlKey:"CT"&Text(CountRows(Table_Risk_Control) + 1,"00000")})
 
     RectQuickActionBar2_4 As rectangle:
         Fill: =RGBA(0, 52, 104, 1)

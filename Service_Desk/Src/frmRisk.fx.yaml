@@ -3,7 +3,7 @@
     OnHidden: =
     OnVisible: |+
         =UpdateContext({varTemp2:true});
-        UpdateContext({varRiskKey:"RK"&Text(CountRows(Risks) + 1,"00000")});
+        UpdateContext({varRiskKey:"RK"&Text(CountRows(Table_Risk) + 1,"00000")});
         UpdateContext({varRiskGOPOverall_Text:"Thấp"});
         UpdateContext({varRiskGOPOverall_Index:1});
         UpdateContext({varRiskGOPRank:"Nhỏ"});

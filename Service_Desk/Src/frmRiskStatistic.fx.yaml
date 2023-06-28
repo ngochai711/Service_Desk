@@ -599,7 +599,7 @@
                     =Set(var_Timer,false);
                     Set(var_Timer,true);
                     Set(var_Click,var_Click+1);
-                    If(var_Click=2,Navigate(frmRiskSolutionEdit,ScreenTransition.Fade);Set(varRiskSolution,ThisItem))
+                    If(var_Click=2,Navigate(frmRiskSolutionEdit,ScreenTransition.Fade);Set(varRiskSolution,ThisItem));
                 PressedBorderColor: =
                 PressedColor: =
                 PressedFill: =
@@ -701,7 +701,7 @@
                 PressedFill: =LabelPersonDisplayName.Fill
                 Size: =10
                 TabIndex: =0
-                Text: =ThisItem.DisplayName&ThisItem.Mail
+                Text: =ThisItem.DisplayName&" - "&ThisItem.Department
                 Width: =335
                 ZIndex: =1
 
@@ -927,12 +927,7 @@
             BorderThickness: =0
             Default: ="All"
             Height: =38
-            Items: |-
-                =Table({Value:"Thấp",Index:1},
-                {Value:"Trung bình",Index:2},
-                {Value:"Cao",Index:3},
-                {Value:"Rất cao",Index:4},{Value:"All",Index:5}
-                )
+            Items: =Filter(Table_Risk_Configure,SECTION="RISK"&&TYPE="Risk_Status")
             Width: =125
             X: =863
             Y: =103

@@ -1,7 +1,7 @@
 "frmRiskSolution As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =RGBA(237, 237, 237, 1)
     OnVisible: |-
-        =UpdateContext({varRiskSolutionKey:"SL"&Text((CountRows(Risk_Solution)+1),"00000")});
+        =UpdateContext({varRiskSolutionKey:"SL"&Text((CountRows(Table_Risk_Solution)+1),"00000")});
 
     RectQuickActionBar2_1 As rectangle:
         Fill: =RGBA(0, 52, 104, 1)

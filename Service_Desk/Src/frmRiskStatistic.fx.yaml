@@ -483,50 +483,6 @@
                 Width: =455
                 ZIndex: =8
 
-            NextArrow1_1 As icon.ChevronRight:
-                AccessibleLabel: =Self.Tooltip
-                Color: =RGBA(166, 166, 166, 1)
-                Height: =126
-                Icon: =Icon.ChevronRight
-                OnSelect: |-
-                    =UpdateContext({varControlCode:ThisItem.Control_Code})
-                    /*Collect(
-                        RiskInfo,
-                        {
-                            RiskId: ThisItem.RR_MA,
-                            RiskStatus: ThisItem.RR_TRANGTHAI,
-                            RiskCreateDate: Text(ThisItem.'NGAY TẠO',"dd/mm/yyyy"),
-                            RiskImportant: ThisItem.RR_TRONGYEU,
-                            RiskName: ThisItem.RR_TEN,
-                            RiskDescribe: ThisItem.RR_MOTA,
-                            RiskReason: ThisItem.RR_NGUYENNHAN,
-                            RiskConsequence: ThisItem.RR_HAUQUA,
-                            RiskOwner: ThisItem.RR_CSH,
-                            RiskGOPFinance: ThisItem.RR_GOP_TAICHINH,
-                            RiskGOPnonFinance: ThisItem.RR_GOP_PHITAICHINH,
-                            RiskGOPOverall: ThisItem.RR_GOP_TONGTHE,
-                            RiskGOPRate: ThisItem.RR_GOP_KHANANGXAYRA,
-                            RiskGOPGrade: ThisItem.RR_GOP_DIEM,
-                            RiskGOPRank: ThisItem.RR_GOP_XEPHANG,
-                            RiskGOPEvaluate: ThisItem.RR_GOP_CSDANHGIA,
-                            RiskTHUANFinance: ThisItem.RR_THUAN_TAICHINH,
-                            RiskTHUANnonFinance: ThisItem.RR_THUAN_PHITAICHINH,
-                            RiskTHUANOverall: ThisItem.RR_THUAN_TONGTHE,
-                            RiskTHUANRate: ThisItem.RR_THUAN_KHANANGXAYRA,
-                            RiskTHUANGrade: ThisItem.RR_THUAN_DIEM,
-                            RiskTHUANRank: ThisItem.RR_THUAN_XEPHANG,
-                            RiskTHUANEvaluate: ThisItem.RR_THUAN_CSDANHGIA
-                        }
-                    )*/
-                PaddingBottom: =16
-                PaddingLeft: =16
-                PaddingRight: =16
-                PaddingTop: =16
-                Tooltip: ="Hiện kiểm soát"
-                Width: =60
-                X: =396
-                ZIndex: =9
-
         Rectangle1_4 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
             Fill: =RGBA(215, 223, 240, 1)
@@ -879,7 +835,7 @@
         "Gallery1_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
             Height: =499
-            Items: =Table_Risk_Control
+            Items: =Filter(Table_Risk_Solution,Risk_ID=varRiskCode)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
@@ -896,7 +852,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =ThisItem.Control_Code
+                Text: =ThisItem.Action_Code
                 VerticalAlign: =VerticalAlign.Top
                 Width: =390
                 X: =5
@@ -988,7 +944,7 @@
                     =Set(var_Timer,false);
                     Set(var_Timer,true);
                     Set(var_Click,var_Click+1);
-                    If(var_Click=2,Navigate(frmRiskSolutionEdit,ScreenTransition.Fade);var_Click=0;Set(varRiskInfo, ThisItem))
+                    If(var_Click=2,Navigate(frmRiskSolutionEdit,ScreenTransition.Fade);)
                 PressedBorderColor: =
                 PressedColor: =
                 PressedFill: =

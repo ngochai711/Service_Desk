@@ -46,39 +46,5 @@
     "dependencies": {},
     "dependents": [],
     "id": "88c1ac81-89e0-4ad5-9744-f9073c9503d6"
-  },
-  "8b9b6a0b-05de-4a43-a8f1-d3ee4ba6a368": {
-    "connectionRef": {
-      "displayName": "Excel Online (Business)",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1639/1.0.1639.3315/excelonlinebusiness/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness"
-    },
-    "datasets": {
-      "groups%252F0be597da-943b-43c0-ac9a-4da2ac0e7e5d,b%2521isfcMv9O60qSdNmoNPYqVVQL-DBOXCRAupISYaIEdk8VFGxm1q-wTJcQykTCqcs6,01TCJVRABBIRWZBD3V4NGZEN5DHAAZTS4A": {
-        "dataSources": {
-          "Risk_Connection": {
-            "tableName": "{C1DDD4E8-51AE-4E95-84FB-D713C6570043}"
-          },
-          "Risk_Control": {
-            "tableName": "{E15490D9-EC06-45D1-8759-524BB4B8567B}"
-          },
-          "Risk_Solution": {
-            "tableName": "{A6400B47-2B57-42B0-AAF2-CA0CC6FD96FC}"
-          },
-          "Risks": {
-            "tableName": "{6081F979-7556-4810-8CFB-D7FD8972FDC1}"
-          }
-        }
-      }
-    },
-    "dataSources": [
-      "Risk_Connection",
-      "Risk_Solution",
-      "Risk_Control",
-      "Risks"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "8b9b6a0b-05de-4a43-a8f1-d3ee4ba6a368"
   }
 }

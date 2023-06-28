@@ -62,7 +62,7 @@
         Height: =88
         OnSelect: |-
             =If(!IsBlank(inp_ActionEvaluationBasis) && !IsBlank(inp_ActionRank) && !IsBlank(inp_ActionDescription),
-            Patch(Risk_Solution,Defaults(Risk_Solution),{Action_Code:Label8.Text,Action_Create_Date:Text(dp_ActionCreateDate.SelectedDate,"dd/mm/yyyy"),Action_Status:"Mở",Action_Description:inp_ActionDescription.Text,Action_Owner:LB_RiskOwner_2.Text,Action_Plan_Start_Date:Text(dp_ActionStartDate.SelectedDate,"dd/mm/yyyy"),Action_Plan_Finish_Date:Text(dp_ActionEndDate.SelectedDate,"dd/mm/yyyy"),Action_Actual_Finish_Date:Text(dp_ActionRealEndDate.SelectedDate,"dd/mm/yyyy"),Action_Evaluation:cb_ActionEvaluation.Selected.Value,Action_Overal_Rating:cb_ActionOveralEvaluation.Selected.Value,Action_Evaluation_Basis:inp_ActionEvaluationBasis.Text,Action_Rank:inp_ActionRank.Text,RiskControl_ID:SelectedControl.Control_Code})
+            Patch(Risk_Solution,Defaults(Risk_Solution),{Action_Code:Label8.Text,Action_Create_Date:dp_ActionCreateDate.SelectedDate,Action_Status:cb_ActionStatus.Selected.Value,Action_Description:inp_ActionDescription.Text,Action_Owner:LB_RiskOwner_2.Text,Action_Plan_Start_Date:Text(dp_ActionStartDate.SelectedDate,"dd/mm/yyyy"),Action_Plan_Finish_Date:Text(dp_ActionEndDate.SelectedDate,"dd/mm/yyyy"),Action_Actual_Finish_Date:Text(dp_ActionRealEndDate.SelectedDate,"dd/mm/yyyy"),Action_Evaluation:cb_ActionEvaluation.Selected.Value,Action_Overal_Rating:cb_ActionOveralEvaluation.Selected.Value,Action_Evaluation_Basis:inp_ActionEvaluationBasis.Text,RiskControl_ID:varRiskCode.Risk_Code})
             );
             
             Navigate(frmRiskStatistic,ScreenTransition.Fade);
@@ -528,7 +528,7 @@
             Width: =388
             ZIndex: =1
 
-    cb_ActionOveralEvaluation_2 As combobox:
+    cb_ActionStatus As combobox:
         BorderThickness: =1
         ChevronHoverBackground: =RGBA(255, 255, 255, 1)
         DefaultSelectedItems: =
@@ -537,6 +537,10 @@
         Height: =35
         InputTextPlaceholder: =""
         IsSearchable: =false
+        Items: |-
+            =Table({Value:"Không hiệu quả",Index:1},
+            {Value:"Hiệu quả một phần",Index:2},
+            {Value:"Hiệu quả",Index:3})
         OnSelect: =
         SearchFields: =["Value"]
         SearchItems: =[]

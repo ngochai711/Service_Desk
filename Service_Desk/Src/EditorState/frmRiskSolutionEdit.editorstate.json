@@ -19,7 +19,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Back_3",
-      "ParentIndex": 59,
+      "ParentIndex": 62,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3313,7 +3313,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "galleryTemplate3_24",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3359,7 +3359,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "galleryTemplate3_25",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3400,7 +3400,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Group12_1",
-      "ParentIndex": 61,
+      "ParentIndex": 60,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3451,7 +3451,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Group13_1",
-      "ParentIndex": 62,
+      "ParentIndex": 59,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3502,7 +3502,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Group8_1",
-      "ParentIndex": 60,
+      "ParentIndex": 61,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16892,7 +16892,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LabelPersonDisplayName_22",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17269,7 +17269,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LabelPersonDisplayName_23",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

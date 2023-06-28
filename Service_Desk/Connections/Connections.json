@@ -10,12 +10,24 @@
         "dataSources": {
           "Issue tracker list": {
             "tableName": "f3942b34-0b80-4edd-8404-f8ad2abee355"
+          },
+          "Table_Risk": {
+            "tableName": "b37422e0-2fe5-4c78-a97e-385e4fcd9976"
+          },
+          "Table_Risk_Control": {
+            "tableName": "15ef443b-d535-45ae-ae64-dfb72857b554"
+          },
+          "Table_Risk_Solution": {
+            "tableName": "40d1b15c-8ae3-465c-9095-a016c065b31e"
           }
         }
       }
     },
     "dataSources": [
-      "Issue tracker list"
+      "Issue tracker list",
+      "Table_Risk",
+      "Table_Risk_Control",
+      "Table_Risk_Solution"
     ],
     "dependencies": {},
     "dependents": [],

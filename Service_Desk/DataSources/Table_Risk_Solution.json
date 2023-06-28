@@ -32,7 +32,7 @@
       "field_1": "Action_Create_Date",
       "field_10": "Action_Evaluation_Basis",
       "field_11": "Action_Rank",
-      "field_12": "RiskControl_ID",
+      "field_12": "Risk_ID",
       "field_2": "Action_Status",
       "field_3": "Action_Description",
       "field_4": "Action_Owner",

@@ -928,7 +928,7 @@
             BorderThickness: =0
             Default: ="All"
             Height: =38
-            Items: =Filter(Table_Risk_Configure,SECTION="RISK"&&TYPE="Risk_Status")
+            Items: =Filter(Table_Risk_Configure,SECTION="RISK"&&TYPE="Gross_Finance")
             Width: =125
             X: =863
             Y: =103

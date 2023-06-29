@@ -994,11 +994,8 @@
             BorderThickness: =0
             Default: ="All"
             Height: =39
-            Items: |-
-                =Table({Value:"Thấp",Index:1},
-                {Value:"Trung bình",Index:2},
-                {Value:"Cao",Index:3},
-                {Value:"Rất cao",Index:4},{Value:"All",Index:5})
+            Items: |
+                =Filter(Table_Risk,Risk_Code=varRiskCode)
             Width: =125
             X: =586
             Y: =103

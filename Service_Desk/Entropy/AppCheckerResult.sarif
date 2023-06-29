@@ -10624,327 +10624,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRiskEdit.Button1_4.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.Button1_4.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 254,
-                  "snippet": {
-                    "text": "Risks"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit.Button1_4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Risks"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.Button1_4.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.Button1_4.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 267,
-                  "snippet": {
-                    "text": "Risks"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit.Button1_4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Risks"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.Button1_4.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.Button1_4.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 45,
-                  "charOffset": 260,
-                  "snippet": {
-                    "text": "LookUp(Risks,Risk_Code=varRiskInfo.Risk_Code)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit.Button1_4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LookUp"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.Button1_4.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.Button1_4.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 273,
-                  "snippet": {
-                    "text": "Risk_Code"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit.Button1_4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Risk_Code"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.Button1_4.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.Button1_4.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 282,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit.Button1_4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.Button1_4.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.Button1_4.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1140,
-                  "charOffset": 248,
-                  "snippet": {
-                    "text": "Patch(Risks,LookUp(Risks,Risk_Code=varRiskInfo.Risk_Code),{Risk_Status:cb_RiskStatus_1.Selected.Value,Risk_Create_Date:Text(dp_RiskCreateDate_1.SelectedDate,\"dd/mm/yyyy\"),\r\nRisk_Important:cb_RiskImportant_1.Selected.Value,Risk_Name:inp_RiskName_1.Text,Risk_Description:inp_RiskDescription_1.Text,Risk_Reason:inp_RiskReason_1.Text,Risk_Consequence:inp_RiskConsequence_1.Text,Risk_Owner:SelectedRiskOwner.DisplayName&\" - \"&SelectedRiskOwner.Mail,Gross_Finance:cb_GrossFinance_1.Selected.Value,Gross_Non_Finance:cb_GrossnonFinance_1.Selected.Value,Gross_Overall_Finance:lb_GrossOverall_1.Text,Gross_Possibility:cb_GrossPossibility_1.Selected.Value,Gross_Score:cb_GrossPossibility_1.Selected.Index&\"-\"&varRiskGOPOverall_Index,Gross_Rank:lb_GrossRank_1.Text,Gross_Evaluation_Basis: inp_GrossEvaluation_1.Text,Net_Finance:cb_NetFinance_1.Selected.Value,Net_Non_Finance:cb_NetnonFinance_1.Selected.Value,Net_Overall_Finance:varRiskGOPOverall_Text,Net_Possibility:cb_NetPossibility_1.Selected.Value,Net_Score:cb_NetPossibility_1.Selected.Index&\"-\"&varRiskTHUANOverall_Index,Net_Rank:lb_NetRank_1.Text,Net_Evaluation_Basis:inp_NetEvaluation_1.Text})"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit.Button1_4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Patch"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.Button1_4.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.Button1_4.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1081,
-                  "charOffset": 306,
-                  "snippet": {
-                    "text": "{Risk_Status:cb_RiskStatus_1.Selected.Value,Risk_Create_Date:Text(dp_RiskCreateDate_1.SelectedDate,\"dd/mm/yyyy\"),\r\nRisk_Important:cb_RiskImportant_1.Selected.Value,Risk_Name:inp_RiskName_1.Text,Risk_Description:inp_RiskDescription_1.Text,Risk_Reason:inp_RiskReason_1.Text,Risk_Consequence:inp_RiskConsequence_1.Text,Risk_Owner:SelectedRiskOwner.DisplayName&\" - \"&SelectedRiskOwner.Mail,Gross_Finance:cb_GrossFinance_1.Selected.Value,Gross_Non_Finance:cb_GrossnonFinance_1.Selected.Value,Gross_Overall_Finance:lb_GrossOverall_1.Text,Gross_Possibility:cb_GrossPossibility_1.Selected.Value,Gross_Score:cb_GrossPossibility_1.Selected.Index&\"-\"&varRiskGOPOverall_Index,Gross_Rank:lb_GrossRank_1.Text,Gross_Evaluation_Basis: inp_GrossEvaluation_1.Text,Net_Finance:cb_NetFinance_1.Selected.Value,Net_Non_Finance:cb_NetnonFinance_1.Selected.Value,Net_Overall_Finance:varRiskGOPOverall_Text,Net_Possibility:cb_NetPossibility_1.Selected.Value,Net_Score:cb_NetPossibility_1.Selected.Index&\"-\"&varRiskTHUANOverall_Index,Net_Rank:lb_NetRank_1.Text,Net_Evaluation_Basis:inp_NetEvaluation_1.Text}"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit.Button1_4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Gross_Evaluation_Basis"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrColDNE-Name",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.Button1_4.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.Button1_4.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1391,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "If(IsBlank(inp_RiskName_1) || IsBlank(inp_RiskDescription_1) || IsBlank(inp_RiskReason_1) || IsBlank(lb_RiskOwner_1) || IsBlank(cb_RiskImportant_1) || IsBlank(cb_RiskStatus_1) || IsBlank(inp_RiskConsequence_1),\r\nUpdateContext({varTemp2:false}),\r\n\r\nPatch(Risks,LookUp(Risks,Risk_Code=varRiskInfo.Risk_Code),{Risk_Status:cb_RiskStatus_1.Selected.Value,Risk_Create_Date:Text(dp_RiskCreateDate_1.SelectedDate,\"dd/mm/yyyy\"),\r\nRisk_Important:cb_RiskImportant_1.Selected.Value,Risk_Name:inp_RiskName_1.Text,Risk_Description:inp_RiskDescription_1.Text,Risk_Reason:inp_RiskReason_1.Text,Risk_Consequence:inp_RiskConsequence_1.Text,Risk_Owner:SelectedRiskOwner.DisplayName&\" - \"&SelectedRiskOwner.Mail,Gross_Finance:cb_GrossFinance_1.Selected.Value,Gross_Non_Finance:cb_GrossnonFinance_1.Selected.Value,Gross_Overall_Finance:lb_GrossOverall_1.Text,Gross_Possibility:cb_GrossPossibility_1.Selected.Value,Gross_Score:cb_GrossPossibility_1.Selected.Index&\"-\"&varRiskGOPOverall_Index,Gross_Rank:lb_GrossRank_1.Text,Gross_Evaluation_Basis: inp_GrossEvaluation_1.Text,Net_Finance:cb_NetFinance_1.Selected.Value,Net_Non_Finance:cb_NetnonFinance_1.Selected.Value,Net_Overall_Finance:varRiskGOPOverall_Text,Net_Possibility:cb_NetPossibility_1.Selected.Value,Net_Score:cb_NetPossibility_1.Selected.Index&\"-\"&varRiskTHUANOverall_Index,Net_Rank:lb_NetRank_1.Text,Net_Evaluation_Basis:inp_NetEvaluation_1.Text})\r\n)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit.Button1_4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "If"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "frmRiskSolution.OnVisible"
                 }
               ],
@@ -16109,49 +15788,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRiskEdit.lb_GrossScore_2.FocusedBorderThickness"
+                  "fullyQualifiedName": "frmRiskEdit.lb_RiskOwner_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "frmRiskEdit.lb_GrossScore_2.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit.lb_GrossScore_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskEdit.lb_GrossScore_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.lb_GrossScore_2.TabIndex",
+                  "fullyQualifiedName": "frmRiskEdit.lb_RiskOwner_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "frmRiskEdit",
-                "type": "frmRiskEdit.lb_GrossScore_2"
+                "type": "frmRiskEdit.lb_RiskOwner_2"
               }
             }
           ],
@@ -16163,6 +15812,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRiskEdit.lb_RiskOwner_2.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRiskEdit.lb_RiskOwner_2.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "frmRiskEdit",
+                "type": "frmRiskEdit.lb_RiskOwner_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -19210,6 +18889,36 @@
               },
               "properties": {
                 "member": "varLBControlOwner",
+                "module": "frmRiskEdit",
+                "type": "frmRiskEdit"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRiskEdit.varTabSelected1"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRiskEdit.varTabSelected1",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "varTabSelected1",
                 "module": "frmRiskEdit",
                 "type": "frmRiskEdit"
               }

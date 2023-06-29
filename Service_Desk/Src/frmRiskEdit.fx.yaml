@@ -3,12 +3,13 @@
     OnVisible: |-
         =UpdateContext({varTemp2:true});
         UpdateContext({varRiskKey:varRiskInfo.Risk_Code});
-        UpdateContext({HidePeopleGallery:true, varLBRiskOwner: true});
+        UpdateContext({varLBRiskOwnerTemp:true});
         UpdateContext({varRiskGOPOverall_Text:varRiskInfo.Gross_Overall_Finance});
         UpdateContext({varTabSelected1:true});
         UpdateContext({varRiskGOPRank:varRiskInfo.Gross_Rank});
         UpdateContext({varRiskTHUANOverall_Text:varRiskInfo.Net_Overall_Finance});
         UpdateContext({varRiskTHUANRank:varRiskInfo.Net_Rank});
+        UpdateContext({varTabSelected:1});
 
     RectQuickActionBar2_6 As rectangle:
         Fill: =RGBA(0, 52, 104, 1)
@@ -41,10 +42,10 @@
         Font: =Font.'Segoe UI'
         Height: =88
         OnSelect: |-
-            =If(IsBlank(inp_RiskName_1) || IsBlank(inp_RiskDescription_1) || IsBlank(inp_RiskReason_1) || IsBlank(lb_RiskOwner_1) || IsBlank(cb_RiskImportant_1) || IsBlank(cb_RiskStatus_1) || IsBlank(inp_RiskConsequence_1),
+            =If(IsBlank(inp_RiskName_1) || IsBlank(inp_RiskDescription_1) || IsBlank(inp_RiskReason_1) || IsBlank(lb_RiskOwner_1) || IsBlank(cb_RiskImportant_1) || IsBlank(cb_RiskStatus_1) || IsBlank(inp_RiskConsequence_1) || varLBRiskOwner=true,
             UpdateContext({varTemp2:false}),
             
-            Patch(Risks,LookUp(Risks,Risk_Code=varRiskInfo.Risk_Code),{Risk_Status:cb_RiskStatus_1.Selected.Value,Risk_Create_Date:Text(dp_RiskCreateDate_1.SelectedDate,"dd/mm/yyyy"),
+            Patch(Table_Risk,LookUp(Table_Risk,Risk_Code=varRiskInfo.Risk_Code),{Risk_Status:cb_RiskStatus_1.Selected.Value,Risk_Create_Date:dp_RiskCreateDate_1.SelectedDate,
             Risk_Important:cb_RiskImportant_1.Selected.Value,Risk_Name:inp_RiskName_1.Text,Risk_Description:inp_RiskDescription_1.Text,Risk_Reason:inp_RiskReason_1.Text,Risk_Consequence:inp_RiskConsequence_1.Text,Risk_Owner:SelectedRiskOwner.DisplayName&" - "&SelectedRiskOwner.Mail,Gross_Finance:cb_GrossFinance_1.Selected.Value,Gross_Non_Finance:cb_GrossnonFinance_1.Selected.Value,Gross_Overall_Finance:lb_GrossOverall_1.Text,Gross_Possibility:cb_GrossPossibility_1.Selected.Value,Gross_Score:cb_GrossPossibility_1.Selected.Index&"-"&varRiskGOPOverall_Index,Gross_Rank:lb_GrossRank_1.Text,Gross_Evaluation_Basis: inp_GrossEvaluation_1.Text,Net_Finance:cb_NetFinance_1.Selected.Value,Net_Non_Finance:cb_NetnonFinance_1.Selected.Value,Net_Overall_Finance:varRiskGOPOverall_Text,Net_Possibility:cb_NetPossibility_1.Selected.Value,Net_Score:cb_NetPossibility_1.Selected.Index&"-"&varRiskTHUANOverall_Index,Net_Rank:lb_NetRank_1.Text,Net_Evaluation_Basis:inp_NetEvaluation_1.Text})
             );
             
@@ -1235,18 +1236,17 @@
         Y: =535
         ZIndex: =59
 
-    lb_GrossScore_2 As label:
-        BorderThickness: =1
+    lb_RiskOwner_2 As label:
         Fill: =RGBA(255, 255, 255, 1)
         Font: =Font.'Segoe UI'
-        Height: =35
+        Height: =26
         OnSelect: |-
-            =UpdateContext({varTabSelected1:false});
+            =UpdateContext({varLBRiskOwnerTemp:false})
         Size: =12
-        Text: =varRiskInfo.Gross_Score
-        Visible: =varTabSelected1
-        Width: =200
-        X: =900
-        Y: =535
+        Text: =varRiskInfo.Risk_Owner
+        Visible: =varLBRiskOwnerTemp
+        Width: =356
+        X: =954
+        Y: =149
         ZIndex: =60
 

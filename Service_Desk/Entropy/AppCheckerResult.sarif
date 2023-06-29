@@ -6740,246 +6740,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRiskSolution.Button1_2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskSolution.Button1_2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 82,
-                  "snippet": {
-                    "text": "Risk_Solution"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "frmRiskSolution",
-                "type": "frmRiskSolution.Button1_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Risk_Solution"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskSolution.Button1_2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskSolution.Button1_2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 105,
-                  "snippet": {
-                    "text": "Risk_Solution"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "frmRiskSolution",
-                "type": "frmRiskSolution.Button1_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Risk_Solution"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskSolution.Button1_2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskSolution.Button1_2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 23,
-                  "charOffset": 96,
-                  "snippet": {
-                    "text": "Defaults(Risk_Solution)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "frmRiskSolution",
-                "type": "frmRiskSolution.Button1_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Defaults"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskSolution.Button1_2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskSolution.Button1_2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 679,
-                  "charOffset": 76,
-                  "snippet": {
-                    "text": "Patch(Risk_Solution,Defaults(Risk_Solution),{Action_Code:Label8.Text,Action_Create_Date:dp_ActionCreateDate.SelectedDate,Action_Status:cb_ActionStatus.Selected.Value,Action_Description:inp_ActionDescription.Text,Action_Owner:LB_RiskOwner_2.Text,Action_Plan_Start_Date:Text(dp_ActionStartDate.SelectedDate,\"dd/mm/yyyy\"),Action_Plan_Finish_Date:Text(dp_ActionEndDate.SelectedDate,\"dd/mm/yyyy\"),Action_Actual_Finish_Date:Text(dp_ActionRealEndDate.SelectedDate,\"dd/mm/yyyy\"),Action_Evaluation:cb_ActionEvaluation.Selected.Value,Action_Overal_Rating:cb_ActionOveralEvaluation.Selected.Value,Action_Evaluation_Basis:inp_ActionEvaluationBasis.Text,RiskControl_ID:varRiskCode.Risk_Code})"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "frmRiskSolution",
-                "type": "frmRiskSolution.Button1_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Patch"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskSolution.Button1_2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskSolution.Button1_2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 634,
-                  "charOffset": 120,
-                  "snippet": {
-                    "text": "{Action_Code:Label8.Text,Action_Create_Date:dp_ActionCreateDate.SelectedDate,Action_Status:cb_ActionStatus.Selected.Value,Action_Description:inp_ActionDescription.Text,Action_Owner:LB_RiskOwner_2.Text,Action_Plan_Start_Date:Text(dp_ActionStartDate.SelectedDate,\"dd/mm/yyyy\"),Action_Plan_Finish_Date:Text(dp_ActionEndDate.SelectedDate,\"dd/mm/yyyy\"),Action_Actual_Finish_Date:Text(dp_ActionRealEndDate.SelectedDate,\"dd/mm/yyyy\"),Action_Evaluation:cb_ActionEvaluation.Selected.Value,Action_Overal_Rating:cb_ActionOveralEvaluation.Selected.Value,Action_Evaluation_Basis:inp_ActionEvaluationBasis.Text,RiskControl_ID:varRiskCode.Risk_Code}"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "frmRiskSolution",
-                "type": "frmRiskSolution.Button1_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Action_Actual_Finish_Date"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrColDNE-Name",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRiskSolution.Button1_2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskSolution.Button1_2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 758,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "If(!IsBlank(inp_ActionEvaluationBasis) && !IsBlank(inp_ActionDescription),\r\nPatch(Risk_Solution,Defaults(Risk_Solution),{Action_Code:Label8.Text,Action_Create_Date:dp_ActionCreateDate.SelectedDate,Action_Status:cb_ActionStatus.Selected.Value,Action_Description:inp_ActionDescription.Text,Action_Owner:LB_RiskOwner_2.Text,Action_Plan_Start_Date:Text(dp_ActionStartDate.SelectedDate,\"dd/mm/yyyy\"),Action_Plan_Finish_Date:Text(dp_ActionEndDate.SelectedDate,\"dd/mm/yyyy\"),Action_Actual_Finish_Date:Text(dp_ActionRealEndDate.SelectedDate,\"dd/mm/yyyy\"),Action_Evaluation:cb_ActionEvaluation.Selected.Value,Action_Overal_Rating:cb_ActionOveralEvaluation.Selected.Value,Action_Evaluation_Basis:inp_ActionEvaluationBasis.Text,RiskControl_ID:varRiskCode.Risk_Code})\r\n)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "frmRiskSolution",
-                "type": "frmRiskSolution.Button1_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "If"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "frmRisk.OnVisible"
                 }
               ],
@@ -7254,7 +7014,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -7371,7 +7131,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -7488,7 +7248,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -7565,7 +7325,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -7642,7 +7402,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -7719,7 +7479,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -7796,7 +7556,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -7873,7 +7633,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -7950,7 +7710,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -8027,7 +7787,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -8104,7 +7864,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -8345,7 +8105,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -8546,7 +8306,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -8663,7 +8423,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -9064,7 +8824,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -9225,7 +8985,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -9386,7 +9146,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -9547,7 +9307,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -9748,7 +9508,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -10309,7 +10069,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -10386,7 +10146,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -10466,7 +10226,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrColDNE-Name",
-          "ruleIndex": 3
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -10543,7 +10303,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -10864,7 +10624,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -11021,7 +10781,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -11098,7 +10858,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -11175,7 +10935,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -11252,7 +11012,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -18161,20 +17921,6 @@
               }
             },
             {
-              "id": "app-ErrColDNE-Name",
-              "messageStrings": {
-                "issue": {
-                  "text": "The specified column '{0}' does not exist."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
               "id": "app-ErrIncompatibleTypesForEquality-Left-Right",
               "messageStrings": {
                 "issue": {
@@ -18218,6 +17964,20 @@
                 "howToFix": [
                   "Look at places where you use a context variable and make sure that the type (e.g., text, number, date, record, table) is compatible."
                 ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrColDNE-Name",
+              "messageStrings": {
+                "issue": {
+                  "text": "The specified column '{0}' does not exist."
+                }
+              },
+              "properties": {
+                "componentType": "app",
                 "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""

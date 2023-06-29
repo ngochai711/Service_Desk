@@ -40,7 +40,7 @@
             
                 UpdateContext({varTemp2:false}),
                 
-                Patch(Risk_Control,LookUp(Risk_Control,Control_Code=varRiskControl.Control_Code),{Control_Description:inp_ControlDescription_1.Text,Main_Control:cb_ControlMain_1.Selected.Value,Control_Owner:lb_ControlOwner_1.Text,Control_Evaluation:cb_ControlEvaluation_1.Selected.Value,Control_Evaluation_Basis:inp_ControlEvaluation_1.Text,Control_Create_Date:dp_ControlCreateDate_1.SelectedDate,Control_Status:cb_ControlStatus_1.Selected.Value,Control_Type:cb_ControlType_1.Selected.Value,Control_Frequency:cb_ControlFrequency_1.Selected.Value,Control_Classify:cb_ControlClassify_1.Selected.Value,Control_Overall_Rating:cb_ControlOverallRating_1.Selected.Value,Control_Rating_Basis:inp_ControlOverallRating_1.Text,Risk_ID:varRiskCode.Risk_Code}
+                Patch(Table_Risk_Control,LookUp(Table_Risk_Control,Control_Code=varRiskControl.Control_Code),{Control_Description:inp_ControlDescription_1.Text,Main_Control:cb_ControlMain_1.Selected.Value,Control_Owner:lb_ControlOwner_1.Text,Control_Evaluation:cb_ControlEvaluation_1.Selected.Value,Control_Evaluation_Basis:inp_ControlEvaluation_1.Text,Control_Create_Date:dp_ControlCreateDate_1.SelectedDate,Control_Status:cb_ControlStatus_1.Selected.Value,Control_Type:cb_ControlType_1.Selected.Value,Control_Frequency:cb_ControlFrequency_1.Selected.Value,Control_Classify:cb_ControlClassify_1.Selected.Value,Control_Overall_Rating:cb_ControlOverallRating_1.Selected.Value,Control_Rating_Basis:inp_ControlOverallRating_1.Text,Risk_ID:varRiskCode.Risk_Code}
             ));
             
             Navigate(frmRiskStatistic,ScreenTransition.Fade);

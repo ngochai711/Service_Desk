@@ -11,11 +11,17 @@
           "Table_Risk": {
             "tableName": "b37422e0-2fe5-4c78-a97e-385e4fcd9976"
           },
+          "Table_Risk_Account": {
+            "tableName": "b7fd6a7f-e5e6-44e8-90ec-0369cd5f1877"
+          },
           "Table_Risk_Configure": {
             "tableName": "ee05c82c-a8d4-43bd-9f9e-7d66069b083d"
           },
           "Table_Risk_Control": {
             "tableName": "15ef443b-d535-45ae-ae64-dfb72857b554"
+          },
+          "Table_Risk_Role": {
+            "tableName": "3ae0fee0-06ff-47a9-8deb-b48115c8a754"
           },
           "Table_Risk_Solution": {
             "tableName": "40d1b15c-8ae3-465c-9095-a016c065b31e"
@@ -27,7 +33,9 @@
       "Table_Risk",
       "Table_Risk_Control",
       "Table_Risk_Solution",
-      "Table_Risk_Configure"
+      "Table_Risk_Configure",
+      "Table_Risk_Role",
+      "Table_Risk_Account"
     ],
     "dependencies": {},
     "dependents": [],

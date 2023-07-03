@@ -1,0 +1,93 @@
+"frmRiskLogin As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    Height: =Max(App.Height, App.DesignHeight)
+    OnVisible: =Set(var_Click,0)
+    Width: =Max(App.Width, App.DesignWidth)
+
+    inp_Password As text:
+        Default: =""
+        HintText: ="Mật khẩu"
+        Mode: =TextMode.Password
+        X: =988
+        Y: =335
+        ZIndex: =15
+
+    inp_Username As text:
+        Default: =""
+        HintText: ="Tên đăng nhập"
+        X: =988
+        Y: =270
+        ZIndex: =16
+
+    btnLogin As button:
+        Height: =62
+        OnSelect: |-
+            =UpdateContext({varCheckAccount: LookUp(Table_Risk_Account,And(inp_Username.Text = Username,inp_Password.Text = Password))});
+            
+            If(
+                !IsBlank(varCheckAccount)
+                ,
+                Navigate(
+                    frmRiskStatistic,
+                    ScreenTransition.CoverRight
+                    //{varUserinfo:txtUsername}
+                );
+                Set(varUserAccess,varCheckAccount);
+                ,
+                Notify(
+                    "Sai tài khoản hoặc mật khẩu!!! Vui lòng nhập lại ",
+                    NotificationType.Error
+                )
+            );
+            Reset(inp_Username);
+            Reset(inp_Password);
+        Text: ="LOGIN"
+        Width: =260
+        X: =1025
+        Y: =416
+        ZIndex: =17
+
+    Label11 As label:
+        Text: |-
+            ="Tên Đăng Nhập:"
+        X: =800
+        Y: =270
+        ZIndex: =18
+
+    Label11_1 As label:
+        Text: |-
+            ="Mật Khẩu:"
+        X: =800
+        Y: =335
+        ZIndex: =19
+
+    Group2_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =22
+
+        RectQuickActionBar2_7 As rectangle:
+            Fill: =RGBA(0, 52, 104, 1)
+            Height: =88
+            Width: =Parent.Width
+            ZIndex: =12
+
+        LblAppName2_7 As label:
+            Align: =Align.Center
+            Color: =RGBA(194, 160, 3, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =88
+            Size: =25
+            Text: ="RISK SAVVY"
+            Width: =Parent.Width
+            ZIndex: =13
+
+        Image2_6 As image:
+            Height: =88
+            Image: ='Logo PNJ_v2'
+            Width: =138
+            X: =9
+            ZIndex: =14
+

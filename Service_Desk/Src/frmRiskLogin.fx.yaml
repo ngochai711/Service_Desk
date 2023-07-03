@@ -1,6 +1,7 @@
 "frmRiskLogin As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Height: =Max(App.Height, App.DesignHeight)
-    OnVisible: =Set(var_Click,0)
+    OnHidden: =
+    OnVisible: =
     Width: =Max(App.Width, App.DesignWidth)
 
     inp_Password As text:

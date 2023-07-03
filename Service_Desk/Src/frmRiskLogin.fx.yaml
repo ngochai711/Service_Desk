@@ -61,6 +61,15 @@
         Y: =335
         ZIndex: =19
 
+    Timer1_1 As timer:
+        Duration: =2000
+        OnTimerEnd: =Set(var_ClickLogin,0)
+        Start: =var_Timer
+        Visible: =false
+        X: =9
+        Y: =24
+        ZIndex: =20
+
     Group2_1 As group:
         Height: =5
         Width: =5

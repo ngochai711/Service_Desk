@@ -40,7 +40,21 @@
             AccessibleLabel: =
             DelayItemLoading: =true
             Height: =501
-            Items: =Table_Risk
+            Items: |-
+                =If(
+                    LookUp(Table_Risk_Role,ROLE_ID=varUser.Role_ID).DATA_RANGE=0,
+                    Filter(Table_Risk,Risk_Department=varUser.Department)
+                    ,
+                    If(
+                        LookUp(Table_Risk_Role,ROLE_ID=varUser.Role_ID).DATA_RANGE=1,
+                        Filter(Table_Risk,Risk_Division=varUser.Division)
+                        ,
+                        If(
+                            LookUp(Table_Risk_Role,ROLE_ID=varUser.Role_ID).DATA_RANGE=2,
+                            Table_Risk
+                        )
+                    )
+                )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0

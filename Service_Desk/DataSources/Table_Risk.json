@@ -31,6 +31,8 @@
       "Author#Claims": "Created By Claims",
       "ComplianceAssetId": "Compliance Asset Id",
       "Created": "Created",
+      "Department": "Risk_Department",
+      "Divition": "Risk_Division",
       "Editor": "Modified By",
       "Editor#Claims": "Modified By Claims",
       "field_1": "Risk_Status",

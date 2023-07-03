@@ -31,7 +31,7 @@
                     ScreenTransition.CoverRight
                     //{varUserinfo:txtUsername}
                 );
-                Set(varUserAccess,varCheckAccount);
+                Set(varUser,varCheckAccount);
                 ,
                 Notify(
                     "Sai tài khoản hoặc mật khẩu!!! Vui lòng nhập lại ",

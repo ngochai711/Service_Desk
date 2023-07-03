@@ -12054,36 +12054,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varUserAccess"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.varUserAccess",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varUserAccess",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "frmRisk.SelectedControlOwner"
                 }
               ],

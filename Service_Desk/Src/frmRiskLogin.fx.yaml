@@ -8,15 +8,15 @@
         Default: =""
         HintText: ="Mật khẩu"
         Mode: =TextMode.Password
-        X: =988
-        Y: =335
+        X: =558
+        Y: =340
         ZIndex: =15
 
     inp_Username As text:
         Default: =""
         HintText: ="Tên đăng nhập"
-        X: =988
-        Y: =270
+        X: =558
+        Y: =275
         ZIndex: =16
 
     btnLogin As button:
@@ -38,31 +38,32 @@
             );
         Text: ="LOGIN"
         Width: =260
-        X: =1025
-        Y: =416
+        X: =595
+        Y: =421
         ZIndex: =17
 
     Label11 As label:
         Text: |-
             ="Tên Đăng Nhập:"
-        X: =800
-        Y: =270
+        X: =370
+        Y: =275
         ZIndex: =18
 
     Label11_1 As label:
         Text: |-
             ="Mật Khẩu:"
-        X: =800
-        Y: =335
+        X: =370
+        Y: =340
         ZIndex: =19
 
     Timer1_1 As timer:
         Duration: =500
         OnTimerEnd: |
             =Set(varUser,varCheckAccount);
+            Set(varRole,Filter(Table_Risk_Role,ROLE_ID=varUser.Role_ID));
             Collect(Collection_Risk,Table_Risk);
             Navigate(
-                    frmRiskStatistic,
+                    frmOverview,
                     ScreenTransition.CoverRight
             );
             Reset(inp_Username);

@@ -1,0 +1,150 @@
+"frmOverview As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    Height: =Max(App.Height, App.DesignHeight)
+    OnHidden: =
+    OnVisible: =
+    Width: =Max(App.Width, App.DesignWidth)
+
+    Timer1_3 As timer:
+        Duration: =200
+        OnTimerEnd: =Set(var_Click,0)
+        Start: =var_Timer
+        Visible: =false
+        X: =40
+        Y: =24
+        ZIndex: =1
+
+    btnfrmRiskStatistic As button:
+        DisplayMode: =If(varRole.FUNCTION=0, DisplayMode.Edit,DisplayMode.Disabled )
+        Height: =87
+        OnSelect: |-
+            =Icon.Hide;
+                Navigate(
+                    frmRiskStatistic,
+                    ScreenTransition.Cover
+                )
+        Text: ="TẠO THẺ RỦI RO"
+        Width: =357
+        X: =85
+        Y: =135
+        ZIndex: =4
+
+    btnfrmRiskApproval_1 As button:
+        DisplayMode: |-
+            =If(varfrmRiskApprovalList_1=false
+            , DisplayMode.Edit,DisplayMode.Disabled )
+        Height: =87
+        OnSelect: |-
+            =    Navigate(
+                    frmRiskApprovalList_1,
+                    ScreenTransition.None
+                )
+        Text: |-
+            ="PHÊ DUYỆT RỦI RO - CẤP 1
+            "
+        Width: =357
+        X: =85
+        Y: =254
+        ZIndex: =5
+
+    btnExit As button:
+        Height: =87
+        Text: ="THOÁT"
+        Width: =357
+        X: =85
+        Y: =612
+        ZIndex: =6
+
+    Image2_11 As image:
+        Height: =88
+        Image: ='Logo PNJ_v2'
+        Width: =138
+        X: =85
+        ZIndex: =8
+
+    Group2_3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =10
+
+        RectQuickActionBar2_10 As rectangle:
+            Fill: =RGBA(0, 52, 104, 1)
+            Height: =88
+            Width: =Parent.Width
+            ZIndex: =2
+
+        LblAppName2_10 As label:
+            Align: =Align.Center
+            Color: =RGBA(194, 160, 3, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =88
+            Size: =25
+            Text: ="RISK SAVVY"
+            Width: =Parent.Width
+            ZIndex: =3
+
+    btnfrmRiskReport As button:
+        DisplayMode: |
+            =If(varfrmRiskApprovalList_2=false
+            , DisplayMode.Edit,DisplayMode.Disabled )
+        Height: =87
+        OnSelect: |-
+            =    Navigate(
+                    frmRisk,
+                    ScreenTransition.CoverRight
+                )
+        Text: ="BÁO CÁO RỦI RO"
+        Width: =357
+        X: =85
+        Y: =492
+        ZIndex: =12
+
+    btnBackhome_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =13
+
+        Rectangle3_14 As rectangle:
+            Fill: =RGBA(0, 52, 104, 1)
+            Height: =88
+            HoverFill: =ColorFade(Self.BorderColor, 20%)
+            OnSelect: =Navigate(frmRiskLogin,ScreenTransition.Fade);
+            Width: =86
+            ZIndex: =9
+
+        ic_Back_9 As icon.ChevronLeft:
+            AccessibleLabel: ="Navigate to previous page"
+            Color: =RGBA(255, 255, 255, 1)
+            FocusedBorderColor: =ic_Back_9.BorderColor
+            Height: =50
+            HoverColor: =ColorFade(Self.BorderColor, 20%)
+            HoverFill: =ColorFade(Self.BorderColor, 20%)
+            Icon: =Icon.ChevronLeft
+            OnSelect: =Navigate(frmRiskLogin,ScreenTransition.Fade);
+            PressedColor: =ColorFade(Self.BorderColor, 20%)
+            TabIndex: =0
+            Width: =32
+            X: =27
+            Y: =19
+            ZIndex: =11
+
+    btnfrmRiskApproval_2 As button:
+        DisplayMode: =If(varfrmRiskApprovalList_2=false, DisplayMode.Edit,DisplayMode.Disabled )
+        Height: =87
+        OnSelect: |-
+            =    Navigate(
+                    frmRiskApprovalList_2,
+                    ScreenTransition.CoverRight
+                )
+        Text: |-
+            ="PHÊ DUYỆT RỦI RO - CẤP 2
+            "
+        Width: =357
+        X: =85
+        Y: =373
+        ZIndex: =14
+

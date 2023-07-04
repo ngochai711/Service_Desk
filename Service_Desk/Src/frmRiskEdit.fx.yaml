@@ -1161,3 +1161,27 @@
         Y: =536
         ZIndex: =67
 
+    Button1_7 As button:
+        BorderStyle: =BorderStyle.None
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.'Segoe UI'
+        Height: =88
+        OnSelect: |-
+            =If(IsBlank(inp_RiskName) || IsBlank(inp_RiskDescription) || IsBlank(inp_RiskReason) || IsBlank(lb_RiskOwner) || IsBlank(cb_RiskImportant) || IsBlank(cb_RiskStatus) || IsBlank(inp_RiskConsequence),
+            UpdateContext({varTemp2:false}),
+            Patch(Table_Risk,Defaults(Table_Risk),{Risk_Code:varRiskKey,Risk_Status:cb_RiskStatus.Selected.Value,Risk_Create_Date:dp_RiskCreateDate.SelectedDate,Risk_Important:cb_RiskImportant.Selected.Value,Risk_Name:inp_RiskName.Text,Risk_Description:inp_RiskDescription.Text,Risk_Reason:inp_RiskReason.Text,Risk_Consequence:inp_RiskConsequence.Text,Risk_Owner:SelectedRiskOwner.DisplayName&" - "&SelectedRiskOwner.Mail,Gross_Finance:cb_GrossFinance.Selected.Value,Gross_Non_Finance:cb_GrossnonFinance.Selected.Value,Gross_Overall_Finance:lb_GrossOverall.Text,Gross_Possibility:cb_GrossPossibility.Selected.Value,Gross_Score:cb_GrossPossibility.Selected.Index&"-"&varRiskGOPOverall_Index,Gross_Rank:lb_GrossRank.Text,Gross_Evaluation_Basis: inp_GrossEvaluation.Text,Net_Finance:cb_NetFinance.Selected.Value,Net_Non_Finance:cb_NetnonFinance.Selected.Value,Net_Overall_Finance:varRiskGOPOverall_Text,Net_Possibility:cb_NetPossibility.Selected.Value,Net_Score:cb_NetPossibility.Selected.Index&"-"&varRiskTHUANOverall_Index,Net_Rank:lb_NetRank.Text,Net_Evaluation_Basis:inp_NetEvaluation.Text,Risk_Division:varUser.Division,Risk_Department:varUser.Department})
+            );
+            
+            Navigate(frmRiskStatistic,ScreenTransition.Fade)
+        PaddingBottom: =12
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =25
+        Text: ="Lưu"
+        Width: =168
+        X: =1053
+        Y: =20
+        ZIndex: =68
+

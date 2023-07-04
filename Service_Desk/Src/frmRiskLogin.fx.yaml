@@ -27,12 +27,7 @@
             If(
                 !IsBlank(varCheckAccount)
                 ,
-                Navigate(
-                    frmRiskStatistic,
-                    ScreenTransition.CoverRight
-                    //{varUserinfo:txtUsername}
-                );
-                Set(varUser,varCheckAccount);
+                Set(varDelayLogin,true);
                 ,
                 Notify(
                     "Sai tài khoản hoặc mật khẩu!!! Vui lòng nhập lại ",
@@ -62,9 +57,16 @@
         ZIndex: =19
 
     Timer1_1 As timer:
-        Duration: =2000
-        OnTimerEnd: =Set(var_ClickLogin,0)
-        Start: =var_Timer
+        Duration: =1000
+        OnTimerEnd: |-
+            =Set(varUser,varCheckAccount);
+            Collect(Collection_Risk,Table_Risk);
+            Navigate(
+                    frmRiskStatistic,
+                    ScreenTransition.CoverRight
+                );
+        Reset: =true
+        Start: =varDelayLogin
         Visible: =false
         X: =9
         Y: =24

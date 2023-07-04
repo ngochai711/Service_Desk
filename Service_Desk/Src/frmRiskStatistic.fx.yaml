@@ -3,6 +3,7 @@
     Height: =Max(App.Height, App.DesignHeight)
     OnVisible: |-
         =Set(var_Click,0);
+        Set(varDelayLogin,false);
         Reset(Gallery1)
     Width: =Max(App.Width, App.DesignWidth)
 
@@ -45,15 +46,15 @@
             Items: |-
                 =If(
                     LookUp(Table_Risk_Role,ROLE_ID=varUser.Role_ID).DATA_RANGE=0,
-                    Filter(Table_Risk,Risk_Department=varUser.Department)
+                    Filter(Collection_Risk,Risk_Department=varUser.Department)
                     ,
                     If(
                         LookUp(Table_Risk_Role,ROLE_ID=varUser.Role_ID).DATA_RANGE=1,
-                        Filter(Table_Risk,Risk_Division=varUser.Division)
+                        Filter(Collection_Risk,Risk_Division=varUser.Division)
                         ,
                         If(
                             LookUp(Table_Risk_Role,ROLE_ID=varUser.Role_ID).DATA_RANGE=2,
-                            Table_Risk
+                            Collection_Risk
                         )
                     )
                 )
@@ -896,7 +897,9 @@
             Fill: =RGBA(0, 52, 104, 1)
             Height: =88
             HoverFill: =ColorFade(Self.BorderColor, 20%)
-            OnSelect: =Navigate(frmRiskLogin,ScreenTransition.Fade);
+            OnSelect: |-
+                =Navigate(frmRiskLogin,ScreenTransition.Fade);
+                Clear(Collection_Risk)
             Width: =86
             ZIndex: =27
 
@@ -908,7 +911,9 @@
             HoverColor: =ColorFade(Self.BorderColor, 20%)
             HoverFill: =ColorFade(Self.BorderColor, 20%)
             Icon: =Icon.ChevronLeft
-            OnSelect: =Navigate(frmRiskLogin,ScreenTransition.Fade);
+            OnSelect: |-
+                =Navigate(frmRiskLogin,ScreenTransition.Fade);
+                Clear(Collection_Risk)
             PressedColor: =ColorFade(Self.BorderColor, 20%)
             TabIndex: =0
             Width: =32

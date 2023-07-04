@@ -60,7 +60,7 @@
         Duration: =500
         OnTimerEnd: |
             =Set(varUser,varCheckAccount);
-            Set(varRole,Filter(Table_Risk_Role,ROLE_ID=varUser.Role_ID));
+            Set(varRole,LookUp(Table_Risk_Role,ROLE_ID=varUser.Role_ID));
             Collect(Collection_Risk,Table_Risk);
             Navigate(
                     frmOverview,

@@ -85,15 +85,9 @@
             ZIndex: =3
 
     btnfrmRiskReport As button:
-        DisplayMode: |
-            =If(varfrmRiskApprovalList_2=false
-            , DisplayMode.Edit,DisplayMode.Disabled )
+        DisplayMode: =
         Height: =87
-        OnSelect: |-
-            =    Navigate(
-                    frmRisk,
-                    ScreenTransition.CoverRight
-                )
+        OnSelect: =
         Text: ="BÁO CÁO RỦI RO"
         Width: =357
         X: =85

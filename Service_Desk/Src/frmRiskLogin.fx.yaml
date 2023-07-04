@@ -21,7 +21,7 @@
 
     btnLogin As button:
         Height: =62
-        OnSelect: |-
+        OnSelect: |
             =UpdateContext({varCheckAccount: LookUp(Table_Risk_Account,And(inp_Username.Text = Username,inp_Password.Text = Password))});
             
             If(
@@ -32,10 +32,10 @@
                 Notify(
                     "Sai tài khoản hoặc mật khẩu!!! Vui lòng nhập lại ",
                     NotificationType.Error
-                )
+                );
+                Reset(inp_Username);
+                Reset(inp_Password);
             );
-            Reset(inp_Username);
-            Reset(inp_Password);
         Text: ="LOGIN"
         Width: =260
         X: =1025
@@ -57,14 +57,16 @@
         ZIndex: =19
 
     Timer1_1 As timer:
-        Duration: =1000
-        OnTimerEnd: |-
+        Duration: =500
+        OnTimerEnd: |
             =Set(varUser,varCheckAccount);
             Collect(Collection_Risk,Table_Risk);
             Navigate(
                     frmRiskStatistic,
                     ScreenTransition.CoverRight
-                );
+            );
+            Reset(inp_Username);
+            Reset(inp_Password);
         Reset: =true
         Start: =varDelayLogin
         Visible: =false

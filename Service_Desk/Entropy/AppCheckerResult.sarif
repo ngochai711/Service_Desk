@@ -12345,36 +12345,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRiskEdit.varRiskOverall_Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.varRiskOverall_Text",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varRiskOverall_Text",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "frmRiskEdit.varTemp2"
                 }
               ],

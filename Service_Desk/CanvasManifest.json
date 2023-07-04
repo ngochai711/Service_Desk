@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 36,
+    "BindingErrorCount": 44,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -116,7 +116,7 @@
     "ManualOfflineProfileId": "",
     "Name": "RiskSavvy",
     "OriginatingVersion": "1.331",
-    "ParserErrorCount": 0
+    "ParserErrorCount": 2
   },
   "PublishInfo": {
     "AppName": "RiskSavvy",
@@ -132,6 +132,10 @@
   "ScreenOrder": [
     "frmRiskLogin",
     "frmOverview",
+    "frmRiskApprovalList_1",
+    "frmRiskApprovalList_2",
+    "frmRiskApprovalDetail_1",
+    "frmRiskApprovalDetail_2",
     "frmRiskStatistic",
     "frmRisk",
     "frmRiskEdit",

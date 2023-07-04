@@ -12,7 +12,6 @@
         UpdateContext({varRiskTHUANRank:"Nhỏ"});
         UpdateContext({varTabSelected:1});
         
-        
 
     RectQuickActionBar2_3 As rectangle:
         Fill: =RGBA(0, 52, 104, 1)
@@ -1071,7 +1070,7 @@
 
     dd_GrossFinance As dropdown:
         Font: =Font.'Segoe UI'
-        Height: =35
+        Height: =33
         Items: =Sort(Filter(Table_Risk_Configure, SECTION = "RISK" && TYPE = "Gross_Finance"),INDEX,SortOrder.Ascending)
         OnChange: |-
             =If(dd_GrossFinance.Selected.INDEX = dd_GrossnonFinance.Selected.INDEX,
@@ -1096,7 +1095,7 @@
 
     dd_GrossnonFinance As dropdown:
         Font: =Font.'Segoe UI'
-        Height: =35
+        Height: =33
         Items: =Sort(Filter(Table_Risk_Configure,SECTION="RISK"&&TYPE="Gross_Non_Finance"),INDEX,SortOrder.Ascending)
         OnChange: |-
             =If(dd_GrossFinance.Selected.INDEX = dd_GrossnonFinance.Selected.INDEX,
@@ -1121,7 +1120,7 @@
 
     dd_GrossPossibility As dropdown:
         Font: =Font.'Segoe UI'
-        Height: =34
+        Height: =32
         Items: =Sort(Filter(Table_Risk_Configure, SECTION = "RISK" && TYPE = "Gross_Possibility"),INDEX,SortOrder.Ascending)
         OnChange: |
             =UpdateContext({varTemp:varRiskTHUANOverall_Index1*dd_GrossPossibility.Selected.INDEX});
@@ -1139,7 +1138,7 @@
 
     dd_NetFinance As dropdown:
         Font: =Font.'Segoe UI'
-        Height: =35
+        Height: =33
         Items: =Sort(Filter(Table_Risk_Configure, SECTION = "RISK" && TYPE = "Net_Finance"),INDEX,SortOrder.Ascending)
         OnChange: |-
             =If(dd_NetFinance.Selected.INDEX = dd_NetnonFinance.Selected.INDEX,
@@ -1159,12 +1158,12 @@
         Visible: =varTabSelected=2
         Width: =200
         X: =60
-        Y: =536
+        Y: =535
         ZIndex: =64
 
     dd_NetnonFinance As dropdown:
         Font: =Font.'Segoe UI'
-        Height: =35
+        Height: =33
         Items: =Sort(Filter(Table_Risk_Configure,SECTION="RISK"&&TYPE="Net_Non_Finance"),INDEX,SortOrder.Ascending)
         OnChange: |-
             =If(dd_NetFinance.Selected.INDEX = dd_NetnonFinance.Selected.INDEX,
@@ -1184,12 +1183,12 @@
         Visible: =varTabSelected=2
         Width: =200
         X: =270
-        Y: =536
+        Y: =535
         ZIndex: =65
 
     dd_NetPossibility As dropdown:
         Font: =Font.'Segoe UI'
-        Height: =34
+        Height: =32
         Items: =Sort(Filter(Table_Risk_Configure, SECTION = "RISK" && TYPE = "Net_Possibility"),INDEX,SortOrder.Ascending)
         OnChange: |
             =UpdateContext({varTemp:varRiskGOPOverall_Index1*dd_NetPossibility.Selected.INDEX});
@@ -1202,6 +1201,6 @@
         Visible: =varTabSelected=2
         Width: =200
         X: =690
-        Y: =537
+        Y: =536
         ZIndex: =66
 

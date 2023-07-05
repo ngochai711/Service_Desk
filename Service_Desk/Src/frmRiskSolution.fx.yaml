@@ -61,8 +61,21 @@
         Font: =Font.'Segoe UI'
         Height: =88
         OnSelect: |-
-            =If(!IsBlank(inp_ActionEvaluationBasis) && !IsBlank(inp_ActionDescription),
-            Patch(Table_Risk_Solution,Defaults(Table_Risk_Solution),{Action_Code:Label8.Text,Action_Create_Date:dp_ActionCreateDate.SelectedDate,Action_Status:cb_ActionStatus.Selected.Value,Action_Description:inp_ActionDescription.Text,Action_Owner:LB_RiskOwner_2.Text,Action_Plan_Start_Date:dp_ActionStartDate.SelectedDate,Action_Plan_Finish_Date:dp_ActionEndDate.SelectedDate,Action_Actual_Finish_Date:dp_ActionRealEndDate.SelectedDate,Action_Evaluation:cb_ActionEvaluation.Selected.Value,Action_Overal_Rating:cb_ActionOveralEvaluation.Selected.Value,Action_Evaluation_Basis:inp_ActionEvaluationBasis.Text,Risk_ID:varRiskCode.Risk_Code})
+            =If(
+                !IsBlank(inp_ActionEvaluationBasis) && !IsBlank(inp_ActionDescription),
+                Patch(Table_Risk_Solution,Defaults(Table_Risk_Solution),{
+                    Action_Code:Label8.Text,
+                    Action_Create_Date:dp_ActionCreateDate.SelectedDate,
+                    Action_Status:cb_ActionStatus.Selected.Value,
+                    Action_Description:inp_ActionDescription.Text,
+                    Action_Owner:LB_RiskOwner_2.Text,
+                    Action_Plan_Start_Date:dp_ActionStartDate.SelectedDate,
+                    Action_Plan_Finish_Date:dp_ActionEndDate.SelectedDate,
+                    Action_Actual_Finish_Date:dp_ActionRealEndDate.SelectedDate,
+                    Action_Evaluation:cb_ActionEvaluation.Selected.Value,
+                    Action_Overal_Rating:cb_ActionOveralEvaluation.Selected.Value,
+                    Action_Evaluation_Basis:inp_ActionEvaluationBasis.Text,
+                    Risk_ID:varRiskCode.Risk_Code})
             );
             
             Navigate(frmRiskStatistic,ScreenTransition.Fade);

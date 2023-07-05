@@ -8,7 +8,6 @@
         Reset(inp_RiskName_1);
         Reset(inp_RiskDescription_1);
         Reset(inp_RiskReason_1);
-        Reset(inp_RiskOwner_1);
         Reset(inp_RiskConsequence_1);
         Reset(inp_GrossEvaluation_1);
         Reset(inp_NetEvaluation_1);
@@ -21,7 +20,6 @@
         Reset(dd_NetFinance_1);
         Reset(dd_NetnonFinance_1);
         Reset(dd_NetPossibility_1);
-        
         Reset(inp_RiskOwner_1);
         Reset(inp_RiskApproval1_1);
         Reset(inp_RiskApproval1Risk_1);

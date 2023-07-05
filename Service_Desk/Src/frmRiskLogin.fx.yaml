@@ -38,7 +38,7 @@
             );
         Text: ="LOGIN"
         Width: =260
-        X: =588
+        X: =600
         Y: =420
         ZIndex: =17
 

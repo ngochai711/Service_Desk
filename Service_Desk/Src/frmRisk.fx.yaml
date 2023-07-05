@@ -6,6 +6,35 @@
         UpdateContext({varRiskKey:"RK"&Text(CountRows(Table_Risk) + 1,"00000")});
         UpdateContext({varTabSelected:1});
         
+        //Reset input
+        Reset(inp_RiskName);
+        Reset(inp_RiskDescription);
+        Reset(inp_RiskReason);
+        Reset(inp_RiskOwner);
+        Reset(inp_RiskConsequence);
+        Reset(inp_RiskApproval1);
+        Reset(inp_RiskApproval1_Risk);
+        Reset(inp_RiskApproval2);
+        Reset(inp_RiskApproval2_Risk);
+        Reset(inp_GrossEvaluation);
+        Reset(inp_NetEvaluation);
+        Reset(dp_RiskCreateDate);
+        Reset(cb_RiskStatus);
+        Reset(cb_RiskImportant);
+        Reset(dd_GrossFinance);
+        Reset(dd_GrossnonFinance);
+        Reset(dd_GrossPossibility);
+        Reset(dd_NetFinance);
+        Reset(dd_NetnonFinance);
+        Reset(dd_NetPossibility);
+        UpdateContext({varLBRiskOwner:false,HidePeopleGallery:false});
+        UpdateContext({varLBRiskApproval1:false,HideApproval1Gallery:false});
+        UpdateContext({varLBRiskApproval1_Risk:false,HideApproval1RiskGallery:false});
+        UpdateContext({varLBRiskApproval2:false,HideApproval2Gallery:false});
+        UpdateContext({varLBRiskApproval2_Risk:false,HideApproval2RiskGallery:false});
+        
+        
+        
         //Gross
         UpdateContext({varGrossOverall_Text:"Thấp"});
         UpdateContext({varGrossOverall_Index:1});
@@ -16,6 +45,7 @@
         UpdateContext({varNetOverall_Index:1});
         UpdateContext({varNetRank:"Thấp"});
         UpdateContext({varNetScore:dd_NetPossibility.Selected.INDEX&"-"&varNetOverall_Index});
+        
         
 
     RectQuickActionBar2_3 As rectangle:
@@ -91,6 +121,7 @@
                     Approval_By_LV1Risk:SelectedRiskApproval1_Risk.MailNickname,
                     Approval_By_LV2:SelectedRiskApproval2.MailNickname,
                     Approval_By_LV2Risk:SelectedRiskApproval2_Risk.MailNickname});
+                Notify("Tạo rủi ro thành công",NotificationType.Success);
                 Navigate(frmRiskStatistic,ScreenTransition.Fade);
             );
             
@@ -1033,6 +1064,7 @@
                     Approval_By_LV1Risk:SelectedRiskApproval1_Risk.MailNickname,
                     Approval_By_LV2:SelectedRiskApproval2.MailNickname,
                     Approval_By_LV2Risk:SelectedRiskApproval2_Risk.MailNickname});
+                Notify("Chuyển duyệt thành công",NotificationType.Success);
                 Navigate(frmRiskStatistic,ScreenTransition.Fade);
             );
             
@@ -1041,7 +1073,7 @@
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Text: ="Chuyển tiếp"
+        Text: ="Chuyển duyệt"
         Width: =168
         X: =1198
         Y: =1
@@ -1209,6 +1241,7 @@
         Default: =""
         Font: =Font.'Segoe UI'
         Height: =35
+        HintText: ="Nhập tên hoặc email "
         Mode: =TextMode.MultiLine
         OnSelect: =
         RadiusBottomLeft: =0
@@ -1240,11 +1273,12 @@
         Y: =393
         ZIndex: =60
 
-    inp_RiskApproval1Risk As text:
+    inp_RiskApproval1_Risk As text:
         BorderThickness: =1
         Default: =""
         Font: =Font.'Segoe UI'
         Height: =35
+        HintText: ="Nhập tên hoặc email"
         Mode: =TextMode.MultiLine
         OnSelect: =
         RadiusBottomLeft: =0
@@ -1281,6 +1315,7 @@
         Default: =""
         Font: =Font.'Segoe UI'
         Height: =36
+        HintText: ="Nhập tên hoặc email"
         Mode: =TextMode.MultiLine
         OnSelect: =
         RadiusBottomLeft: =0
@@ -1317,6 +1352,7 @@
         Default: =""
         Font: =Font.'Segoe UI'
         Height: =34
+        HintText: ="Nhập tên hoặc email"
         Mode: =TextMode.MultiLine
         OnSelect: =
         RadiusBottomLeft: =0
@@ -1500,8 +1536,8 @@
         HoverBorderColor: =Gal_RiskSelectApproval1_Risk.BorderColor
         HoverFill: =Gal_RiskSelectApproval1_Risk.Fill
         Items: |
-            =If(!IsBlank(inp_RiskApproval1Risk.Text), 
-            Office365Users.SearchUser({searchTerm:Trim(inp_RiskApproval1Risk.Text)}))
+            =If(!IsBlank(inp_RiskApproval1_Risk.Text), 
+            Office365Users.SearchUser({searchTerm:Trim(inp_RiskApproval1_Risk.Text)}))
         Layout: =Layout.Vertical
         LoadingSpinnerColor: =Gal_RiskSelectApproval1_Risk.BorderColor
         OnSelect: |-
@@ -1512,7 +1548,7 @@
         PressedFill: =Gal_RiskSelectApproval1_Risk.Fill
         TemplateSize: =53
         Visible: |-
-            =Not(IsBlank(inp_RiskApproval1Risk)) &&
+            =Not(IsBlank(inp_RiskApproval1_Risk)) &&
             !HideApproval1RiskGallery
         Width: =470
         X: =236

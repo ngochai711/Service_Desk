@@ -23,6 +23,8 @@
         
         UpdateContext({varTabSelected:1}); 
         
+        
+        
 
     RectQuickActionBar2_6 As rectangle:
         Fill: =RGBA(0, 52, 104, 1)
@@ -105,10 +107,10 @@
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Size: =25
         Text: ="Sửa"
         Width: =168
-        X: =1198
+        X: =1030
+        Y: =1
         ZIndex: =4
 
     Gal_RiskSelecttOwner_22 As gallery.galleryVertical:
@@ -1668,4 +1670,65 @@
         X: =950
         Y: =398
         ZIndex: =87
+
+    Button1_7 As button:
+        BorderStyle: =BorderStyle.None
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.'Segoe UI'
+        Height: =88
+        OnSelect: |
+            =If(
+                IsBlank(inp_RiskName_1) || IsBlank(cb_RiskImportant_1) || IsBlank(cb_RiskStatus_1) ,
+            
+                Notify("Vui lòng nhập đầy đủ thông tin",NotificationType.Error),
+            
+                Patch(Table_Risk,LookUp(Table_Risk,Risk_Code=varRiskInfo.Risk_Code),{
+            
+                    //Risk Info
+                    Risk_Status:LookUp(Table_Risk_Configure,And(SECTION="Risk",TYPE="Risk_Status",INDEX=2)).NAME,
+                    Risk_Create_Date:dp_RiskCreateDate_1.SelectedDate,
+                    Risk_Important:cb_RiskImportant_1.Selected.Value,
+                    Risk_Name:inp_RiskName_1.Text,
+                    Risk_Description:inp_RiskDescription_1.Text,
+                    Risk_Reason:inp_RiskReason_1.Text,
+                    Risk_Consequence:inp_RiskConsequence_1.Text,
+                    Risk_Owner:If(varLBRiskOwnerTemp=true,lb_RiskOwner_2.Text,SelectedRiskOwner.DisplayName&" - "&SelectedRiskOwner.Mail),
+            
+                    //Gross
+                    Gross_Finance:dd_GrossFinance_1.Selected.NAME,
+                    Gross_Non_Finance:dd_GrossnonFinance_1.Selected.NAME,
+                    Gross_Overall_Finance:varGrossOverall_Text,
+                    Gross_Possibility:dd_GrossPossibility_1.Selected.NAME,
+                    Gross_Score:varGrossScore,
+                    Gross_Rank:varGrossRank,
+                    Gross_Evaluation_Basis: inp_GrossEvaluation_1.Text,
+            
+                    //Net
+                    Net_Finance:dd_NetFinance_1.Selected.NAME,
+                    Net_Non_Finance:dd_NetnonFinance_1.Selected.NAME,
+                    Net_Overall_Finance:varNetOverall_Text,
+                    Net_Possibility:dd_NetPossibility_1.Selected.NAME,
+                    Net_Score:varNetScore,
+                    Net_Rank:varNetRank,
+                    Net_Evaluation_Basis:inp_NetEvaluation_1.Text,
+                    
+                    Mail_create_by:varUser.Username,
+            
+                    //Approval
+                    Approval_By_LV1:If(varLBRiskApproval1Temp=true,lb_RiskApproval1_1.Text,SelectedRiskApproval1.MailNickname),
+                    Approval_By_LV1Risk:If(varLBRiskApproval1Temp=true,lb_RiskApproval1_Risk_1.Text,SelectedRiskApproval1_Risk.MailNickname),
+                    Approval_By_LV2:If(varLBRiskApproval1Temp=true && !IsBlank(lb_RiskApproval2_1.Text),lb_RiskApproval2_1.Text,SelectedRiskApproval2.MailNickname),
+                    Approval_By_LV2Risk:If(varLBRiskApproval1Temp=true && !IsBlank(lb_RiskApproval2_Risk_1.Text),lb_RiskApproval2_Risk_1.Text,SelectedRiskApproval2_Risk.MailNickname)}
+                );
+                Notify("Thay đổi thành công",NotificationType.Success)
+            );
+        PaddingBottom: =12
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Text: ="Chuyển duyệt"
+        Width: =168
+        X: =1198
+        ZIndex: =88
 

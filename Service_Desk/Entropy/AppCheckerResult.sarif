@@ -9354,6 +9354,18 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 14
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
             }
           ]
         }
@@ -14968,19 +14980,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRisk.inp_RiskApproval1Risk.AccessibleLabel"
+                  "fullyQualifiedName": "frmRisk.inp_RiskApproval1_Risk.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "frmRisk.inp_RiskApproval1Risk.AccessibleLabel",
+                  "fullyQualifiedName": "frmRisk.inp_RiskApproval1_Risk.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "frmRisk",
-                "type": "frmRisk.inp_RiskApproval1Risk"
+                "type": "frmRisk.inp_RiskApproval1_Risk"
               }
             }
           ],

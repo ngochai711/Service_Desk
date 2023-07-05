@@ -38,8 +38,8 @@
             );
         Text: ="LOGIN"
         Width: =260
-        X: =600
-        Y: =420
+        X: =588
+        Y: =423
         ZIndex: =17
 
     Label11 As label:

@@ -472,7 +472,9 @@
         R_Add_1 As icon.Add:
             Height: =28
             Icon: =Icon.Add
-            OnSelect: =Navigate(frmRiskControl,ScreenTransition.Fade)
+            OnSelect: |-
+                =Navigate(frmRiskControl,ScreenTransition.Fade);
+                Set(varRiskInfo,Gallery1.Selected)
             Tooltip: ="Tạo thủ tục kiểm soát"
             Width: =27
             X: =417

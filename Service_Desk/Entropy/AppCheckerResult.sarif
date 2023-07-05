@@ -17212,19 +17212,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRisk.inp_RiskReason_4.AccessibleLabel"
+                  "fullyQualifiedName": "frmRisk.inp_RiskApproval2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "frmRisk.inp_RiskReason_4.AccessibleLabel",
+                  "fullyQualifiedName": "frmRisk.inp_RiskApproval2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "frmRisk",
-                "type": "frmRisk.inp_RiskReason_4"
+                "type": "frmRisk.inp_RiskApproval2"
               }
             }
           ],
@@ -17242,19 +17242,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRisk.inp_RiskReason_5.AccessibleLabel"
+                  "fullyQualifiedName": "frmRisk.inp_RiskApproval2_Risk.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "frmRisk.inp_RiskReason_5.AccessibleLabel",
+                  "fullyQualifiedName": "frmRisk.inp_RiskApproval2_Risk.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "frmRisk",
-                "type": "frmRisk.inp_RiskReason_5"
+                "type": "frmRisk.inp_RiskApproval2_Risk"
               }
             }
           ],

@@ -43,40 +43,40 @@
         Fill: =RGBA(0, 0, 0, 0)
         Font: =Font.'Segoe UI'
         Height: =88
-        OnSelect: |-
+        OnSelect: |+
             =If(
                 IsBlank(inp_RiskName) || IsBlank(inp_RiskDescription) || IsBlank(inp_RiskReason) || IsBlank(lb_RiskOwner) || IsBlank(cb_RiskImportant) || IsBlank(cb_RiskStatus) || IsBlank(inp_RiskConsequence),
             
-                UpdateContext({varTemp2:false}),
+                Notify("Vui lòng nhập đầy đủ thông tin",NotificationType.Error),
                 
-            Patch(Table_Risk,Defaults(Table_Risk),{
-                Risk_Code:varRiskKey,
-                Risk_Status:cb_RiskStatus.Selected.Value,
-                Risk_Create_Date:dp_RiskCreateDate.SelectedDate,
-                Risk_Important:cb_RiskImportant.Selected.Value,
-                Risk_Name:inp_RiskName.Text,
-                Risk_Description:inp_RiskDescription.Text,
-                Risk_Reason:inp_RiskReason.Text,
-                Risk_Consequence:inp_RiskConsequence.Text,
-                Risk_Owner:SelectedRiskOwner.DisplayName&" - "&SelectedRiskOwner.Mail,
-                Gross_Finance:dd_GrossFinance.Selected.NAME,
-                Gross_Non_Finance:dd_GrossnonFinance.Selected.NAME,
-                Gross_Overall_Finance:lb_GrossOverall.Text,
-                Gross_Possibility:dd_GrossPossibility.Selected.NAME,
-                Gross_Score:dd_GrossPossibility.Selected.INDEX&"-"&varRiskGOPOverall_Index,
-                Gross_Rank:lb_GrossRank.Text,
-                Gross_Evaluation_Basis: inp_GrossEvaluation.Text,
-                Net_Finance:dd_NetFinance.Selected.NAME,
-                Net_Non_Finance:dd_NetnonFinance.Selected.NAME,
-                Net_Overall_Finance:varRiskGOPOverall_Text,
-                Net_Possibility:dd_NetPossibility.Selected.NAME,
-                Net_Score:dd_NetPossibility.Selected.INDEX&"-"&varRiskTHUANOverall_Index,
-                Net_Rank:lb_NetRank.Text,
-                Net_Evaluation_Basis:inp_NetEvaluation.Text,
-                Risk_Division:varUser.Division,Risk_Department:varUser.Department})
+                Patch(Table_Risk,Defaults(Table_Risk),{
+                    Risk_Code:varRiskKey,
+                    Risk_Status:cb_RiskStatus.Selected.Value,
+                    Risk_Create_Date:dp_RiskCreateDate.SelectedDate,
+                    Risk_Important:cb_RiskImportant.Selected.Value,
+                    Risk_Name:inp_RiskName.Text,
+                    Risk_Description:inp_RiskDescription.Text,
+                    Risk_Reason:inp_RiskReason.Text,
+                    Risk_Consequence:inp_RiskConsequence.Text,
+                    Risk_Owner:SelectedRiskOwner.DisplayName&" - "&SelectedRiskOwner.Mail,
+                    Gross_Finance:dd_GrossFinance.Selected.NAME,
+                    Gross_Non_Finance:dd_GrossnonFinance.Selected.NAME,
+                    Gross_Overall_Finance:lb_GrossOverall.Text,
+                    Gross_Possibility:dd_GrossPossibility.Selected.NAME,
+                    Gross_Score:dd_GrossPossibility.Selected.INDEX&"-"&varRiskGOPOverall_Index,
+                    Gross_Rank:lb_GrossRank.Text,
+                    Gross_Evaluation_Basis: inp_GrossEvaluation.Text,
+                    Net_Finance:dd_NetFinance.Selected.NAME,
+                    Net_Non_Finance:dd_NetnonFinance.Selected.NAME,
+                    Net_Overall_Finance:varRiskGOPOverall_Text,
+                    Net_Possibility:dd_NetPossibility.Selected.NAME,
+                    Net_Score:dd_NetPossibility.Selected.INDEX&"-"&varRiskTHUANOverall_Index,
+                    Net_Rank:lb_NetRank.Text,
+                    Net_Evaluation_Basis:inp_NetEvaluation.Text,
+                    Risk_Division:varUser.Division,Risk_Department:varUser.Department});
+                Navigate(frmRiskStatistic,ScreenTransition.Fade);
             );
             
-            Navigate(frmRiskStatistic,ScreenTransition.Fade)
         PaddingBottom: =12
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
@@ -1245,7 +1245,7 @@
         Y: =340
         ZIndex: =62
 
-    inp_RiskReason_4 As text:
+    inp_RiskApproval2 As text:
         BorderThickness: =1
         Default: =""
         Font: =Font.'Segoe UI'
@@ -1281,7 +1281,7 @@
         Y: =394
         ZIndex: =64
 
-    inp_RiskReason_5 As text:
+    inp_RiskApproval2_Risk As text:
         BorderThickness: =1
         Default: =""
         Font: =Font.'Segoe UI'
@@ -1484,11 +1484,11 @@
         Font: =Font.'Segoe UI'
         Height: =26
         OnSelect: |-
-            =UpdateContext({varLBRiskOwner:false,
-            HidePeopleGallery:false})
+            =UpdateContext({varLBRiskApproval2:false,
+            HideApproval2Gallery:false})
         Size: =12
-        Text: =SelectedRiskOwner.DisplayName&" - "&SelectedRiskOwner.Mail
-        Visible: =varLBRiskOwner
+        Text: =SelectedRiskApproval2.DisplayName&" - "&SelectedRiskApproval2.Mail
+        Visible: =varLBRiskApproval2
         Width: =359
         X: =951
         Y: =344
@@ -1505,19 +1505,19 @@
         HoverBorderColor: =Gal_RiskSelecttOwner_25.BorderColor
         HoverFill: =Gal_RiskSelecttOwner_25.Fill
         Items: |
-            =If(!IsBlank(inp_RiskOwner.Text), 
-            Office365Users.SearchUser({searchTerm:Trim(inp_RiskOwner.Text)}))
+            =If(!IsBlank(inp_RiskApproval2.Text), 
+            Office365Users.SearchUser({searchTerm:Trim(inp_RiskApproval2.Text)}))
         Layout: =Layout.Vertical
         LoadingSpinnerColor: =Gal_RiskSelecttOwner_25.BorderColor
         OnSelect: |-
-            = UpdateContext({SelectedRiskOwner:ThisItem, HidePeopleGallery:true, 
-             varLBRiskOwner: true})
+            = UpdateContext({SelectedRiskApproval2:ThisItem, HideApproval2Gallery:true, 
+             varLBRiskApproval2: true})
         PressedBorderColor: =Gal_RiskSelecttOwner_25.BorderColor
         PressedFill: =Gal_RiskSelecttOwner_25.Fill
         TemplateSize: =53
         Visible: |-
-            =Not(IsBlank(inp_RiskOwner)) &&
-            !HidePeopleGallery
+            =Not(IsBlank(inp_RiskApproval2)) &&
+            !HideApproval2Gallery
         Width: =376
         X: =947
         Y: =375
@@ -1549,11 +1549,11 @@
         Font: =Font.'Segoe UI'
         Height: =26
         OnSelect: |-
-            =UpdateContext({varLBRiskOwner:false,
-            HidePeopleGallery:false})
+            =UpdateContext({varLBRiskApproval2_Risk:false,
+            HideApproval2RiskGallery:false})
         Size: =12
-        Text: =SelectedRiskOwner.DisplayName&" - "&SelectedRiskOwner.Mail
-        Visible: =varLBRiskOwner
+        Text: =SelectedRiskApproval2_Risk.DisplayName&" - "&SelectedRiskApproval2_Risk.Mail
+        Visible: =varLBRiskApproval2_Risk
         Width: =359
         X: =950
         Y: =398
@@ -1570,19 +1570,19 @@
         HoverBorderColor: =Gal_RiskSelecttOwner_26.BorderColor
         HoverFill: =Gal_RiskSelecttOwner_26.Fill
         Items: |
-            =If(!IsBlank(inp_RiskOwner.Text), 
-            Office365Users.SearchUser({searchTerm:Trim(inp_RiskOwner.Text)}))
+            =If(!IsBlank(inp_RiskApproval2_Risk.Text), 
+            Office365Users.SearchUser({searchTerm:Trim(inp_RiskApproval2_Risk.Text)}))
         Layout: =Layout.Vertical
         LoadingSpinnerColor: =Gal_RiskSelecttOwner_26.BorderColor
         OnSelect: |-
-            = UpdateContext({SelectedRiskOwner:ThisItem, HidePeopleGallery:true, 
-             varLBRiskOwner: true})
+            = UpdateContext({SelectedRiskApproval2_Risk:ThisItem, HideApproval2RiskGallery:true, 
+             varLBRiskApproval2_Risk: true})
         PressedBorderColor: =Gal_RiskSelecttOwner_26.BorderColor
         PressedFill: =Gal_RiskSelecttOwner_26.Fill
         TemplateSize: =53
         Visible: |-
-            =Not(IsBlank(inp_RiskOwner)) &&
-            !HidePeopleGallery
+            =Not(IsBlank(inp_RiskApproval2_Risk)) &&
+            !HideApproval2RiskGallery
         Width: =376
         X: =946
         Y: =429

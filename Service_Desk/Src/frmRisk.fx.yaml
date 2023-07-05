@@ -1023,7 +1023,7 @@
                     Net_Non_Finance:dd_NetnonFinance.Selected.NAME,
                     Net_Overall_Finance:varNetOverall_Text,
                     Net_Possibility:dd_NetPossibility.Selected.NAME,
-                    Net_Score:dd_NetPossibility.Selected.INDEX&"-"&varNetOverall_Index,
+                    Net_Score:varNetScore,
                     Net_Rank:varNetRank,
                     Net_Evaluation_Basis:inp_NetEvaluation.Text,
             

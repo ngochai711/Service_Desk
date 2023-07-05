@@ -2,26 +2,20 @@
     Fill: =RGBA(237, 237, 237, 1)
     OnHidden: =
     OnVisible: |+
-        =UpdateContext({varTemp2:true});
+        =
         UpdateContext({varRiskKey:"RK"&Text(CountRows(Table_Risk) + 1,"00000")});
-        UpdateContext({varRiskGOPOverall_Text:"Thấp"});
-        UpdateContext({varRiskGOPOverall_Index:1});
-        UpdateContext({varRiskGOPRank:"Nhỏ"});
-        UpdateContext({varRiskTHUANOverall_Text:"Thấp"});
-        UpdateContext({varRiskTHUANOverall_Index:1});
-        UpdateContext({varRiskTHUANRank:"Nhỏ"});
         UpdateContext({varTabSelected:1});
         
         //Gross
-        UpdateContext({varGrossOverall_Text:varRiskInfo.Gross_Overall_Finance});
+        UpdateContext({varGrossOverall_Text:"Thấp"});
         UpdateContext({varGrossOverall_Index:1});
-        UpdateContext({varGrossRank:varRiskInfo.Gross_Rank});
-        UpdateContext({varGrossScore:varRiskInfo.Gross_Score});
+        UpdateContext({varGrossRank:"Thấp"});
+        UpdateContext({varGrossScore:dd_GrossPossibility.Selected.INDEX&"-"&varGrossOverall_Index});
         //Net
-        UpdateContext({varNetOverall_Text:varRiskInfo.Net_Overall_Finance});
+        UpdateContext({varNetOverall_Text:"Thấp"});
         UpdateContext({varNetOverall_Index:1});
-        UpdateContext({varNetRank:varRiskInfo.Net_Rank});
-        UpdateContext({varNetScore:varRiskInfo.Net_Score});
+        UpdateContext({varNetRank:"Thấp"});
+        UpdateContext({varNetScore:dd_NetPossibility.Selected.INDEX&"-"&varNetOverall_Index});
         
 
     RectQuickActionBar2_3 As rectangle:
@@ -77,7 +71,7 @@
                     //Gross
                     Gross_Finance:dd_GrossFinance.Selected.NAME,
                     Gross_Non_Finance:dd_GrossnonFinance.Selected.NAME,
-                    Gross_Overall_Finance:lb_GrossOverall.Text,
+                    Gross_Overall_Finance:varGrossOverall_Text,
                     Gross_Possibility:dd_GrossPossibility.Selected.NAME,
                     Gross_Score:dd_GrossPossibility.Selected.INDEX&"-"&varGrossOverall_Index,
                     Gross_Rank:varGrossRank,
@@ -85,7 +79,7 @@
                     //Net
                     Net_Finance:dd_NetFinance.Selected.NAME,
                     Net_Non_Finance:dd_NetnonFinance.Selected.NAME,
-                    Net_Overall_Finance:varRiskGOPOverall_Text,
+                    Net_Overall_Finance:varNetOverall_Text,
                     Net_Possibility:dd_NetPossibility.Selected.NAME,
                     Net_Score:dd_NetPossibility.Selected.INDEX&"-"&varNetOverall_Index,
                     Net_Rank:varNetRank,
@@ -1019,7 +1013,7 @@
                     //Gross
                     Gross_Finance:dd_GrossFinance.Selected.NAME,
                     Gross_Non_Finance:dd_GrossnonFinance.Selected.NAME,
-                    Gross_Overall_Finance:lb_GrossOverall.Text,
+                    Gross_Overall_Finance:varGrossOverall_Text,
                     Gross_Possibility:dd_GrossPossibility.Selected.NAME,
                     Gross_Score:dd_GrossPossibility.Selected.INDEX&"-"&varGrossOverall_Index,
                     Gross_Rank:varGrossRank,
@@ -1027,7 +1021,7 @@
                     //Net
                     Net_Finance:dd_NetFinance.Selected.NAME,
                     Net_Non_Finance:dd_NetnonFinance.Selected.NAME,
-                    Net_Overall_Finance:varRiskGOPOverall_Text,
+                    Net_Overall_Finance:varNetOverall_Text,
                     Net_Possibility:dd_NetPossibility.Selected.NAME,
                     Net_Score:dd_NetPossibility.Selected.INDEX&"-"&varNetOverall_Index,
                     Net_Rank:varNetRank,

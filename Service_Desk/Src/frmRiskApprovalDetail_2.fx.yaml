@@ -13,7 +13,7 @@ frmRiskApprovalDetail_2 As screen:
         FontWeight: =FontWeight.Bold
         Height: =88
         Size: =25
-        Text: ="THÔNG TIN RỦI RO - PHÊ DUYỆT LV1"
+        Text: ="RISK SAVVY - DUYỆT CẤP 2"
         Width: =Parent.Width
         ZIndex: =2
 
@@ -36,7 +36,7 @@ frmRiskApprovalDetail_2 As screen:
             Fill: =RGBA(0, 52, 104, 1)
             Height: =88
             HoverFill: =ColorFade(Self.BorderColor, 20%)
-            OnSelect: =Navigate(frmRiskApprovalList_1,ScreenTransition.Fade);
+            OnSelect: =Navigate(frmRiskApprovalList_2,ScreenTransition.Fade);
             Width: =86
             ZIndex: =4
 
@@ -48,7 +48,7 @@ frmRiskApprovalDetail_2 As screen:
             HoverColor: =ColorFade(Self.BorderColor, 20%)
             HoverFill: =ColorFade(Self.BorderColor, 20%)
             Icon: =Icon.ChevronLeft
-            OnSelect: =Navigate(frmRiskApprovalList_1,ScreenTransition.Fade);
+            OnSelect: =Navigate(frmRiskApprovalList_2,ScreenTransition.Fade);
             PressedColor: =ColorFade(Self.BorderColor, 20%)
             TabIndex: =0
             Width: =32
@@ -56,902 +56,458 @@ frmRiskApprovalDetail_2 As screen:
             Y: =19
             ZIndex: =5
 
-    btn_Reject_LV1_4 As button:
-        BorderStyle: =BorderStyle.None
-        Fill: =RGBA(255, 0, 0, 1)
-        Font: =Font.'Segoe UI'
-        Height: =69
-        OnSelect: |-
-            =
-            Patch(Table_Risk,LookUp(Table_Risk,Risk_Code=varRiskInfo.Risk_Code),{Risk_Status:LookUp(Table_Risk_Configure,And(SECTION="Risk",TYPE="Risk_Status",INDEX=2)).NAME});
-                Notify(
-                    "Đã từ chối",
-                    NotificationType.Information
-                )
-            
-            //Navigate(frmRiskApprovalList_1,ScreenTransition.Fade)
-        PaddingBottom: =12
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Size: =25
-        Text: ="Từ chối"
-        Width: =171
-        X: =1180
-        Y: =12
-        ZIndex: =9
-
-    btn_Reject_LV1_5 As button:
-        BorderStyle: =BorderStyle.None
-        Fill: =RGBA(255, 0, 0, 1)
-        Font: =Font.'Segoe UI'
-        Height: =69
-        OnSelect: |-
-            =
-            Patch(Table_Risk,LookUp(Table_Risk,Risk_Code=varRiskInfo.Risk_Code),{Risk_Status:LookUp(Table_Risk_Configure,And(SECTION="Risk",TYPE="Risk_Status",INDEX=4)).NAME});
-                Notify(
-                    "Phê duyệt thành công",
-                    NotificationType.Success
-                )
-            
-            
-            
-            //Navigate(frmRiskApprovalList_1,ScreenTransition.Fade)
-        PaddingBottom: =12
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Size: =25
-        Text: ="Duyệt"
-        Width: =171
-        X: =1004
-        Y: =12
-        ZIndex: =11
-
-    dtv_Risk_2 As dataTable.datatable:
-        BorderStyle: =BorderStyle.Solid
-        DisplayMode: =DisplayMode.Edit
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =160
-        Items: =Filter(Table_Risk,Risk_Code=varRiskInfo.Risk_Code)
-        Width: =1335
-        X: =16
-        Y: =114
+    Risk_4 As groupContainer:
+        Height: =189
+        Width: =1341
+        X: =12
+        Y: =102
         ZIndex: =12
 
-        Risk_Code_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Risk_Code"
-            FieldName: ="Title"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =1
-            Text: =ThisItem.Risk_Code
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-        Risk_Status_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Risk_Status"
-            FieldName: ="field_1"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =2
-            Text: =ThisItem.Risk_Status
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =2
-
-        Risk_Create_Date_Column3_2 As dataTableColumn.dateTimeColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Risk_Create_Date"
-            FieldName: ="field_2"
-            FieldVariantName: ="dateTimeColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =3
-            Text: =Text(ThisItem.Risk_Create_Date,DateTimeFormat.LongDateTime)
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =3
-
-        Risk_Important_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Risk_Important"
-            FieldName: ="field_3"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =4
-            Text: =ThisItem.Risk_Important
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =4
-
-        Risk_Name_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Risk_Name"
-            FieldName: ="field_4"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =5
-            Text: =ThisItem.Risk_Name
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =5
-
-        Risk_Description_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Risk_Description"
-            FieldName: ="field_5"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =6
-            Text: =ThisItem.Risk_Description
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =6
-
-        Risk_Reason_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Risk_Reason"
-            FieldName: ="field_6"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =7
-            Text: =ThisItem.Risk_Reason
-            Width: =100
-            X: =0
-            Y: =0
+        "Gallery1_6 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            AccessibleLabel: =
+            DelayItemLoading: =true
+            Height: =134
+            Items: |-
+                =Filter(
+                    Table_Risk,
+                    And(
+                        Approval_By_LV2 = varUser.Username,
+                        Risk_Code=varRiskInfo.Risk_Code
+                    )
+                )
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =129
+            Width: =1338
+            Y: =52
             ZIndex: =7
 
-        Risk_Consequence_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Risk_Consequence"
-            FieldName: ="field_7"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =8
-            Text: =ThisItem.Risk_Consequence
-            Width: =100
-            X: =0
-            Y: =0
+            Separator1_6 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =0.5
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =125
+                ZIndex: =1
+
+            Rectangle2_6 As rectangle:
+                Height: =Parent.TemplateHeight - Separator1_6.Height
+                OnSelect: =Select(Parent)
+                Visible: =If(ThisItem.IsSelected, true, false)
+                Width: =0
+                X: =1
+                ZIndex: =2
+
+            Label7_26 As label:
+                Color: =RGBA(9, 33, 98, 1)
+                Font: =Font.Arial
+                Height: =30
+                OnSelect: =Select(Parent)
+                PaddingBottom: =4
+                Size: =12
+                Text: |
+                    =ThisItem.Risk_Code&" | "&ThisItem.Risk_Name
+                Width: =399
+                X: =6
+                ZIndex: =3
+
+            Label7_27 As label:
+                Color: =RGBA(9, 33, 98, 1)
+                Font: =Font.Arial
+                Height: =30
+                OnSelect: =Select(Parent)
+                Size: =12
+                Text: |-
+                    ="Ngày: "&Text(ThisItem.Risk_Create_Date,"dd/mm/yyyy")
+                Width: =145
+                X: =430
+                ZIndex: =4
+
+            Label7_28 As label:
+                Color: =RGBA(9, 33, 98, 1)
+                Font: =Font.Arial
+                Height: =30
+                OnSelect: =Select(Parent)
+                Size: =12
+                Text: |-
+                    ="Trạng thái: "&ThisItem.Risk_Status
+                Width: =355
+                X: =724
+                ZIndex: =5
+
+            Label7_31 As label:
+                Color: =RGBA(9, 33, 98, 1)
+                Font: =Font.Arial
+                Height: =30
+                OnSelect: =Select(Parent)
+                Size: =12
+                Text: |-
+                    ="Xếp hạng Thuần: "&ThisItem.Net_Rank&" - Gộp: "&ThisItem.Gross_Rank
+                Width: =355
+                X: =724
+                Y: =30
+                ZIndex: =6
+
+            Label7_29 As label:
+                Color: =RGBA(9, 33, 98, 1)
+                Font: =Font.Arial
+                Height: =30
+                OnSelect: =Select(Parent)
+                PaddingBottom: =4
+                Size: =12
+                Text: |-
+                    ="CSH: "&ThisItem.Risk_Owner 
+                Width: =399
+                X: =6
+                Y: =30
+                ZIndex: =7
+
+            Label7_30 As label:
+                Color: =RGBA(9, 33, 98, 1)
+                Font: =Font.Arial
+                Height: =30
+                OnSelect: =Select(Parent)
+                PaddingBottom: =3
+                PaddingTop: =0
+                Size: =12
+                Text: |-
+                    ="Trọng yếu: "&ThisItem.Risk_Important
+                Width: =158
+                X: =430
+                Y: =30
+                ZIndex: =8
+
+            Button3_6 As button:
+                Color: =RGBA(0, 0, 0, 0)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(0, 0, 0, 0)
+                FocusedBorderColor: =
+                FocusedBorderThickness: =
+                Height: =38
+                HoverBorderColor: =
+                HoverColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =
+                OnSelect: |-
+                    =Set(var_Timer,false);
+                    Set(var_Timer,true);
+                    Set(var_Click,var_Click+1);
+                    If(var_Click=2,Navigate(frmRiskApprovalDetail_1,ScreenTransition.Fade);var_Click=0;Set(varRiskInfo, ThisItem))
+                PressedBorderColor: =
+                PressedColor: =
+                PressedFill: =
+                Text: =""
+                Width: =1073
+                X: =6
+                Y: =88
+                ZIndex: =9
+
+            Icon1_2 As icon.Check:
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(54, 176, 75, 1)
+                Height: =40
+                Icon: =Icon.Check
+                OnSelect: |-
+                    =Patch(Table_Risk,LookUp(Table_Risk,Risk_Code=varRiskInfo.Risk_Code),{Risk_Status:LookUp(Table_Risk_Configure,And(SECTION="Risk",TYPE="Risk_Status",INDEX=4)).NAME});
+                        Notify(
+                            "Cấp 02 đã duyệt thành công",
+                            NotificationType.Success
+                        )
+                Width: =100
+                X: =1190
+                Y: =60
+                ZIndex: =13
+
+            Label7_32 As label:
+                Font: =Font.'Segoe UI'
+                Height: =60
+                OnSelect: =Select(Parent)
+                PaddingBottom: =4
+                Size: =14
+                Text: |-
+                    ="Mô tả: "&ThisItem.Risk_Description
+                VerticalAlign: =VerticalAlign.Top
+                Width: =1097
+                X: =6
+                Y: =60
+                ZIndex: =14
+
+            Icon1_3 As icon.Check:
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(255, 0, 0, 1)
+                Height: =40
+                Icon: =Icon.Cancel
+                OnSelect: |-
+                    =Patch(Table_Risk,LookUp(Table_Risk,Risk_Code=varRiskInfo.Risk_Code),{Risk_Status:LookUp(Table_Risk_Configure,And(SECTION="Risk",TYPE="Risk_Status",INDEX=7)).NAME});
+                        Notify(
+                            "Đã từ chối",
+                            NotificationType.Information
+                        )
+                    
+                    //Navigate(frmRiskApprovalList_1,ScreenTransition.Fade)
+                Width: =100
+                X: =1079
+                Y: =60
+                ZIndex: =15
+
+        Label1_6 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(54, 176, 75, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =47
+            Size: =17
+            Text: ="THÔNG TIN RỦI RO"
+            Width: =1336
             ZIndex: =8
 
-        Risk_Owner_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Risk_Owner"
-            FieldName: ="field_8"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =9
-            Text: =ThisItem.Risk_Owner
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =9
-
-        Gross_Finance_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Gross_Finance"
-            FieldName: ="field_9"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =10
-            Text: =ThisItem.Gross_Finance
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =10
-
-        Gross_Non_Finance_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Gross_Non_Finance"
-            FieldName: ="field_10"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =11
-            Text: =ThisItem.Gross_Non_Finance
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =11
-
-        Gross_Overall_Finance_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Gross_Overall_Finance"
-            FieldName: ="field_11"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =12
-            Text: =ThisItem.Gross_Overall_Finance
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =12
-
-        Gross_Possibility_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Gross_Possibility"
-            FieldName: ="field_12"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =13
-            Text: =ThisItem.Gross_Possibility
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =13
-
-        Gross_Score_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Gross_Score"
-            FieldName: ="field_13"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =14
-            Text: =ThisItem.Gross_Score
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =14
-
-        Gross_Rank_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Gross_Rank"
-            FieldName: ="field_14"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =15
-            Text: =ThisItem.Gross_Rank
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =15
-
-        Gross_Evaluation_Basis_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Gross_Evaluation_Basis"
-            FieldName: ="field_15"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =16
-            Text: =ThisItem.Gross_Evaluation_Basis
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =16
-
-        Net_Finance_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Net_Finance"
-            FieldName: ="field_16"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =17
-            Text: =ThisItem.Net_Finance
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =17
-
-        Net_Non_Finance_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Net_Non_Finance"
-            FieldName: ="field_17"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =18
-            Text: =ThisItem.Net_Non_Finance
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =18
-
-        Net_Overall_Finance_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Net_Overall_Finance"
-            FieldName: ="field_18"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =19
-            Text: =ThisItem.Net_Overall_Finance
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =20
-
-        Net_Possibility_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Net_Possibility"
-            FieldName: ="field_19"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =20
-            Text: =ThisItem.Net_Possibility
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =22
-
-        Net_Score_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Net_Score"
-            FieldName: ="field_20"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =21
-            Text: =ThisItem.Net_Score
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =24
-
-        Net_Rank_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Net_Rank"
-            FieldName: ="field_21"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =22
-            Text: =ThisItem.Net_Rank
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =26
-
-        Net_Evaluation_Basis_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Net_Evaluation_Basis"
-            FieldName: ="field_22"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =23
-            Text: =ThisItem.Net_Evaluation_Basis
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =28
-
-        Mail_create_by_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Mail_create_by"
-            FieldName: ="Mailcreateby"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =24
-            Text: =ThisItem.Mail_create_by
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =30
-
-        Approval_By_LV1_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Approval_By_LV1"
-            FieldName: ="Approval_By_LV1"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =25
-            Text: =ThisItem.Approval_By_LV1
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =32
-
-        Approval_By_LV2_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Approval_By_LV2"
-            FieldName: ="Approval_By_LV2"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =26
-            Text: =ThisItem.Approval_By_LV2
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =34
-
-        Approval_By_LV1Risk_Column2_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Approval_By_LV1Risk"
-            FieldName: ="Approval_By_LV1Risk"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =27
-            Text: =ThisItem.Approval_By_LV1Risk
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =36
-
-        Approval_By_LV2Risk_Column2_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Approval_By_LV2Risk"
-            FieldName: ="Approval_By_LV2Risk"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =28
-            Text: =ThisItem.Approval_By_LV2Risk
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =38
-
-        Attachments_Column3_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Attachments"
-            FieldName: ="{Attachments}"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =29
-            Text: =ThisItem.Attachments
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =40
-
-    dtv_Risk_Control_2 As dataTable.datatable:
-        BorderStyle: =BorderStyle.Solid
-        DisplayMode: =DisplayMode.Edit
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =426
-        Items: =Filter(Table_Risk_Control,Risk_ID=varRiskInfo.Risk_Code)
-        Width: =660
-        X: =16
-        Y: =291
+    Risk_5 As groupContainer:
+        Height: =448
+        Width: =668
+        X: =12
+        Y: =305
         ZIndex: =13
 
-        Control_Code_Column1_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Control_Code"
-            FieldName: ="Title"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =1
-            Text: =ThisItem.Control_Code
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =19
+        "Gallery1_7 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            AccessibleLabel: =
+            DelayItemLoading: =true
+            Height: =388
+            Items: |-
+                =Filter(
+                    Table_Risk_Control,
+                    And(
+                        Risk_ID=varRiskInfo.Risk_Code
+                    )
+                )
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =139
+            Width: =661
+            Y: =52
+            ZIndex: =7
 
-        Control_Status_Column1_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Control_Status"
-            FieldName: ="field_1"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =2
-            Text: =ThisItem.Control_Status
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =21
+            Separator1_7 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =0.5
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =134
+                ZIndex: =1
 
-        Control_Description_Column1_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Control_Description"
-            FieldName: ="field_2"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =3
-            Text: =ThisItem.Control_Description
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =23
+            Rectangle2_7 As rectangle:
+                Height: =Parent.TemplateHeight - Separator1_7.Height
+                OnSelect: =Select(Parent)
+                Visible: =If(ThisItem.IsSelected, true, false)
+                Width: =0
+                X: =1
+                ZIndex: =2
 
-        Control_Create_Date_Column1_2 As dataTableColumn.dateTimeColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Control_Create_Date"
-            FieldName: ="field_3"
-            FieldVariantName: ="dateTimeColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =4
-            Text: =Text(ThisItem.Control_Create_Date,DateTimeFormat.LongDateTime)
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =25
+            Label7_33 As label:
+                Color: =RGBA(9, 33, 98, 1)
+                Font: =Font.Arial
+                Height: =30
+                OnSelect: =Select(Parent)
+                PaddingBottom: =4
+                Size: =12
+                Text: |
+                    =ThisItem.Control_Code&" - Ngày: "&ThisItem.Control_Create_Date
+                Width: =271
+                X: =6
+                ZIndex: =3
 
-        Main_Control_Column1_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Main_Control"
-            FieldName: ="field_4"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =5
-            Text: =ThisItem.Main_Control
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =27
+            Label7_35 As label:
+                Color: =RGBA(9, 33, 98, 1)
+                Font: =Font.Arial
+                Height: =30
+                OnSelect: =Select(Parent)
+                Size: =12
+                Text: |-
+                    ="Trạng thái: "&ThisItem.Control_Status
+                Width: =346
+                X: =277
+                ZIndex: =5
 
-        Control_Owner_Column1_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Control_Owner"
-            FieldName: ="field_5"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =6
-            Text: =ThisItem.Control_Owner
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =29
+            Label7_36 As label:
+                Color: =RGBA(9, 33, 98, 1)
+                Font: =Font.Arial
+                Height: =66
+                OnSelect: =Select(Parent)
+                PaddingBottom: =4
+                Size: =12
+                Text: |-
+                    ="CSH: "&ThisItem.Control_Owner
+                VerticalAlign: =VerticalAlign.Top
+                Width: =199
+                X: =457
+                ZIndex: =7
 
-        Control_Type_Column1_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Control_Type"
-            FieldName: ="field_6"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =7
-            Text: =ThisItem.Control_Type
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =31
+            Label7_37 As label:
+                Color: =RGBA(9, 33, 98, 1)
+                Font: =Font.Arial
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =3
+                PaddingTop: =0
+                Size: =12
+                Text: |-
+                    ="ĐG: "&ThisItem.Control_Frequency&" - TT: "&ThisItem.Control_Classify
+                Width: =617
+                X: =6
+                Y: =30
+                ZIndex: =8
 
-        Control_Frequency_Column1_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Control_Frequency"
-            FieldName: ="field_7"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =8
-            Text: =ThisItem.Control_Frequency
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =33
+            Label7_39 As label:
+                Font: =Font.'Segoe UI'
+                Height: =68
+                OnSelect: =Select(Parent)
+                PaddingBottom: =4
+                Size: =14
+                Text: |-
+                    ="Mô tả: "&ThisItem.Control_Description
+                VerticalAlign: =VerticalAlign.Top
+                Width: =614
+                X: =9
+                Y: =66
+                ZIndex: =14
 
-        Control_Classify_Column1_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Control_Classify"
-            FieldName: ="field_8"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =9
-            Text: =ThisItem.Control_Classify
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =35
+        Label1_7 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(54, 176, 75, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =47
+            Size: =17
+            Text: ="KIỂM SOÁT"
+            Width: =668
+            ZIndex: =8
 
-        Control_Evaluation_Column1_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Control_Evaluation"
-            FieldName: ="field_9"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =10
-            Text: =ThisItem.Control_Evaluation
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =37
-
-        Control_Evaluation_Basis_Column1_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Control_Evaluation_Basis"
-            FieldName: ="field_10"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =11
-            Text: =ThisItem.Control_Evaluation_Basis
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =39
-
-        Control_Overall_Rating_Column1_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Control_Overall_Rating"
-            FieldName: ="field_11"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =12
-            Text: =ThisItem.Control_Overall_Rating
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =42
-
-        Control_Rating_Basis_Column1_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Control_Rating_Basis"
-            FieldName: ="field_12"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =13
-            Text: =ThisItem.Control_Rating_Basis
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =44
-
-        Risk_ID_Column1_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Risk_ID"
-            FieldName: ="field_13"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =14
-            Text: =ThisItem.Risk_ID
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =46
-
-        Attachments_Column4_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Attachments"
-            FieldName: ="{Attachments}"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =15
-            Text: =ThisItem.Attachments
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =48
-
-    dtv_Risk_Solution_2 As dataTable.datatable:
-        BorderStyle: =BorderStyle.Solid
-        DisplayMode: =DisplayMode.Edit
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =426
-        Items: =Filter(Table_Risk_Solution,Risk_ID=varRiskInfo.Risk_Code)
-        Width: =655
-        X: =697
-        Y: =291
+    Risk_6 As groupContainer:
+        Height: =448
+        Width: =668
+        X: =685
+        Y: =305
         ZIndex: =14
 
-        Action_Code_Column1_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Action_Code"
-            FieldName: ="Title"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =1
-            Text: =ThisItem.Action_Code
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =41
+        "Gallery1_8 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            AccessibleLabel: =
+            DelayItemLoading: =true
+            Height: =388
+            Items: |-
+                =Filter(
+                    Table_Risk_Solution,
+                    And(
+                        Risk_ID=varRiskInfo.Risk_Code
+                    )
+                )
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =139
+            Width: =661
+            Y: =52
+            ZIndex: =7
 
-        Action_Create_Date_Column1_2 As dataTableColumn.dateTimeColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Action_Create_Date"
-            FieldName: ="field_1"
-            FieldVariantName: ="dateTimeColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =2
-            Text: =Text(ThisItem.Action_Create_Date,DateTimeFormat.LongDateTime)
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =43
+            Separator1_8 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =0.5
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =134
+                ZIndex: =1
 
-        Action_Status_Column1_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Action_Status"
-            FieldName: ="field_2"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =3
-            Text: =ThisItem.Action_Status
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =45
+            Rectangle2_8 As rectangle:
+                Height: =Parent.TemplateHeight - Separator1_8.Height
+                OnSelect: =Select(Parent)
+                Visible: =If(ThisItem.IsSelected, true, false)
+                Width: =0
+                X: =1
+                ZIndex: =2
 
-        Action_Description_Column1_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Action_Description"
-            FieldName: ="field_3"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =4
-            Text: =ThisItem.Action_Description
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =47
+            Label7_40 As label:
+                Color: =RGBA(9, 33, 98, 1)
+                Font: =Font.Arial
+                Height: =30
+                OnSelect: =Select(Parent)
+                PaddingBottom: =4
+                Size: =12
+                Text: |
+                    =ThisItem.Action_Code&" - Ngày: "&ThisItem.Action_Create_Date
+                Width: =271
+                X: =6
+                ZIndex: =3
 
-        Action_Owner_Column1_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Action_Owner"
-            FieldName: ="field_4"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =5
-            Text: =ThisItem.Action_Owner
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =49
+            Label7_42 As label:
+                Color: =RGBA(9, 33, 98, 1)
+                Font: =Font.Arial
+                Height: =30
+                OnSelect: =Select(Parent)
+                Size: =12
+                Text: |-
+                    ="Trạng thái: "&ThisItem.Action_Status
+                Width: =178
+                X: =277
+                ZIndex: =5
 
-        Action_Plan_Start_Date_Column1_2 As dataTableColumn.dateTimeColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Action_Plan_Start_Date"
-            FieldName: ="field_5"
-            FieldVariantName: ="dateTimeColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =6
-            Text: =Text(ThisItem.Action_Plan_Start_Date,DateTimeFormat.LongDateTime)
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =50
+            Label7_43 As label:
+                Color: =RGBA(9, 33, 98, 1)
+                Font: =Font.Arial
+                Height: =66
+                OnSelect: =Select(Parent)
+                PaddingBottom: =4
+                Size: =12
+                Text: |-
+                    ="CSH: "&ThisItem.Action_Owner
+                VerticalAlign: =VerticalAlign.Top
+                Width: =217
+                X: =444
+                ZIndex: =7
 
-        Action_Plan_Finish_Date_Column1_2 As dataTableColumn.dateTimeColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Action_Plan_Finish_Date"
-            FieldName: ="field_6"
-            FieldVariantName: ="dateTimeColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =7
-            Text: =Text(ThisItem.Action_Plan_Finish_Date,DateTimeFormat.LongDateTime)
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =51
+            Label7_44 As label:
+                Color: =RGBA(9, 33, 98, 1)
+                Font: =Font.Arial
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =3
+                PaddingTop: =0
+                Size: =12
+                Text: |-
+                    ="ĐG:"&ThisItem.Action_Evaluation&" -TT: "&ThisItem.Action_Evaluation
+                Width: =438
+                X: =6
+                Y: =30
+                ZIndex: =8
 
-        Action_Actual_Finish_Date_Column1_2 As dataTableColumn.dateTimeColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Action_Actual_Finish_Date"
-            FieldName: ="field_7"
-            FieldVariantName: ="dateTimeColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =8
-            Text: =Text(ThisItem.Action_Actual_Finish_Date,DateTimeFormat.LongDateTime)
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =52
+            Label7_46 As label:
+                Font: =Font.'Segoe UI'
+                Height: =68
+                OnSelect: =Select(Parent)
+                PaddingBottom: =4
+                Size: =14
+                Text: |-
+                    ="Mô tả: "&ThisItem.Action_Description
+                VerticalAlign: =VerticalAlign.Top
+                Width: =614
+                X: =9
+                Y: =66
+                ZIndex: =14
 
-        Action_Evaluation_Column1_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Action_Evaluation"
-            FieldName: ="field_8"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =9
-            Text: =ThisItem.Action_Evaluation
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =53
-
-        Action_Overal_Rating_Column1_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Action_Overal_Rating"
-            FieldName: ="field_9"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =10
-            Text: =ThisItem.Action_Overal_Rating
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =54
-
-        Action_Evaluation_Basis_Column1_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Action_Evaluation_Basis"
-            FieldName: ="field_10"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =11
-            Text: =ThisItem.Action_Evaluation_Basis
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =55
-
-        Action_Rank_Column1_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Action_Rank"
-            FieldName: ="field_11"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =12
-            Text: =ThisItem.Action_Rank
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =56
-
-        Risk_ID_Column2_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Risk_ID"
-            FieldName: ="field_12"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =13
-            Text: =ThisItem.Risk_ID
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =57
-
-        Attachments_Column5_2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Attachments"
-            FieldName: ="{Attachments}"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =14
-            Text: =ThisItem.Attachments
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =58
+        Label1_8 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(54, 176, 75, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =47
+            Size: =17
+            Text: ="HÀNH ĐỘNG KHẮC PHỤC"
+            Width: =668
+            ZIndex: =8
 

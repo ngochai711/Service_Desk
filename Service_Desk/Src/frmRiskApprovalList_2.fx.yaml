@@ -13,280 +13,6 @@
         Y: =24
         ZIndex: =1
 
-    Risk_2 As groupContainer:
-        Height: =514
-        Width: =1336
-        X: =30
-        Y: =159
-        ZIndex: =4
-
-        Rectangle1_40 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =62
-            OnSelect: =
-            Width: =1317
-            Y: =47
-            ZIndex: =1
-
-        Rectangle1_39 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            Fill: =RGBA(215, 223, 240, 1)
-            Height: =47
-            OnSelect: =
-            Width: =455
-            ZIndex: =2
-
-        "Gallery1_4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-            AccessibleLabel: =
-            DelayItemLoading: =true
-            Height: =383
-            Items: |-
-                =Filter(
-                    Table_Risk,
-                    And(
-                        Approval_By_LV2Risk=varUser.Username,
-                        Risk_Status="Chờ duyệt cấp 2"
-                    )
-                )
-            Layout: =Layout.Vertical
-            LoadingSpinner: =LoadingSpinner.Data
-            TemplatePadding: =0
-            TemplateSize: =135
-            Width: =1317
-            Y: =108
-            ZIndex: =7
-
-            Separator1_2 As rectangle:
-                BorderColor: =RGBA(0, 0, 0, 1)
-                BorderThickness: =0.5
-                Height: =1
-                OnSelect: =Select(Parent)
-                Width: =Parent.TemplateWidth
-                Y: =126
-                ZIndex: =1
-
-            Rectangle2_3 As rectangle:
-                Height: =Parent.TemplateHeight - Separator1_2.Height
-                OnSelect: =Select(Parent)
-                Visible: =If(ThisItem.IsSelected, true, false)
-                Width: =0
-                X: =1
-                ZIndex: =2
-
-            Label7_12 As label:
-                Font: =Font.'Segoe UI'
-                Height: =25
-                OnSelect: =Select(Parent)
-                PaddingBottom: =4
-                Size: =12
-                Text: =ThisItem.Risk_Code&" - "&ThisItem.Risk_Name
-                Width: =390
-                X: =5
-                ZIndex: =3
-
-            Label7_14 As label:
-                Font: =Font.'Segoe UI'
-                Height: =25
-                OnSelect: =Select(Parent)
-                Size: =12
-                Text: |-
-                    ="Ngày: "&Text(ThisItem.Risk_Create_Date,"dd/mm/yyyy")
-                Width: =145
-                X: =5
-                Y: =50
-                ZIndex: =4
-
-            Label7_16 As label:
-                Font: =Font.'Segoe UI'
-                Height: =25
-                OnSelect: =Select(Parent)
-                Size: =12
-                Text: |-
-                    ="Trạng thái: "&ThisItem.Risk_Status
-                Width: =390
-                X: =5
-                Y: =75
-                ZIndex: =5
-
-            Label7_17 As label:
-                Font: =Font.'Segoe UI'
-                Height: =25
-                OnSelect: =Select(Parent)
-                Size: =12
-                Text: |-
-                    ="Xếp hạng Thuần: "&ThisItem.Net_Rank&" - Gộp: "&ThisItem.Gross_Rank
-                Width: =390
-                X: =5
-                Y: =100
-                ZIndex: =6
-
-            Label7_13 As label:
-                Font: =Font.'Segoe UI'
-                Height: =25
-                OnSelect: =Select(Parent)
-                PaddingBottom: =4
-                Size: =12
-                Text: |-
-                    ="CSH: "&ThisItem.Risk_Owner 
-                Width: =451
-                X: =5
-                Y: =25
-                ZIndex: =7
-
-            Label7_15 As label:
-                Font: =Font.'Segoe UI'
-                Height: =25
-                OnSelect: =Select(Parent)
-                PaddingBottom: =3
-                PaddingTop: =0
-                Size: =12
-                Text: |-
-                    ="Trọng yếu: "&ThisItem.Risk_Important
-                Width: =145
-                X: =175
-                Y: =50
-                ZIndex: =8
-
-            Button3_3 As button:
-                Color: =RGBA(0, 0, 0, 0)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(0, 0, 0, 0)
-                DisabledFill: =RGBA(0, 0, 0, 0)
-                Fill: =RGBA(0, 0, 0, 0)
-                FocusedBorderColor: =
-                FocusedBorderThickness: =
-                Height: =126
-                HoverBorderColor: =
-                HoverColor: =RGBA(0, 0, 0, 0)
-                HoverFill: =
-                OnSelect: |-
-                    =Set(var_Timer,false);
-                    Set(var_Timer,true);
-                    Set(var_Click,var_Click+1);
-                    If(var_Click=2,Navigate(frmRiskApprovalDetail_1,ScreenTransition.Fade);var_Click=0;Set(varRiskInfo, ThisItem))
-                PressedBorderColor: =
-                PressedColor: =
-                PressedFill: =
-                Text: =""
-                Width: =456
-                ZIndex: =9
-
-            NextArrow1_3 As icon.ChevronRight:
-                AccessibleLabel: =Self.Tooltip
-                Color: =RGBA(166, 166, 166, 1)
-                Height: =126
-                Icon: =Icon.ChevronRight
-                OnSelect: |-
-                    =UpdateContext({varRiskCode:ThisItem.Risk_Code})
-                    /*Collect(
-                        RiskInfo,
-                        {
-                            RiskId: ThisItem.RR_MA,
-                            RiskStatus: ThisItem.RR_TRANGTHAI,
-                            RiskCreateDate: Text(ThisItem.'NGAY TẠO',"dd/mm/yyyy"),
-                            RiskImportant: ThisItem.RR_TRONGYEU,
-                            RiskName: ThisItem.RR_TEN,
-                            RiskDescribe: ThisItem.RR_MOTA,
-                            RiskReason: ThisItem.RR_NGUYENNHAN,
-                            RiskConsequence: ThisItem.RR_HAUQUA,
-                            RiskOwner: ThisItem.RR_CSH,
-                            RiskGOPFinance: ThisItem.RR_GOP_TAICHINH,
-                            RiskGOPnonFinance: ThisItem.RR_GOP_PHITAICHINH,
-                            RiskGOPOverall: ThisItem.RR_GOP_TONGTHE,
-                            RiskGOPRate: ThisItem.RR_GOP_KHANANGXAYRA,
-                            RiskGOPGrade: ThisItem.RR_GOP_DIEM,
-                            RiskGOPRank: ThisItem.RR_GOP_XEPHANG,
-                            RiskGOPEvaluate: ThisItem.RR_GOP_CSDANHGIA,
-                            RiskTHUANFinance: ThisItem.RR_THUAN_TAICHINH,
-                            RiskTHUANnonFinance: ThisItem.RR_THUAN_PHITAICHINH,
-                            RiskTHUANOverall: ThisItem.RR_THUAN_TONGTHE,
-                            RiskTHUANRate: ThisItem.RR_THUAN_KHANANGXAYRA,
-                            RiskTHUANGrade: ThisItem.RR_THUAN_DIEM,
-                            RiskTHUANRank: ThisItem.RR_THUAN_XEPHANG,
-                            RiskTHUANEvaluate: ThisItem.RR_THUAN_CSDANHGIA
-                        }
-                    )*/
-                PaddingBottom: =16
-                PaddingLeft: =16
-                PaddingRight: =16
-                PaddingTop: =16
-                Tooltip: ="Hiện kiểm soát"
-                Width: =60
-                X: =396
-                ZIndex: =10
-
-        Label1_4 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(82, 94, 117, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =47
-            Size: =17
-            Text: ="THÔNG TIN RỦI RO"
-            Width: =1317
-            ZIndex: =8
-
-        R_Add_4 As icon.Add:
-            Height: =28
-            Icon: =Icon.Add
-            OnSelect: =Navigate(frmRisk,ScreenTransition.Fade)
-            Tooltip: ="Tạo rủi ro"
-            Width: =27
-            X: =1275
-            Y: =9
-            ZIndex: =9
-
-        R_CloseStatus_2 As group:
-            Height: =150
-            Width: =150.00000000000003
-            X: =-42
-            Y: =-7
-            ZIndex: =12
-
-            TextBox1_26 As label:
-                Align: =LayoutAlignItems.Center
-                Color: =RGBA(54, 176, 75, 1)
-                FocusedBorderColor: =TextBox1_26.BorderColor
-                FocusedBorderThickness: =02
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =25
-                HoverBorderColor: =TextBox1_26.BorderColor
-                HoverColor: =TextBox1_26.Color
-                HoverFill: =TextBox1_26.Fill
-                PressedBorderColor: =TextBox1_26.BorderColor
-                PressedColor: =TextBox1_26.Color
-                PressedFill: =TextBox1_26.Fill
-                Size: =20
-                Text: =CountRows(Table_Risk)
-                Width: =231
-                Wrap: =false
-                Y: =60
-                ZIndex: =3
-
-            TextBox2_26 As label:
-                Align: =LayoutAlignItems.Center
-                Color: =RGBA(54, 176, 75, 1)
-                FocusedBorderColor: =TextBox2_26.BorderColor
-                FocusedBorderThickness: =02
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =23
-                HoverBorderColor: =TextBox2_26.BorderColor
-                HoverColor: =TextBox2_26.Color
-                HoverFill: =TextBox2_26.Fill
-                PressedBorderColor: =TextBox2_26.BorderColor
-                PressedColor: =TextBox2_26.Color
-                PressedFill: =TextBox2_26.Fill
-                Size: =7
-                Text: ="Theo dõi"
-                Width: =231
-                Y: =85
-                ZIndex: =4
-
     Risk_Owner_5 As group:
         Height: =5
         Width: =5
@@ -427,7 +153,7 @@
             FontWeight: =FontWeight.Bold
             Height: =88
             Size: =25
-            Text: ="RISK SAVVY - PHÊ DUYỆT LV 1"
+            Text: ="RISK SAVVY - DS RỦI RO DUYỆT CẤP 2"
             Width: =Parent.Width
             ZIndex: =11
 
@@ -526,6 +252,295 @@
         X: =124
         Y: =1
         ZIndex: =28
+
+    Risk_3 As groupContainer:
+        Height: =579
+        Width: =1315
+        X: =27
+        Y: =160
+        ZIndex: =31
+
+        Rectangle1_46 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =62
+            OnSelect: =
+            Width: =1315
+            Y: =47
+            ZIndex: =1
+
+        Rectangle1_45 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(215, 223, 240, 1)
+            Height: =47
+            OnSelect: =
+            Width: =455
+            ZIndex: =2
+
+        "Gallery1_5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            AccessibleLabel: =
+            DelayItemLoading: =true
+            Height: =382
+            Items: |-
+                =Filter(
+                    Table_Risk,
+                    And(
+                        Approval_By_LV2 = varUser.Username,
+                        Or(
+                            Risk_Status="Đã Duyệt - Theo dõi khăc phục",
+                            Risk_Status="Chờ duyệt cấp 1",
+                            Risk_Status="Chờ duyệt cấp 2",
+                            Risk_Status="Trả Lại"
+                        )
+                    )
+                )
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =126
+            Width: =1315
+            Y: =114
+            ZIndex: =7
+
+            Separator1_5 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =0.5
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =125
+                ZIndex: =1
+
+            Rectangle2_5 As rectangle:
+                Height: =Parent.TemplateHeight - Separator1_5.Height
+                OnSelect: =Select(Parent)
+                Visible: =If(ThisItem.IsSelected, true, false)
+                Width: =0
+                X: =1
+                ZIndex: =2
+
+            Label7_19 As label:
+                Color: =RGBA(9, 33, 98, 1)
+                Font: =Font.Arial
+                Height: =30
+                OnSelect: =Select(Parent)
+                PaddingBottom: =4
+                Size: =12
+                Text: |
+                    =ThisItem.Risk_Code&" | "&ThisItem.Risk_Name
+                Width: =399
+                X: =6
+                ZIndex: =3
+
+            Label7_21 As label:
+                Color: =RGBA(9, 33, 98, 1)
+                Font: =Font.Arial
+                Height: =30
+                OnSelect: =Select(Parent)
+                Size: =12
+                Text: |-
+                    ="Ngày: "&Text(ThisItem.Risk_Create_Date,"dd/mm/yyyy")
+                Width: =145
+                X: =430
+                ZIndex: =4
+
+            Label7_23 As label:
+                Color: =RGBA(9, 33, 98, 1)
+                Font: =Font.Arial
+                Height: =30
+                OnSelect: =Select(Parent)
+                Size: =12
+                Text: |-
+                    ="Trạng thái: "&ThisItem.Risk_Status
+                Width: =355
+                X: =724
+                ZIndex: =5
+
+            Label7_24 As label:
+                Color: =RGBA(9, 33, 98, 1)
+                Font: =Font.Arial
+                Height: =30
+                OnSelect: =Select(Parent)
+                Size: =12
+                Text: |-
+                    ="Xếp hạng Thuần: "&ThisItem.Net_Rank&" - Gộp: "&ThisItem.Gross_Rank
+                Width: =355
+                X: =724
+                Y: =30
+                ZIndex: =6
+
+            Label7_20 As label:
+                Color: =RGBA(9, 33, 98, 1)
+                Font: =Font.Arial
+                Height: =30
+                OnSelect: =Select(Parent)
+                PaddingBottom: =4
+                Size: =12
+                Text: |-
+                    ="CSH: "&ThisItem.Risk_Owner 
+                Width: =399
+                X: =6
+                Y: =30
+                ZIndex: =7
+
+            Label7_22 As label:
+                Color: =RGBA(9, 33, 98, 1)
+                Font: =Font.Arial
+                Height: =30
+                OnSelect: =Select(Parent)
+                PaddingBottom: =3
+                PaddingTop: =0
+                Size: =12
+                Text: |-
+                    ="Trọng yếu: "&ThisItem.Risk_Important
+                Width: =158
+                X: =430
+                Y: =30
+                ZIndex: =8
+
+            Button3_5 As button:
+                Color: =RGBA(0, 0, 0, 0)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(0, 0, 0, 0)
+                FocusedBorderColor: =
+                FocusedBorderThickness: =
+                Height: =38
+                HoverBorderColor: =
+                HoverColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =
+                OnSelect: |-
+                    =Set(var_Timer,false);
+                    Set(var_Timer,true);
+                    Set(var_Click,var_Click+1);
+                    If(var_Click=2,Navigate(frmRiskApprovalDetail_1,ScreenTransition.Fade);var_Click=0;Set(varRiskInfo, ThisItem))
+                PressedBorderColor: =
+                PressedColor: =
+                PressedFill: =
+                Text: =""
+                Width: =1073
+                X: =6
+                Y: =88
+                ZIndex: =9
+
+            NextArrow1_4 As icon.ChevronRight:
+                AccessibleLabel: =Self.Tooltip
+                Color: =RGBA(255, 255, 0, 1)
+                Fill: =RGBA(9, 33, 98, 1)
+                Height: =43
+                Icon: =Icon.DetailList
+                OnSelect: =Navigate(frmRiskApprovalDetail_2,ScreenTransition.Fade);var_Click=0;Set(varRiskInfo, ThisItem)
+                PaddingBottom: =16
+                PaddingLeft: =16
+                PaddingRight: =16
+                PaddingTop: =16
+                Tooltip: ="Hiện kiểm soát"
+                Width: =58
+                X: =1169
+                Y: =60
+                ZIndex: =10
+
+            Icon1_1 As icon.Check:
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(54, 176, 75, 1)
+                Height: =43
+                Icon: =Icon.Check
+                OnSelect: |-
+                    =Patch(Table_Risk,LookUp(Table_Risk,Risk_Code=varRiskInfo.Risk_Code),{Risk_Status:LookUp(Table_Risk_Configure,And(SECTION="Risk",TYPE="Risk_Status",INDEX=4)).NAME});
+                        Notify(
+                            "Cấp 02 đã duyệt thành công",
+                            NotificationType.Success
+                        )
+                Width: =41
+                X: =1243
+                Y: =60
+                ZIndex: =13
+
+            Label7_25 As label:
+                Font: =Font.'Segoe UI'
+                Height: =60
+                OnSelect: =Select(Parent)
+                PaddingBottom: =4
+                Size: =14
+                Text: |-
+                    ="Mô tả: "&ThisItem.Risk_Description
+                VerticalAlign: =VerticalAlign.Top
+                Width: =1097
+                X: =6
+                Y: =60
+                ZIndex: =14
+
+        Label1_5 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(54, 176, 75, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =47
+            Size: =17
+            Text: ="THÔNG TIN RỦI RO"
+            Width: =1315
+            ZIndex: =8
+
+        R_Add_5 As icon.Add:
+            Height: =28
+            Icon: =Icon.Add
+            OnSelect: =Navigate(frmRisk,ScreenTransition.Fade)
+            Tooltip: ="Tạo rủi ro"
+            Width: =27
+            X: =1275
+            Y: =9
+            ZIndex: =9
+
+        R_CloseStatus_3 As group:
+            Height: =150
+            Width: =150.00000000000003
+            X: =-42
+            Y: =-7
+            ZIndex: =12
+
+            TextBox1_27 As label:
+                Align: =LayoutAlignItems.Center
+                Color: =RGBA(54, 176, 75, 1)
+                FocusedBorderColor: =TextBox1_27.BorderColor
+                FocusedBorderThickness: =02
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =25
+                HoverBorderColor: =TextBox1_27.BorderColor
+                HoverColor: =TextBox1_27.Color
+                HoverFill: =TextBox1_27.Fill
+                PressedBorderColor: =TextBox1_27.BorderColor
+                PressedColor: =TextBox1_27.Color
+                PressedFill: =TextBox1_27.Fill
+                Size: =20
+                Text: =CountRows(Table_Risk)
+                Width: =231
+                Wrap: =false
+                Y: =60
+                ZIndex: =3
+
+            TextBox2_27 As label:
+                Align: =LayoutAlignItems.Center
+                Color: =RGBA(54, 176, 75, 1)
+                FocusedBorderColor: =TextBox2_27.BorderColor
+                FocusedBorderThickness: =02
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =23
+                HoverBorderColor: =TextBox2_27.BorderColor
+                HoverColor: =TextBox2_27.Color
+                HoverFill: =TextBox2_27.Fill
+                PressedBorderColor: =TextBox2_27.BorderColor
+                PressedColor: =TextBox2_27.Color
+                PressedFill: =TextBox2_27.Fill
+                Size: =7
+                Text: ="Theo dõi"
+                Width: =231
+                Y: =85
+                ZIndex: =4
 
     btnBackhome_5 As group:
         Height: =5

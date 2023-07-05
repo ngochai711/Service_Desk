@@ -5,6 +5,23 @@
         UpdateContext({varRiskKey:varRiskInfo.Risk_Code});
         
         //Reset
+        Reset(inp_RiskName_1);
+        Reset(inp_RiskDescription_1);
+        Reset(inp_RiskReason_1);
+        Reset(inp_RiskOwner_1);
+        Reset(inp_RiskConsequence_1);
+        Reset(inp_GrossEvaluation_1);
+        Reset(inp_NetEvaluation_1);
+        Reset(dp_RiskCreateDate_1);
+        Reset(cb_RiskStatus_1);
+        Reset(cb_RiskImportant_1);
+        Reset(dd_GrossFinance_1);
+        Reset(dd_GrossnonFinance_1);
+        Reset(dd_GrossPossibility_1);
+        Reset(dd_NetFinance_1);
+        Reset(dd_NetnonFinance_1);
+        Reset(dd_NetPossibility_1);
+        
         Reset(inp_RiskOwner_1);
         Reset(inp_RiskApproval1_1);
         Reset(inp_RiskApproval1Risk_1);
@@ -110,9 +127,9 @@
             
                     //Approval
                     Approval_By_LV1:If(varLBRiskApproval1Temp=true ,lb_RiskApproval1_1.Text,SelectedRiskApproval1.MailNickname),
-                    Approval_By_LV1Risk:If(varLBRiskApproval1Temp=true,lb_RiskApproval1_Risk_1.Text,SelectedRiskApproval1_Risk.MailNickname),
-                    Approval_By_LV2:If(varLBRiskApproval1Temp=true,lb_RiskApproval2_1.Text,SelectedRiskApproval2.MailNickname),
-                    Approval_By_LV2Risk:If(varLBRiskApproval1Temp=true,lb_RiskApproval2_Risk_1.Text,SelectedRiskApproval2_Risk.MailNickname)}
+                    Approval_By_LV1Risk:If(varLBRiskApproval1_RiskTemp=true,lb_RiskApproval1_Risk_1.Text,SelectedRiskApproval1_Risk.MailNickname),
+                    Approval_By_LV2:If(varLBRiskApproval2Temp=true,lb_RiskApproval2_1.Text,SelectedRiskApproval2.MailNickname),
+                    Approval_By_LV2Risk:If(varLBRiskApproval2_RiskTemp=true,lb_RiskApproval2_Risk_1.Text,SelectedRiskApproval2_Risk.MailNickname)}
                 );
                 Notify("Thay đổi thành công",NotificationType.Success)
             );
@@ -1730,9 +1747,9 @@
             
                     //Approval
                     Approval_By_LV1:If(varLBRiskApproval1Temp=true,lb_RiskApproval1_1.Text,SelectedRiskApproval1.MailNickname),
-                    Approval_By_LV1Risk:If(varLBRiskApproval1Temp=true,lb_RiskApproval1_Risk_1.Text,SelectedRiskApproval1_Risk.MailNickname),
-                    Approval_By_LV2:If(varLBRiskApproval1Temp=true,lb_RiskApproval2_1.Text,SelectedRiskApproval2.MailNickname),
-                    Approval_By_LV2Risk:If(varLBRiskApproval1Temp=true ,lb_RiskApproval2_Risk_1.Text,SelectedRiskApproval2_Risk.MailNickname)}
+                    Approval_By_LV1Risk:If(varLBRiskApproval1_RiskTemp=true,lb_RiskApproval1_Risk_1.Text,SelectedRiskApproval1_Risk.MailNickname),
+                    Approval_By_LV2:If(varLBRiskApproval2Temp=true,lb_RiskApproval2_1.Text,SelectedRiskApproval2.MailNickname),
+                    Approval_By_LV2Risk:If(varLBRiskApproval2_RiskTemp=true ,lb_RiskApproval2_Risk_1.Text,SelectedRiskApproval2_Risk.MailNickname)}
                 );
                 Notify("Thay đổi thành công",NotificationType.Success)
             );

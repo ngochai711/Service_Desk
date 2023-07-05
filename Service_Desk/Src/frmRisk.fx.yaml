@@ -12,6 +12,17 @@
         UpdateContext({varRiskTHUANRank:"Nhỏ"});
         UpdateContext({varTabSelected:1});
         
+        //Gross
+        UpdateContext({varGrossOverall_Text:varRiskInfo.Gross_Overall_Finance});
+        UpdateContext({varGrossOverall_Index:1});
+        UpdateContext({varGrossRank:varRiskInfo.Gross_Rank});
+        UpdateContext({varGrossScore:varRiskInfo.Gross_Score});
+        //Net
+        UpdateContext({varNetOverall_Text:varRiskInfo.Net_Overall_Finance});
+        UpdateContext({varNetOverall_Index:1});
+        UpdateContext({varNetRank:varRiskInfo.Net_Rank});
+        UpdateContext({varNetScore:varRiskInfo.Net_Score});
+        
 
     RectQuickActionBar2_3 As rectangle:
         Fill: =RGBA(0, 52, 104, 1)
@@ -532,7 +543,7 @@
         Font: =Font.'Segoe UI'
         Height: =35
         Size: =12
-        Text: =varRiskGOPOverall_Text
+        Text: =varGrossOverall_Text
         Visible: =varTabSelected=1
         Width: =200
         X: =480
@@ -584,7 +595,7 @@
         Font: =Font.'Segoe UI'
         Height: =35
         Size: =12
-        Text: =dd_GrossPossibility.Selected.INDEX&"-"&varRiskGOPOverall_Index
+        Text: =dd_GrossPossibility.Selected.INDEX&"-"&varGrossOverall_Index
         Visible: =varTabSelected=1
         Width: =200
         X: =900
@@ -616,7 +627,7 @@
         Font: =Font.'Segoe UI'
         Height: =35
         Size: =12
-        Text: =varRiskGOPRank
+        Text: =varGrossRank
         Visible: =varTabSelected=1
         Width: =200
         X: =1110
@@ -837,7 +848,7 @@
         Font: =Font.'Segoe UI'
         Height: =35
         Size: =12
-        Text: =varRiskTHUANOverall_Text
+        Text: =varNetOverall_Text
         Visible: |
             =varTabSelected=2
         Width: =200
@@ -892,7 +903,7 @@
         Font: =Font.'Segoe UI'
         Height: =35
         Size: =12
-        Text: =dd_NetPossibility.Selected.INDEX&"-"&varRiskTHUANOverall_Index
+        Text: =dd_NetPossibility.Selected.INDEX&"-"&varNetOverall_Index
         Visible: |
             =varTabSelected=2
         Width: =200
@@ -926,7 +937,7 @@
         Font: =Font.'Segoe UI'
         Height: =35
         Size: =12
-        Text: =varRiskTHUANRank
+        Text: =varNetRank
         Visible: |
             =varTabSelected=2
         Width: =200
@@ -985,40 +996,52 @@
         Fill: =RGBA(0, 0, 0, 0)
         Font: =Font.'Segoe UI'
         Height: =87
-        OnSelect: |-
+        OnSelect: |+
             =If(
-                IsBlank(inp_RiskName) || IsBlank(inp_RiskDescription) || IsBlank(inp_RiskReason) || IsBlank(lb_RiskOwner) || IsBlank(cb_RiskImportant) || IsBlank(cb_RiskStatus) || IsBlank(inp_RiskConsequence),
+                IsBlank(inp_RiskName) || IsBlank(inp_RiskDescription) || IsBlank(inp_RiskReason) || IsBlank(lb_RiskOwner) || IsBlank(cb_RiskImportant) || IsBlank(cb_RiskStatus) || IsBlank(inp_RiskConsequence)
+                || IsBlank(lb_RiskApproval1) || IsBlank(lb_RiskApproval2) || IsBlank(lb_RiskApproval1_Risk) || IsBlank(lb_RiskApproval2_Risk),
             
-                UpdateContext({varTemp2:false}),
+                Notify("Vui lòng nhập đầy đủ thông tin",NotificationType.Error),
                 
-            Patch(Table_Risk,Defaults(Table_Risk),{
-                Risk_Code:varRiskKey,
-                Risk_Status:LookUp(Table_Risk_Configure,And(SECTION="Risk",TYPE="Risk_Status",INDEX=2)).NAME,
-                Risk_Create_Date:dp_RiskCreateDate.SelectedDate,
-                Risk_Important:cb_RiskImportant.Selected.Value,
-                Risk_Name:inp_RiskName.Text,
-                Risk_Description:inp_RiskDescription.Text,
-                Risk_Reason:inp_RiskReason.Text,
-                Risk_Consequence:inp_RiskConsequence.Text,
-                Risk_Owner:SelectedRiskOwner.DisplayName&" - "&SelectedRiskOwner.Mail,
-                Gross_Finance:dd_GrossFinance.Selected.NAME,
-                Gross_Non_Finance:dd_GrossnonFinance.Selected.NAME,
-                Gross_Overall_Finance:lb_GrossOverall.Text,
-                Gross_Possibility:dd_GrossPossibility.Selected.NAME,
-                Gross_Score:dd_GrossPossibility.Selected.INDEX&"-"&varRiskGOPOverall_Index,
-                Gross_Rank:lb_GrossRank.Text,
-                Gross_Evaluation_Basis: inp_GrossEvaluation.Text,
-                Net_Finance:dd_NetFinance.Selected.NAME,
-                Net_Non_Finance:dd_NetnonFinance.Selected.NAME,
-                Net_Overall_Finance:varRiskGOPOverall_Text,
-                Net_Possibility:dd_NetPossibility.Selected.NAME,
-                Net_Score:dd_NetPossibility.Selected.INDEX&"-"&varRiskTHUANOverall_Index,
-                Net_Rank:lb_NetRank.Text,
-                Net_Evaluation_Basis:inp_NetEvaluation.Text,
-                Risk_Division:varUser.Division,Risk_Department:varUser.Department})
+                Patch(Table_Risk,Defaults(Table_Risk),{
+                    //Risk Info
+                    Risk_Code:varRiskKey,
+                    Risk_Status:LookUp(Table_Risk_Configure,And(SECTION="Risk",TYPE="Risk_Status",INDEX=2)).NAME,
+                    Risk_Create_Date:dp_RiskCreateDate.SelectedDate,
+                    Risk_Important:cb_RiskImportant.Selected.Value,
+                    Risk_Name:inp_RiskName.Text,
+                    Risk_Description:inp_RiskDescription.Text,
+                    Risk_Reason:inp_RiskReason.Text,
+                    Risk_Consequence:inp_RiskConsequence.Text,
+                    Risk_Owner:SelectedRiskOwner.DisplayName&" - "&SelectedRiskOwner.Mail,
+                    Risk_Division:varUser.Division,
+                    Risk_Department:varUser.Department,
+                    //Gross
+                    Gross_Finance:dd_GrossFinance.Selected.NAME,
+                    Gross_Non_Finance:dd_GrossnonFinance.Selected.NAME,
+                    Gross_Overall_Finance:lb_GrossOverall.Text,
+                    Gross_Possibility:dd_GrossPossibility.Selected.NAME,
+                    Gross_Score:dd_GrossPossibility.Selected.INDEX&"-"&varRiskGOPOverall_Index,
+                    Gross_Rank:lb_GrossRank.Text,
+                    Gross_Evaluation_Basis: inp_GrossEvaluation.Text,
+                    //Net
+                    Net_Finance:dd_NetFinance.Selected.NAME,
+                    Net_Non_Finance:dd_NetnonFinance.Selected.NAME,
+                    Net_Overall_Finance:varRiskGOPOverall_Text,
+                    Net_Possibility:dd_NetPossibility.Selected.NAME,
+                    Net_Score:dd_NetPossibility.Selected.INDEX&"-"&varRiskTHUANOverall_Index,
+                    Net_Rank:lb_NetRank.Text,
+                    Net_Evaluation_Basis:inp_NetEvaluation.Text,
+            
+                    Mail_create_by:varUser.Username,
+                    //Approval
+                    Approval_By_LV1:SelectedRiskApproval1.MailNickname,
+                    Approval_By_LV1Risk:SelectedRiskApproval1_Risk.MailNickname,
+                    Approval_By_LV2:SelectedRiskApproval2.MailNickname,
+                    Approval_By_LV2Risk:SelectedRiskApproval2_Risk.MailNickname});
+                Navigate(frmRiskStatistic,ScreenTransition.Fade);
             );
             
-            Navigate(frmRiskStatistic,ScreenTransition.Fade)
         PaddingBottom: =12
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
@@ -1036,18 +1059,18 @@
         Items: =Sort(Filter(Table_Risk_Configure, SECTION = "RISK" && TYPE = "Gross_Finance"),INDEX,SortOrder.Ascending)
         OnChange: |-
             =If(dd_GrossFinance.Selected.INDEX = dd_GrossnonFinance.Selected.INDEX,
-            UpdateContext({varRiskTHUANOverall_Text:dd_GrossFinance.Selected.NAME,varRiskTHUANOverall_Index1:dd_GrossFinance.Selected.INDEX}),
+            UpdateContext({varGrossOverall_Text:dd_GrossFinance.Selected.NAME,varGrossOverall_Index:dd_GrossFinance.Selected.INDEX}),
             If(dd_GrossFinance.Selected.INDEX > dd_GrossnonFinance.Selected.INDEX,
-            UpdateContext({varRiskTHUANOverall_Text:dd_GrossFinance.Selected.NAME,varRiskTHUANOverall_Index1:dd_GrossFinance.Selected.INDEX}),
-            UpdateContext({varRiskTHUANOverall_Text:dd_GrossnonFinance.Selected.NAME,varRiskTHUANOverall_Index1:dd_GrossnonFinance.Selected.INDEX})));
+            UpdateContext({varGrossOverall_Text:dd_GrossFinance.Selected.NAME,varGrossOverall_Index:dd_GrossFinance.Selected.INDEX}),
+            UpdateContext({varGrossOverall_Text:dd_GrossnonFinance.Selected.NAME,varGrossOverall_Index:dd_GrossnonFinance.Selected.INDEX})));
             
-            UpdateContext({varTemp:varRiskTHUANOverall_Index1*dd_GrossPossibility.Selected.INDEX});
-            If(!(varRiskTHUANOverall_Index1=2) && varTemp >= 8, UpdateContext({varRiskGOPRank:"Rất cao"}),
-            If((varRiskTHUANOverall_Index1>=3 || dd_GrossPossibility.Selected.INDEX>=3) && varTemp >=4, UpdateContext({varRiskGOPRank:"Cao"}),
-            If(dd_GrossPossibility.Selected.INDEX=1 && varRiskTHUANOverall_Index1<=2,  UpdateContext({varRiskGOPRank:"Thấp"}),
-            UpdateContext({varRiskGOPRank:"Trung bình"}))));
+            UpdateContext({varTemp:varGrossOverall_Index*dd_GrossPossibility.Selected.INDEX});
+            If(!(varGrossOverall_Index=2) && varTemp >= 8, UpdateContext({varGrossRank:"Rất cao"}),
+            If((varGrossOverall_Index>=3 || dd_GrossPossibility.Selected.INDEX>=3) && varTemp >=4, UpdateContext({varGrossRank:"Cao"}),
+            If(dd_GrossPossibility.Selected.INDEX=1 && varGrossOverall_Index<=2,  UpdateContext({varGrossRank:"Thấp"}),
+            UpdateContext({varGrossRank:"Trung bình"}))));
             
-            UpdateContext({varGrossScore:dd_GrossPossibility.Selected.INDEX&"-"&varRiskTHUANOverall_Index1});
+            UpdateContext({varGrossScore:dd_GrossPossibility.Selected.INDEX&"-"&varGrossOverall_Index});
         Size: =12
         Visible: =varTabSelected=1
         Width: =200
@@ -1061,18 +1084,18 @@
         Items: =Sort(Filter(Table_Risk_Configure,SECTION="RISK"&&TYPE="Gross_Non_Finance"),INDEX,SortOrder.Ascending)
         OnChange: |-
             =If(dd_GrossFinance.Selected.INDEX = dd_GrossnonFinance.Selected.INDEX,
-            UpdateContext({varRiskTHUANOverall_Text:dd_GrossFinance.Selected.NAME,varRiskTHUANOverall_Index1:dd_GrossFinance.Selected.INDEX}),
+            UpdateContext({varGrossOverall_Text:dd_GrossFinance.Selected.NAME,varGrossOverall_Index:dd_GrossFinance.Selected.INDEX}),
             If(dd_GrossFinance.Selected.INDEX > dd_GrossnonFinance.Selected.INDEX,
-            UpdateContext({varRiskTHUANOverall_Text:dd_GrossFinance.Selected.NAME,varRiskTHUANOverall_Index1:dd_GrossFinance.Selected.INDEX}),
-            UpdateContext({varRiskTHUANOverall_Text:dd_GrossnonFinance.Selected.NAME,varRiskTHUANOverall_Index1:dd_GrossnonFinance.Selected.INDEX})));
+            UpdateContext({varGrossOverall_Text:dd_GrossFinance.Selected.NAME,varGrossOverall_Index:dd_GrossFinance.Selected.INDEX}),
+            UpdateContext({varGrossOverall_Text:dd_GrossnonFinance.Selected.NAME,varGrossOverall_Index:dd_GrossnonFinance.Selected.INDEX})));
             
-            UpdateContext({varTemp:varRiskTHUANOverall_Index1*dd_GrossPossibility.Selected.INDEX});
-            If(!(varRiskTHUANOverall_Index1=2) && varTemp >= 8, UpdateContext({varRiskGOPRank:"Rất cao"}),
-            If((varRiskTHUANOverall_Index1>=3 || dd_GrossPossibility.Selected.INDEX>=3) && varTemp >=4, UpdateContext({varRiskGOPRank:"Cao"}),
-            If(dd_GrossPossibility.Selected.INDEX=1 && varRiskTHUANOverall_Index1<=2,  UpdateContext({varRiskGOPRank:"Thấp"}),
-            UpdateContext({varRiskGOPRank:"Trung bình"}))));
+            UpdateContext({varTemp:varGrossOverall_Index*dd_GrossPossibility.Selected.INDEX});
+            If(!(varGrossOverall_Index=2) && varTemp >= 8, UpdateContext({varGrossRank:"Rất cao"}),
+            If((varGrossOverall_Index>=3 || dd_GrossPossibility.Selected.INDEX>=3) && varTemp >=4, UpdateContext({varGrossRank:"Cao"}),
+            If(dd_GrossPossibility.Selected.INDEX=1 && varGrossOverall_Index<=2,  UpdateContext({varGrossRank:"Thấp"}),
+            UpdateContext({varGrossRank:"Trung bình"}))));
             
-            UpdateContext({varGrossScore:dd_GrossPossibility.Selected.INDEX&"-"&varRiskTHUANOverall_Index1});
+            UpdateContext({varGrossScore:dd_GrossPossibility.Selected.INDEX&"-"&varGrossOverall_Index});
         Size: =12
         Visible: =varTabSelected=1
         Width: =200
@@ -1084,13 +1107,14 @@
         Font: =Font.'Segoe UI'
         Height: =32
         Items: =Sort(Filter(Table_Risk_Configure, SECTION = "RISK" && TYPE = "Gross_Possibility"),INDEX,SortOrder.Ascending)
-        OnChange: |
-            =UpdateContext({varTemp:varRiskTHUANOverall_Index1*dd_GrossPossibility.Selected.INDEX});
-            If(!(varRiskTHUANOverall_Index1=2) && varTemp >= 8, UpdateContext({varRiskGOPRank:"Rất cao"}),
-            If((varRiskTHUANOverall_Index1>=3 || dd_GrossPossibility.Selected.INDEX>=3) && varTemp >=4, UpdateContext({varRiskGOPRank:"Cao"}),
-            If(dd_GrossPossibility.Selected.INDEX=1 && varRiskTHUANOverall_Index1<=2,  UpdateContext({varRiskGOPRank:"Thấp"}),
-            UpdateContext({varRiskGOPRank:"Trung bình"}))));
-            UpdateContext({varGrossScore:dd_GrossPossibility.Selected.INDEX&"-"&varRiskTHUANOverall_Index1});
+        OnChange: |-
+            =UpdateContext({varTemp:varGrossOverall_Index*dd_GrossPossibility.Selected.INDEX});
+            If(!(varGrossOverall_Index=2) && varTemp >= 8, UpdateContext({varGrossRank:"Rất cao"}),
+            If((varGrossOverall_Index>=3 || dd_GrossPossibility.Selected.INDEX>=3) && varTemp >=4, UpdateContext({varGrossRank:"Cao"}),
+            If(dd_GrossPossibility.Selected.INDEX=1 && varGrossOverall_Index<=2,  UpdateContext({varGrossRank:"Thấp"}),
+            UpdateContext({varGrossRank:"Trung bình"}))));
+            
+            UpdateContext({varGrossScore:dd_GrossPossibility.Selected.INDEX&"-"&varGrossOverall_Index});
         Size: =12
         Visible: =varTabSelected=1
         Width: =200
@@ -1104,18 +1128,18 @@
         Items: =Sort(Filter(Table_Risk_Configure, SECTION = "RISK" && TYPE = "Net_Finance"),INDEX,SortOrder.Ascending)
         OnChange: |-
             =If(dd_NetFinance.Selected.INDEX = dd_NetnonFinance.Selected.INDEX,
-            UpdateContext({varRiskTHUANOverall_Text:dd_NetFinance.Selected.NAME,varRiskGOPOverall_Index1:dd_NetFinance.Selected.INDEX}),
+            UpdateContext({varNetOverall_Text:dd_NetFinance.Selected.NAME,varNetOverall_Index:dd_NetFinance.Selected.INDEX}),
             If(dd_NetFinance.Selected.INDEX > dd_NetnonFinance.Selected.INDEX,
-            UpdateContext({varRiskTHUANOverall_Text:dd_NetFinance.Selected.NAME,varRiskGOPOverall_Index1:dd_NetFinance.Selected.INDEX}),
-            UpdateContext({varRiskTHUANOverall_Text:dd_NetnonFinance.Selected.NAME,varRiskGOPOverall_Index1:dd_NetnonFinance.Selected.INDEX})));
+            UpdateContext({varNetOverall_Text:dd_NetFinance.Selected.NAME,varNetOverall_Index:dd_NetFinance.Selected.INDEX}),
+            UpdateContext({varNetOverall_Text:dd_NetnonFinance.Selected.NAME,varNetOverall_Index:dd_NetnonFinance.Selected.INDEX})));
             
-            UpdateContext({varTemp:varRiskGOPOverall_Index1*dd_NetPossibility.Selected.INDEX});
-            If(!(varRiskGOPOverall_Index1=2) && varTemp >= 8, UpdateContext({varRiskTHUANRank:"Rất cao"}),
-            If((varRiskGOPOverall_Index1>=3 || dd_NetPossibility.Selected.INDEX>=3) && varTemp >=4, UpdateContext({varRiskTHUANRank:"Cao"}),
-            If(dd_NetPossibility.Selected.INDEX=1 && varRiskGOPOverall_Index1<=2,  UpdateContext({varRiskTHUANRank:"Thấp"}),
-            UpdateContext({varRiskTHUANRank:"Trung bình"}))));
+            UpdateContext({varTemp:varNetOverall_Index*dd_NetPossibility.Selected.INDEX});
+            If(!(varNetOverall_Index=2) && varTemp >= 8, UpdateContext({varNetRank:"Rất cao"}),
+            If((varNetOverall_Index>=3 || dd_NetPossibility.Selected.INDEX>=3) && varTemp >=4, UpdateContext({varNetRank:"Cao"}),
+            If(dd_NetPossibility.Selected.INDEX=1 && varNetOverall_Index<=2,  UpdateContext({varNetRank:"Thấp"}),
+            UpdateContext({varNetRank:"Trung bình"}))));
             
-            UpdateContext({varNetScore:dd_NetPossibility.Selected.INDEX&"-"&varRiskTHUANOverall_Index1});
+            UpdateContext({varNetScore:dd_NetPossibility.Selected.INDEX&"-"&varNetOverall_Index});
         Size: =12
         Visible: =varTabSelected=2
         Width: =200
@@ -1129,18 +1153,18 @@
         Items: =Sort(Filter(Table_Risk_Configure,SECTION="RISK"&&TYPE="Net_Non_Finance"),INDEX,SortOrder.Ascending)
         OnChange: |-
             =If(dd_NetFinance.Selected.INDEX = dd_NetnonFinance.Selected.INDEX,
-            UpdateContext({varRiskOverall_Text:dd_NetFinance.Selected.NAME,varRiskGOPOverall_Index1:dd_NetFinance.Selected.INDEX}),
+            UpdateContext({varNetOverall_Text:dd_NetFinance.Selected.NAME,varNetOverall_Index:dd_NetFinance.Selected.INDEX}),
             If(dd_NetFinance.Selected.INDEX > dd_NetnonFinance.Selected.INDEX,
-            UpdateContext({varRiskOverall_Text:dd_NetFinance.Selected.NAME,varRiskGOPOverall_Index1:dd_NetFinance.Selected.INDEX}),
-            UpdateContext({varRiskOverall_Text:dd_NetnonFinance.Selected.NAME,varRiskGOPOverall_Index1:dd_NetnonFinance.Selected.INDEX})));
+            UpdateContext({varNetOverall_Text:dd_NetFinance.Selected.NAME,varNetOverall_Index:dd_NetFinance.Selected.INDEX}),
+            UpdateContext({varNetOverall_Text:dd_NetnonFinance.Selected.NAME,varNetOverall_Index:dd_NetnonFinance.Selected.INDEX})));
             
-            UpdateContext({varTemp:varRiskGOPOverall_Index1*dd_NetPossibility.Selected.INDEX});
-            If(!(varRiskGOPOverall_Index1=2) && varTemp >= 8, UpdateContext({varRiskTHUANRank:"Rất cao"}),
-            If((varRiskGOPOverall_Index1>=3 || dd_NetPossibility.Selected.INDEX>=3) && varTemp >=4, UpdateContext({varRiskTHUANRank:"Cao"}),
-            If(dd_NetPossibility.Selected.INDEX=1 && varRiskGOPOverall_Index1<=2,  UpdateContext({varRiskTHUANRank:"Thấp"}),
-            UpdateContext({varRiskTHUANRank:"Trung bình"}))));
+            UpdateContext({varTemp:varNetOverall_Index*dd_NetPossibility.Selected.INDEX});
+            If(!(varNetOverall_Index=2) && varTemp >= 8, UpdateContext({varNetRank:"Rất cao"}),
+            If((varNetOverall_Index>=3 || dd_NetPossibility.Selected.INDEX>=3) && varTemp >=4, UpdateContext({varNetRank:"Cao"}),
+            If(dd_NetPossibility.Selected.INDEX=1 && varNetOverall_Index<=2,  UpdateContext({varNetRank:"Thấp"}),
+            UpdateContext({varNetRank:"Trung bình"}))));
             
-            UpdateContext({varNetScore:dd_NetPossibility.Selected.INDEX&"-"&varRiskTHUANOverall_Index1});
+            UpdateContext({varNetScore:dd_NetPossibility.Selected.INDEX&"-"&varNetOverall_Index});
         Size: =12
         Visible: =varTabSelected=2
         Width: =200
@@ -1152,13 +1176,14 @@
         Font: =Font.'Segoe UI'
         Height: =32
         Items: =Sort(Filter(Table_Risk_Configure, SECTION = "RISK" && TYPE = "Net_Possibility"),INDEX,SortOrder.Ascending)
-        OnChange: |
-            =UpdateContext({varTemp:varRiskGOPOverall_Index1*dd_NetPossibility.Selected.INDEX});
-            If(!(varRiskGOPOverall_Index1=2) && varTemp >= 8, UpdateContext({varRiskTHUANRank:"Rất cao"}),
-            If((varRiskGOPOverall_Index1>=3 || dd_NetPossibility.Selected.INDEX>=3) && varTemp >=4, UpdateContext({varRiskTHUANRank:"Cao"}),
-            If(dd_NetPossibility.Selected.INDEX=1 && varRiskGOPOverall_Index1<=2,  UpdateContext({varRiskTHUANRank:"Thấp"}),
-            UpdateContext({varRiskTHUANRank:"Trung bình"}))));
-            UpdateContext({varNetScore:dd_NetPossibility.Selected.INDEX&"-"&varRiskTHUANOverall_Index1});
+        OnChange: |-
+            =UpdateContext({varTemp:varNetOverall_Index*dd_NetPossibility.Selected.INDEX});
+            If(!(varNetOverall_Index=2) && varTemp >= 8, UpdateContext({varNetRank:"Rất cao"}),
+            If((varNetOverall_Index>=3 || dd_NetPossibility.Selected.INDEX>=3) && varTemp >=4, UpdateContext({varNetRank:"Cao"}),
+            If(dd_NetPossibility.Selected.INDEX=1 && varNetOverall_Index<=2,  UpdateContext({varNetRank:"Thấp"}),
+            UpdateContext({varNetRank:"Trung bình"}))));
+            
+            UpdateContext({varNetScore:dd_NetPossibility.Selected.INDEX&"-"&varNetOverall_Index});
         Size: =12
         Visible: =varTabSelected=2
         Width: =200

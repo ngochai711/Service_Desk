@@ -18052,17 +18052,77 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRisk.varRiskOverall_Text"
+                  "fullyQualifiedName": "frmRisk.varRiskGOPRank"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "frmRisk.varRiskOverall_Text",
+                  "fullyQualifiedName": "frmRisk.varRiskGOPRank",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "varRiskOverall_Text",
+                "member": "varRiskGOPRank",
+                "module": "frmRisk",
+                "type": "frmRisk"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.varRiskTHUANOverall_Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.varRiskTHUANOverall_Text",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "varRiskTHUANOverall_Text",
+                "module": "frmRisk",
+                "type": "frmRisk"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "frmRisk.varRiskTHUANRank"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "frmRisk.varRiskTHUANRank",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "varRiskTHUANRank",
                 "module": "frmRisk",
                 "type": "frmRisk"
               }

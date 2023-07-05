@@ -88,7 +88,7 @@
                     //Net
                     Net_Finance:dd_NetFinance_1.Selected.NAME,
                     Net_Non_Finance:dd_NetnonFinance_1.Selected.NAME,
-                    Net_Overall_Finance:varGrossOverall_Text,
+                    Net_Overall_Finance:varNetOverall_Text,
                     Net_Possibility:dd_NetPossibility_1.Selected.NAME,
                     Net_Score:varNetScore,
                     Net_Rank:varGrossRank,

@@ -73,7 +73,7 @@
                     Gross_Non_Finance:dd_GrossnonFinance.Selected.NAME,
                     Gross_Overall_Finance:varGrossOverall_Text,
                     Gross_Possibility:dd_GrossPossibility.Selected.NAME,
-                    Gross_Score:dd_GrossPossibility.Selected.INDEX&"-"&varGrossOverall_Index,
+                    Gross_Score:varGrossScore,
                     Gross_Rank:varGrossRank,
                     Gross_Evaluation_Basis: inp_GrossEvaluation.Text,
                     //Net
@@ -81,7 +81,7 @@
                     Net_Non_Finance:dd_NetnonFinance.Selected.NAME,
                     Net_Overall_Finance:varNetOverall_Text,
                     Net_Possibility:dd_NetPossibility.Selected.NAME,
-                    Net_Score:dd_NetPossibility.Selected.INDEX&"-"&varNetOverall_Index,
+                    Net_Score:varNetScore,
                     Net_Rank:varNetRank,
                     Net_Evaluation_Basis:inp_NetEvaluation.Text,
             
@@ -589,7 +589,7 @@
         Font: =Font.'Segoe UI'
         Height: =35
         Size: =12
-        Text: =dd_GrossPossibility.Selected.INDEX&"-"&varGrossOverall_Index
+        Text: =varGrossScore
         Visible: =varTabSelected=1
         Width: =200
         X: =900
@@ -897,7 +897,7 @@
         Font: =Font.'Segoe UI'
         Height: =35
         Size: =12
-        Text: =dd_NetPossibility.Selected.INDEX&"-"&varNetOverall_Index
+        Text: =varNetScore
         Visible: |
             =varTabSelected=2
         Width: =200
@@ -1015,7 +1015,7 @@
                     Gross_Non_Finance:dd_GrossnonFinance.Selected.NAME,
                     Gross_Overall_Finance:varGrossOverall_Text,
                     Gross_Possibility:dd_GrossPossibility.Selected.NAME,
-                    Gross_Score:dd_GrossPossibility.Selected.INDEX&"-"&varGrossOverall_Index,
+                    Gross_Score:varGrossScore,
                     Gross_Rank:varGrossRank,
                     Gross_Evaluation_Basis: inp_GrossEvaluation.Text,
                     //Net

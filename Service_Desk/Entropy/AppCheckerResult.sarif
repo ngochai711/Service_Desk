@@ -19348,36 +19348,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRisk.varGrossScore"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRisk.varGrossScore",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varGrossScore",
-                "module": "frmRisk",
-                "type": "frmRisk"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "frmRisk.varLBControlOwner"
                 }
               ],
@@ -19389,36 +19359,6 @@
               },
               "properties": {
                 "member": "varLBControlOwner",
-                "module": "frmRisk",
-                "type": "frmRisk"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "frmRisk.varNetScore"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRisk.varNetScore",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varNetScore",
                 "module": "frmRisk",
                 "type": "frmRisk"
               }

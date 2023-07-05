@@ -641,8 +641,9 @@
         R_Add_2 As icon.Add:
             Height: =28
             Icon: =Icon.Add
-            OnSelect: |
+            OnSelect: |-
                 =Navigate(frmRiskSolution,ScreenTransition.Fade);
+                Set(varRiskInfo,Gallery1.Selected);
             Tooltip: ="Tạo khắc phục - sửa chữa"
             Width: =27
             X: =416

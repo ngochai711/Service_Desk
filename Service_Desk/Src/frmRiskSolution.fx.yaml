@@ -698,7 +698,7 @@
             Fill: =RGBA(255, 255, 255, 1)
             Font: =Font.'Segoe UI'
             Size: =12
-            Text: =varRiskCode.Risk_Name
+            Text: =varRiskInfo.Risk_Name
             Width: =472
             X: =831
             Y: =480
@@ -711,7 +711,7 @@
             Height: =88
             Overflow: =Overflow.Scroll
             Size: =12
-            Text: =varRiskCode.Risk_Description
+            Text: =varRiskInfo.Risk_Description
             Width: =1085
             X: =218
             Y: =531
@@ -722,7 +722,7 @@
             Fill: =RGBA(255, 255, 255, 1)
             Font: =Font.'Segoe UI'
             Size: =12
-            Text: =varRiskCode.Risk_Owner
+            Text: =varRiskInfo.Risk_Owner
             Width: =445
             X: =218
             Y: =634
@@ -733,7 +733,7 @@
             Fill: =RGBA(255, 255, 255, 1)
             Font: =Font.'Segoe UI'
             Size: =12
-            Text: =varRiskCode.Risk_Important
+            Text: =varRiskInfo.Risk_Important
             Width: =445
             X: =218
             Y: =686
@@ -744,7 +744,7 @@
             Fill: =RGBA(255, 255, 255, 1)
             Font: =Font.'Segoe UI'
             Size: =12
-            Text: =varRiskCode.Risk_Status
+            Text: =varRiskInfo.Risk_Status
             Width: =472
             X: =831
             Y: =686
@@ -784,7 +784,7 @@
             Fill: =RGBA(255, 255, 255, 1)
             Font: =Font.'Segoe UI'
             Size: =12
-            Text: =varRiskCode.Risk_Status
+            Text: =varRiskInfo.Risk_Status
             Width: =472
             X: =831
             Y: =634

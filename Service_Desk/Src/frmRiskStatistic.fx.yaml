@@ -901,7 +901,7 @@
             Height: =88
             HoverFill: =ColorFade(Self.BorderColor, 20%)
             OnSelect: |-
-                =Navigate(frmRiskLogin,ScreenTransition.Fade);
+                =Navigate(frmOverview,ScreenTransition.Fade);
                 Clear(Collection_Risk)
             Width: =86
             ZIndex: =27
@@ -915,7 +915,7 @@
             HoverFill: =ColorFade(Self.BorderColor, 20%)
             Icon: =Icon.ChevronLeft
             OnSelect: |-
-                =Navigate(frmRiskLogin,ScreenTransition.Fade);
+                =Navigate(frmOverview,ScreenTransition.Fade);
                 Clear(Collection_Risk)
             PressedColor: =ColorFade(Self.BorderColor, 20%)
             TabIndex: =0

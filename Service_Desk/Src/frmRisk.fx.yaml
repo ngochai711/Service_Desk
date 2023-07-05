@@ -51,6 +51,7 @@
                 Notify("Vui lòng nhập đầy đủ thông tin",NotificationType.Error),
                 
                 Patch(Table_Risk,Defaults(Table_Risk),{
+                    //Risk Info
                     Risk_Code:varRiskKey,
                     Risk_Status:cb_RiskStatus.Selected.Value,
                     Risk_Create_Date:dp_RiskCreateDate.SelectedDate,
@@ -60,6 +61,9 @@
                     Risk_Reason:inp_RiskReason.Text,
                     Risk_Consequence:inp_RiskConsequence.Text,
                     Risk_Owner:SelectedRiskOwner.DisplayName&" - "&SelectedRiskOwner.Mail,
+                    Risk_Division:varUser.Division,
+                    Risk_Department:varUser.Department,
+                    //Gross
                     Gross_Finance:dd_GrossFinance.Selected.NAME,
                     Gross_Non_Finance:dd_GrossnonFinance.Selected.NAME,
                     Gross_Overall_Finance:lb_GrossOverall.Text,
@@ -67,6 +71,7 @@
                     Gross_Score:dd_GrossPossibility.Selected.INDEX&"-"&varRiskGOPOverall_Index,
                     Gross_Rank:lb_GrossRank.Text,
                     Gross_Evaluation_Basis: inp_GrossEvaluation.Text,
+                    //Net
                     Net_Finance:dd_NetFinance.Selected.NAME,
                     Net_Non_Finance:dd_NetnonFinance.Selected.NAME,
                     Net_Overall_Finance:varRiskGOPOverall_Text,
@@ -74,8 +79,9 @@
                     Net_Score:dd_NetPossibility.Selected.INDEX&"-"&varRiskTHUANOverall_Index,
                     Net_Rank:lb_NetRank.Text,
                     Net_Evaluation_Basis:inp_NetEvaluation.Text,
-                    Risk_Division:varUser.Division,Risk_Department:varUser.Department,
+            
                     Mail_create_by:varUser.Username,
+                    //Approval
                     Approval_By_LV1:SelectedRiskApproval1.MailNickname,
                     Approval_By_LV1Risk:SelectedRiskApproval1_Risk.MailNickname,
                     Approval_By_LV2:SelectedRiskApproval2.MailNickname,

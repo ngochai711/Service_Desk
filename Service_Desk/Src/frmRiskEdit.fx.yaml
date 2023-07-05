@@ -54,13 +54,9 @@
         Fill: =RGBA(0, 0, 0, 0)
         Font: =Font.'Segoe UI'
         Height: =88
-        OnSelect: |-
-            =UpdateContext({varApproval1:If(varLBRiskOwnerTemp=true,lb_RiskOwner_2.Text,lb_RiskOwner_3.Text)});
-            
-            
-            
-            If(
-                IsBlank(inp_RiskName_1) || IsBlank(inp_RiskDescription_1) || IsBlank(inp_RiskReason_1) || IsBlank(lb_RiskOwner_1) || IsBlank(cb_RiskImportant_1) || IsBlank(cb_RiskStatus_1) || IsBlank                         (inp_RiskConsequence_1) || varLBRiskOwner=true,
+        OnSelect: |
+            =If(
+                IsBlank(inp_RiskName_1) || IsBlank(cb_RiskImportant_1) || IsBlank(cb_RiskStatus_1) ,
             
                 Notify("Vui lòng nhập đầy đủ thông tin",NotificationType.Error),
             
@@ -74,7 +70,7 @@
                     Risk_Description:inp_RiskDescription_1.Text,
                     Risk_Reason:inp_RiskReason_1.Text,
                     Risk_Consequence:inp_RiskConsequence_1.Text,
-                    Risk_Owner:SelectedRiskOwner.DisplayName&" - "&SelectedRiskOwner.Mail,
+                    Risk_Owner:If(varLBRiskOwnerTemp=true,lb_RiskOwner_2.Text,SelectedRiskOwner.DisplayName&" - "&SelectedRiskOwner.Mail),
             
                     //Gross
                     Gross_Finance:dd_GrossFinance_1.Selected.NAME,
@@ -93,16 +89,17 @@
                     Net_Score:varNetScore,
                     Net_Rank:varGrossRank,
                     Net_Evaluation_Basis:inp_NetEvaluation_1.Text,
+                    
                     Mail_create_by:varUser.Username,
-                    //Approval
-                    Approval_By_LV1:If(varLBRiskApproval1Temp=true,lb_RiskApproval1_1,lb_RiskApproval1_2),
-                    Approval_By_LV1Risk:If(varLBRiskApproval1Temp=true,lb_RiskApproval1_Risk_1,lb_RiskApproval1_Risk_2),
-                    Approval_By_LV2:If(varLBRiskApproval1Temp=true,lb_RiskApproval2_1,lb_RiskApproval2_2),
-                    Approval_By_LV2Risk:If(varLBRiskApproval1Temp=true,lb_RiskApproval2_Risk_1,lb_RiskApproval2_Risk_2)}
-                )
-            );
             
-            Navigate(frmRiskStatistic,ScreenTransition.Fade)
+                    //Approval
+                    Approval_By_LV1:If(varLBRiskApproval1Temp=true,lb_RiskApproval1_1.Text,SelectedRiskApproval1.MailNickname),
+                    Approval_By_LV1Risk:If(varLBRiskApproval1Temp=true,lb_RiskApproval1_Risk_1.Text,SelectedRiskApproval1_Risk.MailNickname),
+                    Approval_By_LV2:If(varLBRiskApproval1Temp=true && !IsBlank(lb_RiskApproval2_1.Text),lb_RiskApproval2_1.Text,SelectedRiskApproval2.MailNickname),
+                    Approval_By_LV2Risk:If(varLBRiskApproval1Temp=true && !IsBlank(lb_RiskApproval2_Risk_1.Text),lb_RiskApproval2_Risk_1.Text,SelectedRiskApproval2_Risk.MailNickname)}
+                );
+                Notify("Thay đổi thành công",NotificationType.Success)
+            );
         PaddingBottom: =12
         RadiusBottomLeft: =0
         RadiusBottomRight: =0

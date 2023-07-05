@@ -19198,36 +19198,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRiskEdit.varApproval1"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "frmRiskEdit.varApproval1",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varApproval1",
-                "module": "frmRiskEdit",
-                "type": "frmRiskEdit"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "frmRiskEdit.varLBControlOwner"
                 }
               ],

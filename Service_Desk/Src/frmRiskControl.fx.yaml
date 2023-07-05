@@ -34,11 +34,24 @@
         Font: =Font.'Segoe UI'
         Height: =88
         OnSelect: |-
-            =If(IsBlank(inp_ControlDescription) || IsBlank(inp_ControlEvaluation) || IsBlank(lb_ControlOwner)  || IsBlank(cb_ControlStatus) || IsBlank(cb_ControlType) || IsBlank(cb_ControlClassify) || IsBlank(cb_ControlEvaluation) ,
-            UpdateContext({varTemp2:false}),
-            Patch(Table_Risk_Control,Defaults(Table_Risk_Control),{Control_Code:varRiskControlKey,Control_Status:"Theo dõi",Control_Description:inp_ControlDescription.Text,Control_Create_Date:dp_ControlCreateDate.SelectedDate,Main_Control: cb_ControlMain.Selected.Value,Control_Owner:lb_ControlOwner.Text,Control_Type:cb_ControlType.Selected.Value,Control_Frequency:cb_ControlFrequency.Selected.Value,Control_Classify:cb_ControlClassify.Selected.Value,Control_Evaluation:cb_ControlEvaluation.Selected.Value, Control_Evaluation_Basis:inp_ControlEvaluation.Text,Risk_ID:varRiskCode.Risk_Code});
-            /*If(IsBlank(LookUp(Risk_Connection,R_ID=First(RiskInfo).RiskId)),Patch(Risk_Connection,LookUp(Risk_Connection,R_ID=First(RiskInfo).RiskId),{RC_ID:varRiskControlKey,RS_ID:""}),
-            Patch(Risk_Connection,Defaults(Risk_Connection),{ID:Last(Risk_Connection).ID+1,R_ID:First(RiskInfo).RiskId,RC_ID:varRiskControlKey,RS_ID:""}))*/
+            =If(
+                IsBlank(inp_ControlDescription) || IsBlank(inp_ControlEvaluation) || IsBlank(lb_ControlOwner)  || IsBlank(cb_ControlStatus) || IsBlank(cb_ControlType) || IsBlank(cb_ControlClassify) || IsBlank                (cb_ControlEvaluation) ,
+            
+                UpdateContext({varTemp2:false}),
+            
+                Patch(Table_Risk_Control,Defaults(Table_Risk_Control),{
+                    Control_Code:varRiskControlKey,
+                    Control_Status:"Theo dõi",
+                    Control_Description:inp_ControlDescription.Text,
+                    Control_Create_Date:dp_ControlCreateDate.SelectedDate,
+                    Main_Control: cb_ControlMain.Selected.Value,
+                    Control_Owner:lb_ControlOwner.Text,
+                    Control_Type:cb_ControlType.Selected.Value,
+                    Control_Frequency:cb_ControlFrequency.Selected.Value,
+                    Control_Classify:cb_ControlClassify.Selected.Value,
+                    Control_Evaluation:cb_ControlEvaluation.Selected.Value, 
+                    Control_Evaluation_Basis:inp_ControlEvaluation.Text,
+                    Risk_ID:varRiskCode.Risk_Code});
             );
             
             Navigate(frmRiskStatistic,ScreenTransition.Fade)

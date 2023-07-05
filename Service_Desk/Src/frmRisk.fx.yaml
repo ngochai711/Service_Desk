@@ -45,7 +45,8 @@
         Height: =88
         OnSelect: |+
             =If(
-                IsBlank(inp_RiskName) || IsBlank(inp_RiskDescription) || IsBlank(inp_RiskReason) || IsBlank(lb_RiskOwner) || IsBlank(cb_RiskImportant) || IsBlank(cb_RiskStatus) || IsBlank(inp_RiskConsequence),
+                IsBlank(inp_RiskName) || IsBlank(inp_RiskDescription) || IsBlank(inp_RiskReason) || IsBlank(lb_RiskOwner) || IsBlank(cb_RiskImportant) || IsBlank(cb_RiskStatus) || IsBlank(inp_RiskConsequence)
+                || IsBlank(lb_RiskApproval1) || IsBlank(lb_RiskApproval2) || IsBlank(lb_RiskApproval1_Risk) || IsBlank(lb_RiskApproval2_Risk),
             
                 Notify("Vui lòng nhập đầy đủ thông tin",NotificationType.Error),
                 
@@ -73,7 +74,12 @@
                     Net_Score:dd_NetPossibility.Selected.INDEX&"-"&varRiskTHUANOverall_Index,
                     Net_Rank:lb_NetRank.Text,
                     Net_Evaluation_Basis:inp_NetEvaluation.Text,
-                    Risk_Division:varUser.Division,Risk_Department:varUser.Department});
+                    Risk_Division:varUser.Division,Risk_Department:varUser.Department,
+                    Mail_create_by:varUser.Username,
+                    Approval_By_LV1:SelectedRiskApproval1.MailNickname,
+                    Approval_By_LV1Risk:SelectedRiskApproval1_Risk.MailNickname,
+                    Approval_By_LV2:SelectedRiskApproval2.MailNickname,
+                    Approval_By_LV2Risk:SelectedRiskApproval2_Risk.MailNickname});
                 Navigate(frmRiskStatistic,ScreenTransition.Fade);
             );
             
@@ -1348,7 +1354,7 @@
             Width: =388
             ZIndex: =1
 
-    lb_RiskApproval_LV1 As label:
+    lb_RiskApproval1 As label:
         Fill: =RGBA(255, 255, 255, 1)
         Font: =Font.'Segoe UI'
         Height: =26
@@ -1479,7 +1485,7 @@
             Width: =388
             ZIndex: =1
 
-    lb_RiskOwner_6 As label:
+    lb_RiskApproval2 As label:
         Fill: =RGBA(255, 255, 255, 1)
         Font: =Font.'Segoe UI'
         Height: =26
@@ -1544,7 +1550,7 @@
             Width: =366
             ZIndex: =1
 
-    lb_RiskOwner_7 As label:
+    lb_RiskApproval2_Risk As label:
         Fill: =RGBA(255, 255, 255, 1)
         Font: =Font.'Segoe UI'
         Height: =26

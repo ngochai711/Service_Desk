@@ -17272,19 +17272,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRisk.lb_RiskApproval_LV1.FocusedBorderThickness"
+                  "fullyQualifiedName": "frmRisk.lb_RiskApproval1.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "frmRisk.lb_RiskApproval_LV1.FocusedBorderThickness",
+                  "fullyQualifiedName": "frmRisk.lb_RiskApproval1.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "frmRisk",
-                "type": "frmRisk.lb_RiskApproval_LV1"
+                "type": "frmRisk.lb_RiskApproval1"
               }
             }
           ],
@@ -17302,19 +17302,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRisk.lb_RiskApproval_LV1.TabIndex"
+                  "fullyQualifiedName": "frmRisk.lb_RiskApproval1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "frmRisk.lb_RiskApproval_LV1.TabIndex",
+                  "fullyQualifiedName": "frmRisk.lb_RiskApproval1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "frmRisk",
-                "type": "frmRisk.lb_RiskApproval_LV1"
+                "type": "frmRisk.lb_RiskApproval1"
               }
             }
           ],
@@ -17512,19 +17512,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRisk.lb_RiskOwner_6.FocusedBorderThickness"
+                  "fullyQualifiedName": "frmRisk.lb_RiskApproval2.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "frmRisk.lb_RiskOwner_6.FocusedBorderThickness",
+                  "fullyQualifiedName": "frmRisk.lb_RiskApproval2.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "frmRisk",
-                "type": "frmRisk.lb_RiskOwner_6"
+                "type": "frmRisk.lb_RiskApproval2"
               }
             }
           ],
@@ -17542,19 +17542,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRisk.lb_RiskOwner_6.TabIndex"
+                  "fullyQualifiedName": "frmRisk.lb_RiskApproval2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "frmRisk.lb_RiskOwner_6.TabIndex",
+                  "fullyQualifiedName": "frmRisk.lb_RiskApproval2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "frmRisk",
-                "type": "frmRisk.lb_RiskOwner_6"
+                "type": "frmRisk.lb_RiskApproval2"
               }
             }
           ],
@@ -17632,19 +17632,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRisk.lb_RiskOwner_7.FocusedBorderThickness"
+                  "fullyQualifiedName": "frmRisk.lb_RiskApproval2_Risk.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "frmRisk.lb_RiskOwner_7.FocusedBorderThickness",
+                  "fullyQualifiedName": "frmRisk.lb_RiskApproval2_Risk.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "frmRisk",
-                "type": "frmRisk.lb_RiskOwner_7"
+                "type": "frmRisk.lb_RiskApproval2_Risk"
               }
             }
           ],
@@ -17662,19 +17662,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "frmRisk.lb_RiskOwner_7.TabIndex"
+                  "fullyQualifiedName": "frmRisk.lb_RiskApproval2_Risk.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "frmRisk.lb_RiskOwner_7.TabIndex",
+                  "fullyQualifiedName": "frmRisk.lb_RiskApproval2_Risk.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "frmRisk",
-                "type": "frmRisk.lb_RiskOwner_7"
+                "type": "frmRisk.lb_RiskApproval2_Risk"
               }
             }
           ],

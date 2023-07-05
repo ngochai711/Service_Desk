@@ -114,12 +114,12 @@
     "Id": "aef194d0-012c-477b-8c7e-36a85320fd37",
     "InstrumentationKey": "",
     "ManualOfflineProfileId": "",
-    "Name": "RiskSavvy_Copy_05-07",
+    "Name": "RiskSavvy",
     "OriginatingVersion": "1.331",
     "ParserErrorCount": 0
   },
   "PublishInfo": {
-    "AppName": "RiskSavvy_Copy_05-07",
+    "AppName": "RiskSavvy",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",

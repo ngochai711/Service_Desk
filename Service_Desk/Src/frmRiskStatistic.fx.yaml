@@ -1,6 +1,7 @@
 "frmRiskStatistic As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =RGBA(237, 237, 237, 1)
     Height: =Max(App.Height, App.DesignHeight)
+    OnHidden: =Reset(Gallery1)
     OnVisible: |-
         =Set(var_Click,0);
         Set(varDelayLogin,false);
@@ -46,15 +47,15 @@
             Items: |-
                 =If(
                     LookUp(Table_Risk_Role,ROLE_ID=varUser.Role_ID).DATA_RANGE=0,
-                    Filter(Collection_Risk,Risk_Department=varUser.Department)
+                    Filter(Table_Risk,Risk_Department=varUser.Department)
                     ,
                     If(
                         LookUp(Table_Risk_Role,ROLE_ID=varUser.Role_ID).DATA_RANGE=1,
-                        Filter(Collection_Risk,Risk_Division=varUser.Division)
+                        Filter(Table_Risk,Risk_Division=varUser.Division)
                         ,
                         If(
                             LookUp(Table_Risk_Role,ROLE_ID=varUser.Role_ID).DATA_RANGE=2,
-                            Collection_Risk
+                            Table_Risk
                         )
                     )
                 )
@@ -900,9 +901,8 @@
             Fill: =RGBA(0, 52, 104, 1)
             Height: =88
             HoverFill: =ColorFade(Self.BorderColor, 20%)
-            OnSelect: |-
+            OnSelect: |
                 =Navigate(frmOverview,ScreenTransition.Fade);
-                Clear(Collection_Risk)
             Width: =86
             ZIndex: =27
 
@@ -914,9 +914,8 @@
             HoverColor: =ColorFade(Self.BorderColor, 20%)
             HoverFill: =ColorFade(Self.BorderColor, 20%)
             Icon: =Icon.ChevronLeft
-            OnSelect: |-
+            OnSelect: |
                 =Navigate(frmOverview,ScreenTransition.Fade);
-                Clear(Collection_Risk)
             PressedColor: =ColorFade(Self.BorderColor, 20%)
             TabIndex: =0
             Width: =32

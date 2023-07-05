@@ -79,16 +79,16 @@
                     Gross_Non_Finance:dd_GrossnonFinance.Selected.NAME,
                     Gross_Overall_Finance:lb_GrossOverall.Text,
                     Gross_Possibility:dd_GrossPossibility.Selected.NAME,
-                    Gross_Score:dd_GrossPossibility.Selected.INDEX&"-"&varRiskGOPOverall_Index,
-                    Gross_Rank:lb_GrossRank.Text,
+                    Gross_Score:dd_GrossPossibility.Selected.INDEX&"-"&varGrossOverall_Index,
+                    Gross_Rank:varGrossRank,
                     Gross_Evaluation_Basis: inp_GrossEvaluation.Text,
                     //Net
                     Net_Finance:dd_NetFinance.Selected.NAME,
                     Net_Non_Finance:dd_NetnonFinance.Selected.NAME,
                     Net_Overall_Finance:varRiskGOPOverall_Text,
                     Net_Possibility:dd_NetPossibility.Selected.NAME,
-                    Net_Score:dd_NetPossibility.Selected.INDEX&"-"&varRiskTHUANOverall_Index,
-                    Net_Rank:lb_NetRank.Text,
+                    Net_Score:dd_NetPossibility.Selected.INDEX&"-"&varNetOverall_Index,
+                    Net_Rank:varNetRank,
                     Net_Evaluation_Basis:inp_NetEvaluation.Text,
             
                     Mail_create_by:varUser.Username,
@@ -1021,16 +1021,16 @@
                     Gross_Non_Finance:dd_GrossnonFinance.Selected.NAME,
                     Gross_Overall_Finance:lb_GrossOverall.Text,
                     Gross_Possibility:dd_GrossPossibility.Selected.NAME,
-                    Gross_Score:dd_GrossPossibility.Selected.INDEX&"-"&varRiskGOPOverall_Index,
-                    Gross_Rank:lb_GrossRank.Text,
+                    Gross_Score:dd_GrossPossibility.Selected.INDEX&"-"&varGrossOverall_Index,
+                    Gross_Rank:varGrossRank,
                     Gross_Evaluation_Basis: inp_GrossEvaluation.Text,
                     //Net
                     Net_Finance:dd_NetFinance.Selected.NAME,
                     Net_Non_Finance:dd_NetnonFinance.Selected.NAME,
                     Net_Overall_Finance:varRiskGOPOverall_Text,
                     Net_Possibility:dd_NetPossibility.Selected.NAME,
-                    Net_Score:dd_NetPossibility.Selected.INDEX&"-"&varRiskTHUANOverall_Index,
-                    Net_Rank:lb_NetRank.Text,
+                    Net_Score:dd_NetPossibility.Selected.INDEX&"-"&varNetOverall_Index,
+                    Net_Rank:varNetRank,
                     Net_Evaluation_Basis:inp_NetEvaluation.Text,
             
                     Mail_create_by:varUser.Username,
@@ -1335,56 +1335,6 @@
         Y: =394
         ZIndex: =65
 
-    Gal_RiskSelecttOwner_16 As gallery.galleryVertical:
-        AccessibleLabel: ="People for selection"
-        BorderColor: =RGBA(0, 0, 0, 0.16)
-        BorderThickness: =1
-        DisabledBorderColor: =Gal_RiskSelecttOwner_16.BorderColor
-        DisabledFill: =Gal_RiskSelecttOwner_16.Fill
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =272
-        HoverBorderColor: =Gal_RiskSelecttOwner_16.BorderColor
-        HoverFill: =Gal_RiskSelecttOwner_16.Fill
-        Items: |
-            =If(!IsBlank(inp_RiskOwner.Text), 
-            Office365Users.SearchUser({searchTerm:Trim(inp_RiskOwner.Text)}))
-        Layout: =Layout.Vertical
-        LoadingSpinnerColor: =Gal_RiskSelecttOwner_16.BorderColor
-        OnSelect: |-
-            = UpdateContext({SelectedRiskOwner:ThisItem, HidePeopleGallery:true, 
-             varLBRiskOwner: true})
-        PressedBorderColor: =Gal_RiskSelecttOwner_16.BorderColor
-        PressedFill: =Gal_RiskSelecttOwner_16.Fill
-        TemplateSize: =53
-        Visible: |-
-            =Not(IsBlank(inp_RiskOwner)) &&
-            !HidePeopleGallery
-        Width: =372
-        X: =947
-        Y: =185
-        ZIndex: =66
-
-        LabelPersonDisplayName_18 As label:
-            FocusedBorderColor: =LabelPersonDisplayName_18.BorderColor
-            Font: =Font.'Segoe UI'
-            Height: =53
-            HoverBorderColor: =LabelPersonDisplayName_18.BorderColor
-            HoverColor: =RGBA(0, 0, 0, 1)
-            HoverFill: =RGBA(244, 244, 244, 1)
-            OnSelect: =Select(Parent)
-            PaddingBottom: =15
-            PaddingLeft: =20
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedBorderColor: =LabelPersonDisplayName_18.BorderColor
-            PressedColor: =LabelPersonDisplayName_18.Color
-            PressedFill: =LabelPersonDisplayName_18.Fill
-            Size: =10
-            TabIndex: =0
-            Text: =ThisItem.DisplayName&" - "&ThisItem.Mail
-            Width: =388
-            ZIndex: =1
-
     lb_RiskApproval1 As label:
         Fill: =RGBA(255, 255, 255, 1)
         Font: =Font.'Segoe UI'
@@ -1398,57 +1348,7 @@
         Width: =449
         X: =240
         Y: =345
-        ZIndex: =67
-
-    Gal_RiskSelectApproval1 As gallery.galleryVertical:
-        AccessibleLabel: ="People for selection"
-        BorderColor: =RGBA(0, 0, 0, 0.16)
-        BorderThickness: =1
-        DisabledBorderColor: =Gal_RiskSelectApproval1.BorderColor
-        DisabledFill: =Gal_RiskSelectApproval1.Fill
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =272
-        HoverBorderColor: =Gal_RiskSelectApproval1.BorderColor
-        HoverFill: =Gal_RiskSelectApproval1.Fill
-        Items: |
-            =If(!IsBlank(inp_RiskApproval1.Text), 
-            Office365Users.SearchUser({searchTerm:Trim(inp_RiskApproval1.Text)}))
-        Layout: =Layout.Vertical
-        LoadingSpinnerColor: =Gal_RiskSelectApproval1.BorderColor
-        OnSelect: |-
-            = UpdateContext({SelectedRiskApproval1:ThisItem, HideApproval1Gallery:true, 
-             varLBRiskApproval1: true})
-        PressedBorderColor: =Gal_RiskSelectApproval1.BorderColor
-        PressedFill: =Gal_RiskSelectApproval1.Fill
-        TemplateSize: =53
-        Visible: |-
-            =Not(IsBlank(inp_RiskApproval1)) &&
-            !HideApproval1Gallery
-        Width: =470
-        X: =236
-        Y: =382
-        ZIndex: =68
-
-        LabelPersonDisplayName_20 As label:
-            FocusedBorderColor: =LabelPersonDisplayName_20.BorderColor
-            Font: =Font.'Segoe UI'
-            Height: =53
-            HoverBorderColor: =LabelPersonDisplayName_20.BorderColor
-            HoverColor: =RGBA(0, 0, 0, 1)
-            HoverFill: =RGBA(244, 244, 244, 1)
-            OnSelect: =Select(Parent)
-            PaddingBottom: =15
-            PaddingLeft: =20
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedBorderColor: =LabelPersonDisplayName_20.BorderColor
-            PressedColor: =LabelPersonDisplayName_20.Color
-            PressedFill: =LabelPersonDisplayName_20.Fill
-            Size: =10
-            TabIndex: =0
-            Text: =ThisItem.DisplayName&" - "&ThisItem.Mail
-            Width: =388
-            ZIndex: =1
+        ZIndex: =66
 
     lb_RiskApproval1_Risk As label:
         Fill: =RGBA(255, 255, 255, 1)
@@ -1463,7 +1363,137 @@
         Width: =449
         X: =240
         Y: =398
+        ZIndex: =67
+
+    lb_RiskApproval2 As label:
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =26
+        OnSelect: |-
+            =UpdateContext({varLBRiskApproval2:false,
+            HideApproval2Gallery:false})
+        Size: =12
+        Text: =SelectedRiskApproval2.DisplayName&" - "&SelectedRiskApproval2.Mail
+        Visible: =varLBRiskApproval2
+        Width: =359
+        X: =951
+        Y: =344
+        ZIndex: =68
+
+    lb_RiskApproval2_Risk As label:
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =26
+        OnSelect: |-
+            =UpdateContext({varLBRiskApproval2_Risk:false,
+            HideApproval2RiskGallery:false})
+        Size: =12
+        Text: =SelectedRiskApproval2_Risk.DisplayName&" - "&SelectedRiskApproval2_Risk.Mail
+        Visible: =varLBRiskApproval2_Risk
+        Width: =359
+        X: =950
+        Y: =398
         ZIndex: =69
+
+    Gal_RiskSelecttOwner_26 As gallery.galleryVertical:
+        AccessibleLabel: ="People for selection"
+        BorderColor: =RGBA(0, 0, 0, 0.16)
+        BorderThickness: =1
+        DisabledBorderColor: =Gal_RiskSelecttOwner_26.BorderColor
+        DisabledFill: =Gal_RiskSelecttOwner_26.Fill
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =279
+        HoverBorderColor: =Gal_RiskSelecttOwner_26.BorderColor
+        HoverFill: =Gal_RiskSelecttOwner_26.Fill
+        Items: |
+            =If(!IsBlank(inp_RiskApproval2_Risk.Text), 
+            Office365Users.SearchUser({searchTerm:Trim(inp_RiskApproval2_Risk.Text)}))
+        Layout: =Layout.Vertical
+        LoadingSpinnerColor: =Gal_RiskSelecttOwner_26.BorderColor
+        OnSelect: |-
+            = UpdateContext({SelectedRiskApproval2_Risk:ThisItem, HideApproval2RiskGallery:true, 
+             varLBRiskApproval2_Risk: true})
+        PressedBorderColor: =Gal_RiskSelecttOwner_26.BorderColor
+        PressedFill: =Gal_RiskSelecttOwner_26.Fill
+        TemplateSize: =53
+        Visible: |-
+            =Not(IsBlank(inp_RiskApproval2_Risk)) &&
+            !HideApproval2RiskGallery
+        Width: =376
+        X: =946
+        Y: =429
+        ZIndex: =70
+
+        LabelPersonDisplayName_28 As label:
+            FocusedBorderColor: =LabelPersonDisplayName_28.BorderColor
+            Font: =Font.'Segoe UI'
+            Height: =53
+            HoverBorderColor: =LabelPersonDisplayName_28.BorderColor
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(244, 244, 244, 1)
+            OnSelect: =Select(Parent)
+            PaddingBottom: =15
+            PaddingLeft: =20
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =LabelPersonDisplayName_28.BorderColor
+            PressedColor: =LabelPersonDisplayName_28.Color
+            PressedFill: =LabelPersonDisplayName_28.Fill
+            Size: =10
+            TabIndex: =0
+            Text: =ThisItem.DisplayName&" - "&ThisItem.Mail
+            Width: =366
+            ZIndex: =1
+
+    Gal_RiskSelecttOwner_25 As gallery.galleryVertical:
+        AccessibleLabel: ="People for selection"
+        BorderColor: =RGBA(0, 0, 0, 0.16)
+        BorderThickness: =1
+        DisabledBorderColor: =Gal_RiskSelecttOwner_25.BorderColor
+        DisabledFill: =Gal_RiskSelecttOwner_25.Fill
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =279
+        HoverBorderColor: =Gal_RiskSelecttOwner_25.BorderColor
+        HoverFill: =Gal_RiskSelecttOwner_25.Fill
+        Items: |
+            =If(!IsBlank(inp_RiskApproval2.Text), 
+            Office365Users.SearchUser({searchTerm:Trim(inp_RiskApproval2.Text)}))
+        Layout: =Layout.Vertical
+        LoadingSpinnerColor: =Gal_RiskSelecttOwner_25.BorderColor
+        OnSelect: |-
+            = UpdateContext({SelectedRiskApproval2:ThisItem, HideApproval2Gallery:true, 
+             varLBRiskApproval2: true})
+        PressedBorderColor: =Gal_RiskSelecttOwner_25.BorderColor
+        PressedFill: =Gal_RiskSelecttOwner_25.Fill
+        TemplateSize: =53
+        Visible: |-
+            =Not(IsBlank(inp_RiskApproval2)) &&
+            !HideApproval2Gallery
+        Width: =376
+        X: =947
+        Y: =375
+        ZIndex: =71
+
+        LabelPersonDisplayName_27 As label:
+            FocusedBorderColor: =LabelPersonDisplayName_27.BorderColor
+            Font: =Font.'Segoe UI'
+            Height: =53
+            HoverBorderColor: =LabelPersonDisplayName_27.BorderColor
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(244, 244, 244, 1)
+            OnSelect: =Select(Parent)
+            PaddingBottom: =15
+            PaddingLeft: =20
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =LabelPersonDisplayName_27.BorderColor
+            PressedColor: =LabelPersonDisplayName_27.Color
+            PressedFill: =LabelPersonDisplayName_27.Fill
+            Size: =10
+            TabIndex: =0
+            Text: =ThisItem.DisplayName&" - "&ThisItem.Mail
+            Width: =366
+            ZIndex: =1
 
     Gal_RiskSelectApproval1_Risk As gallery.galleryVertical:
         AccessibleLabel: ="People for selection"
@@ -1493,7 +1523,7 @@
         Width: =470
         X: =236
         Y: =428
-        ZIndex: =70
+        ZIndex: =72
 
         LabelPersonDisplayName_26 As label:
             FocusedBorderColor: =LabelPersonDisplayName_26.BorderColor
@@ -1516,120 +1546,40 @@
             Width: =388
             ZIndex: =1
 
-    lb_RiskApproval2 As label:
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =Font.'Segoe UI'
-        Height: =26
-        OnSelect: |-
-            =UpdateContext({varLBRiskApproval2:false,
-            HideApproval2Gallery:false})
-        Size: =12
-        Text: =SelectedRiskApproval2.DisplayName&" - "&SelectedRiskApproval2.Mail
-        Visible: =varLBRiskApproval2
-        Width: =359
-        X: =951
-        Y: =344
-        ZIndex: =71
-
-    Gal_RiskSelecttOwner_25 As gallery.galleryVertical:
+    Gal_RiskSelectApproval1 As gallery.galleryVertical:
         AccessibleLabel: ="People for selection"
         BorderColor: =RGBA(0, 0, 0, 0.16)
         BorderThickness: =1
-        DisabledBorderColor: =Gal_RiskSelecttOwner_25.BorderColor
-        DisabledFill: =Gal_RiskSelecttOwner_25.Fill
+        DisabledBorderColor: =Gal_RiskSelectApproval1.BorderColor
+        DisabledFill: =Gal_RiskSelectApproval1.Fill
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =279
-        HoverBorderColor: =Gal_RiskSelecttOwner_25.BorderColor
-        HoverFill: =Gal_RiskSelecttOwner_25.Fill
+        Height: =272
+        HoverBorderColor: =Gal_RiskSelectApproval1.BorderColor
+        HoverFill: =Gal_RiskSelectApproval1.Fill
         Items: |
-            =If(!IsBlank(inp_RiskApproval2.Text), 
-            Office365Users.SearchUser({searchTerm:Trim(inp_RiskApproval2.Text)}))
+            =If(!IsBlank(inp_RiskApproval1.Text), 
+            Office365Users.SearchUser({searchTerm:Trim(inp_RiskApproval1.Text)}))
         Layout: =Layout.Vertical
-        LoadingSpinnerColor: =Gal_RiskSelecttOwner_25.BorderColor
+        LoadingSpinnerColor: =Gal_RiskSelectApproval1.BorderColor
         OnSelect: |-
-            = UpdateContext({SelectedRiskApproval2:ThisItem, HideApproval2Gallery:true, 
-             varLBRiskApproval2: true})
-        PressedBorderColor: =Gal_RiskSelecttOwner_25.BorderColor
-        PressedFill: =Gal_RiskSelecttOwner_25.Fill
+            = UpdateContext({SelectedRiskApproval1:ThisItem, HideApproval1Gallery:true, 
+             varLBRiskApproval1: true})
+        PressedBorderColor: =Gal_RiskSelectApproval1.BorderColor
+        PressedFill: =Gal_RiskSelectApproval1.Fill
         TemplateSize: =53
         Visible: |-
-            =Not(IsBlank(inp_RiskApproval2)) &&
-            !HideApproval2Gallery
-        Width: =376
-        X: =947
-        Y: =375
-        ZIndex: =72
-
-        LabelPersonDisplayName_27 As label:
-            FocusedBorderColor: =LabelPersonDisplayName_27.BorderColor
-            Font: =Font.'Segoe UI'
-            Height: =53
-            HoverBorderColor: =LabelPersonDisplayName_27.BorderColor
-            HoverColor: =RGBA(0, 0, 0, 1)
-            HoverFill: =RGBA(244, 244, 244, 1)
-            OnSelect: =Select(Parent)
-            PaddingBottom: =15
-            PaddingLeft: =20
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedBorderColor: =LabelPersonDisplayName_27.BorderColor
-            PressedColor: =LabelPersonDisplayName_27.Color
-            PressedFill: =LabelPersonDisplayName_27.Fill
-            Size: =10
-            TabIndex: =0
-            Text: =ThisItem.DisplayName&" - "&ThisItem.Mail
-            Width: =366
-            ZIndex: =1
-
-    lb_RiskApproval2_Risk As label:
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =Font.'Segoe UI'
-        Height: =26
-        OnSelect: |-
-            =UpdateContext({varLBRiskApproval2_Risk:false,
-            HideApproval2RiskGallery:false})
-        Size: =12
-        Text: =SelectedRiskApproval2_Risk.DisplayName&" - "&SelectedRiskApproval2_Risk.Mail
-        Visible: =varLBRiskApproval2_Risk
-        Width: =359
-        X: =950
-        Y: =398
+            =Not(IsBlank(inp_RiskApproval1)) &&
+            !HideApproval1Gallery
+        Width: =470
+        X: =236
+        Y: =382
         ZIndex: =73
 
-    Gal_RiskSelecttOwner_26 As gallery.galleryVertical:
-        AccessibleLabel: ="People for selection"
-        BorderColor: =RGBA(0, 0, 0, 0.16)
-        BorderThickness: =1
-        DisabledBorderColor: =Gal_RiskSelecttOwner_26.BorderColor
-        DisabledFill: =Gal_RiskSelecttOwner_26.Fill
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =279
-        HoverBorderColor: =Gal_RiskSelecttOwner_26.BorderColor
-        HoverFill: =Gal_RiskSelecttOwner_26.Fill
-        Items: |
-            =If(!IsBlank(inp_RiskApproval2_Risk.Text), 
-            Office365Users.SearchUser({searchTerm:Trim(inp_RiskApproval2_Risk.Text)}))
-        Layout: =Layout.Vertical
-        LoadingSpinnerColor: =Gal_RiskSelecttOwner_26.BorderColor
-        OnSelect: |-
-            = UpdateContext({SelectedRiskApproval2_Risk:ThisItem, HideApproval2RiskGallery:true, 
-             varLBRiskApproval2_Risk: true})
-        PressedBorderColor: =Gal_RiskSelecttOwner_26.BorderColor
-        PressedFill: =Gal_RiskSelecttOwner_26.Fill
-        TemplateSize: =53
-        Visible: |-
-            =Not(IsBlank(inp_RiskApproval2_Risk)) &&
-            !HideApproval2RiskGallery
-        Width: =376
-        X: =946
-        Y: =429
-        ZIndex: =74
-
-        LabelPersonDisplayName_28 As label:
-            FocusedBorderColor: =LabelPersonDisplayName_28.BorderColor
+        LabelPersonDisplayName_20 As label:
+            FocusedBorderColor: =LabelPersonDisplayName_20.BorderColor
             Font: =Font.'Segoe UI'
             Height: =53
-            HoverBorderColor: =LabelPersonDisplayName_28.BorderColor
+            HoverBorderColor: =LabelPersonDisplayName_20.BorderColor
             HoverColor: =RGBA(0, 0, 0, 1)
             HoverFill: =RGBA(244, 244, 244, 1)
             OnSelect: =Select(Parent)
@@ -1637,12 +1587,62 @@
             PaddingLeft: =20
             PaddingRight: =0
             PaddingTop: =0
-            PressedBorderColor: =LabelPersonDisplayName_28.BorderColor
-            PressedColor: =LabelPersonDisplayName_28.Color
-            PressedFill: =LabelPersonDisplayName_28.Fill
+            PressedBorderColor: =LabelPersonDisplayName_20.BorderColor
+            PressedColor: =LabelPersonDisplayName_20.Color
+            PressedFill: =LabelPersonDisplayName_20.Fill
             Size: =10
             TabIndex: =0
             Text: =ThisItem.DisplayName&" - "&ThisItem.Mail
-            Width: =366
+            Width: =388
+            ZIndex: =1
+
+    Gal_RiskSelecttOwner_16 As gallery.galleryVertical:
+        AccessibleLabel: ="People for selection"
+        BorderColor: =RGBA(0, 0, 0, 0.16)
+        BorderThickness: =1
+        DisabledBorderColor: =Gal_RiskSelecttOwner_16.BorderColor
+        DisabledFill: =Gal_RiskSelecttOwner_16.Fill
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =272
+        HoverBorderColor: =Gal_RiskSelecttOwner_16.BorderColor
+        HoverFill: =Gal_RiskSelecttOwner_16.Fill
+        Items: |
+            =If(!IsBlank(inp_RiskOwner.Text), 
+            Office365Users.SearchUser({searchTerm:Trim(inp_RiskOwner.Text)}))
+        Layout: =Layout.Vertical
+        LoadingSpinnerColor: =Gal_RiskSelecttOwner_16.BorderColor
+        OnSelect: |-
+            = UpdateContext({SelectedRiskOwner:ThisItem, HidePeopleGallery:true, 
+             varLBRiskOwner: true})
+        PressedBorderColor: =Gal_RiskSelecttOwner_16.BorderColor
+        PressedFill: =Gal_RiskSelecttOwner_16.Fill
+        TemplateSize: =53
+        Visible: |-
+            =Not(IsBlank(inp_RiskOwner)) &&
+            !HidePeopleGallery
+        Width: =372
+        X: =947
+        Y: =185
+        ZIndex: =74
+
+        LabelPersonDisplayName_18 As label:
+            FocusedBorderColor: =LabelPersonDisplayName_18.BorderColor
+            Font: =Font.'Segoe UI'
+            Height: =53
+            HoverBorderColor: =LabelPersonDisplayName_18.BorderColor
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(244, 244, 244, 1)
+            OnSelect: =Select(Parent)
+            PaddingBottom: =15
+            PaddingLeft: =20
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =LabelPersonDisplayName_18.BorderColor
+            PressedColor: =LabelPersonDisplayName_18.Color
+            PressedFill: =LabelPersonDisplayName_18.Fill
+            Size: =10
+            TabIndex: =0
+            Text: =ThisItem.DisplayName&" - "&ThisItem.Mail
+            Width: =388
             ZIndex: =1
 

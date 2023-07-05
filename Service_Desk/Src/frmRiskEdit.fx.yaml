@@ -1263,6 +1263,7 @@
         Default: =""
         Font: =Font.'Segoe UI'
         Height: =35
+        HintText: ="Nhập tên hoặc email"
         Mode: =TextMode.MultiLine
         OnSelect: =
         RadiusBottomLeft: =0
@@ -1335,6 +1336,7 @@
         Default: =""
         Font: =Font.'Segoe UI'
         Height: =36
+        HintText: ="Nhập tên hoặc email"
         Mode: =TextMode.MultiLine
         OnSelect: =
         RadiusBottomLeft: =0
@@ -1371,6 +1373,7 @@
         Default: =""
         Font: =Font.'Segoe UI'
         Height: =34
+        HintText: ="Nhập tên hoặc email"
         Mode: =TextMode.MultiLine
         OnSelect: =
         RadiusBottomLeft: =0
@@ -1587,13 +1590,13 @@
     lb_RiskApproval1_1 As label:
         Fill: =RGBA(255, 255, 255, 1)
         Font: =Font.'Segoe UI'
-        Height: =26
+        Height: =25
         OnSelect: |-
             =UpdateContext({varLBRiskApproval1Temp:false})
         Size: =12
         Text: =varRiskInfo.Approval_By_LV1
         Visible: =varLBRiskApproval1Temp
-        Width: =400
+        Width: =446
         X: =243
         Y: =342
         ZIndex: =80
@@ -1601,13 +1604,13 @@
     lb_RiskApproval1_Risk_1 As label:
         Fill: =RGBA(255, 255, 255, 1)
         Font: =Font.'Segoe UI'
-        Height: =26
+        Height: =27
         OnSelect: |-
             =UpdateContext({varLBRiskApproval1_RiskTemp:false})
         Size: =12
         Text: =varRiskInfo.Approval_By_LV1Risk
         Visible: =varLBRiskApproval1_RiskTemp
-        Width: =400
+        Width: =446
         X: =243
         Y: =396
         ZIndex: =81

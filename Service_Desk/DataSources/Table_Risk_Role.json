@@ -32,6 +32,7 @@
       "field_1": "ROLE_NAME",
       "field_2": "DATA_RANGE",
       "field_3": "FUNCTION",
+      "FUNC_DESCRIPTION": "FUNC_DESCRIPTION",
       "ID": "ID",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",

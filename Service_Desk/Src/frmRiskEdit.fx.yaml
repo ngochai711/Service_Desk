@@ -3,6 +3,20 @@
     OnVisible: |+
         =UpdateContext({varTemp2:true});
         UpdateContext({varRiskKey:varRiskInfo.Risk_Code});
+        
+        //Reset
+        Reset(inp_RiskOwner_1);
+        Reset(inp_RiskApproval1_1);
+        Reset(inp_RiskApproval1Risk_1);
+        Reset(inp_RiskApproval2_1);
+        Reset(inp_RiskApproval2Risk_1);
+        UpdateContext({varLBRiskOwner:false,HidePeopleGallery:false});
+        UpdateContext({varLBRiskApproval1:false,HideApproval1Gallery:false});
+        UpdateContext({varLBRiskApproval1_Risk:false,HideApproval1RiskGallery:false});
+        UpdateContext({varLBRiskApproval2:false,HideApproval2Gallery:false});
+        UpdateContext({varLBRiskApproval2_Risk:false,HideApproval2RiskGallery:false});
+        
+        //Show name
         UpdateContext({varLBRiskOwnerTemp:true});
         UpdateContext({varLBRiskApproval1Temp:true});
         UpdateContext({varLBRiskApproval1_RiskTemp:true});
@@ -55,7 +69,7 @@
         BorderStyle: =BorderStyle.None
         Fill: =RGBA(0, 0, 0, 0)
         Font: =Font.'Segoe UI'
-        Height: =88
+        Height: =87
         OnSelect: |
             =If(
                 IsBlank(inp_RiskName_1) || IsBlank(cb_RiskImportant_1) || IsBlank(cb_RiskStatus_1) ,
@@ -95,10 +109,10 @@
                     Mail_create_by:varUser.Username,
             
                     //Approval
-                    Approval_By_LV1:If(varLBRiskApproval1Temp=true,lb_RiskApproval1_1.Text,SelectedRiskApproval1.MailNickname),
+                    Approval_By_LV1:If(varLBRiskApproval1Temp=true ,lb_RiskApproval1_1.Text,SelectedRiskApproval1.MailNickname),
                     Approval_By_LV1Risk:If(varLBRiskApproval1Temp=true,lb_RiskApproval1_Risk_1.Text,SelectedRiskApproval1_Risk.MailNickname),
-                    Approval_By_LV2:If(varLBRiskApproval1Temp=true && !IsBlank(lb_RiskApproval2_1.Text),lb_RiskApproval2_1.Text,SelectedRiskApproval2.MailNickname),
-                    Approval_By_LV2Risk:If(varLBRiskApproval1Temp=true && !IsBlank(lb_RiskApproval2_Risk_1.Text),lb_RiskApproval2_Risk_1.Text,SelectedRiskApproval2_Risk.MailNickname)}
+                    Approval_By_LV2:If(varLBRiskApproval1Temp=true,lb_RiskApproval2_1.Text,SelectedRiskApproval2.MailNickname),
+                    Approval_By_LV2Risk:If(varLBRiskApproval1Temp=true,lb_RiskApproval2_Risk_1.Text,SelectedRiskApproval2_Risk.MailNickname)}
                 );
                 Notify("Thay đổi thành công",NotificationType.Success)
             );
@@ -1337,7 +1351,7 @@
         Y: =393
         ZIndex: =74
 
-    inp_RiskApproval2_Risk_1 As text:
+    inp_RiskApproval2Risk_1 As text:
         BorderThickness: =1
         Default: =""
         Font: =Font.'Segoe UI'
@@ -1365,8 +1379,8 @@
         HoverBorderColor: =Gal_RiskSelecttOwner_27.BorderColor
         HoverFill: =Gal_RiskSelecttOwner_27.Fill
         Items: |
-            =If(!IsBlank(inp_RiskApproval2_Risk_1.Text), 
-            Office365Users.SearchUser({searchTerm:Trim(inp_RiskApproval2_Risk_1.Text)}))
+            =If(!IsBlank(inp_RiskApproval2Risk_1.Text), 
+            Office365Users.SearchUser({searchTerm:Trim(inp_RiskApproval2Risk_1.Text)}))
         Layout: =Layout.Vertical
         LoadingSpinnerColor: =Gal_RiskSelecttOwner_27.BorderColor
         OnSelect: |-
@@ -1376,7 +1390,7 @@
         PressedFill: =Gal_RiskSelecttOwner_27.Fill
         TemplateSize: =53
         Visible: |-
-            =Not(IsBlank(inp_RiskApproval2_Risk_1)) &&
+            =Not(IsBlank(inp_RiskApproval2Risk_1)) &&
             !HideApproval2RiskGallery
         Width: =376
         X: =946
@@ -1717,8 +1731,8 @@
                     //Approval
                     Approval_By_LV1:If(varLBRiskApproval1Temp=true,lb_RiskApproval1_1.Text,SelectedRiskApproval1.MailNickname),
                     Approval_By_LV1Risk:If(varLBRiskApproval1Temp=true,lb_RiskApproval1_Risk_1.Text,SelectedRiskApproval1_Risk.MailNickname),
-                    Approval_By_LV2:If(varLBRiskApproval1Temp=true && !IsBlank(lb_RiskApproval2_1.Text),lb_RiskApproval2_1.Text,SelectedRiskApproval2.MailNickname),
-                    Approval_By_LV2Risk:If(varLBRiskApproval1Temp=true && !IsBlank(lb_RiskApproval2_Risk_1.Text),lb_RiskApproval2_Risk_1.Text,SelectedRiskApproval2_Risk.MailNickname)}
+                    Approval_By_LV2:If(varLBRiskApproval1Temp=true,lb_RiskApproval2_1.Text,SelectedRiskApproval2.MailNickname),
+                    Approval_By_LV2Risk:If(varLBRiskApproval1Temp=true ,lb_RiskApproval2_Risk_1.Text,SelectedRiskApproval2_Risk.MailNickname)}
                 );
                 Notify("Thay đổi thành công",NotificationType.Success)
             );

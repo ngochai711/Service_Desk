@@ -87,7 +87,7 @@
                     Net_Overall_Finance:varNetOverall_Text,
                     Net_Possibility:dd_NetPossibility_1.Selected.NAME,
                     Net_Score:varNetScore,
-                    Net_Rank:varGrossRank,
+                    Net_Rank:varNetRank,
                     Net_Evaluation_Basis:inp_NetEvaluation_1.Text,
                     
                     Mail_create_by:varUser.Username,

@@ -82,20 +82,6 @@ frmRiskApprovalDetail_2 As screen:
         Y: =12
         ZIndex: =9
 
-    lbUserinfo_5 As label:
-        Align: =Align.Center
-        Color: =RGBA(9, 33, 98, 1)
-        Font: =Font.Arial
-        FontWeight: =FontWeight.Bold
-        Size: =20
-        Text: |+
-            ="Xin Chào: "&varUserinfo&"
-            
-        Width: =523
-        X: =828
-        Y: =688
-        ZIndex: =10
-
     btn_Reject_LV1_5 As button:
         BorderStyle: =BorderStyle.None
         Fill: =RGBA(255, 0, 0, 1)

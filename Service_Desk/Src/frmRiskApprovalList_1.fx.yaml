@@ -43,8 +43,13 @@
             DelayItemLoading: =true
             Height: =383
             Items: |-
-                =Filter(Table_Risk,Approval_By_LV1
-                =varUser.Username)
+                =Filter(
+                    Table_Risk,
+                    And(
+                        Approval_By_LV1 = varUser.Username,
+                        Risk_Status = "Chờ duyệt cấp 1"
+                    )
+                )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
